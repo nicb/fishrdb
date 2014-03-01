@@ -1,0 +1,32 @@
+<!-- $Id: ar.rhtml 616 2012-06-21 11:47:43Z nicb $ -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    	<title>Archivio Fondazione Isabella Scelsi</title>
+  		<%= stylesheet_link_tag 'fishrdb_common', 'fishrdb_backoffice' -%>
+	    <%= javascript_include_tag "prototype", "effects", "controls" -%>
+		<!-- compliance patch for microsoft browsers -->
+		<!--[if lt IE 7]>
+        	<%= javascript_include_tag "ie7/ie7-standard-p" -%>
+		<![endif]-->
+	    <%= javascript_include_tag "fishrdb" -%>
+	    <%= javascript_include_tag "editableSelectBox" -%>
+	</head>
+    <body onload="menuScrollToActiveItem(); return false;">
+      <div class="page">
+    <%= render(:partial => 'share/common_header') %>
+    <%=
+        render(:partial => 'share/backoffice_dashboard',
+               :locals => { :ardblink => 'share/ar_to_db_link',
+                 :maybe_docs_per_page => 'share/no_paginator'})
+    -%>
+
+    <div class="outerdoc">
+		  <%= yield  -%>
+	  </div> <!-- outer doc -->
+
+      <%= render(:partial => 'share/backoffice_footer') -%>
+    </div> <!-- page -->
+</body>
+</html>

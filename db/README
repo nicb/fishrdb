@@ -1,0 +1,8 @@
+The .sql files in this directory are out of date. They are needed by the
+bootstrap  procedures,  which  are  never  done  any  longer  since  the
+production  database  has  evolved  since  bootstrapping  it.  The  only
+authoritative up-to-date source on the status of  the  database  is  the
+schema.rb file.
+
+----
+$Id: README 124 2008-01-06 16:19:17Z nicb $

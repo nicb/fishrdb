@@ -1,0 +1,45 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      "Pranam" nastro solo (base) a 38
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: AC?
+      pen: matita nera
+    lines: "ORIGINal, (not cleaned) "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna biro
+    lines: "I | II la II pista \xC3\xA8 pi\xC3\xB9 forte ---+--- della I\n\
+      - | + e c'\xC3\xA8 \n\
+      un leggero\n\
+      resto di\n\
+      MICHIKO\n"
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    registrazione professionale di Pranam
+    
+  tag_end: A01
+  tag_start: A01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 una registrazione professionale stereofonica di Pranam. Contiene una giuntura (non di edizione) a [10'11\"]"
+  tag: NMGS0239-369
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2010-01-15
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

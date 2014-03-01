@@ -1,0 +1,61 @@
+#
+# $Id: database.yml 128 2008-01-06 22:55:19Z nicb $
+#
+# MySQL (default setup).  Versions 4.1 and 5.0 are recommended.
+#
+# Install the MySQL driver:
+#   gem install mysql
+# On MacOS X:
+#   gem install mysql -- --include=/usr/local/lib
+# On Windows:
+#   There is no gem for Windows.  Install mysql.so from RubyForApache.
+#   http://rubyforge.org/projects/rubyforapache
+#
+# And be sure to use new-style password hashing:
+#   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
+development:
+  adapter: mysql
+  encoding: utf8
+  database: fishrdb_development
+  username: fishrdb
+  password: fishrdb
+  host: localhost
+
+# Warning: The database defined as 'test' will be erased and
+# re-generated from your development database when you run 'rake'.
+# Do not set this db to the same as development or production.
+test:
+  adapter: mysql
+  encoding: utf8
+  database: fishrdb_test
+  username: fishrdb
+  password: fishrdb
+  host: localhost
+
+production:
+  adapter: mysql
+  encoding: utf8
+  database: fishrdb_production
+  username: fishrdb
+  password: fishrdb
+  host: localhost
+
+#
+# this is the database that holds the "old-structure" FIS
+# data
+#
+fisold:
+  adapter: mysql
+# encoding: utf8 # do NOT put utf8 encoding here! It won't render correctly
+  database: fisold
+  username: fishrdb
+  password: fishrdb
+  host: localhost
+
+benchmarking:
+  encoding: utf8
+  username: fishrdb
+  adapter: mysql
+  host: localhost
+  password: fishrdb
+  database: fishrdb_development

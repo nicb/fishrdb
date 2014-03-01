@@ -1,0 +1,22 @@
+#
+# $Id: mongrel_configuration.yml 590 2010-12-24 14:58:05Z nicb $
+#
+--- 
+:throttle: 0
+:user: nicb
+:cwd: /home/nicb/src/fishrdb
+:host: 192.168.0.252
+:timeout: 180
+:debug: false
+:group: nicb
+:port: "3000"
+:num_processors: 1024
+:daemon: true
+:environment: production
+:config_script: 
+:prefix: 
+:pid_file: tmp/pids/mongrel.pid
+:includes: 
+:log_file: log/mongrel.log
+:mime_map: 
+:docroot: public

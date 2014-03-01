@@ -1,0 +1,87 @@
+<!-- $Id: _doc_date_single.html.erb 478 2010-03-03 22:16:14Z nicb $ -->
+<table>
+  <tr>
+    <td colspan="2">
+      <%=
+          select_day(doc_date_single.date.date_from.day,
+                     doc_date_single.date.date_from.date_select_options('doc[data_dal]', doc_date_single.senza_data_boolean),
+                     { :onchange => Document.date_onchange_string('from') })
+      -%>
+      <%=
+          select_month(doc_date_single.date.date_from.month,
+                     doc_date_single.date.date_from.date_select_options('doc[data_dal]', doc_date_single.senza_data_boolean),
+                     { :onchange => Document.date_onchange_string('from') })
+      -%>
+      <%=
+          select_year(doc_date_single.date.date_from.year,
+                     doc_date_single.date.date_from.date_select_options('doc[data_dal]', doc_date_single.senza_data_boolean),
+                     { :onchange => Document.date_onchange_string('from') })
+      -%>
+      <%=
+          text_field('doc', 'data_dal_format', :size => 10, :maxsize => 22,
+                     :value => doc_date_single.date.from_format,
+                     :onchange => Document.format_onchange_string,
+                     :disabled => doc_date_single.senza_data_boolean)
+      -%>
+      <%= hidden_field('doc', 'data_dal_input_parameters', :value => doc_date_single.date.dfips) -%>
+    </td>
+    <td> <i><font size="-3">%d => giorno, %m => mese, %Y => anno</font></i></td>
+  </tr>
+  <tr>
+    <td>Data Visualizzata:</td><td colspan="3">
+      <%=
+          text_field('doc', 'data_visualizzata', :value => doc_date_single.dates_to_be_displayed, :disabled => true)
+      -%>
+    </td>
+  </tr>
+  <tr>
+    <td>Formato data:</td>
+    <td>
+      <%=
+          text_field('doc', 'full_date_format', :size => 16, :maxsize => 128,
+                     :value => doc_date_single.date.intv_format,
+                     :onchange => Document.format_onchange_string,
+                     :disabled => doc_date_single.senza_data_boolean)
+      -%>
+    </td>
+    <td colspan="2"><i><font size="-3">%DD => data_dal, %DA => data_al</font></i></td>
+  </tr>
+  <tr>
+    <td>Luogo:</td>
+    <td>
+      <%=
+          text_field('doc', 'data_topica', :size => 16, :maxsize => 256,
+                     :value => doc_date_single.data_topica,
+                     :onchange => Document.format_onchange_string)
+      -%>
+    </td>
+  </tr>
+  <tr>
+    <td>Senza Data?</td>
+    <td>
+      <%=
+          check_box('doc', 'senza_data',
+                    {
+                      :checked => doc_date_single.senza_data_boolean,
+                      :onchange => Document.sd_onchange_string,
+                    }, 'Y', 'N')
+      -%>
+    </td>
+  </tr>
+  <tr>
+    <td>Nota Data:</td>
+    <td>
+      <%=
+          text_field('doc', 'nota_data', :size => 20, :maxsize => 128, :value => doc_date_single.nota_data,
+                     :onchange => Document.format_onchange_string)
+      -%>
+    </td>
+   </tr>
+</table>
+<!-- These empty divs are required otherwise the javascript code fails -->
+<%= hidden_field('doc[data_al]', 'day', :value => '') -%>
+<%= hidden_field('doc[data_al]', 'month', :value => '') -%>
+<%= hidden_field('doc[data_al]', 'year', :value => '') -%>
+<%= hidden_field('doc', 'data_al', :value => '') -%>
+<%= hidden_field('doc', 'data_al_format', :value => '') -%>
+<%= hidden_field('doc', 'data_al_input_parameters', :value => '---') %>

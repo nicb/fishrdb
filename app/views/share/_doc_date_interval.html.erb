@@ -1,0 +1,114 @@
+<!-- $Id: _doc_date_interval.html.erb 270 2008-11-09 12:06:14Z nicb $ -->
+<table>
+  <tr>
+    <td>Data Visualizzata:</td><td colspan="3">
+      <%=
+          text_field('doc', 'data_visualizzata', :value => doc_date_interval.dates_to_be_displayed, :disabled => true)
+      -%>
+    </td>
+  </tr>
+  <tr>
+    <td>Dal:</td>
+    <td>
+      <%=
+          select_day(doc_date_interval.date.date_from.day,
+                     doc_date_interval.date.date_from.date_select_options('doc[data_dal]', doc_date_interval.senza_data_boolean),
+                     { :onchange => Document.date_onchange_string('from') })
+      -%>
+      <%=
+          select_month(doc_date_interval.date.date_from.month,
+                     doc_date_interval.date.date_from.date_select_options('doc[data_dal]', doc_date_interval.senza_data_boolean),
+                     { :onchange => Document.date_onchange_string('from') })
+      -%>
+      <%=
+          select_year(doc_date_interval.date.date_from.year,
+                     doc_date_interval.date.date_from.date_select_options('doc[data_dal]', doc_date_interval.senza_data_boolean),
+                     { :onchange => Document.date_onchange_string('from') })
+      -%>
+    </td>
+    <td>
+      <%=
+          text_field('doc', 'data_dal_format', :size => 10, :maxsize => 22,
+                     :value => doc_date_interval.date.from_format,
+                     :onchange => Document.format_onchange_string,
+                     :disabled => doc_date_interval.senza_data_boolean)
+      -%>
+      <%= hidden_field('doc', 'data_dal_input_parameters', :value => doc_date_interval.date.dfips) -%>
+    </td>
+    <td> <i><font size="-3">%d => giorno, %m => mese, %Y => anno</font></i></td>
+  </tr>
+  <tr>
+    <td>Al:</td>
+    <td>
+      <%# onchange_string = "new Ajax.Updater('', '/doc/to_date_changed/?from[day]=' + $('doc_data_dal_day').value + '&from[month]=' + $('doc_data_dal_month').value + '&from[year]=' + $('doc_data_dal_year').value + '&to[day]=' + $('doc_data_al_day').value + '&to[month]=' + $('doc_data_al_month').value + '&to[year]=' + $('doc_data_al_year').value + '&data_topica=' + $('doc_data_topica').value + '&nota_data=' + $('doc_nota_data').value, { asynchronous: true, evalScripts: true });" -%>
+      <%=
+          select_day(doc_date_interval.date.date_to.day,
+                     doc_date_interval.date.date_to.date_select_options('doc[data_al]', doc_date_interval.senza_data_boolean),
+                     { :onchange => Document.date_onchange_string('to') })
+      -%>
+      <%=
+          select_month(doc_date_interval.date.date_to.month,
+                     doc_date_interval.date.date_to.date_select_options('doc[data_al]', doc_date_interval.senza_data_boolean),
+                     { :onchange => Document.date_onchange_string('to') })
+      -%>
+      <%=
+          select_year(doc_date_interval.date.date_to.year,
+                     doc_date_interval.date.date_to.date_select_options('doc[data_al]', doc_date_interval.senza_data_boolean),
+                     { :onchange => Document.date_onchange_string('to') })
+      -%>
+    </td>
+    <td>
+      <%=
+          text_field('doc', 'data_al_format', :size => 10, :maxsize => 22,
+                     :value => doc_date_interval.date.to_format,
+                     :onchange => Document.format_onchange_string,
+                     :disabled => doc_date_interval.senza_data_boolean)
+      -%>
+      <%= hidden_field('doc', 'data_al_input_parameters', :value => doc_date_interval.date.dtips) -%>
+    </td>
+    <td> <i><font size="-3">%d => giorno, %m => mese, %Y => anno</font></i></td>
+  </tr>
+  <tr>
+    <td>Formato data:</td>
+    <td>
+      <%=
+          text_field('doc', 'full_date_format', :size => 16, :maxsize => 128,
+                     :value => doc_date_interval.date.intv_format,
+                     :onchange => Document.format_onchange_string,
+                     :disabled => doc_date_interval.senza_data_boolean)
+      -%>
+    </td>
+    <td colspan="2"><i><font size="-3">%DD => data_dal, %DA => data_al</font></i></td>
+  </tr>
+  <tr>
+    <td>Luogo:</td>
+    <td>
+      <%=
+          text_field('doc', 'data_topica', :size => 16, :maxsize => 256,
+                     :value => doc_date_interval.data_topica,
+                     :onchange => Document.format_onchange_string)
+      -%>
+    </td>
+  </tr>
+  <tr>
+    <td>Senza Data?</td>
+    <td>
+      <%=
+          check_box('doc', 'senza_data',
+                    {
+                      :checked => doc_date_interval.senza_data_boolean,
+                      :onchange => Document.sd_onchange_string,
+                    }, 'Y', 'N')
+      -%>
+    </td>
+  </tr>
+  <tr>
+    <td>Nota Data:</td>
+    <td>
+      <%=
+          text_field('doc', 'nota_data', :size => 20, :maxsize => 128, :value => doc_date_interval.nota_data,
+                     :onchange => Document.format_onchange_string)
+      -%>
+    </td>
+   </tr>
+</table>

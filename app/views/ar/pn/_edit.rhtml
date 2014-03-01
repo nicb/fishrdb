@@ -1,0 +1,32 @@
+<!-- $Id: _edit.rhtml 616 2012-06-21 11:47:43Z nicb $ -->
+<%= edit.class.label -%>: <% form_tag(:action => :edit_from_form, :id => edit.id, :class_name => edit.class.name) do -%>
+	<span class="ar_form_element">
+	  <table>
+	    <tr class="ar_form_element">
+	      <th>Cognome:</th><td><%= text_field 'authority_record', 'name', :size => 15, :maxsize => 256, :value => edit.name -%></td>
+	    </tr>
+	    <tr class="ar_form_element">
+	      <th>Nome:</th><td><%= text_field 'authority_record', 'first_name', :size => 8, :maxsize => 256, :value => edit.first_name -%></td>
+	    </tr>
+	    <tr class="ar_form_element">
+	      <th>Pseudonimo:</th><td><%= text_field 'authority_record', 'pseudonym', :size => 8, :maxsize => 256, :value => edit.pseudonym -%></td>
+	    </tr>
+	    <tr class="ar_form_element">
+        <th>Date:</th>
+        <td>
+          <%= render(:partial => 'ar/pn/pn_date_interval', :object => edit) %>
+        </td>
+	    </tr>
+	  </table>
+  </span>
+	<div class="form_buttons">
+    <%= 
+        submit_tag('salva', :name => 'commit')
+    -%>
+    <%= 
+        submit_tag('cancella', :name => 'commit')
+    -%>
+	</div> <!-- form_buttons -->
+<% end -%>
+<%# calendar_setup('authority_record_date_start') -%>
+<%# calendar_setup('authority_record_date_end') -%>

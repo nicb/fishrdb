@@ -1,0 +1,140 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: etichetta
+      author: FMU
+      pen: feltro rosso
+    lines: "po/ondiola "
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna biro nera
+    lines: "SICELSI "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro blu
+    lines: "inciso in parte "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "L'art et Satan A6 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro blu
+    lines: "Traccia internazionale copia bobina 9 - tutto a velocit\xC3\xA0 19 cm/s \n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato
+      author: GS
+      pen: matita rossa
+    lines: "TRIO "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro blu
+    lines: |
+      pezzi buoni per pf da fare
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna stilografica blu
+    lines: |
+      verso 225-340 1 basso e notine acute
+      Perdus
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "Michiko "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato
+      author: GS
+      pen: matita nera
+    lines: |
+      Quartetto I II III IV manca il V
+
+- !ruby/object:Tdp::Box::Display 
+  location: etichetta all'interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: FMU
+      pen: feltro verde
+    lines: "TRIO "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola\n "
+  tag_end: A05
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "prove con voce femminile (Michiko Hirayama?)\n "
+  tag_end: A09
+  tag_start: A06
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "prove con voce femminile (Michiko Hirayama?)\n "
+  tag_end: A13
+  tag_start: A11
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "prove con strumentista e strumento a fiato\n non identificati\n "
+  tag_end: A16
+  tag_start: A15
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiole\n "
+  tag_end: A20
+  tag_start: A17
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per pianoforte\n "
+  tag_end: B11
+  tag_start: B03
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "esecuzioni di lieder/songs per voce maschile e pianoforte\n "
+  tag_end: B12
+  tag_start: B12
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "esecuzioni di lieder/songs per contralto e pianoforte\n "
+  tag_end: B13
+  tag_start: B13
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "esecuzioni di lieder/songs per contralto e pianoforte\n "
+  tag_end: B15
+  tag_start: B15
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "esecuzione di \"There's a Boat Leaving soon for New York\"\n per voce maschile e pianoforte\n "
+  tag_end: B16
+  tag_start: B16
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    esecuzioni di lieder/songs per contralto e pianoforte
+    
+  tag_end: B17
+  tag_start: B17
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato su entrambi i lati fronte/retro. La velocit\xC3\xA0 di scorrimento del nastro delle parti di ondiola \xC3\xA8 di difficile interpretazione. L'interpretazione corrente \xC3\xA8 data dall'analisi del hum presente sul nastro. Il nastro presenta il caratteristico \"ting\" del registratore Revox G36. In [A08] si pu\xC3\xB2 ascoltare la voce di GS che dice \"uno, due, tre, quattro.\n Frammenti parlati:\n [A09] VF: \"posso prendere? GS: \"s\xC3\xAC s\xC3\xAC\" [A10] GS: \"Si vuole riposare un momento? [A13] GS: \" forte forte. S\xC3\xAC s\xC3\xAC pu\xC3\xB2 andare\" GS: \"No pi\xC3\xB9 forte. Far [] l'accento. poi dopo. [A15] VM: \"ci mettiamo qui. GS: \"Lo sollevi un p\xC3\xB2. GS: \"e con quel bocchino l\xC3\xAC. VM: \"non ce la fa. [B01] VM1: \" well they said that they knew this. VM2: \" [] I hadn't known it was on. GS: \"Yes but it wasn't on! VM2: \"Oh. VF: \"Oh. [B14] VM: \" perch\xC3\xA9 lei lo sa!"
+  tag: NMGS0213-199
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2009-05-26
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

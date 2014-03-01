@@ -1,0 +1,7 @@
+<!-- $Id: _list.rhtml 214 2008-05-11 21:47:15Z nicb $ -->
+<li>
+  <%=
+      link_to(list.name, :action => 'show',
+              :id => list.read_attribute('id'))
+  -%>
+</li>

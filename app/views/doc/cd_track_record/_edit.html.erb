@@ -1,0 +1,106 @@
+<!-- $Id: _edit.html.erb 616 2012-06-21 11:47:43Z nicb $ -->
+<%
+  cdttag = 'cd_track'
+  c_id = edit.creator.read_attribute('id') 
+  lm_id = session["user"].read_attribute('id')
+  ct_id = edit && edit.container_type ? edit.container_type.id : ContainerType.find_by_container_type('').id
+-%>
+<%= javascript_tag("update_page_var = false;") -%>
+<% form_tag({ :controller => 'doc', :action => :create_or_update_form }, { :class => 'form_content'}) do %>
+	<%= hidden_field('doc', 'id', :value => edit.read_attribute('id')) -%>
+	<%= hidden_field('doc', 'parent_id', :value => edit.parent_id) -%>
+	<%= hidden_field('doc', 'position', :value => edit.position) -%>
+	<%= hidden_field('doc', 'type', :value => edit.read_attribute('type')) -%>
+	<%= hidden_field('doc', 'creator_id', :value => c_id) -%>
+	<%= hidden_field('doc', 'last_modifier_id', :value => lm_id) -%>
+	<%= hidden_field('doc', 'container_type_id', :value => ct_id) -%>
+	<%= hidden_field('doc', 'description_level_position', :value => DescriptionLevel.unita_documentaria.position) -%> <!-- FIXME -->
+	<%= error_messages_for 'doc' %>
+	
+	<!--[form:doc]-->
+	<table class="form_content" id="<%= cdttag -%>">
+    <%= render(:partial => 'share/create_multiple_items') if edit.read_attribute('id').blank? -%>
+	  <tr valign="top">
+			<td width="15%">
+	      <label for="<%= cdttag -%>_authors">Autore/i:</label>
+			</td>
+			<td>
+        <font size='-2'><i>(Nome&nbsp;/&nbsp;Cognome&nbsp;/&nbsp;Pseudonimo&nbsp;/&nbsp;tag di disambiguazione)</i></font>
+        <%= render(:partial => 'share/names', :object => edit, :locals => { :single => 'share/name', :association => :authors, :creator_id => c_id, :last_modifier_id => lm_id } ) %>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+	      <label for="<%= cdttag -%>_title">Titolo:</label>
+			</td>
+			<td>
+        <font size='-2'><i>(Titolo&nbsp;/&nbsp;N.d'Ordine)</i></font><br />
+	      <%= text_field "doc", 'name', :size => '36%', :maxsize => 1024, :value => edit.name  %>
+        <%= text_field "doc[#{cdttag}]", 'ordinal', :size => '5%', :maxsize => 8, :value => edit.ordinal  %>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+	      <label for="<%= cdttag -%>_for">Organico:</label>
+			</td>
+			<td>
+	      <%= text_field "doc[#{cdttag}]", 'for', :size => '36%', :maxsize => 4096, :value => edit.for  %>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+	      <label for="<%= cdttag -%>_duration">Durata:</label>
+			</td>
+			<td>
+        <font size='-2'><i>(Ore&nbsp;/&nbsp;Minuti&nbsp;/&nbsp;Secondi)</i></font><br />
+        <%= select_hour(edit.cd_track.read_attribute(:duration), :prefix => "doc[#{cdttag}][duration]") -%>:
+        <%= select_minute(edit.cd_track.read_attribute(:duration), :prefix => "doc[#{cdttag}][duration]") -%>:
+        <%= select_second(edit.cd_track.read_attribute(:duration), :prefix => "doc[#{cdttag}][duration]") %>
+			</td>
+		</tr>
+		<tr valign="top">
+	  	<td>
+	      <label for="<%= cdttag -%>_abstract">Interpreti:</label>
+				</td>
+			<td>
+        <font size='-2'><i>(Nome&nbsp;/&nbsp;Cognome&nbsp;/&nbsp;Pseudonimo&nbsp;/&nbsp;Disambiguazione&nbsp;/&nbsp;Strumento)</i></font>
+        <%= render(:partial => 'share/names', :object => edit, :locals => { :single => 'doc/cd_track_record/performer', :association => :performers, :creator_id => c_id, :last_modifier_id => lm_id } ) %>
+			</td>
+		</tr>
+		<tr valign="top">
+	  	<td>
+	      <label for="<%= cdttag -%>_abstract">Ensembles:</label>
+				</td>
+			<td>
+        <font size='-2'><i>(Den.Ensemble&nbsp;+&nbsp;Nome&nbsp;/&nbsp;Cognome&nbsp;/&nbsp;Pseudonimo&nbsp;/&nbsp;Disambiguazione,&nbsp;direttore)</i></font>
+        <%= render(:partial => 'share/names', :object => edit, :locals => { :single => 'doc/cd_track_record/ensemble', :association => :ensembles, :creator_id => c_id, :last_modifier_id => lm_id } ) %>
+			</td>
+		</tr>
+		<tr class="display_separator" style="height: 15px;"><td></td></tr>
+		<tr valign="top">
+		  <td align="left">
+		    <label for="doc_description">Contenuto:</label>
+		  </td>
+		  <td>
+		    <%= text_area 'doc', 'description', :cols => '56.5%', :rows => 8, :value => edit.raw_description -%>
+		  </td>
+		</tr>
+		<tr valign="top">
+	  	<td>
+	      <label for="<%= cdttag -%>_note">Note:</label>
+				</td>
+			<td>
+	      <%= text_area 'doc', 'note', :cols => '46.5%', :rows => 4, :value => edit.raw_note  %>
+			</td>
+		</tr>
+  </table><!-- form content -->
+<br />
+<div class="form_buttons">
+  <%= submit_tag(" salva ", :name => 'update') -%>
+  <%= submit_tag(" cancella ", :name => 'cancel') -%>
+</div> <!-- form_buttons -->
+<% end %>
+<!--[eoform:doc]-->
+<table width="100%">
+  <%= render(:partial => 'ar_show', :collection => edit.authority_record_collection) -%>
+</table>

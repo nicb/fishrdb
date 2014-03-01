@@ -1,0 +1,37 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: "OK "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: "M IV "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "memorie narrate da GS\n "
+  tag_end: A26
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    memorie narrate da GS
+    
+  tag_end: B90
+  tag_start: B01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato su entrambe le tracce fronte- retro. Si tratta presumibilmente del quarto volume di memorie di GS (stando a quanto riportato sul contenitore)\n Persone nominate: Fritz, Betty, Leopold L\xC3\xB6wenstein-Wertheim, Antoine de Saint-Exup\xC3\xA9ry, Helen Rubenstein, Sir Francis Rose, Gertrude Stein, Granduca Dimitri di Russia, Monsieur Jouve (Pierre-Jean Jouve), Madame Jouve (Blanche Reverchon in Jouve), Ramus, Charles Bardet (), la moglie (Dorothy Kate Ramsden), Igor Markevitch, Bernard Berendson, Topazia Caetani, Adolphe, lo zio (Marchese Giuseppe d'Ayala Valva)"
+  tag: NMGS0231-299
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2009-10-12
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Cursi, Carlo

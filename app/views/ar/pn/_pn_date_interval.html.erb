@@ -1,0 +1,57 @@
+<!-- $Id: _pn_date_interval.html.erb 270 2008-11-09 12:06:14Z nicb $ -->
+<table>
+  <tr>
+    <td>Nascita:</td>
+    <td>
+      <%=
+          select_day(pn_date_interval.date.date_from.day,
+                     pn_date_interval.date.date_from.date_select_options('authority_record[date_start]'),
+                     { :onchange => AuthorityRecord.date_onchange_string('from') })
+      -%>
+      <%=
+          select_month(pn_date_interval.date.date_from.month,
+                     pn_date_interval.date.date_from.date_select_options('authority_record[date_start]'),
+                     { :onchange => AuthorityRecord.date_onchange_string('from') })
+      -%>
+      <%=
+          select_year(pn_date_interval.date.date_from.year,
+                     pn_date_interval.date.date_from.date_select_options('authority_record[date_start]'),
+                     { :onchange => AuthorityRecord.date_onchange_string('from') })
+      %>
+      <%=
+          hidden_field('authority_record', 'date_start_format', :size => 10, :maxsize => 22,
+                     :value => pn_date_interval.date.from_format)
+      %>
+      <%= hidden_field('authority_record', 'date_start_input_parameters', :value => pn_date_interval.date.dfips) %>
+    </td>
+  </tr>
+  <tr>
+    <td>Morte:</td>
+    <td>
+      <%=
+          select_day(pn_date_interval.date.date_to.day,
+                     pn_date_interval.date.date_to.date_select_options('authority_record[date_end]'),
+                     { :onchange => AuthorityRecord.date_onchange_string('to') })
+      -%>
+      <%=
+          select_month(pn_date_interval.date.date_to.month,
+                     pn_date_interval.date.date_to.date_select_options('authority_record[date_end]'),
+                     { :onchange => AuthorityRecord.date_onchange_string('to') })
+      -%>
+      <%=
+          select_year(pn_date_interval.date.date_to.year,
+                     pn_date_interval.date.date_to.date_select_options('authority_record[date_end]'),
+                     { :onchange => AuthorityRecord.date_onchange_string('to') })
+      -%>
+      <%=
+          hidden_field('authority_record', 'date_end_format', :size => 10, :maxsize => 22,
+                     :value => pn_date_interval.date.to_format)
+      %>
+      <%= hidden_field('authority_record', 'date_end_input_parameters', :value => pn_date_interval.date.dtips) %>
+    </td>
+  </tr>
+  <%=
+    hidden_field('authority_record', 'full_date_format', :size => 16, :maxsize => 128,
+                 :value => pn_date_interval.date.intv_format)
+  %>
+</table>

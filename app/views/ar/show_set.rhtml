@@ -1,0 +1,16 @@
+<!-- $Id: show_set.rhtml 253 2008-07-22 21:51:13Z nicb $ -->
+<%= render(:partial => 'sidebar') -%>
+<div class="innerdoc" id="innerdoc">
+  <div class="innerdoc_dashboard">
+		<%=
+        link_to(image_tag("fishrdb/add_16.png", :border => 0,
+		                    :alt => "Crea un Nuovo Record", :title => "Crea un Nuovo Record"),
+                        :action => :create, :class_name => @set[0].class.name)
+		-%> 
+  </div>
+  <div class="doc_content">
+    <ul class="doc_content">
+      <%= render(:partial => @partial, :collection => @set) -%>
+    </ul>
+  </div>
+</div> <!-- innerdoc -->

@@ -1,0 +1,18 @@
+<!-- $Id: _sidebar_display.rhtml 483 2010-04-04 01:48:36Z nicb $ -->
+<div class='menu'>
+  <% form_tag(:controller => :sidebar, :action => :manipulate_selection) do -%>
+  <div class='inner_menu' id='inner_menu'>
+    <ul class='sidebar_top_list'>
+      <%= render(:partial => 'sidebar/show', :collection => sidebar_display.children) -%>
+    </ul>
+  </div><!-- inner_menu -->
+  <div class="menu_buttons">
+  <%= submit_tag("taglia selezionati", :name => "copy") -%>
+      <%=
+          submit_tag("cancella selezionati", { :name => "delete_confirmation" ,
+                     :onclick => 'window.open(this.html); return false;' })
+      -%>
+  <%= submit_tag("annulla selezione", :name => "clear_selection") -%>
+  </div> <!-- menu_buttons -->
+  <% end -%>
+</div><!-- menu -->

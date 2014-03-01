@@ -1,0 +1,294 @@
+/*
+ * $Id: fishrdb_common.css 608 2011-01-24 10:27:36Z nicb $
+ */
+body {
+  font-family: "Arial", "Verdana", "Lucida Grande", "Bitstream Vera Sans";
+  font-size: 13px;
+  color: #000;
+  background: #3C3C78;
+  color: #ffffff;
+}
+
+.page {
+  /* display: block; */
+  border: 4px solid #3C3C78;
+ /*  border: 4px solid white; */
+  width: 1050px;
+  height: 600px;
+  margin: 20px auto;
+  padding: 0px;
+}
+
+.archive {
+  border: 5px solid #F00;
+  background-color: #ffff00;
+}
+a.footerelement {
+  font-size: 6pt;
+}
+/*
+ * common attributes
+ */
+pre {
+  background-color: #3b3b75;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #ffffff; }
+a:visited { color: #D7D7DD; }
+a:hover { color: #FEF3B0; background-color: #3C3C78; }
+
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+div.errorExplanation {
+  width: 94%;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+  margin-left: 1em;
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+h2.errorExplanation {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+p.errorExplanation {
+  color: #000;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+ul.errorExplanation {
+  font-size: 12px;
+  list-style: square;
+  color: #000;
+}
+
+li.errorExplanation {
+  color: #000;
+}
+
+td.errorExplanation {
+  color: blue;
+  background: yellow;
+}
+
+div.uploadStatus {
+  margin: 5px;
+}
+
+div.progressBar {
+  margin: 5px;
+}
+
+div.progressBar div.border {
+  background-color: #fff;
+  border: 1px solid grey;
+  width: 100%;
+}
+
+div.progressBar div.background {
+  background-color: #333;
+  height: 18px;
+  width: 0%;
+}
+
+/*
+ * 'will_paginate' plugin attributes
+ */
+.pagination {
+  padding: 3px;
+  margin: 3px;
+}
+.pagination a {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #eee;
+  text-decoration: none;
+  color: #ddd;
+}
+.pagination a:hover, .pagination a:active {
+  border: 1px solid #000099;
+  color: #ffffff;
+}
+.pagination span.current {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #000099;
+  font-weight: bold;
+  background-color: #000099;
+  color: #FFF;
+}
+.pagination span.disabled {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #A9A9F8;
+  color: #A9A9F8;
+}
+
+/*
+ * auto-complete attributes
+ */
+
+div.auto_complete {
+  width: 350px;
+  background: #fff;
+  color: #000;
+  height: 6em;
+  overflow-y: auto;
+}
+div.auto_complete ul {
+  border:1px solid #888;
+  margin:0;
+  padding:0;
+  width:100%;
+  list-style-type:none;
+}
+div.auto_complete ul li {
+  margin:0;
+  padding:3px;
+}
+div.auto_complete ul li.selected {
+  background-color: #ffb;
+}
+div.auto_complete ul strong.highlight {
+  color: #800; 
+  margin:0;
+  padding:0;
+}
+
+/*
+ * fishrdb specific tags
+ */
+
+div.fis_header {
+  position: relative;
+  margin-top: -16px;
+  left:0em;
+  padding: 0px;
+}
+
+/*
+ * record display
+ */
+
+td.record_item_tag {
+  width: 15%;
+}
+
+td.record_item_content {
+  width: 85%;
+  font-weight: bold;
+}
+
+a.record_item_content {
+  font-weight: bold;
+}
+
+span.consultation_allowed {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+span.consultation_not_allowed {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  color: #F8B037;
+}
+
+span.public_visibility_allowed {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+span.public_visibility_not_allowed {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+/*
+ * playlist style
+ */
+
+ul.playlist {
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+/*
+ * flash player style
+ */
+
+div.flash_player {
+  display: block;
+  width: 95%;
+  height: 25px;
+}
+
+/*
+ * tape box style
+ */
+
+div.tape_filename {
+  font-size: 9pt;
+  font-weight: bold;
+}
+
+div.tape_description {
+  font-size: 7pt;
+}
+
+tr.tape_box_marker_collection_tag {
+  vertical-align: top;
+}
+
+td.tape_box_marker_collection_tag {
+}
+
+td.tape_box_marker_collection_location {
+  border-bottom: 1px solid white;
+  font-style: oblique;
+}
+
+table.tape_box_marker_collection {
+  border: 1px solid white;
+  width: 100%;
+}
+
+tr.tape_box_mark {
+  vertical-align: top;
+}
+
+td.tape_box_mark_content {
+  border: 1px dotted white;
+  width: 50%;
+  color: black;
+  background-color: white;
+}
+
+div.tape_box_mark_content_string {
+  min-width: 10px;
+  font-family: "comic sans ms";
+  display: inline;
+}
+
+td.tape_box_mark_calligraphy {
+  font-style: oblique;
+  font-size: 11px;
+}

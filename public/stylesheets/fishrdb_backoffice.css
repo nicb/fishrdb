@@ -1,0 +1,295 @@
+/*
+ * $Id: fishrdb_backoffice.css 488 2010-04-05 22:52:43Z nicb $
+ */
+
+/*
+ * doc css
+ */
+
+div.outerdoc {
+	display:	block;
+	position:	relative;
+	top:		-45px;
+	left:		0%;
+	height:	80%;
+	width:	inherit;
+  /* border: 1px solid yellow; */
+}
+
+div.sidebar {
+  position:	relative;
+	float:		left;
+	width:		42%;
+  height:   101%;
+	top:		  4%;
+  left:     0.5em;
+}
+
+div#fis_search {
+  position: relative; 
+  top: -90px;
+  left: 58%;
+  width: 42%;
+  /* border: 1px solid red; */
+}
+
+/*
+ * footers
+ */
+div.footer {
+  position: relative;
+	left:		  1em;
+	width:		inherit;
+  height:   1em;
+  float:    left;
+  top:      -1em;
+}
+
+div.paginator {
+    position:	relative;
+	height:		10%;
+	padding:	5px;
+}
+
+div.sorter {
+    position:	relative;
+	height:		10%;
+	padding:	5px;
+}
+
+div.navigator {
+  position:    relative;
+  height:      9%;
+  padding:     5px;
+}
+
+div.menu {
+  position:	relative;
+	height:		86%;
+	/* border:		1px solid #DADAFF; */
+	padding:	0px;
+}
+
+div.inner_menu {
+  position: relative;
+  height: 384px;
+	overflow-y:	auto;
+	overflow-x:	hidden;
+  margin-bottom: 0.5em;
+  padding: 0px;
+}
+
+table.menu {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+div.innerdoc {
+	position:	relative;
+	float:		left;
+	top:		10px;
+	left:		1%;
+	width:		56%;
+	border:		1px solid #DADAFF;
+	height:		99%;
+	padding:	3px;
+}
+
+div.doc_content {
+  position: absolute;
+  top: 2em;
+  margin-top: 0px;
+  height: 92%;
+  width: 100%;
+	overflow-y:	auto;
+  overflow-x: hidden;
+}
+
+ul.doc_content {
+  list-style-type: none;
+  margin: 1px;
+  padding: 0px 1em;
+}
+
+.form_content {
+  width: 100%;
+  padding: 0px;
+}
+
+form.form_content {
+ /* border: solid 4px red; */
+  padding: 4px;
+  display: block;
+  width: 100%;
+}
+
+fieldset.form_content {
+ /* border: solid 1px yellow; */
+  padding: 1px;
+}
+
+table.form_content {
+  /* border: solid 1px green; */
+  padding-left: 5px;
+  padding-right: 16px;
+}
+
+div.form_buttons {
+  position: relative;
+  display: inline;
+  border: solid 2px green;
+}
+
+div.frontfooter {
+	position:	absolute;
+	bottom:		0px;
+	left:		  1em;
+	width:		100%;
+  height:   2em;
+}
+
+div.sb_item_has_leaves {
+    /* background: url(/images/live_tree_branch_collapsed_icon.gif) no-repeat; */
+}
+
+div.sb_item_has_no_leaves {
+    /* background: url(/images/live_tree_branch_collapsed_icon.gif) no-repeat; */
+}
+
+form { display: inline }
+
+div.fis_dashboard {
+	position: relative;
+	top: -3ex;
+  width: inherit;
+  /* border: 1px solid green; */
+}
+
+tr.inactivedocitem {
+  color: white;
+}
+
+tr.activedocitem, a.activedocitem:visited {
+  background-color: #048;
+  color: white;
+  font-weight: bold;
+}
+
+td.activedocitem, td.inactivedocitem {
+  padding: 0px 4px 0px 4px;
+  border: none;
+}
+
+/*
+ * authority record forms
+ */
+
+span.ar_form_element {
+  line-height: 2em;
+  text-align: left;
+}
+
+tr.ar_form_element {
+  vertical-align: top;
+}
+
+th.ar_form_element {
+  width: 25%;
+  line-height: 1em;
+}
+
+td.ar_form_element {
+  padding: 0em;
+  margin: 0em;
+}
+
+/*
+ * provisional sidebar stuff - to be integrated later on
+ */
+
+div.sidebar_test {
+  position:	absolute;
+	width:		42%;
+	top:		  50px;
+	height:		93%;
+  left:     0.5em;
+}
+
+ul.sidebar_top_list {
+  margin: 0em;
+  padding: 0px;
+  list-style-type: none;
+}
+
+ul.sidebar_children_list {
+  margin-left: 1.5em;
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+td.sidebar_list_content {
+  /* border: 1px solid white; */
+  text-align: left;
+  padding: 0px 0px;
+  vertical-align: middle;
+  left: -0.5em;
+  min-width: 18em;
+}
+
+td.sidebar_list_corda {
+  text-align: right;
+  padding: 0px 3px 0px 0px;
+  vertical-align: middle;
+  min-width: 1.5em;
+  font-size: 1.1ex;
+}
+
+td.sidebar_date_content {
+  /* border: 1px solid white; */
+  padding: 0px 0px;
+  vertical-align: middle;
+  min-width: 9em;
+}
+
+span.sidebar_list_marker {
+  display: -moz-stack;
+  /* border: 1px solid white; */
+  width: 5em;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 0px;
+}
+
+table.sidebar_list_table td tr {
+  padding: 0px;
+  margin: 0px;
+  vertical-align: top;
+  width: 100%;
+  border: 1px solid white;
+}
+
+/*
+ * item selection
+ */
+
+li#selected.sidebar_list_item {
+  background-color: #0909e0;
+  font-weight: bold;
+}
+
+a#selected.sidebar_list_content:hover {
+  background-color: #0909e0;
+}
+
+/*
+ * miscellaneous labels
+ */
+
+span.dashboard_label {
+  font-size: 10px;
+}
+
+span.form_italic_label {
+  font-style: italic;
+  font-size: 11px;
+}

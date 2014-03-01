@@ -1,0 +1,19 @@
+<!-- $Id: _bound_document.rhtml 204 2008-04-19 21:20:26Z nicb $ -->
+<li>
+  <%= 
+      link_to(bound_document.id.to_s, :controller => 'doc', :action => 'show', :id => bound_document.read_attribute('id'))
+  -%>   
+  <%=
+      bound_document.ancestors.reverse[1..bound_document.ancestors.size-1].map do
+        |d|
+        attrs = { :controller => 'doc', :action => 'show', :id => d.read_attribute('id') }
+        if d === bound_document.ancestors.reverse.last
+          attrs[:page] = bound_document.my_page(session[:per_page])
+        end
+        link_to(truncate(d.cleansed_name, 20), attrs)
+      end.join(" &raquo; ")
+  -%> &raquo; 
+  <%=
+      link_to(truncate(bound_document.name, 30), :controller => 'doc', :action => 'show', :id => bound_document.read_attribute('id'))
+  -%>
+</li>

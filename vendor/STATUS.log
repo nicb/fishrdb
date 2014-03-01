@@ -1,0 +1,6 @@
+#
+# $Id: gitversions.sh 229 2008-07-08 20:38:01Z nicb $
+#
+# This file has been produced automatically by the gitversions.sh script
+#
+rails:	commit 2f4aaed7b3feb3be787a316fab3144c06bb21a27

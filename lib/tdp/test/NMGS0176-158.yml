@@ -1,0 +1,108 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cerchiato e sbarrato
+      author: GS)
+      pen: penna biro blu
+    lines: |
+      1 I 30 VI
+      45 IV
+      95 VII
+      108 ?
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita blu
+    lines: "16/0 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: |
+      I vllo, voce, batteria Finale (9,5) 82 c)
+      | 134 b)
+      | 338 a)
+      fondo: riversamenti nuovi serie voce
+
+- !ruby/object:Tdp::Box::Display 
+  location: foglietto staccato interno fronte
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: "GS) "
+      pen: matita nera
+    lines: |
+      226 | melisma I 191 melisma II | trmbo 338
+      353 | corno 353
+      voce corno | 
+      191 | buono 166
+      melisma I | batteria 377
+      338 trmbo | melisma II
+      | finale 82
+      134 Intermez | =============
+      166 buono | trmbo
+      377 batteria | melism I
+      82 finale |
+
+- !ruby/object:Tdp::Box::Display 
+  location: foglietto staccato interno fronte
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: penna biro blu
+    lines: |
+      Financial times | New
+      Network time
+      [Slok??] [Escomge??] Quotations
+      60-61-
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola\n "
+  tag_end: A02
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per violoncello e ondiola\n "
+  tag_end: A03
+  tag_start: A03
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola\n "
+  tag_end: A07
+  tag_start: A04
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per ondiola con voce\n femminile (Michiko Hirayama)\n "
+  tag_end: A08
+  tag_start: A08
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "prove con Michiko Hirayama\n "
+  tag_end: A13
+  tag_start: A10
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola\n "
+  tag_end: A16
+  tag_start: A15
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazioni per ondiola e violoncello
+    
+  tag_end: A18
+  tag_start: A17
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " il nastro \xC3\xA8 inciso solo sul lato A. Contiene\n improvvisazioni per ondiola. Il contenitore possiede anche un\n foglietto interno con annotazioni aggiuntive. In [A10-A13 39'] per\xC3\xB2\n c'\xC3\xA8 la sola voce (sempre a 19 cm/sec)\n - per cui il trasferimento viene fatto alle due velocit\xC3\xA0. In vari\n punti si sente il classico 'ting' del G36.\n\n"
+  tag: NMGS0176-158
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2008-09-30
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

@@ -1,0 +1,99 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: pastello bordeaux
+    lines: "memorie "
+- !ruby/object:Tdp::Box::Display 
+  location: foglio interno fronte
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: "verde "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: |
+      valva castello infanzia Anna la Pazza.
+      [Lit???]. arte. ecc.
+      dr Bas. ecc.
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro blu
+    lines: |
+      [Cyrdenelle??] fantastici. [Bruntori??]. 4 Pezzi
+      Mme [Trezenas??]. Hotel Raphael
+
+- !ruby/object:Tdp::Box::Display 
+  location: foglio interno retro
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro blu
+    lines: "rosso "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro blu
+    lines: |
+      voci - registrazioni quartetto [???] - sono il primo a fare
+      musica ecc ecc [???] concerto
+      [???] - 4 Pezzi d'orchestra
+      [Xnoylis??]
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento di un brano di musica\n elettronica (musica concreta?)\n "
+  tag_end: A03
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento (rovesciato) di un brano\n di musica elettronica (musica\n elettronica pura?)\n "
+  tag_end: A09
+  tag_start: A04
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento (rovesciato) di un brano\n di percussione etnica()\n "
+  tag_end: A23
+  tag_start: A10
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per ondiola\n "
+  tag_end: A26
+  tag_start: A25
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per pianoforte\n "
+  tag_end: A27
+  tag_start: A27
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per ondiola\n "
+  tag_end: A26
+  tag_start: A25
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    memorie raccontate da GS
+    
+  tag_end: B95
+  tag_start: B01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato su entrambi i lati e presenta alcune peculiarit\xC3\xA0. E` stato trovato disposto in coda, senza coda in testa e con numerose giunture in testa (anche con nastri di tipo diverso, come ad esempio un AGFA PEM 468) Il nastro sembrerebbe essere stato riciclato sul lato B per registrare le memorie. I primi tre frammenti del nastro riportano variazioni di velocit\xC3\xA0 di scorrimento del nastro tra 9,5 cm/sec, 19 cm/sec e una velocit\xC3\xA0 intermedia non meglio identificata. Nei frammenti immediatamente successivi invece c'\xC3\xA8 il riversamento di un brano di musica elettronica (non identificato) con scorrimento invertito. Il senso di scorrimento della registrazione \xC3\xA8 determinato dai rumori ancillari (di partenza e di arresto registratore) presenti ai margini di ciascun frammento."
+  tag: NMGS0229-293
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2009-10-05
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

@@ -1,0 +1,60 @@
+<!-- $Id: _show.rhtml 482 2010-04-02 23:28:42Z nicb $ -->
+<li class='sidebar_list_item' id='<%= show.selection_id_tag -%>'>
+  <span class='sidebar_list_marker'>
+    <table class='sidebar_list_table'>
+      <tr class="sidebar_list_table">
+        <td class="sidebar_list_marker_table">
+          <%= link_to(image_tag(show.icon, :size => '8x10', :border => 0), :action => :toggle, :id => show.document_id, :open_tree => 'false' ) -%>
+        </td>
+        <td class="sidebar_list_marker_table">
+          <%= check_box('copied_to_clipboard', show.document.id, { :checked => show.copied_to_clipboard? }, "yes", "no") -%>
+        </td>
+        <td class="sidebar_list_corda" title='<%= show.document.signature -%>'>
+          <%= show.document.full_corda -%>
+        </td>
+        <td class="sidebar_list_content">
+			    <%
+			        if editor_session? && show.document.class.name == "Score" && show.document.is_a_part?
+			          truncate_value = 30
+					    else
+			          truncate_value = 50
+			        end
+			    -%>
+          <%=
+              link_to(truncate(show.document.sidebar_name,truncate_value), { :action => :open,
+                      :id => show.document.id },
+                      { :class => 'sidebar_list_content', :id => show.selection_id_tag, :title => show.document.sidebar_tip})
+          -%>
+          <% if show.selected? -%>
+            <br />
+            <font size="-4">
+            <% unless show.document.children_empty? -%>
+				      <%= 
+		              link_to('Genera report',
+		                      # image_tag('fishrdb/print_16.png', :size => '12x12', :alt => 'Genera report', :title => 'Genera report', :border => 0),
+                          { :controller => 'report', :action => 'list', :id => show.document.id }, { :title => 'Genera report', :media => "print" })
+				      -%>
+            <% end -%>
+            <% unless SidebarTree.clipboard_empty?(session) -%>
+	            <%= 
+		            link_to('Incolla sorella',
+		                    # image_tag('fishrdb/paste_16.png', :size => '12x12', :alt => 'Incolla sorella qui sopra', :title => 'Incolla sorella qui sopra'),
+                        { :controller => :sidebar, :action => :paste_sibling_above_here, :id => show.document.id },
+                        { :title => 'Incolla sorella qui sopra' })
+				      -%>   
+            <% end -%>
+            </font>
+          <% end -%>
+        </td>
+        <td class="sidebar_date_content">
+          <%= show.document.sidebar_dates -%>
+        </td>
+      </tr>
+    </table>
+  </span> <!-- sidebar_list_marker -->
+</li>
+<% unless show.children.empty? -%>
+  <ul class='sidebar_children_list'>
+    <%= render(:partial => 'sidebar/show', :collection => show.children) -%>
+  </ul>
+<% end %>

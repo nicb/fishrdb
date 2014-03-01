@@ -1,0 +1,25 @@
+<!-- $Id: score_search_form.rhtml 396 2009-05-04 11:23:32Z nicb $ -->
+<%= render(:partial => 'sidebar_display', :object => @sidebar_root) -%>
+<div class="content_plus_dashboard">
+	<% sel = Hash.new('unselected'); sel['score'] = 'selected'; -%>
+	<%= render(:partial => 'search_tabs', :object => sel) -%>
+	<div class="content_area">
+	  <div class="score_search_form">
+	    <center>
+			<% form_tag(:action => 'score_search') do -%>
+	        <table class="score_search_form">
+	          <tr>
+	            <td align="right">Titolo: </td>
+	            <td><%= text_field_with_auto_complete(:search, :title, { :size => 40, :maxsize => 256 }, :skip_style => true) -%></td>
+	          </tr>
+	          <tr>
+	            <td align="right">Autore: </td>
+	            <td><%= text_field_with_auto_complete(:search, :author, { :size => 40, :maxsize => 256 }, :skip_style => true) -%></td>
+	          </tr>
+	        </table>
+			    <%= submit_tag('cerca', :name => 'search') -%>
+			<% end -%>
+	    </center>
+	  </div>
+	</div>
+</div> <!-- content_plus_dashboard -->

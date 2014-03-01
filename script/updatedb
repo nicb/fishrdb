@@ -1,0 +1,41 @@
+#!/bin/sh
+#
+# $Id: updatedb 1 2007-09-25 18:13:27Z nicb $
+#
+# Updates the db tables whenever there is a change
+# Warning: it does *NOT* update the production db
+#
+
+fail()
+{
+	echo $@ 2>&1
+	exit 255
+}
+
+message()
+{
+	echo $@
+}
+
+[ $# -gt 0 ] || fail "Usage: $0 <database name prefix>"
+
+DB=$1
+TESTDB=${DB}_test
+DEVDB=${DB}_development
+DBUSER=root
+
+TABLESDIR=db
+
+[ -d $TABLESDIR ] || fail "$TABLESDIR directory does not exist"
+
+for db in $TESTDB $DEVDB
+do
+	for i in $TABLESDIR/*.sql
+	do
+		name=$(basename $i)
+		mysql -u $DBUSER $db < $i || fail "Update of table $i in database $db failed"
+		message "Updated table $name in database $db" 
+	done
+done
+
+exit 0

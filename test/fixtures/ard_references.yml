@@ -1,0 +1,180 @@
+#
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+#
+# $Id: ard_references.yml 543 2010-09-08 02:03:17Z nicb $
+#
+ard_turin:
+  site_name:   one
+  document:           Invented_001
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               SiteNameArdReference
+
+ard_gs_001:
+  person_name:        two
+  document:           Taiaga_0935
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+
+ard_gs_002:
+  person_name:        two
+  document:           Okanag_0899
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+
+ard_gs_003:
+  person_name:        two
+  document:           Ckckck_0924
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+
+ard_gs_004:
+  person_name:        two
+  document:           Ohoi_0890           
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+
+ard_gs_005:
+  person_name:        two
+  document:           I_pres_0846
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+
+ard_gs_006:
+  person_name:        two
+  document:           Yamaon_0949
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+
+ard_gs_007:
+  person_name:        two
+  document:           Konx_o_1589
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+
+ard_gs_008:
+  person_name:        two
+  document:           Suite__1096
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+
+ard_gs_009:
+  person_name:        two
+  document:           Pezzo__1063
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+
+ard_gs_010:
+  person_name:   two
+  document:           Sonata_0999
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+
+ard_gs_011:
+  person_name:   two
+  document:           Kovir_0814
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+
+ard_gs_012:
+  person_name:   two
+  document:           Ouvert_0815
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+
+ard_gs_013:
+  person_name:   two
+  document:           Piangi_0969
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+
+ard_gs_014:
+  person_name:   two
+  document:           Sparti_1102
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+
+ard_gs_015:
+  person_name:   two
+  document:           Partit_1095
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+
+ard_gs_016:
+  person_name:   two
+  document:           Anahit_0856
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+
+ard_gs_017:
+  person_name:   two
+  document:           Parti__1046
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+
+ard_gs_018:
+  person_name:   two
+  document:           Il_est_1031
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+
+ard_gs_019:
+  person_name:   two
+  document:           Il_pri_0951
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+
+ard_gs_020:
+  person_name:   two
+  document:           L_Orac_0895
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+
+ard_khoom_001:
+  score_title:   three
+  document:           Khoom__1112
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               ScoreTitleArdReference
+
+ard_khoom_002:
+  score_title:   three
+  document:           Partit_1036
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               ScoreTitleArdReference
+
+ard_mdf_001:
+  collective_name:   four
+  document:           Invented_003
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               CollectiveNameArdReference
+
+funny_collation_and_taiaga:
+  person_name:        funny_collation
+  document:           Taiaga_0935
+  creator:            staffbob
+  last_modifier:      staffbob
+  type:               PersonNameArdReference
+

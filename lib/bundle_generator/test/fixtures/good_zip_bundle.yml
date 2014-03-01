@@ -1,0 +1,29 @@
+#
+# $Id: good_zip_bundle.yml 577 2010-12-15 01:26:21Z nicb $
+# 
+# The fields of the yaml file are organized as follow:
+#
+# system: # this is a mandatory set
+#   format:       targz  # should have: targz, zip (optional, default: targz)
+#   output_filename: <name> 
+#
+# NMGS0123-348:  # tag (which gets translated into a directory name)
+#   files: [ Riv@19-L-128.mp3, Riv@9,5-RVRS-R-128.mp3 ] # files to be included
+#                                                       # (if no files field is included, 
+#                                                       # all 128 br mp3 files are
+#                                                       # included)
+#  images: [ Snapshot348-768.tiff, 348_001-768.jpg ]    # images to be included
+#                                                       # (if no images field is included,
+#                                                       # all 768 px files are
+#                                                       # included)
+#  fragments: [ A0-A12, B23 ]                           # fragments generated
+#                                                       # as separate 128 br mp3 files
+#
+system:
+  format: zip
+  output_filename:  full_data_bundle.zip
+
+NMGS0136-580:  # this the only tape that is in the development repository
+  files: [ Riv@9,5_01.L-128.mp3, Riv@9,5_01.R-128.mp3, Riv@9,5-RVRS_01.R-128.mp3 ]
+  images: [ 580-001-768.jpg, 580-002-768.jpg, 580-003-768.jpg, 580-004-768.jpg, Snapshot580-768.jpg ]
+

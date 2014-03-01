@@ -1,0 +1,8 @@
+#
+# $Id: toggle_enabling_dates.rjs 270 2008-11-09 12:06:14Z nicb $
+# 
+@tag_array.each do
+  |t|
+  eval('page[t].' + @enabling_method)
+end
+page[@vizdate_id].value = @vizdate_value

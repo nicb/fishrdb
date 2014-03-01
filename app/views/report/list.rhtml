@@ -1,0 +1,7 @@
+<!-- $Id: list.rhtml 365 2009-04-14 14:45:59Z nicb $ -->
+<font size="+1"><%= @root.description_level.level -%>:
+  <b><%= link_to(@root.full_name, { :controller => 'doc', :action => 'show', :id => @root.id }) -%></b></font>
+  <font size="-4">   (<a href='#' onclick="window.print();" media="print">Stampa</a>)</font>
+<ul>
+  <%= render(:partial => 'item', :collection => @root.children(true)) -%>
+</ul>

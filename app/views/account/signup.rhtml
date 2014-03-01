@@ -1,0 +1,22 @@
+<!-- $Id: signup.rhtml 1 2007-09-25 18:13:27Z nicb $ -->
+<% form_tag (:action=> "signup"){ %>
+
+<div title="Registrazione" id="signupform" class="form" style="position:absolute; top:50px;">
+  <h3>Registrazione</h3>
+  <%= error_messages_for 'user' %><br/>
+  
+  <label for="user_login">Login desiderato:</label><br/>
+  <%= text_field "user", "login", :size => 30, :maxsize => 40 %><br/>
+  <label for="full_name">Nome e Cognome:</label><br/>
+  <%= text_field "user", "name", :size => 30, :maxsize => 256 %><br/>
+  <label for="email_address">Indirizzo E-mail:</label><br/>
+  <%= text_field "user", "email", :size => 30, :maxsize => 1024  %><br/>
+  <label for="user_password">Scegli una password:</label><br/>
+  <%= password_field "user", "password", :size => 30, :maxsize => 41 %><br/>
+  <label for="user_password_confirmation">Conferma la password:</label><br/>
+  <%= password_field "user", "password_confirmation", :size => 30, :maxsize => 41 %><br/>
+
+<input type="submit" value="Registra &#187;" class="primary" />
+</div>
+
+<% } %>

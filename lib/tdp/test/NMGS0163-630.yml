@@ -1,0 +1,102 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cancellato?
+      author: GS)
+      pen: matita blu
+    lines: "[Tanmatras?] 2 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cancellato?
+      author: GS)
+      pen: matita blu
+    lines: |
+      vari pezzi buoni
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: biro blu
+    lines: "action music pf 1a serie 2a serie "
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: matita nera
+    lines: "Action I e II 9 1/2 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS?)
+      pen: matita nera
+    lines: |
+      ^ Evangelisti | Ordini
+      [???] | Invenzioni
+      Evangelisti Proporzioni Violino
+      [???] canti
+      [???] flauto
+      Evangelisti flauto
+      poi Tanmatras
+
+- !ruby/object:Tdp::Box::Display 
+  location: foglietto su retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: FMU?)
+      pen: biro blu
+    lines: "Side I tr.II 7.5 530 \xC2\xB1 TrI 3.75\n\
+      18 \xC2\xB1 silence\n\
+      TrI 375\n\
+      60 \xC2\xB1 min\n\
+      ----------------------\n\
+      Side II chI 375\n\
+      piano - short pieces\n\
+      17\xC2\xB1 orchestra (RAI?)\n\
+      not G.S.\n\
+      22\xC2\xB1 piano + strings\n\
+      --------\n\
+      40\xC2\xB1 po solo (notgs-)\n\
+      orches.again\n\
+      52\xC2\xB1 Ondiola\n"
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Riversamenti orchestrali (a scorrimento rovesciato?)\n "
+  tag_end: A01
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Riversamenti di improvvisazioni di ondiola\n "
+  tag_end: A34
+  tag_start: A03
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Riversamenti di improvvisazioni per pianoforte\n "
+  tag_end: B08
+  tag_start: B01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Riversamento da trasmissione radiofonica ()\n di brani orchestrali (musica contemporanea)\n "
+  tag_end: B20
+  tag_start: B10
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    Improvvisazioni per ondiola
+    
+  tag_end: B21
+  tag_start: B21
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " il nastro \xC3\xA8 registrato su due tracce\n fronte/retro e anche doppio mono. La velocit\xC3\xA0 ed il senso di\n scorrimento sono di difficile determinazione. Per questo motivo il\n nastro \xC3\xA8 stato trasferito ad entrambe le velocit\xC3\xA0. Il nastro\n contiene riversamenti da altri nastri. All'inizio di [A03] si pu\xC3\xB2\n udire la voce (presumibilmente) del Maestro che sussurra 'eh no'\n confermando quindi la velocit\xC3\xA0 dello scorrimento in registrazione di\n 9,5 cm/sec. Il nastro sembrerebbe una 'messa in forma' di un brano,\n con numerosi spezzoni uguali. In [B12] si sente un presentatore\n radiofonico che fa una presentazione in tedesco [NON TRASCRITTA], in\n cui cita Aloys Kontarsky, Friedrich Cerha e un brano intitolato\n 'Sieben Ges\xC3\xA4nge nach . Omar Kayyam'\n\n"
+  tag: NMGS0163-630
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2008-06-14
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

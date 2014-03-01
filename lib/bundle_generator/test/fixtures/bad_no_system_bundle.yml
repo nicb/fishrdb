@@ -1,0 +1,8 @@
+#
+# $Id: bad_no_system_bundle.yml 577 2010-12-15 01:26:21Z nicb $
+# 
+# This is a wrong bundle info without the mandatory system info
+#
+NMGS0136-580:  # this the only tape that is in the development repository
+  files: [ Riv@9,5_01.L-128.mp3, Riv@9,5_01.R-128.mp3, Riv@9,5-RVRS_01.R-128.mp3 ]
+  images: [ 580-001-768.jpg, 580-002-768.jpg, 580-003-768.jpg, 580-004-768.jpg, Snapshot580-768.jpg ]

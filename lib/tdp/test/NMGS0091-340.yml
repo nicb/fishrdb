@@ -1,0 +1,35 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      Conchiglia PFAT 1a
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "sinusoide a 555 Hz su entrambe le tracce\n "
+  tag_end: A01
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione di toy piano () e voce con un ritardo in loop di 3.4 secondi.\n "
+  tag_end: A02
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni (suoni?) realizzate con una conchiglia (stereo ma col nastro\n iniziato dall'altra estremit\xC3\xA0, quindi con lo scorrimento invertito)\n\n"
+  tag_end: B02
+  tag_start: B02
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato all'inizio sulla traccia 1. In seguito, e a partire dalla fine (quindi in direzione di scorrimento opposta) il nastro \xC3\xA8 registrato su entrambe le tracce contemporaneamente. Si tratta con tutta probabilit\xC3\xA0 di riversamenti continui di suoni registrati su altri supporti. L' improvvisazione [A02] viene improvvisamente interrotta a [2'37\"] (l'interruzione sembra pi\xC3\xB9 un fade-out piuttosto che lo spegnimento di un registratore)"
+  tag: NMGS0091-340
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2006-10-13
+  location: Studio Schiavoni
+  transferrers: 
+  - Bernardini, Nicola
+  - Schiavoni, Piero

@@ -1,0 +1,101 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sbarrato
+      author: GS
+      pen: matita
+    lines: |
+      2 Improvv.[?] Pierrot Lunaire Suite op.25 
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: "alcune altre 1 (romantica) dopo "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: "1s\xC3\xAC2s\xC3\xAC3no4no Pierrot-piano Schoenberg\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: |
+      dall'altra parte 1si 2no intervallo (3 si-no (Boulez)
+      orchestra --
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: "4 piano s\xC3\xAC - 5 s\xC3\xAC 6 si-no (mediocri)\n\
+      dopo Boulez 1 romantica\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato
+      author: GS
+      pen: penna blu
+    lines: "nessun Om "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Improvvisazioni per Pianoforte (GS)\n "
+  tag_end: A04
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "registrazione radiofonica dal vivo di un brano seriale per\n ensemble non identificato\n "
+  tag_end: A08
+  tag_start: A08
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "registrazione radiofonica di un brano orchestrale non\n identificato (moderno ma non troppo, forse di stile russo)\n "
+  tag_end: A10
+  tag_start: A09
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "brevissimo frammento con voce e percussione, non identificato\n "
+  tag_end: A12
+  tag_start: A12
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "registrazione (da disco? radiofonica?) frammentaria del\n Pierrot Lunaire; una peculiarit\xC3\xA0 \xC3\xA8 il fatto che nonostante\n si sentano le scariche elettrostatiche della radio il brano\n ha dei tagli bruschi e il vinile da cui \xC3\xA8 tratto \xC3\xA8 piuttosto\n rovinato.\n "
+  tag_end: A18
+  tag_start: A13
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "registrazione (da disco? radiofonica?) dell'op.25 di Arnold\n Sch\xC3\xB6nberg\n "
+  tag_end: A24
+  tag_start: A19
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Improvvisazioni per Pianoforte (GS)\n "
+  tag_end: B02
+  tag_start: B02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "registrazione (da disco?) di un brano per pianoforte non\n identificato (seriale integrale, forse Boulez, 1ma Sonata?)\n "
+  tag_end: B04
+  tag_start: B04
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "registrazione (radiofonica?) di un'opera per pianoforte e\n orchestra non identificata\n "
+  tag_end: B05
+  tag_start: B05
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    Improvvisazioni per Pianoforte (GS) queste regioni hanno
+     anche molti rumori spuri, come se il registratore avesse la
+     spina infilata male
+    
+  tag_end: B08
+  tag_start: B06
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "Il nastro \xC3\xA8 registrato su entrambe le tracce e contiene materiale vario. In [A07] si pu\xC3\xB2 udire \" [VF] per archi, due corni, clarinetto, clarinetto basso e arpa. Ruhig schreiten, Tema con Variazioni. [VM] Dei tre capostipiti della scuola dodecafonica. In [B06] si sente chiaramente che il Maestro va al pianoforte (si tratta quindi di una sua improvvisazione) e riprende tematicamente il frammeno registrato in [B05] Il nastro era sprovvisto di coda in coda ed \xC3\xA8 quindi stata aggiunta una coda gialla in sede di riversamento."
+  tag: NMGS0088-646
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2006-10-09
+  location: Studio Schiavoni
+  transferrers: 
+  - Bernardini, Nicola
+  - Schiavoni, Piero

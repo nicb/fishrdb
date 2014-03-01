@@ -1,0 +1,55 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: "  (fronte esterno)"
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS?
+      pen: matita
+    lines: "D "
+- !ruby/object:Tdp::Box::Display 
+  location: "  (retro esterno)"
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS?
+      pen: matita
+    lines: "D "
+- !ruby/object:Tdp::Box::Display 
+  location: "  (fronte interno)"
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: pennarelli viola
+    lines: "CHUKUM "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita
+    lines: "qui c'\xC3\xA8 il I tempo per archi (originale non modificato\n\
+      ed il IV tempo sovrapposto\n\
+      e 2 sovrapposizioni per quartetto\n\
+      in 1 tempo tutti accaduti\n\
+      su una nota\n"
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    riversamenti di improvvisazioni per ondiola
+    
+  tag_end: A12
+  tag_start: A01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " Il nastro \xC3\xA8 chiaramente un riversamento\n stereofonico con una sovrapposizione delle tracce di un altro nastro.\n In testa si possono udire le partenze della macchina sorgente\n (presumibilmente il Revox G36) Una peculiarit\xC3\xA0 \xC3\xA8 che la velocit\xC3\xA0 di\n scorrimento cambia verso la fine del nastro [23'39\" a 9.5 cm/sec], e\n che le sorgenti dei frammenti riversati sulla traccia B al dritto sono\n riprodotti al rovescio.\n\n"
+  tag: NMGS0140-346
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2007-11-23
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

@@ -1,0 +1,1641 @@
+lexing: "  Il presunto  contenitore  contiene le seguenti scritte:@@@==@  (fronte interno)@@@==@  flauto                                          (matita nera, incorniciato, calligrafia GS)@@@==@  ====@@@==@  non c'è altro mi pare                           (matita nera, calligrafia GS)@@      da fare@@@==@  ====@@@==@                 + Tetratkis                     (penna biro blu, calligrafia GS)@@                 |@@  Clarinetto    <  Preghiera@@                 |@@                 + Iscion@@@==@  =====@@@==@  pezzi per violino staccati fatti               (penna biro blu, calligrafia GS)@@       "       "    da vedere ancora@@@==@  ====@@@==@  (retro interno)@@@==@  divertimenti per Vno                           (penna biro blu, calligrafia GS)@@@==@  ====@@@==@  pezzi da vedere per Vno                        (penna biro blu, calligrafia GS)@@@==@"
+:TAPE_BOX_HEADER:   Il presunto  contenitore  contiene le seguenti scritte:
+:EOL: @@
+:DISPLAY_LOCATION: @==@  (fronte interno)@@
+:EMPTY_LINE: @==@
+:WHITE_SPACE:   
+:ANYWORD: flauto
+:WHITE_SPACE:                                           
+LPAR -> (: (
+:ANYWORD: matita
+:WHITE_SPACE:  
+:ANYWORD: nera
+COMMA -> ,: ,
+:WHITE_SPACE:  
+:ANYWORD: incorniciato
+COMMA -> ,: ,
+:WHITE_SPACE:  
+:CALLIGRAPHY: calligrafia
+:WHITE_SPACE:  
+:AUTHOR_INITIALS: GS)
+:EOL: @@
+:EMPTY_LINE: @==@
+:DISPLAY_TERM_SEPARATOR:   ====@@
+:EMPTY_LINE: @==@
+:WHITE_SPACE:   
+:ANYWORD: non
+:WHITE_SPACE:  
+:ANYWORD: c
+PONCTUATION -> ': '
+:ANYWORD: è
+:WHITE_SPACE:  
+:ANYWORD: altro
+:WHITE_SPACE:  
+:ANYWORD: mi
+:WHITE_SPACE:  
+:ANYWORD: pare
+:WHITE_SPACE:                            
+LPAR -> (: (
+:ANYWORD: matita
+:WHITE_SPACE:  
+:ANYWORD: nera
+COMMA -> ,: ,
+:WHITE_SPACE:  
+:CALLIGRAPHY: calligrafia
+:WHITE_SPACE:  
+:AUTHOR_INITIALS: GS)
+:EOL: @@
+:WHITE_SPACE:       
+:ANYWORD: da
+:WHITE_SPACE:  
+:ANYWORD: fare
+:EOL: @@
+:EMPTY_LINE: @==@
+:DISPLAY_TERM_SEPARATOR:   ====@@
+:EMPTY_LINE: @==@
+:WHITE_SPACE:                  
+PONCTUATION -> +: +
+:WHITE_SPACE:  
+:ANYWORD: Tetratkis
+:WHITE_SPACE:                      
+LPAR -> (: (
+:ANYWORD: penna
+:WHITE_SPACE:  
+:ANYWORD: biro
+:WHITE_SPACE:  
+:ANYWORD: blu
+COMMA -> ,: ,
+:WHITE_SPACE:  
+:CALLIGRAPHY: calligrafia
+:WHITE_SPACE:  
+:AUTHOR_INITIALS: GS)
+:EOL: @@
+:WHITE_SPACE:                  
+PONCTUATION -> |: |
+:EOL: @@
+:WHITE_SPACE:   
+:ANYWORD: Clarinetto
+:WHITE_SPACE:     
+PONCTUATION -> <: <
+:WHITE_SPACE:   
+:ANYWORD: Preghiera
+:EOL: @@
+:WHITE_SPACE:                  
+PONCTUATION -> |: |
+:EOL: @@
+:WHITE_SPACE:                  
+PONCTUATION -> +: +
+:WHITE_SPACE:  
+:ANYWORD: Iscion
+:EOL: @@
+:EMPTY_LINE: @==@
+:WHITE_SPACE:   
+EQ -> =: =
+EQ -> =: =
+EQ -> =: =
+EQ -> =: =
+EQ -> =: =
+:EOL: @@
+:EMPTY_LINE: @==@
+:WHITE_SPACE:   
+:ANYWORD: pezzi
+:WHITE_SPACE:  
+:ANYWORD: per
+:WHITE_SPACE:  
+:ANYWORD: violino
+:WHITE_SPACE:  
+:ANYWORD: staccati
+:WHITE_SPACE:  
+:ANYWORD: fatti
+:WHITE_SPACE:                
+LPAR -> (: (
+:ANYWORD: penna
+:WHITE_SPACE:  
+:ANYWORD: biro
+:WHITE_SPACE:  
+:ANYWORD: blu
+COMMA -> ,: ,
+:WHITE_SPACE:  
+:CALLIGRAPHY: calligrafia
+:WHITE_SPACE:  
+:AUTHOR_INITIALS: GS)
+:EOL: @@
+:WHITE_SPACE:        
+PONCTUATION -> ": "
+:WHITE_SPACE:        
+PONCTUATION -> ": "
+:WHITE_SPACE:     
+:ANYWORD: da
+:WHITE_SPACE:  
+:ANYWORD: vedere
+:WHITE_SPACE:  
+:ANYWORD: ancora
+:EOL: @@
+:EMPTY_LINE: @==@
+:DISPLAY_TERM_SEPARATOR:   ====@@
+:DISPLAY_LOCATION: @==@  (retro interno)@@
+:EMPTY_LINE: @==@
+:WHITE_SPACE:   
+:ANYWORD: divertimenti
+:WHITE_SPACE:  
+:ANYWORD: per
+:WHITE_SPACE:  
+:ANYWORD: Vno
+:WHITE_SPACE:                            
+LPAR -> (: (
+:ANYWORD: penna
+:WHITE_SPACE:  
+:ANYWORD: biro
+:WHITE_SPACE:  
+:ANYWORD: blu
+COMMA -> ,: ,
+:WHITE_SPACE:  
+:CALLIGRAPHY: calligrafia
+:WHITE_SPACE:  
+:AUTHOR_INITIALS: GS)
+:EOL: @@
+:EMPTY_LINE: @==@
+:DISPLAY_TERM_SEPARATOR:   ====@@
+:EMPTY_LINE: @==@
+:WHITE_SPACE:   
+:ANYWORD: pezzi
+:WHITE_SPACE:  
+:ANYWORD: da
+:WHITE_SPACE:  
+:ANYWORD: vedere
+:WHITE_SPACE:  
+:ANYWORD: per
+:WHITE_SPACE:  
+:ANYWORD: Vno
+:WHITE_SPACE:                         
+LPAR -> (: (
+:ANYWORD: penna
+:WHITE_SPACE:  
+:ANYWORD: biro
+:WHITE_SPACE:  
+:ANYWORD: blu
+COMMA -> ,: ,
+:WHITE_SPACE:  
+:CALLIGRAPHY: calligrafia
+:WHITE_SPACE:  
+:AUTHOR_INITIALS: GS)
+:EOL: @@
+:EMPTY_LINE: @==@
+read    :TAPE_BOX_HEADER(TAPE_BOX_HEADER) "  Il presunto  contenitore  contiene le seguenti scritte:"
+
+shift   TAPE_BOX_HEADER
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") ]
+
+goto    2
+        [ 0 2 ]
+
+read    :EOL(EOL) "\n"
+
+shift   EOL
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") ]
+
+goto    4
+        [ 0 2 4 ]
+
+read    :DISPLAY_LOCATION(DISPLAY_LOCATION) "@==@  (fronte interno)@@"
+
+shift   DISPLAY_LOCATION
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") ]
+
+goto    10
+        [ 0 2 4 10 ]
+
+read    :EMPTY_LINE(EMPTY_LINE) "\n"
+
+shift   EMPTY_LINE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (EMPTY_LINE "\n") ]
+
+goto    6
+        [ 0 2 4 10 6 ]
+
+reduce  EMPTY_LINE --> empty_lines
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") ]
+
+goto    15
+        [ 0 2 4 10 15 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (WHITE_SPACE " ") ]
+
+goto    31
+        [ 0 2 4 10 15 31 ]
+
+reduce  WHITE_SPACE --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (word " ") ]
+
+goto    28
+        [ 0 2 4 10 15 28 ]
+
+reduce  word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " ") ]
+
+goto    29
+        [ 0 2 4 10 15 29 ]
+
+read    :ANYWORD(ANYWORD) "flauto"
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " ") (ANYWORD "flauto") ]
+
+goto    27
+        [ 0 2 4 10 15 29 27 ]
+
+reduce  ANYWORD --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " ") (word "flauto") ]
+
+goto    40
+        [ 0 2 4 10 15 29 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto") ]
+
+goto    29
+        [ 0 2 4 10 15 29 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto") (WHITE_SPACE " ") ]
+
+goto    31
+        [ 0 2 4 10 15 29 31 ]
+
+reduce  WHITE_SPACE --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto") (word " ") ]
+
+goto    40
+        [ 0 2 4 10 15 29 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") ]
+
+goto    29
+        [ 0 2 4 10 15 29 ]
+
+read    :LPAR(LPAR) "("
+
+shift   LPAR
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") ]
+
+goto    41
+        [ 0 2 4 10 15 29 41 ]
+
+read    :ANYWORD(ANYWORD) "matita"
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (ANYWORD "matita") ]
+
+goto    46
+        [ 0 2 4 10 15 29 41 46 ]
+
+reduce  ANYWORD --> calligraphy_word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (calligraphy_word "matita") ]
+
+goto    45
+        [ 0 2 4 10 15 29 41 45 ]
+
+reduce  calligraphy_word --> calligraphy_words
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (calligraphy_words "matita") ]
+
+goto    44
+        [ 0 2 4 10 15 29 41 44 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (calligraphy_words "matita") (WHITE_SPACE " ") ]
+
+goto    52
+        [ 0 2 4 10 15 29 41 44 52 ]
+
+read    :ANYWORD(ANYWORD) "nera"
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (calligraphy_words "matita") (WHITE_SPACE " ") (ANYWORD "nera") ]
+
+goto    46
+        [ 0 2 4 10 15 29 41 44 52 46 ]
+
+reduce  ANYWORD --> calligraphy_word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (calligraphy_words "matita") (WHITE_SPACE " ") (calligraphy_word "nera") ]
+
+goto    55
+        [ 0 2 4 10 15 29 41 44 52 55 ]
+
+reduce  calligraphy_words WHITE_SPACE calligraphy_word --> calligraphy_words
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (calligraphy_words "matita nera") ]
+
+goto    44
+        [ 0 2 4 10 15 29 41 44 ]
+
+read    :COMMA(COMMA) ","
+
+reduce  calligraphy_words --> pen
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (pen "matita nera") ]
+
+goto    49
+        [ 0 2 4 10 15 29 41 49 ]
+
+shift   COMMA
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (pen "matita nera") (COMMA ",") ]
+
+goto    54
+        [ 0 2 4 10 15 29 41 49 54 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (pen "matita nera") (COMMA ",") (WHITE_SPACE " ") ]
+
+goto    56
+        [ 0 2 4 10 15 29 41 49 54 56 ]
+
+read    :ANYWORD(ANYWORD) "incorniciato"
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (pen "matita nera") (COMMA ",") (WHITE_SPACE " ") (ANYWORD "incorniciato") ]
+
+goto    61
+        [ 0 2 4 10 15 29 41 49 54 56 61 ]
+
+reduce  ANYWORD --> additional_info_word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (pen "matita nera") (COMMA ",") (WHITE_SPACE " ") (additional_info_word "incorniciato") ]
+
+goto    59
+        [ 0 2 4 10 15 29 41 49 54 56 59 ]
+
+reduce  additional_info_word --> additional_info_words
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (pen "matita nera") (COMMA ",") (WHITE_SPACE " ") (additional_info_words "incorniciato") ]
+
+goto    64
+        [ 0 2 4 10 15 29 41 49 54 56 64 ]
+
+read    :COMMA(COMMA) ","
+
+shift   COMMA
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (pen "matita nera") (COMMA ",") (WHITE_SPACE " ") (additional_info_words "incorniciato") (COMMA ",") ]
+
+goto    66
+        [ 0 2 4 10 15 29 41 49 54 56 64 66 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (pen "matita nera") (COMMA ",") (WHITE_SPACE " ") (additional_info_words "incorniciato") (COMMA ",") (WHITE_SPACE " ") ]
+
+goto    72
+        [ 0 2 4 10 15 29 41 49 54 56 64 66 72 ]
+
+read    :CALLIGRAPHY(CALLIGRAPHY) "calligrafia"
+
+shift   CALLIGRAPHY
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (pen "matita nera") (COMMA ",") (WHITE_SPACE " ") (additional_info_words "incorniciato") (COMMA ",") (WHITE_SPACE " ") (CALLIGRAPHY "calligrafia") ]
+
+goto    63
+        [ 0 2 4 10 15 29 41 49 54 56 64 66 72 63 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (pen "matita nera") (COMMA ",") (WHITE_SPACE " ") (additional_info_words "incorniciato") (COMMA ",") (WHITE_SPACE " ") (CALLIGRAPHY "calligrafia") (WHITE_SPACE " ") ]
+
+goto    65
+        [ 0 2 4 10 15 29 41 49 54 56 64 66 72 63 65 ]
+
+read    :AUTHOR_INITIALS(AUTHOR_INITIALS) "GS)"
+
+shift   AUTHOR_INITIALS
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (pen "matita nera") (COMMA ",") (WHITE_SPACE " ") (additional_info_words "incorniciato") (COMMA ",") (WHITE_SPACE " ") (CALLIGRAPHY "calligrafia") (WHITE_SPACE " ") (AUTHOR_INITIALS "GS)") ]
+
+goto    69
+        [ 0 2 4 10 15 29 41 49 54 56 64 66 72 63 65 69 ]
+
+reduce  AUTHOR_INITIALS --> author_initials
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (pen "matita nera") (COMMA ",") (WHITE_SPACE " ") (additional_info_words "incorniciato") (COMMA ",") (WHITE_SPACE " ") (CALLIGRAPHY "calligrafia") (WHITE_SPACE " ") (author_initials "GS)") ]
+
+goto    70
+        [ 0 2 4 10 15 29 41 49 54 56 64 66 72 63 65 70 ]
+
+reduce  CALLIGRAPHY WHITE_SPACE author_initials --> author
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (pen "matita nera") (COMMA ",") (WHITE_SPACE " ") (additional_info_words "incorniciato") (COMMA ",") (WHITE_SPACE " ") (author "GS)") ]
+
+goto    75
+        [ 0 2 4 10 15 29 41 49 54 56 64 66 72 75 ]
+
+reduce  pen COMMA WHITE_SPACE additional_info_words COMMA WHITE_SPACE author --> calligraphy
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (calligraphy #<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">) ]
+
+goto    47
+        [ 0 2 4 10 15 29 41 47 ]
+
+read    :EOL(EOL) "\n"
+
+shift   EOL
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (filled_line " flauto ") (LPAR "(") (calligraphy #<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">) (EOL "\n") ]
+
+goto    53
+        [ 0 2 4 10 15 29 41 47 53 ]
+
+reduce  filled_line LPAR calligraphy EOL --> display_term
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (DISPLAY_LOCATION "@==@  (fronte interno)@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">) ]
+
+goto    25
+        [ 0 2 4 10 15 25 ]
+
+read    :EMPTY_LINE(EMPTY_LINE) "\n"
+
+reduce  DISPLAY_LOCATION empty_lines display_term --> full_term
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (full_term #<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">) ]
+
+goto    9
+        [ 0 2 4 9 ]
+
+reduce  full_term --> display
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) ]
+
+goto    7
+        [ 0 2 4 7 ]
+
+shift   EMPTY_LINE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (EMPTY_LINE "\n") ]
+
+goto    6
+        [ 0 2 4 7 6 ]
+
+reduce  EMPTY_LINE --> empty_lines
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") ]
+
+goto    11
+        [ 0 2 4 7 11 ]
+
+read    :DISPLAY_TERM_SEPARATOR(DISPLAY_TERM_SEPARATOR) "  ====@@"
+
+shift   DISPLAY_TERM_SEPARATOR
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") ]
+
+goto    16
+        [ 0 2 4 7 11 16 ]
+
+read    :EMPTY_LINE(EMPTY_LINE) "\n"
+
+shift   EMPTY_LINE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (EMPTY_LINE "\n") ]
+
+goto    6
+        [ 0 2 4 7 11 16 6 ]
+
+reduce  EMPTY_LINE --> empty_lines
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") ]
+
+goto    36
+        [ 0 2 4 7 11 16 36 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (WHITE_SPACE " ") ]
+
+goto    31
+        [ 0 2 4 7 11 16 36 31 ]
+
+reduce  WHITE_SPACE --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (word " ") ]
+
+goto    28
+        [ 0 2 4 7 11 16 36 28 ]
+
+reduce  word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " ") ]
+
+goto    29
+        [ 0 2 4 7 11 16 36 29 ]
+
+read    :ANYWORD(ANYWORD) "non"
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " ") (ANYWORD "non") ]
+
+goto    27
+        [ 0 2 4 7 11 16 36 29 27 ]
+
+reduce  ANYWORD --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " ") (word "non") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 29 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non") ]
+
+goto    29
+        [ 0 2 4 7 11 16 36 29 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non") (WHITE_SPACE " ") ]
+
+goto    31
+        [ 0 2 4 7 11 16 36 29 31 ]
+
+reduce  WHITE_SPACE --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non") (word " ") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 29 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non ") ]
+
+goto    29
+        [ 0 2 4 7 11 16 36 29 ]
+
+read    :ANYWORD(ANYWORD) "c"
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non ") (ANYWORD "c") ]
+
+goto    27
+        [ 0 2 4 7 11 16 36 29 27 ]
+
+reduce  ANYWORD --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non ") (word "c") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 29 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c") ]
+
+goto    29
+        [ 0 2 4 7 11 16 36 29 ]
+
+read    :PUNCTUATION(PUNCTUATION) "'"
+
+shift   PUNCTUATION
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c") (PUNCTUATION "'") ]
+
+goto    33
+        [ 0 2 4 7 11 16 36 29 33 ]
+
+reduce  PUNCTUATION --> punctuation
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c") (punctuation "'") ]
+
+goto    24
+        [ 0 2 4 7 11 16 36 29 24 ]
+
+read    :ANYWORD(ANYWORD) "\303\250"
+
+reduce  punctuation --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c") (word "'") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 29 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'") ]
+
+goto    29
+        [ 0 2 4 7 11 16 36 29 ]
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'") (ANYWORD "\303\250") ]
+
+goto    27
+        [ 0 2 4 7 11 16 36 29 27 ]
+
+reduce  ANYWORD --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'") (word "\303\250") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 29 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250") ]
+
+goto    29
+        [ 0 2 4 7 11 16 36 29 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250") (WHITE_SPACE " ") ]
+
+goto    31
+        [ 0 2 4 7 11 16 36 29 31 ]
+
+reduce  WHITE_SPACE --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250") (word " ") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 29 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 ") ]
+
+goto    29
+        [ 0 2 4 7 11 16 36 29 ]
+
+read    :ANYWORD(ANYWORD) "altro"
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 ") (ANYWORD "altro") ]
+
+goto    27
+        [ 0 2 4 7 11 16 36 29 27 ]
+
+reduce  ANYWORD --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 ") (word "altro") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 29 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro") ]
+
+goto    29
+        [ 0 2 4 7 11 16 36 29 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro") (WHITE_SPACE " ") ]
+
+goto    31
+        [ 0 2 4 7 11 16 36 29 31 ]
+
+reduce  WHITE_SPACE --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro") (word " ") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 29 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro ") ]
+
+goto    29
+        [ 0 2 4 7 11 16 36 29 ]
+
+read    :ANYWORD(ANYWORD) "mi"
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro ") (ANYWORD "mi") ]
+
+goto    27
+        [ 0 2 4 7 11 16 36 29 27 ]
+
+reduce  ANYWORD --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro ") (word "mi") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 29 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi") ]
+
+goto    29
+        [ 0 2 4 7 11 16 36 29 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi") (WHITE_SPACE " ") ]
+
+goto    31
+        [ 0 2 4 7 11 16 36 29 31 ]
+
+reduce  WHITE_SPACE --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi") (word " ") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 29 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi ") ]
+
+goto    29
+        [ 0 2 4 7 11 16 36 29 ]
+
+read    :ANYWORD(ANYWORD) "pare"
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi ") (ANYWORD "pare") ]
+
+goto    27
+        [ 0 2 4 7 11 16 36 29 27 ]
+
+reduce  ANYWORD --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi ") (word "pare") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 29 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare") ]
+
+goto    29
+        [ 0 2 4 7 11 16 36 29 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare") (WHITE_SPACE " ") ]
+
+goto    31
+        [ 0 2 4 7 11 16 36 29 31 ]
+
+reduce  WHITE_SPACE --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare") (word " ") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 29 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare ") ]
+
+goto    29
+        [ 0 2 4 7 11 16 36 29 ]
+
+read    :LPAR(LPAR) "("
+
+shift   LPAR
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare ") (LPAR "(") ]
+
+goto    41
+        [ 0 2 4 7 11 16 36 29 41 ]
+
+read    :ANYWORD(ANYWORD) "matita"
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare ") (LPAR "(") (ANYWORD "matita") ]
+
+goto    46
+        [ 0 2 4 7 11 16 36 29 41 46 ]
+
+reduce  ANYWORD --> calligraphy_word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare ") (LPAR "(") (calligraphy_word "matita") ]
+
+goto    45
+        [ 0 2 4 7 11 16 36 29 41 45 ]
+
+reduce  calligraphy_word --> calligraphy_words
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare ") (LPAR "(") (calligraphy_words "matita") ]
+
+goto    44
+        [ 0 2 4 7 11 16 36 29 41 44 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare ") (LPAR "(") (calligraphy_words "matita") (WHITE_SPACE " ") ]
+
+goto    52
+        [ 0 2 4 7 11 16 36 29 41 44 52 ]
+
+read    :ANYWORD(ANYWORD) "nera"
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare ") (LPAR "(") (calligraphy_words "matita") (WHITE_SPACE " ") (ANYWORD "nera") ]
+
+goto    46
+        [ 0 2 4 7 11 16 36 29 41 44 52 46 ]
+
+reduce  ANYWORD --> calligraphy_word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare ") (LPAR "(") (calligraphy_words "matita") (WHITE_SPACE " ") (calligraphy_word "nera") ]
+
+goto    55
+        [ 0 2 4 7 11 16 36 29 41 44 52 55 ]
+
+reduce  calligraphy_words WHITE_SPACE calligraphy_word --> calligraphy_words
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare ") (LPAR "(") (calligraphy_words "matita nera") ]
+
+goto    44
+        [ 0 2 4 7 11 16 36 29 41 44 ]
+
+read    :COMMA(COMMA) ","
+
+reduce  calligraphy_words --> pen
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare ") (LPAR "(") (pen "matita nera") ]
+
+goto    49
+        [ 0 2 4 7 11 16 36 29 41 49 ]
+
+shift   COMMA
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare ") (LPAR "(") (pen "matita nera") (COMMA ",") ]
+
+goto    54
+        [ 0 2 4 7 11 16 36 29 41 49 54 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare ") (LPAR "(") (pen "matita nera") (COMMA ",") (WHITE_SPACE " ") ]
+
+goto    56
+        [ 0 2 4 7 11 16 36 29 41 49 54 56 ]
+
+read    :CALLIGRAPHY(CALLIGRAPHY) "calligrafia"
+
+shift   CALLIGRAPHY
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare ") (LPAR "(") (pen "matita nera") (COMMA ",") (WHITE_SPACE " ") (CALLIGRAPHY "calligrafia") ]
+
+goto    63
+        [ 0 2 4 7 11 16 36 29 41 49 54 56 63 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare ") (LPAR "(") (pen "matita nera") (COMMA ",") (WHITE_SPACE " ") (CALLIGRAPHY "calligrafia") (WHITE_SPACE " ") ]
+
+goto    65
+        [ 0 2 4 7 11 16 36 29 41 49 54 56 63 65 ]
+
+read    :AUTHOR_INITIALS(AUTHOR_INITIALS) "GS)"
+
+shift   AUTHOR_INITIALS
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare ") (LPAR "(") (pen "matita nera") (COMMA ",") (WHITE_SPACE " ") (CALLIGRAPHY "calligrafia") (WHITE_SPACE " ") (AUTHOR_INITIALS "GS)") ]
+
+goto    69
+        [ 0 2 4 7 11 16 36 29 41 49 54 56 63 65 69 ]
+
+reduce  AUTHOR_INITIALS --> author_initials
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare ") (LPAR "(") (pen "matita nera") (COMMA ",") (WHITE_SPACE " ") (CALLIGRAPHY "calligrafia") (WHITE_SPACE " ") (author_initials "GS)") ]
+
+goto    70
+        [ 0 2 4 7 11 16 36 29 41 49 54 56 63 65 70 ]
+
+reduce  CALLIGRAPHY WHITE_SPACE author_initials --> author
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare ") (LPAR "(") (pen "matita nera") (COMMA ",") (WHITE_SPACE " ") (author "GS)") ]
+
+goto    57
+        [ 0 2 4 7 11 16 36 29 41 49 54 56 57 ]
+
+reduce  pen COMMA WHITE_SPACE author --> calligraphy
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare ") (LPAR "(") (calligraphy #<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">) ]
+
+goto    47
+        [ 0 2 4 7 11 16 36 29 41 47 ]
+
+read    :EOL(EOL) "\n"
+
+shift   EOL
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " non c'\303\250 altro mi pare ") (LPAR "(") (calligraphy #<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">) (EOL "\n") ]
+
+goto    53
+        [ 0 2 4 7 11 16 36 29 41 47 53 ]
+
+reduce  filled_line LPAR calligraphy EOL --> display_term
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare ">) ]
+
+goto    42
+        [ 0 2 4 7 11 16 36 42 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare ">) (WHITE_SPACE " ") ]
+
+goto    39
+        [ 0 2 4 7 11 16 36 42 39 ]
+
+read    :ANYWORD(ANYWORD) "da"
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare ">) (WHITE_SPACE " ") (ANYWORD "da") ]
+
+goto    27
+        [ 0 2 4 7 11 16 36 42 39 27 ]
+
+reduce  ANYWORD --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare ">) (WHITE_SPACE " ") (word "da") ]
+
+goto    28
+        [ 0 2 4 7 11 16 36 42 39 28 ]
+
+reduce  word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare ">) (WHITE_SPACE " ") (filled_line "da") ]
+
+goto    43
+        [ 0 2 4 7 11 16 36 42 39 43 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare ">) (WHITE_SPACE " ") (filled_line "da") (WHITE_SPACE " ") ]
+
+goto    31
+        [ 0 2 4 7 11 16 36 42 39 43 31 ]
+
+reduce  WHITE_SPACE --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare ">) (WHITE_SPACE " ") (filled_line "da") (word " ") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 42 39 43 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare ">) (WHITE_SPACE " ") (filled_line "da ") ]
+
+goto    43
+        [ 0 2 4 7 11 16 36 42 39 43 ]
+
+read    :ANYWORD(ANYWORD) "fare"
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare ">) (WHITE_SPACE " ") (filled_line "da ") (ANYWORD "fare") ]
+
+goto    27
+        [ 0 2 4 7 11 16 36 42 39 43 27 ]
+
+reduce  ANYWORD --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare ">) (WHITE_SPACE " ") (filled_line "da ") (word "fare") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 42 39 43 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare ">) (WHITE_SPACE " ") (filled_line "da fare") ]
+
+goto    43
+        [ 0 2 4 7 11 16 36 42 39 43 ]
+
+read    :EOL(EOL) "\n"
+
+shift   EOL
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare ">) (WHITE_SPACE " ") (filled_line "da fare") (EOL "\n") ]
+
+goto    50
+        [ 0 2 4 7 11 16 36 42 39 43 50 ]
+
+reduce  display_term WHITE_SPACE filled_line EOL --> display_term
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">) ]
+
+goto    42
+        [ 0 2 4 7 11 16 36 42 ]
+
+read    :EMPTY_LINE(EMPTY_LINE) "\n"
+
+reduce  display empty_lines DISPLAY_TERM_SEPARATOR empty_lines display_term --> display
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) ]
+
+goto    7
+        [ 0 2 4 7 ]
+
+shift   EMPTY_LINE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (EMPTY_LINE "\n") ]
+
+goto    6
+        [ 0 2 4 7 6 ]
+
+reduce  EMPTY_LINE --> empty_lines
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") ]
+
+goto    11
+        [ 0 2 4 7 11 ]
+
+read    :DISPLAY_TERM_SEPARATOR(DISPLAY_TERM_SEPARATOR) "  ====@@"
+
+shift   DISPLAY_TERM_SEPARATOR
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") ]
+
+goto    16
+        [ 0 2 4 7 11 16 ]
+
+read    :EMPTY_LINE(EMPTY_LINE) "\n"
+
+shift   EMPTY_LINE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (EMPTY_LINE "\n") ]
+
+goto    6
+        [ 0 2 4 7 11 16 6 ]
+
+reduce  EMPTY_LINE --> empty_lines
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") ]
+
+goto    36
+        [ 0 2 4 7 11 16 36 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (WHITE_SPACE " ") ]
+
+goto    31
+        [ 0 2 4 7 11 16 36 31 ]
+
+reduce  WHITE_SPACE --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (word " ") ]
+
+goto    28
+        [ 0 2 4 7 11 16 36 28 ]
+
+reduce  word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " ") ]
+
+goto    29
+        [ 0 2 4 7 11 16 36 29 ]
+
+read    :PUNCTUATION(PUNCTUATION) "+"
+
+shift   PUNCTUATION
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " ") (PUNCTUATION "+") ]
+
+goto    33
+        [ 0 2 4 7 11 16 36 29 33 ]
+
+reduce  PUNCTUATION --> punctuation
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " ") (punctuation "+") ]
+
+goto    24
+        [ 0 2 4 7 11 16 36 29 24 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+reduce  punctuation --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " ") (word "+") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 29 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " +") ]
+
+goto    29
+        [ 0 2 4 7 11 16 36 29 ]
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " +") (WHITE_SPACE " ") ]
+
+goto    31
+        [ 0 2 4 7 11 16 36 29 31 ]
+
+reduce  WHITE_SPACE --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " +") (word " ") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 29 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + ") ]
+
+goto    29
+        [ 0 2 4 7 11 16 36 29 ]
+
+read    :ANYWORD(ANYWORD) "Tetratkis"
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + ") (ANYWORD "Tetratkis") ]
+
+goto    27
+        [ 0 2 4 7 11 16 36 29 27 ]
+
+reduce  ANYWORD --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + ") (word "Tetratkis") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 29 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis") ]
+
+goto    29
+        [ 0 2 4 7 11 16 36 29 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis") (WHITE_SPACE " ") ]
+
+goto    31
+        [ 0 2 4 7 11 16 36 29 31 ]
+
+reduce  WHITE_SPACE --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis") (word " ") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 29 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") ]
+
+goto    29
+        [ 0 2 4 7 11 16 36 29 ]
+
+read    :LPAR(LPAR) "("
+
+shift   LPAR
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") ]
+
+goto    41
+        [ 0 2 4 7 11 16 36 29 41 ]
+
+read    :ANYWORD(ANYWORD) "penna"
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (ANYWORD "penna") ]
+
+goto    46
+        [ 0 2 4 7 11 16 36 29 41 46 ]
+
+reduce  ANYWORD --> calligraphy_word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (calligraphy_word "penna") ]
+
+goto    45
+        [ 0 2 4 7 11 16 36 29 41 45 ]
+
+reduce  calligraphy_word --> calligraphy_words
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (calligraphy_words "penna") ]
+
+goto    44
+        [ 0 2 4 7 11 16 36 29 41 44 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (calligraphy_words "penna") (WHITE_SPACE " ") ]
+
+goto    52
+        [ 0 2 4 7 11 16 36 29 41 44 52 ]
+
+read    :ANYWORD(ANYWORD) "biro"
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (calligraphy_words "penna") (WHITE_SPACE " ") (ANYWORD "biro") ]
+
+goto    46
+        [ 0 2 4 7 11 16 36 29 41 44 52 46 ]
+
+reduce  ANYWORD --> calligraphy_word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (calligraphy_words "penna") (WHITE_SPACE " ") (calligraphy_word "biro") ]
+
+goto    55
+        [ 0 2 4 7 11 16 36 29 41 44 52 55 ]
+
+reduce  calligraphy_words WHITE_SPACE calligraphy_word --> calligraphy_words
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (calligraphy_words "penna biro") ]
+
+goto    44
+        [ 0 2 4 7 11 16 36 29 41 44 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (calligraphy_words "penna biro") (WHITE_SPACE " ") ]
+
+goto    52
+        [ 0 2 4 7 11 16 36 29 41 44 52 ]
+
+read    :ANYWORD(ANYWORD) "blu"
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (calligraphy_words "penna biro") (WHITE_SPACE " ") (ANYWORD "blu") ]
+
+goto    46
+        [ 0 2 4 7 11 16 36 29 41 44 52 46 ]
+
+reduce  ANYWORD --> calligraphy_word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (calligraphy_words "penna biro") (WHITE_SPACE " ") (calligraphy_word "blu") ]
+
+goto    55
+        [ 0 2 4 7 11 16 36 29 41 44 52 55 ]
+
+reduce  calligraphy_words WHITE_SPACE calligraphy_word --> calligraphy_words
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (calligraphy_words "penna biro blu") ]
+
+goto    44
+        [ 0 2 4 7 11 16 36 29 41 44 ]
+
+read    :COMMA(COMMA) ","
+
+reduce  calligraphy_words --> pen
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (pen "penna biro blu") ]
+
+goto    49
+        [ 0 2 4 7 11 16 36 29 41 49 ]
+
+shift   COMMA
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (pen "penna biro blu") (COMMA ",") ]
+
+goto    54
+        [ 0 2 4 7 11 16 36 29 41 49 54 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (pen "penna biro blu") (COMMA ",") (WHITE_SPACE " ") ]
+
+goto    56
+        [ 0 2 4 7 11 16 36 29 41 49 54 56 ]
+
+read    :CALLIGRAPHY(CALLIGRAPHY) "calligrafia"
+
+shift   CALLIGRAPHY
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (pen "penna biro blu") (COMMA ",") (WHITE_SPACE " ") (CALLIGRAPHY "calligrafia") ]
+
+goto    63
+        [ 0 2 4 7 11 16 36 29 41 49 54 56 63 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (pen "penna biro blu") (COMMA ",") (WHITE_SPACE " ") (CALLIGRAPHY "calligrafia") (WHITE_SPACE " ") ]
+
+goto    65
+        [ 0 2 4 7 11 16 36 29 41 49 54 56 63 65 ]
+
+read    :AUTHOR_INITIALS(AUTHOR_INITIALS) "GS)"
+
+shift   AUTHOR_INITIALS
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (pen "penna biro blu") (COMMA ",") (WHITE_SPACE " ") (CALLIGRAPHY "calligrafia") (WHITE_SPACE " ") (AUTHOR_INITIALS "GS)") ]
+
+goto    69
+        [ 0 2 4 7 11 16 36 29 41 49 54 56 63 65 69 ]
+
+reduce  AUTHOR_INITIALS --> author_initials
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (pen "penna biro blu") (COMMA ",") (WHITE_SPACE " ") (CALLIGRAPHY "calligrafia") (WHITE_SPACE " ") (author_initials "GS)") ]
+
+goto    70
+        [ 0 2 4 7 11 16 36 29 41 49 54 56 63 65 70 ]
+
+reduce  CALLIGRAPHY WHITE_SPACE author_initials --> author
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (pen "penna biro blu") (COMMA ",") (WHITE_SPACE " ") (author "GS)") ]
+
+goto    57
+        [ 0 2 4 7 11 16 36 29 41 49 54 56 57 ]
+
+reduce  pen COMMA WHITE_SPACE author --> calligraphy
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (calligraphy #<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">) ]
+
+goto    47
+        [ 0 2 4 7 11 16 36 29 41 47 ]
+
+read    :EOL(EOL) "\n"
+
+shift   EOL
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (filled_line " + Tetratkis ") (LPAR "(") (calligraphy #<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">) (EOL "\n") ]
+
+goto    53
+        [ 0 2 4 7 11 16 36 29 41 47 53 ]
+
+reduce  filled_line LPAR calligraphy EOL --> display_term
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis ">) ]
+
+goto    42
+        [ 0 2 4 7 11 16 36 42 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis ">) (WHITE_SPACE " ") ]
+
+goto    39
+        [ 0 2 4 7 11 16 36 42 39 ]
+
+read    :PUNCTUATION(PUNCTUATION) "|"
+
+shift   PUNCTUATION
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis ">) (WHITE_SPACE " ") (PUNCTUATION "|") ]
+
+goto    33
+        [ 0 2 4 7 11 16 36 42 39 33 ]
+
+reduce  PUNCTUATION --> punctuation
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis ">) (WHITE_SPACE " ") (punctuation "|") ]
+
+goto    24
+        [ 0 2 4 7 11 16 36 42 39 24 ]
+
+read    :EOL(EOL) "\n"
+
+reduce  punctuation --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis ">) (WHITE_SPACE " ") (word "|") ]
+
+goto    28
+        [ 0 2 4 7 11 16 36 42 39 28 ]
+
+reduce  word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis ">) (WHITE_SPACE " ") (filled_line "|") ]
+
+goto    43
+        [ 0 2 4 7 11 16 36 42 39 43 ]
+
+shift   EOL
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis ">) (WHITE_SPACE " ") (filled_line "|") (EOL "\n") ]
+
+goto    50
+        [ 0 2 4 7 11 16 36 42 39 43 50 ]
+
+reduce  display_term WHITE_SPACE filled_line EOL --> display_term
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\n">) ]
+
+goto    42
+        [ 0 2 4 7 11 16 36 42 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\n">) (WHITE_SPACE " ") ]
+
+goto    39
+        [ 0 2 4 7 11 16 36 42 39 ]
+
+read    :ANYWORD(ANYWORD) "Clarinetto"
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\n">) (WHITE_SPACE " ") (ANYWORD "Clarinetto") ]
+
+goto    27
+        [ 0 2 4 7 11 16 36 42 39 27 ]
+
+reduce  ANYWORD --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\n">) (WHITE_SPACE " ") (word "Clarinetto") ]
+
+goto    28
+        [ 0 2 4 7 11 16 36 42 39 28 ]
+
+reduce  word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\n">) (WHITE_SPACE " ") (filled_line "Clarinetto") ]
+
+goto    43
+        [ 0 2 4 7 11 16 36 42 39 43 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\n">) (WHITE_SPACE " ") (filled_line "Clarinetto") (WHITE_SPACE " ") ]
+
+goto    31
+        [ 0 2 4 7 11 16 36 42 39 43 31 ]
+
+reduce  WHITE_SPACE --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\n">) (WHITE_SPACE " ") (filled_line "Clarinetto") (word " ") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 42 39 43 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\n">) (WHITE_SPACE " ") (filled_line "Clarinetto ") ]
+
+goto    43
+        [ 0 2 4 7 11 16 36 42 39 43 ]
+
+read    :PUNCTUATION(PUNCTUATION) "<"
+
+shift   PUNCTUATION
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\n">) (WHITE_SPACE " ") (filled_line "Clarinetto ") (PUNCTUATION "<") ]
+
+goto    33
+        [ 0 2 4 7 11 16 36 42 39 43 33 ]
+
+reduce  PUNCTUATION --> punctuation
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\n">) (WHITE_SPACE " ") (filled_line "Clarinetto ") (punctuation "<") ]
+
+goto    24
+        [ 0 2 4 7 11 16 36 42 39 43 24 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+reduce  punctuation --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\n">) (WHITE_SPACE " ") (filled_line "Clarinetto ") (word "<") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 42 39 43 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\n">) (WHITE_SPACE " ") (filled_line "Clarinetto <") ]
+
+goto    43
+        [ 0 2 4 7 11 16 36 42 39 43 ]
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\n">) (WHITE_SPACE " ") (filled_line "Clarinetto <") (WHITE_SPACE " ") ]
+
+goto    31
+        [ 0 2 4 7 11 16 36 42 39 43 31 ]
+
+reduce  WHITE_SPACE --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\n">) (WHITE_SPACE " ") (filled_line "Clarinetto <") (word " ") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 42 39 43 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\n">) (WHITE_SPACE " ") (filled_line "Clarinetto < ") ]
+
+goto    43
+        [ 0 2 4 7 11 16 36 42 39 43 ]
+
+read    :ANYWORD(ANYWORD) "Preghiera"
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\n">) (WHITE_SPACE " ") (filled_line "Clarinetto < ") (ANYWORD "Preghiera") ]
+
+goto    27
+        [ 0 2 4 7 11 16 36 42 39 43 27 ]
+
+reduce  ANYWORD --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\n">) (WHITE_SPACE " ") (filled_line "Clarinetto < ") (word "Preghiera") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 42 39 43 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\n">) (WHITE_SPACE " ") (filled_line "Clarinetto < Preghiera") ]
+
+goto    43
+        [ 0 2 4 7 11 16 36 42 39 43 ]
+
+read    :EOL(EOL) "\n"
+
+shift   EOL
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\n">) (WHITE_SPACE " ") (filled_line "Clarinetto < Preghiera") (EOL "\n") ]
+
+goto    50
+        [ 0 2 4 7 11 16 36 42 39 43 50 ]
+
+reduce  display_term WHITE_SPACE filled_line EOL --> display_term
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n">) ]
+
+goto    42
+        [ 0 2 4 7 11 16 36 42 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n">) (WHITE_SPACE " ") ]
+
+goto    39
+        [ 0 2 4 7 11 16 36 42 39 ]
+
+read    :PUNCTUATION(PUNCTUATION) "|"
+
+shift   PUNCTUATION
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n">) (WHITE_SPACE " ") (PUNCTUATION "|") ]
+
+goto    33
+        [ 0 2 4 7 11 16 36 42 39 33 ]
+
+reduce  PUNCTUATION --> punctuation
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n">) (WHITE_SPACE " ") (punctuation "|") ]
+
+goto    24
+        [ 0 2 4 7 11 16 36 42 39 24 ]
+
+read    :EOL(EOL) "\n"
+
+reduce  punctuation --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n">) (WHITE_SPACE " ") (word "|") ]
+
+goto    28
+        [ 0 2 4 7 11 16 36 42 39 28 ]
+
+reduce  word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n">) (WHITE_SPACE " ") (filled_line "|") ]
+
+goto    43
+        [ 0 2 4 7 11 16 36 42 39 43 ]
+
+shift   EOL
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n">) (WHITE_SPACE " ") (filled_line "|") (EOL "\n") ]
+
+goto    50
+        [ 0 2 4 7 11 16 36 42 39 43 50 ]
+
+reduce  display_term WHITE_SPACE filled_line EOL --> display_term
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n|\n">) ]
+
+goto    42
+        [ 0 2 4 7 11 16 36 42 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n|\n">) (WHITE_SPACE " ") ]
+
+goto    39
+        [ 0 2 4 7 11 16 36 42 39 ]
+
+read    :PUNCTUATION(PUNCTUATION) "+"
+
+shift   PUNCTUATION
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n|\n">) (WHITE_SPACE " ") (PUNCTUATION "+") ]
+
+goto    33
+        [ 0 2 4 7 11 16 36 42 39 33 ]
+
+reduce  PUNCTUATION --> punctuation
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n|\n">) (WHITE_SPACE " ") (punctuation "+") ]
+
+goto    24
+        [ 0 2 4 7 11 16 36 42 39 24 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+reduce  punctuation --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n|\n">) (WHITE_SPACE " ") (word "+") ]
+
+goto    28
+        [ 0 2 4 7 11 16 36 42 39 28 ]
+
+reduce  word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n|\n">) (WHITE_SPACE " ") (filled_line "+") ]
+
+goto    43
+        [ 0 2 4 7 11 16 36 42 39 43 ]
+
+shift   WHITE_SPACE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n|\n">) (WHITE_SPACE " ") (filled_line "+") (WHITE_SPACE " ") ]
+
+goto    31
+        [ 0 2 4 7 11 16 36 42 39 43 31 ]
+
+reduce  WHITE_SPACE --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n|\n">) (WHITE_SPACE " ") (filled_line "+") (word " ") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 42 39 43 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n|\n">) (WHITE_SPACE " ") (filled_line "+ ") ]
+
+goto    43
+        [ 0 2 4 7 11 16 36 42 39 43 ]
+
+read    :ANYWORD(ANYWORD) "Iscion"
+
+shift   ANYWORD
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n|\n">) (WHITE_SPACE " ") (filled_line "+ ") (ANYWORD "Iscion") ]
+
+goto    27
+        [ 0 2 4 7 11 16 36 42 39 43 27 ]
+
+reduce  ANYWORD --> word
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n|\n">) (WHITE_SPACE " ") (filled_line "+ ") (word "Iscion") ]
+
+goto    40
+        [ 0 2 4 7 11 16 36 42 39 43 40 ]
+
+reduce  filled_line word --> filled_line
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n|\n">) (WHITE_SPACE " ") (filled_line "+ Iscion") ]
+
+goto    43
+        [ 0 2 4 7 11 16 36 42 39 43 ]
+
+read    :EOL(EOL) "\n"
+
+shift   EOL
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n|\n">) (WHITE_SPACE " ") (filled_line "+ Iscion") (EOL "\n") ]
+
+goto    50
+        [ 0 2 4 7 11 16 36 42 39 43 50 ]
+
+reduce  display_term WHITE_SPACE filled_line EOL --> display_term
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">], @location="fronte interno">]) (empty_lines "\n") (DISPLAY_TERM_SEPARATOR "  ====@@") (empty_lines "\n") (display_term #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n|\n+ Iscion\n">) ]
+
+goto    42
+        [ 0 2 4 7 11 16 36 42 ]
+
+read    :EMPTY_LINE(EMPTY_LINE) "\n"
+
+reduce  display empty_lines DISPLAY_TERM_SEPARATOR empty_lines display_term --> display
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">, #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n|\n+ Iscion\n">], @location="fronte interno">]) ]
+
+goto    7
+        [ 0 2 4 7 ]
+
+shift   EMPTY_LINE
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">, #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n|\n+ Iscion\n">], @location="fronte interno">]) (EMPTY_LINE "\n") ]
+
+goto    6
+        [ 0 2 4 7 6 ]
+
+reduce  EMPTY_LINE --> empty_lines
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">, #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n|\n+ Iscion\n">], @location="fronte interno">]) (empty_lines "\n") ]
+
+goto    11
+        [ 0 2 4 7 11 ]
+
+read    :WHITE_SPACE(WHITE_SPACE) " "
+
+reduce  display empty_lines --> display
+        [ (TAPE_BOX_HEADER "  Il presunto  contenitore  contiene le seguenti scritte:") (EOL "\n") (display [#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">, #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n|\n+ Iscion\n">], @location="fronte interno">]) ]
+
+goto    7
+        [ 0 2 4 7 ]
+
+reduce  TAPE_BOX_HEADER EOL display --> box
+        [ (box #<Tdp::Tape::Item:0xb7b27b10 @description=#<Tdp::Tape::TapeDescription:0xb7b216ac @description=" il nastro \303\250 registrato su entrambi i lati\n fronte/retro. Il rumore di \"hum\" presente sul nastro sembra indicare\n chiaramente la velocit\303\240 di scorrimento a 19 cm/sec.\n\n", @tag="NMGS0202-M102B">, @box=[#<Tdp::Box::Display:0xb7b06f78 @notes=[#<Tdp::Box::Note:0xb7b0757c @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b07fb8 @additional_info="incorniciato", @author="GS)", @pen="matita nera">, @lines="flauto ">, #<Tdp::Box::Note:0xb7bd31e0 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7bd8a78 @additional_info="", @author="GS)", @pen="matita nera">, @lines="non c'\303\250 altro mi pare da fare\n">, #<Tdp::Box::Note:0xb7b83ab4 @calligraphy=#<Tdp::Tape::CalligraphyDescription:0xb7b8524c @additional_info="", @author="GS)", @pen="penna biro blu">, @lines="+ Tetratkis |\nClarinetto < Preghiera\n|\n+ Iscion\n">], @location="fronte interno">], @content=[#<Tdp::Tape::TapeContent:0xb7b1b8ec @description="improvvisazioni per ondiola\n ", @tag_end="A12", @tag_start="A01">, #<Tdp::Tape::TapeContent:0xb7b1b540 @description="improvvisazioni per ondiola\n ", @tag_end="B04", @tag_start="B01">, #<Tdp::Tape::TapeContent:0xb7b1b194 @description="improvvisazioni per ondiola\n ", @tag_end="B07", @tag_start="B06">, #<Tdp::Tape::TapeContent:0xb7b1ade8 @description="riversamento da disco e da\n nastro (a partire da 72:04) con\n sovrapposta improvvisazione per\n ondiola\n ", @tag_end="B08", @tag_start="B08">, #<Tdp::Tape::TapeContent:0xb7b19d58 @description="improvvisazioni per ondiola\n\n", @tag_end="B11", @tag_start="B09">], @session=#<Tdp::Tape::SessionDescription:0xb7b21a08 @date=#<Date: 4909829/2,0,2299161>, @location="Discoteca di Stato", @transferrers=["Bernardini, Nicola"]>>) ]
+
+goto    1
+        [ 0 1 ]
+
+tbp.racc:171:in `parse': Box Description failed at line 45:  (Racc::ParseError)
+parse error on value " " (WHITE_SPACE)
+	from ../test/../tpw.rb:58:in `compile'
+	from ../test/tpw_test.rb:20

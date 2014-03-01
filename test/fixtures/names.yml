@@ -1,0 +1,70 @@
+#
+# $Id: names.yml 617 2012-07-15 16:30:06Z nicb $
+#
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+#
+
+gs:
+  last_name: Scelsi
+  first_name: Giacinto
+  disambiguation_tag: the count himself
+
+bop:
+  last_name: Polzer
+  first_name: Bern Odo
+
+
+wambach:
+  last_name: Wambach
+  first_name: Bernhard
+
+tallini:
+  last_name: Tallini
+  first_name: Arturo
+  pseudonym: Tallboy
+
+dessy:
+  last_name: Dessy
+  first_name: Jean-Paul
+
+rundel:
+  last_name: Rundel
+  first_name: Peter
+
+salonen:
+  last_name: Salonen
+  first_name: Esa Pekka
+
+sani:
+  last_name: Sani
+  first_name: Nicola
+
+acp:
+  last_name: Pellegrini
+  first_name: Alessandra Carlotta
+
+schiavoni:
+  last_name: Schiavoni
+  first_name: Piero
+
+bernardini:
+  last_name: Bernardini
+  first_name: Nicola
+
+quaresima:
+  last_name: Quaresima
+  first_name: Bruno
+
+fmu:
+  last_name: Uitti
+  first_name: Frances-Marie
+
+ac:
+  last_name: Curran
+  first_name: Alvin
+  pseudonym: Padre Curran
+
+ps:
+  last_name: Scarnecchia
+  first_name: Paolo
+  pseudonym: Bastrilani

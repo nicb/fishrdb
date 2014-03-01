@@ -1,0 +1,142 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: FMU
+      pen: feltro rosso
+    lines: |
+      ondiola ---> <---
+
+- !ruby/object:Tdp::Box::Display 
+  location: fronte interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS
+      pen: matita nera
+    lines: "rituali "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      430 460 vedere se fatto
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cancellato
+      author: GS
+      pen: matita nera
+    lines: |
+      Clarinetto Ixor (cattivo)
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "segue dall'altra banda "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "X 12 flauto OK X 13 vlno OK buono\n\
+      X 14 clarinetto OK\n\
+      X 15 flauto gong\n\
+      X 16 flauto velocit\xC3\xA0 piccola\n\
+      X 17 flauto\n\
+      X piano 550\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      scherzo 1o tempo
+      da fare
+
+- !ruby/object:Tdp::Box::Display 
+  location: retro interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      214 252 248 463
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "pezzi per fl cl. ecc 1 vlno divertimento N 1 fatto\n\
+      2 vl \" \" \" \" N 4 fatto\n\
+      3 vl eventualmente da fare 1o tempo\n\
+      4 vl N 1 fatto\n\
+      5 vl N 4 fatto\n\
+      6 fl gong\n\
+      7 [???] velocit\xC3\xA0 piccola\n\
+      X 8 clarinetto velocit\xC3\xA0 piccola adagio\n\
+      X 9 clarinetto 325 grande\n\
+      10 flauto 375\n\
+      X 11 flauto 1o tempo\n\
+      velocit\xC3\xA0 piccola\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "fare in parte "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per pianoforte\n "
+  tag_end: A15
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola\n "
+  tag_end: B06
+  tag_start: B01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamenti da vinile di improvvisazioni\n per ondiola\n "
+  tag_end: B08
+  tag_start: B08
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "esperimenti di suoni percussivi riprodotti\n a velocit\xC3\xA0 diverse (prima un'ottava sotto,\n poi un'ottava e una quinta? sopra)\n "
+  tag_end: B11
+  tag_start: B10
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola\n "
+  tag_end: B18
+  tag_start: B12
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "colpo di percussione metallica\n "
+  tag_end: B19
+  tag_start: B19
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola con percussioni\n metalliche\n "
+  tag_end: B23
+  tag_start: B20
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazioni per pianoforte
+    
+  tag_end: B25
+  tag_start: B24
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "Il nastro \xC3\xA8 registrato su entrambi i lati fronte-retro. Esso \xC3\xA8 stato trovato in coda. Il nastro presenta talvolta delle interruzioni incidentali che non sembrano essere volute da GS ma piuttosto dei fenomeni di smagnetizzazione momentanea del nastro.\n Frammenti parlati: [A08] [VM1]: \"S\xC3\xAC come prova eh? [VM2]: \"Come prova."
+  tag: NMGS0217-544
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2009-06-09
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

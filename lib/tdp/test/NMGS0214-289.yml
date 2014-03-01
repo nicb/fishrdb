@@ -1,0 +1,81 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: etichetta
+      author: FMU
+      pen: feltro rosso
+    lines: "1.20min sound "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: etichetta
+      author: FMU
+      pen: feltro rosso
+    lines: |
+      ONDIOLA - TALKING PIANO
+      I Small PIECES
+
+- !ruby/object:Tdp::Box::Display 
+  location: fronte interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "X "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      Riversam su 1 pista 380 3 solisti al 550
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      (prima ci sono) cose buone
+      accordi con note
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: pastello bordeaux
+    lines: "visto "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per ondiola\n "
+  tag_end: A02
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "accordi distorti di pianoforte con\n ondiola\n "
+  tag_end: A05
+  tag_start: A04
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola\n "
+  tag_end: B06
+  tag_start: B02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    accordi distorti di pianoforte con
+     ondiola
+    
+  tag_end: B16
+  tag_start: B07
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato su entrambe le tracce presumibilmente nello stesso senso di scorrimento. Si tratta di un nastro sperimentale. In particolare, a partire da [15'30\"] GS sperimenta registrando suoni di pianoforte e variando il guadagno di ingresso del microfono (quindi a volte tagliando l'attacco, ecc.) Il nastro presenta aderenze diffuse lungo tutto lo scorrimento ed \xC3\xA8 stato trattato con talco sull'emergenza di queste ultime. Il nastro \xC3\xA8 stato trasferito con due trasferimenti successivi a causa della sua durata."
+  tag: NMGS0214-289
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2009-05-26
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

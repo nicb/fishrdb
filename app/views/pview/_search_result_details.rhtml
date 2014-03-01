@@ -1,0 +1,28 @@
+<!-- $Id: _search_result_details.rhtml 617 2012-07-15 16:30:06Z nicb $ -->
+<li class="search_result_details">
+  <hr />
+  <table>
+		<tr valign="top">
+      <td>
+        <h3><%= search_result_details.description_level.level -%>:</h3>
+			</td>
+      <td colspan="2">
+        <h3><%= link_to(search_result_details.name, { :action => 'show', :id => search_result_details.id }) -%></h3>
+			</td>
+		</tr>
+		<tr valign="top">
+      <td width="15%"><b>Corda:</b></td><td width="70%"><%= search_result_details.corda -%></td>
+			<td rowspan="3">
+			</td>
+		</tr>
+		<tr valign="top">
+      <td width="15%"><b>Date:</b></td><td width="70%"><%= search_result_details.dates_to_be_displayed -%></td>
+		</tr>
+		<tr valign="top">
+      <td width="15%"><b>Descrizione:</b></td><td width="70%"><%= truncate(search_result_details.description, 100) -%></td>
+		</tr>
+		<tr valign="top">
+      <td width="15%"><b>Segnatura:</b></td><td width="70%"><%= search_result_details.signature -%></td>
+		</tr>
+  </table>
+</li>

@@ -1,0 +1,110 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cerchiato
+      author: ??
+      pen: matita nera
+    lines: "9 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: pennarello viola
+    lines: "2 per pf. ottimi da fare "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: |
+      Scelsi ottimo fatto Si[va?] 5, autre serie, grande
+      c[oa?][???] etc.
+      "question" echo
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cerchiato
+      author: ??
+      pen: penna blu
+    lines: "56 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: "Les p[????] 1985 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: inquadrato
+      author: GS
+      pen: matita blu
+    lines: "Vichamo[?] intero "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna nera
+    lines: "all'inizio "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita blu
+    lines: "alcuni di KA e Bot-Ba "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: "(poi uno buono) "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu scuro
+    lines: "il I dopo Illustrazioni (c'\xC3\xA8 il 1o di KA) e il 2o e il 3o/\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu scuro
+    lines: "studio ritmico (forse) "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna nera
+    lines: "2 da fare "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: etichetta
+      author: ??
+      pen: penna nera
+    lines: |
+      4 Illustrazione Pezzi varie (buoni)
+      Scelsi/pf.
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per pianoforte\n "
+  tag_end: A06
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazioni per pianoforte
+    
+  tag_end: B05
+  tag_start: B01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato due tracce fronte-retro. Contiene improvvisazioni per pianoforte. Alla fine di [A01] si sente il Maestro rispondere ad una voce distante (incomprensibile) che dice \"Voyons. [] In [A02, B04] ci sono degli disturbi peculiari che non coincidono esattamente tra traccia 1 e traccia 2 (il disturbo \xC3\xA8 costituito da un impulso grande ed uno piccolo, ed \xC3\xA8 speculare tra una traccia e l'altra, con 1.4 secondi circa di ritardo) Il disturbo compare alla fine della parte registrata sulla traccia 2. In [A03 (26')] c'\xC3\xA8 un secondo disturbo (doppio), ma solo solo sulla traccia 1. In [A06 (53'14\")] ce n'\xC3\xA8 un'altro (singolo) solo sulla traccia 1, mentre in [A06 (53'45\")] ce n'\xC3\xA8 uno doppio sulle traccie 1 e 2 in una tipologia identica al primo trovato in [A02]"
+  tag: NMGS0090-347
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2006-10-13
+  location: Studio Schiavoni
+  transferrers: 
+  - Bernardini, Nicola
+  - Schiavoni, Piero

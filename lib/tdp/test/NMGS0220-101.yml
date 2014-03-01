@@ -1,0 +1,75 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: pastello rosso
+    lines: "4 "
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: pennarello viola
+    lines: "Sinfonia lunga "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: pennarello viola
+    lines: "compone per fiato pi\xC3\xB9 Sinfonia lunga\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "il 1o su due piste "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna china nera
+    lines: |
+      il 2o per trombone? poi Sinfonia (lunga)
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna stilografica blu
+    lines: |
+      1 forse cl basso il 2o sul retro
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "Pranam II "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna china nera
+    lines: "niente "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    montaggio di improvvisazioni
+    
+  tag_end: A06
+  tag_start: A01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato su entrambi i lati. La direzione e la velocit\xC3\xA0 di scorrimento sono di difficile interpretazione perch\xC3\xA9 il nastro \xC3\xA8 il risultato di numerose sovrapposizioni di improvvisazioni per ondiola in entrambi le direzioni di scorrimento. In definitiva, si tratta di un nastro registrato doppio mono. In particolare, la sezione [A01] \xC3\xA8 replicata su entrambi le tracce leggermente sfasata. Il nastro presenta aderenze diffuse lungo tutto lo scorrimento ed \xC3\xA8 stato trattato con talco sull'emergenza di queste ultime."
+  tag: NMGS0220-101
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2009-07-13
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola

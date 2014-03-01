@@ -1,0 +1,76 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??)
+      pen: penna biro nera
+    lines: "OK "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??)
+      pen: penna biro blu
+    lines: "M II "
+- !ruby/object:Tdp::Box::Display 
+  location: foglio interno fronte
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: |
+      verde Assaggioli medico
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: penna biro nera
+    lines: |
+      Assaggioli bellezze romane - (Cerutti il cervello)
+      electrochoc - [Pitchal?]
+      [Loenoch?] Steiner - Nehal Jonne
+      [Tomatis?] - Saltzer
+
+- !ruby/object:Tdp::Box::Display 
+  location: foglio interno retro
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: |
+      rosso montecarlo
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: penna biro nera
+    lines: "[chiaroveggent?] - Montecarlo "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "frammenti parlati di memorie\n "
+  tag_end: A23
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    frammenti parlati di memorie
+    
+  tag_end: B18
+  tag_start: B01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " il nastro \xC3\xA8 registrato su due tracce fronte-retro. \n Si tratta di un nastro di memorie. Personaggi citati:\n Julius Evola, Roberto Assaggioli, Blumenthal, Pecci-Blunt, Jean Cocteau,\n Marguerite Caetani\n\n"
+  tag: NMGS0192-295
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2009-01-16
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

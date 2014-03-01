@@ -1,0 +1,41 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "serie 11 alcuni "
+- !ruby/object:Tdp::Box::Display 
+  location: retro interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "280 [Sunteggiati?] rosso "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamenti da vinile di improvvisazioni per\n pianoforte\n "
+  tag_end: A15
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    riversamenti da vinile di improvvisazioni per
+     pianoforte
+    
+  tag_end: B08
+  tag_start: B02
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato su 2 tracce fronte-retro. Dal posizionamento dei contenuti se ne deduce che il nastro \xC3\xA8 stato trovato \"in coda\" (i.e. rovesciato) Il nastro \xC3\xA8 riversato da un vinile probabilmente a 33 1/3 rpm (ascoltando la ciclicit\xC3\xA0 di alcuni rumori tipici)"
+  tag: NMGS0125-147
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2007-02-05
+  location: Studio Schiavoni
+  transferrers: 
+  - Bernardini, Nicola
+  - Schiavoni, Piero

@@ -1,0 +1,139 @@
+/*
+ * $Id: tdp.racc 491 2010-04-18 01:53:37Z nicb $
+ */
+
+class Tdp::Tape::DescriptionParser
+
+    prechigh
+        left COMMA COLON RPAR RSQ DASH 
+        right LPAR LSQ EQ
+    preclow
+        token SESSION_HEADER DATE LOCATION TRANSFERRER ANYWORD
+        token TAPE_TAG WHITE_SPACE PUNCTUATION ID_TAG EMPTY_LINE EOL
+        token TAPE_CONTENT_HEADER TAPE_SEGMENT
+        token COMMA COLON RPAR RSQ DASH LPAR LSQ DOLLAR AUTHOR_INITIALS EQ
+
+rule
+     desc   : session_head empty_lines tape { tape.session = val[0]; tape.description = val[2]; result = tape }
+ 
+     session_head
+            : SESSION_HEADER WHITE_SPACE DATE WHITE_SPACE LOCATION WHITE_SPACE LPAR transferrers RPAR COLON EOL
+             {
+                session = Tdp::Tape::SessionDescription.new
+                session.date = val[2]
+                session.location = val[4]
+                session.transferrers = val[7]
+                result = session
+             }
+
+    transferrers
+        : transferrers COMMA WHITE_SPACE TRANSFERRER          { result << Tdp::Tape::SessionDescription.map_transferrer(val[3]) }
+        | transferrers COMMA TRANSFERRER                      { result << Tdp::Tape::SessionDescription.map_transferrer(val[2]) }
+        | TRANSFERRER                                         { result = [ Tdp::Tape::SessionDescription.map_transferrer(val[0]) ] }
+
+    tape
+        : tape_header tape_description                       
+        {
+            t_desc = val[0]
+            t_desc.description = val[1].chomp
+            result = t_desc
+        }
+
+    tape_description
+        : tape_description filled_line      { result = val[0..1].join }
+        | tape_description empty_lines      { result = val[0..1].join }
+        | filled_line                       { result = val[0].strip.chomp }
+
+    tape_header
+        : DASH WHITE_SPACE TAPE_TAG COLON
+        {
+            t_description = Tdp::Tape::TapeDescription.new
+            t_description.tag = val[2]
+            result = t_description
+        }
+
+    filled_line
+        : filled_line word EOL                        { result = val[0..3].join.chomp }
+        | filled_line word                            { result = val[0..2].join }
+        | word
+
+    word
+        : ANYWORD 
+        | punctuation
+        | TAPE_SEGMENT
+        | WHITE_SPACE
+        | AUTHOR_INITIALS
+
+    punctuation
+        : punctuation PUNCTUATION
+        | PUNCTUATION
+        | LPAR
+        | RPAR
+        | LSQ
+        | RSQ
+        | DASH
+        | EQ
+        | COMMA /* commas are sometime significant, sometimes not */
+        | COLON /* colons are sometime significant, sometimes not */
+
+    empty_lines
+        : empty_lines EMPTY_LINE
+        | EMPTY_LINE
+
+end
+
+---- header
+#
+# $Id: tdp.racc 491 2010-04-18 01:53:37Z nicb $
+#
+
+require File.dirname(__FILE__) + '/../tape'
+
+require 'yaml'
+
+class DescriptionTapeParseError < StandardError
+end
+
+---- inner
+
+  attr_accessor :tape, :line, :yydebug, :result, :id_tag
+
+  require 'lexer'
+
+  include Tdp::Tape::Lexer
+
+  def initialize(tape, debug = false)
+    @tape = tape
+    @line = 1
+    @yydebug = debug
+    @result = {}
+    @id_tag = ''
+  end
+
+  def parse(one_line)
+    begin
+        result = tdp_lexer(one_line, :bump_line) { do_parse }
+    rescue ParseError
+        raise ParseError.new("Tape Description failed at line #{line}: #{$!}")
+    end
+    return result
+  end
+
+  def next_token
+    @q.shift
+  end
+
+  def bump_line(inc = 1)
+    self.line += inc
+  end
+
+---- footer
+#
+# test code - to be commented out in production
+#
+#
+# tdp = Tape::DescriptionParser.new(true)
+# fh = File.open(ARGV[0], 'r')
+# one_line = fh.gets
+# session = tdp.parse(one_line)
+# $stderr.puts("Session: #{session.inspect}")

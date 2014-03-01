@@ -1,0 +1,20 @@
+<!-- $Id: paste_confirmation.html.erb 326 2009-03-08 22:30:58Z nicb $ -->
+<center>
+  <h1>Conferma Spostamento</h1>
+	<p>
+	  Hai richiesto di spostare i seguenti documenti:
+	</p>
+	<table class="paste_confirmation_list">
+	  <%= render(:partial => 'selected_item', :collection => @docs) -%>
+	</table>
+    <%= @where -%> al documento "<i><%= @here_doc.cleansed_name -%></i>" (id n.<%= @here_doc.id -%>).
+	<p>
+	  Confermi lo spostamento?
+	</p>
+</center>
+<center>
+  <% form_tag(:controller => :sidebar, :action => :paste_or_cancel, :id => @here_doc.id, :selection => @docs.map { |d| d.id }, :next_action => @next_action) do -%>
+	  <%= submit_tag("confermo", :name => "paste") -%>
+	  <%= submit_tag("annulla", :name => "cancel") -%>
+	<% end -%>
+</center>

@@ -1,0 +1,10 @@
+#
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+# $Id: container_types.yml 343 2009-03-22 22:57:05Z nicb $
+#
+aa_busta:
+  container_type: Busta
+scatolone:
+  container_type: Scatola
+no_container:
+  container_type: ''

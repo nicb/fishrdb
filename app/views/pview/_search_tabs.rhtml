@@ -1,0 +1,22 @@
+<!-- $Id: _search_tabs.rhtml 396 2009-05-04 11:23:32Z nicb $ -->
+<table class="search_dashboard">
+  <tr>
+    <td id="<%= search_tabs['generic'] -%>" class="search_tab">
+      <%= link_to('Ricerca generica', :action => :index) -%>
+    </td>
+    <td id="<%= search_tabs['archive'] -%>" class="search_tab">
+      <%= link_to('Archivio Privato', :action => :private_archive_init_search) -%>
+    </td>
+		<td id="<%= search_tabs['score'] -%>" class="search_tab">
+		  <%= link_to('Partiture', :action => :score_init_search) -%>
+		</td>
+		<td id="<%= search_tabs['tape'] -%>" class="search_tab">
+		  <%= link_to('Nastri', :action => :tape_init_search) -%>
+		</td>
+<!--
+		<td id="<%= search_tabs['pictures'] -%>" class="search_tab">
+		  <%= link_to('Fotografie', :action => :pictures_search_form) -%>
+		</td>
+ -->
+  </tr>
+</table>

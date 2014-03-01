@@ -1,0 +1,121 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cerchiato matita rossa
+      author: GS
+      pen: penna blu
+    lines: |
+      vedere 240 vede per 3o Prsagi
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: "300 vla sola "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna verde
+    lines: "verde 148 - 170 - 200 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: "voce sola o strumento "
+- !ruby/object:Tdp::Box::Display 
+  location: costola destra
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: parzialmente ricoperto da etichette successive
+      author: ??
+      pen: penna rossa
+    lines: "554 ONDIOLA "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: etichetta
+      author: ??
+      pen: penna nera
+    lines: "0255 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: etichetta
+      author: ??
+      pen: pennarello nero
+    lines: "0028 "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento con retrogrado di improvvisazioni per ondiola\n (correlato a B05-B06)\n "
+  tag_end: A06
+  tag_start: A05
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento frammentato di improvvisazioni per ondiola\n "
+  tag_end: A08
+  tag_start: A08
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento con retrogrado di improvvisazioni per ondiola\n "
+  tag_end: A14
+  tag_start: A10
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento da vinile di musica etnica orientale\n non identificata\n "
+  tag_end: A16
+  tag_start: A16
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento di un micro-frammento di musica etnica\n non identificata\n "
+  tag_end: A17
+  tag_start: A17
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per ondiola\n "
+  tag_end: A20
+  tag_start: A19
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per due ondiole in overdubbing su\n due tracce\n "
+  tag_end: A21
+  tag_start: A21
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "micro-frammento di pianoforte\n "
+  tag_end: A22
+  tag_start: A22
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per pianoforte\n "
+  tag_end: A23
+  tag_start: A23
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per ondiola\n "
+  tag_end: A24
+  tag_start: A24
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per pianoforte\n "
+  tag_end: A27
+  tag_start: A27
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento con retrogrado di improvvisazioni per ondiola\n (correlato a A05-A06)\n "
+  tag_end: B06
+  tag_start: B05
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento con retrogrado di improvvisazioni per ondiola\n (correlato a A10)\n "
+  tag_end: B12
+  tag_start: B11
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    riversamento con retrogrado di improvvisazioni per ondiola
+     (correlato a A14)
+    
+  tag_end: B15
+  tag_start: B15
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 inciso due tracce sovrapposte (in un senso solo) Il contenitore reca tre numeri d'ordine sulla costa sinistra: 554, 255, 0028. Il nastro sembra essere un riversamento frammentario (con fermate e ripartenze del registratore) fatto dal ReVox G36 di improvvisazioni di ondiola: si pu\xC3\xB2 udire il caratteristico 'ting' in numerosi inizi di frammenti. La traccia 2 contiene gli stessi materiali della traccia 1 montati sincronicamente con lo scorrimento invertito nelle sezioni [A05<-B05, A06<-B06, A10<-B11- B12, A12<-B13, A13<-B14, A14<-B15] Il frammento [A27] \xC3\xA8 con tutta probabilit\xC3\xA0 la rimanenza di una registrazione precedente (sottostante)\n Frammenti parlati:\n [A3-A4][GS] \"S\xC3\xAC no s\xC3\xB9 giu. si no su gi\xC3\xB9. s\xC3\xAC no su gi\xC3\xB9."
+  tag: NMGS0117-554
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2006-12-19
+  location: Studio Schiavoni
+  transferrers: 
+  - Bernardini, Nicola
+  - Schiavoni, Piero

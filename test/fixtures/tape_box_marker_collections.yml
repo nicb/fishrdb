@@ -1,0 +1,16 @@
+#
+# $Id: tape_box_marker_collections.yml 502 2010-05-30 20:56:50Z nicb $
+#
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+tbmc_if_01:
+  tape_data: tape_record_01
+  location: inside front
+
+tbmc_ir_01:
+  tape_data:  tape_record_01
+  location: inside rear
+
+tbmc_of_01:
+  tape_data: tape_record_01
+  location: outside front

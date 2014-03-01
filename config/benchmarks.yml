@@ -1,0 +1,24 @@
+#
+# $Id: benchmarks.yml 136 2008-01-08 19:07:40Z nicb $
+#
+default:
+    front, corrispondenza, partitureGS, partitureAA
+
+longlistings:
+    corrispondenza, partitureGS, partitureAA
+
+front:
+    uri: /doc/front
+    new_session: true
+
+corrispondenza:
+    uri: /doc/doc/14
+    new_session: true
+
+partitureGS:
+    uri: /doc/doc/4
+    new_session: true
+
+partitureAA:
+    uri: /doc/doc/7
+    new_session: true

@@ -1,0 +1,113 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: "OK "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: "M VII "
+- !ruby/object:Tdp::Box::Display 
+  location: foglio interno 1 fronte
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: "verde "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: |
+      Miciko Evangelisti - arte Gomez
+      Quartetto Atena - ecc N2 - [Amman?]
+      Ascona - Scherchen - Yesudian
+      Koch - incidente Chrisler
+      Francesca - partenza Krishnamurti
+      poema Max Jacob - I chiaccheroni
+      La Mamma - Isa - Poemi
+      Michaux - fine -
+
+- !ruby/object:Tdp::Box::Display 
+  location: foglio interno 1 retro
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: "rosso "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: "[???] e fine "
+- !ruby/object:Tdp::Box::Display 
+  location: foglio interno 2 fronte
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: "verde "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: |
+      Boulez - Pierrot e conversazioni [???] - Quartetto - [Xmylm?]
+      Atene - Grecia - [oute?] - [Jamilia?]
+      [Radha?] - Venezia Konks Om Pax -
+      Peggy - Roma Francesca
+
+- !ruby/object:Tdp::Box::Display 
+  location: foglio interno 2 retro
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: "rosso "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: |
+      Roma - Fondazione Mohan conti ecc.
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "racconto parlato di GS\n "
+  tag_end: A119
+  tag_start: A001
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    racconto parlato di GS
+    
+  tag_end: B003
+  tag_start: B001
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato su entrambi i lati fronte- retro (anche se sul lato B \xC3\xA8 presente solo un breve frammento) Contiene un racconto parlato (da GS) delle sue memorie (presumibilmente il VII) All'interno del contenitore si trovano due fogli con descrizione dei contenuti. Uno di questi due fogli descrive il contenuto di un altro nastro, presumibilmente il NMGS0230-297."
+  tag: NMGS0228-291
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2009-10-05
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

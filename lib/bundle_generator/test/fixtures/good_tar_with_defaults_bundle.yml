@@ -1,0 +1,23 @@
+#
+# $Id: good_tar_with_defaults_bundle.yml 577 2010-12-15 01:26:21Z nicb $
+# 
+# The fields of the yaml file are organized as follow:
+#
+# system: # this is a mandatory set
+#   format:       targz  # should have: targz, zip (optional, default: targz)
+#   output_filename: <name> 
+#
+# NMGS0123-348:  # tag (which gets translated into a directory name)
+#   files: [ Riv@19-L-128.mp3, Riv@9,5-RVRS-R-128.mp3 ] # files to be included
+#                                                       # (if no files field is included, 
+#                                                       # all 128 br mp3 files are
+#                                                       # included)
+#  images: [ Snapshot348-768.tiff, 348_001-768.jpg ]    # images to be included
+#                                                       # (if no images field is included,
+#                                                       # all 768 px files are
+#                                                       # included)
+#
+system:
+  output_filename:  full_data_bundle_with_defaults.tar.gz
+
+NMGS0136-580:  # this the only tape that is in the development repository

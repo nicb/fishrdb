@@ -1,0 +1,122 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: |
+      Ixion 14 m
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: matita rossa
+    lines: "113 m "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cerchiato
+      author: GS)
+      pen: matita nera
+    lines: |
+      clarinetto riversamento
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: |
+      altri da vedere col ritorno
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS)
+      pen: stilografica nera
+    lines: "Ixion (da fare il 2o) "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: stilografica nera
+    lines: "Divertimenti per vl. "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: stilografica blu
+    lines: "fare il 3. 4. "
+- !ruby/object:Tdp::Box::Display 
+  location: retro interno, stampato sulla scatola
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna blu
+    lines: |
+      Spur Dat. Titr Cont Vel ------------------------------------
+      1 CLARINETTO 0000 19
+      1 SI CLARINETTO BASSO 0232 19
+      1 X CLARINETTO 0396 19
+      1 SEGNO CLARINETTO 0518 19
+      1 CLARINETTO 0643 19
+      0
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento da vinile di improvvisazioni per ondiola\n "
+  tag_end: A04
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento da vinile di improvvisazioni per ondiola\n "
+  tag_end: A07
+  tag_start: A07
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento da vinile di improvvisazioni per ondiola\n "
+  tag_end: A09
+  tag_start: A09
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "rumore di collegamento\n "
+  tag_end: A11
+  tag_start: A11
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "frammenti di difficile discernimento\n "
+  tag_end: A12
+  tag_start: A12
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "sovra-incisione (rovesciata) della traccia B02\n con la voce di Michiko Hirayama e ondiola\n "
+  tag_end: A14
+  tag_start: A14
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento di brano strumentale strumentale (brano per\n flauto e percussioni?) eseguito dal vivo\n "
+  tag_end: B02
+  tag_start: B02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento di riversamento da vinile di brano\n strumentale (per pianoforte, viola, percussione?)\n "
+  tag_end: B03
+  tag_start: B03
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per due ondiole (una su nastro,\n l'altra dal vivo)\n "
+  tag_end: B07
+  tag_start: B04
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    voce di Michiko Hirayama con ondiola
+    
+  tag_end: B09
+  tag_start: B09
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " Il nastro \xC3\xA8 registrato fronte-retro su entrambe\n le tracce. La velocit\xC3\xA0 di scorrimento del nastro all'inizio \xC3\xA8 19\n cm/sec, come riportato sulla scatola la scatola riporta delle scritte\n (presumibilmente di un copista) che indicano anch'esse la velocit\xC3\xA0 19\n cm/sec. Il lato B per\xC3\xB2 presenta alcune peculiarit\xC3\xA0 una velocit\xC3\xA0 di\n scorrimento di 9.5 cm/sec: c'\xC3\xA8 il riversamento di una registrazione\n strumentale alla quale viene sovrapposta una traccia [B09] Al termine\n di [B07 1'11\"55] si sente GS che dice \" non verr\xC3\xA0 niente.\n\n"
+  tag: NMGS0143-647
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2007-12-07
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

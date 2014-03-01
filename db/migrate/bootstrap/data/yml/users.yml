@@ -1,0 +1,82 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+#
+# $Id
+#
+# the following users are  bound to stay in production databases
+# PLEASE NOTE: this is not the same file present in $RAILS_ROOT/test/fixtures!
+# (they have to have different structures because of crypting and password
+# confirmation)
+#
+
+nicb:
+  id: 1
+  login: nicb
+  name: Nicola Bernardini
+  password: will_be_changed # 174c3e10375dc4fca5d5fdfdb5359bb31f437dea
+  user_type: admin
+  email: nicb@sme-ccppd.org
+
+anonymous:
+  id: 2
+  login: anonymous
+  name: anonymous user
+  password: "12345" # 24f6833a664abd28849e88e50679cd2bb4069535
+  user_type: public
+  email: nobody@nowhere.com
+
+bootstrap: # this user must be removed in production databases after the bootstrap
+  id: 3
+  login: bootstrap
+  name: Initial Bootstrap
+  password: __fishrdb_bootstrap__ # 65805efd01374399dde1c73fa186fabe133e3d1b
+  user_type: admin
+  email: nobody@bootstrap.com
+#
+# these are just for testing
+#
+
+bob:
+  id: 4
+  login: public
+  name: Bob Test Public
+  password: testtest # 4df57d678cd8d7b43b0ac48f9b605d872da05a1e
+  user_type: public
+  email: nobody@nowhere.com
+  
+existingbob:
+  id: 5
+  login: existing
+  name: ExistingBob Test Public
+  password: testtest # 4df57d678cd8d7b43b0ac48f9b605d872da05a1e
+  user_type: public
+  email: nobody@nowhere.com
+  
+longbob:
+  id: 6
+  login: specialist
+  name: Longbob Test Specialist
+  password: longtest # 830ef24be1662165a9ac73b53498b5c7da5039cf
+  user_type: specialist
+  email: nobody@nowhere.com
+
+staffbob:
+  id: 7
+  login: staff
+  name: Staffbob Test Staff
+  password: testtest # 4df57d678cd8d7b43b0ac48f9b605d872da05a1e
+  user_type: staff
+  email: nobody@nowhere.com
+
+fabio:
+    login: fabio
+    name: Fabio Simonelli
+    password: ventilatore
+    user_type: staff
+    email: fsimonelli@tin.it
+
+mariaelena:
+    login: mariaelena
+    name: Maria Elena Moro
+    password: ventilatore
+    user_type: staff
+    email: mariaelena.moro@inwind.it

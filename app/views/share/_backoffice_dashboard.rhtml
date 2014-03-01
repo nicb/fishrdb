@@ -1,0 +1,56 @@
+<!-- $Id: _backoffice_dashboard.rhtml 328 2009-03-10 00:27:14Z nicb $ -->
+<div class="fis_dashboard" id="fis_dashboard">
+	<table cellpadding="2" summary="Dashboard: login/logout, admin, etc.">
+		<tr>
+			<td width="24%" align="left" valign="top">
+	   		<% if controller.anonymous_session? -%>
+	   				<%= link_to('login&#187;', :controller => "account", :action => "login") -%>
+			<% else -%>
+					Utente: <%= session_user.login -%>,
+	   				<%= link_to('logout&#187;', :controller => "account", :action => "logout") -%>
+			<% end -%>
+	   		<% if controller.admin_session? -%>
+	   				<%= link_to('admin&#187;', :controller => "account", :action => "admin") -%>
+			<% end -%>
+			</td>
+	      <td class="docperpage" width="27%"  align="left" valign="top">
+          <%= render(:partial => maybe_docs_per_page) -%>
+			</td>
+	      <td width="10%" align="left" valign="top">
+          <%= render(:partial => ardblink) -%>
+	      </td>
+      <% if flash[:notice] -%>
+			  <td align="right" class="errorExplanation" width="35%" valign="top">
+				  <%= flash[:notice] -%>
+			  </td>
+      <% else -%>
+			  <td align="right" width="35%" valign="top">
+        </td>
+      <% end -%>
+		</tr>
+	</table>
+</div>
+<div id="fis_search">
+	<%=
+		image_tag('live_tree_loading_spinner.gif', :alt => "Sto cercando la scheda&hellip;",
+			:id => 'search-indicator',
+			:style => 'position:absolute;right:270px;top:8px;display:none;')
+	-%>
+	<%
+		form_tag(:controller => 'doc',  :action => 'search', :method => 'get') {
+	-%>
+		<label for="search_terms"><%= submit_tag('Ricerca:') -%></label>
+		<%=
+			slid = DescriptionLevel.serie.id;
+			series = Document.find(:all,
+				:conditions => ["description_level_id = ?", slid], :order => :id).map { |d| [ d.name, d.read_attribute('id') ] };
+			series.unshift(["in tutte le serie", 0])
+			select('search', 'root', series, { :selected => series[0] }, { :style => 'width: 10em' })
+		-%>
+		<%= text_field 'search', 'terms', :size => 10, :maxsize => 1024, :value => ''  -%>
+		<label for="search_refine">Raffina ricerca </label>
+		<%= check_box('search', 'refine', {}, "yes", "no") -%>
+	<%
+		} 
+	-%>
+</div>

@@ -1,0 +1,41 @@
+#!/bin/bash
+#
+# $Id: re-createdb 32 2007-10-24 17:46:50Z nicb $
+#
+
+. ./fishrdb_env.sh
+
+OLDTABLES="ArchivioMusicaAltriAutori-tables.sql:ArchivioMusicaGS-tables.sql:Serie-tables.sql"
+OLDDATA="ArchivioMusicaAltriAutori-data.sql:ArchivioMusicaGS-data.sql:Serie-data.sql"
+NEWTABLES="description_levels.sql:container_types.sql:users.sql:documents.sql:table_alterations.sql"
+
+(echo "DROP DATABASE IF EXISTS $OLDDB;" | $MYSQL --user=$FISHRDB_USER --password=$FISHRDB_PASSWORD) || exit -1
+(echo "CREATE DATABASE $OLDDB DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;" | $MYSQL --user=$FISHRDB_USER --password=$FISHRDB_PASSWORD) || exit -1
+IFS=":"
+for i in $OLDTABLES
+do
+	echo -n "Adding table file $i to database $OLDDB..."
+	(cat $FISHRDB_SQL_DIR/$i | $MYSQL --user=$FISHRDB_USER --password=$FISHRDB_PASSWORD $OLDDB) || exit -1
+	echo "Done."
+done
+for i in $OLDDATA
+do
+	echo -n "Adding data file $i... to database $OLDDB..."
+	(cat $FISHRDB_SQL_DIR/$i | $MYSQL --user=$FISHRDB_USER --password=$FISHRDB_PASSWORD $OLDDB) || exit -1
+	echo "Done."
+done
+
+for i in $NEW_DBS
+do
+	(echo "DROP DATABASE IF EXISTS $i;" | $MYSQL --user=$FISHRDB_USER --password=$FISHRDB_PASSWORD) || exit -1
+	(echo "CREATE DATABASE $i DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;" | $MYSQL --user=$FISHRDB_USER --password=$FISHRDB_PASSWORD) || exit -1
+	IFS=":"
+	for j in $NEWTABLES
+	do
+		echo -n "Adding table file $j to database $i..."
+		(cat ${FISHRDB_DB_DIR}/$j | $MYSQL --user=$FISHRDB_USER --password=$FISHRDB_PASSWORD $i) || exit -1
+		echo "Done."
+	done
+done
+
+exit 0

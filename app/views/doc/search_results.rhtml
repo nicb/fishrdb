@@ -1,0 +1,13 @@
+<!-- $Id: search_results.rhtml 124 2008-01-06 16:19:17Z nicb $ -->
+<%= javascript_tag("update_page_var = false;") -%>
+	La ricerca dei termini '<%= session['search_terms'] -%>'
+<% if not @search_results.empty? -%>
+	ha prodotto <%= @search_results.size -%> risultat<%= @search_results.size == 1 ? 'o' : 'i' -%>:<br>
+	<div id="inner_doc" style="border:2px solid gray;height:94.5%;padding:5px;overflow:auto">
+		<table width="100%">
+			<%= render(:partial => "search_result_item", :collection => @search_results) %>
+		</table>
+	</div> <!-- inner doc -->
+<% else -%>
+	non ha prodotto alcun risultato.<br>
+<% end -%>

@@ -1,0 +1,40 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte bobina, etichetta
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: FMU?
+      pen: penna
+    lines: |
+      "ito"/new version_____ 1978 | 19
+      Buoni # 2 e 5' | mono 
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: pennarello viola
+    lines: "sentire "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per due ondiole\n "
+  tag_end: B03
+  tag_start: B01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    coro rallentato (sovrapposto a B03)
+    
+  tag_end: A02
+  tag_start: A02
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 inciso su 2 tracce fronte retro. Dato il materiale (note continue di Ondiola), la velocit\xC3\xA0 di scorrimento del nastro \xC3\xA8 di difficile determinazione. Peculiarit\xC3\xA0 del nastro: 1) la traccia 2 \xC3\xA8 registrata \"al dritto\" (cio\xC3\xA8 in senso invertito rispetto alla consuetudine) 2) la traccia 1 contiene ad un certo punto [A02] un riversamento del risultato di pi\xC3\xB9 riversamenti a velocit\xC3\xA0 sempre dimezzate della registrazione di un coro tibetano. La registrazione originale risulta cos\xC3\xAC essere alla velocit\xC3\xA0 di 152 cm/sec; il frammento viene incluso nella sessione anche alla velocit\xC3\xA0 originale a scopo documentario."
+  tag: NMGS0129-087
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2007-02-09
+  location: Studio Schiavoni
+  transferrers: 
+  - Bernardini, Nicola
+  - Schiavoni, Piero

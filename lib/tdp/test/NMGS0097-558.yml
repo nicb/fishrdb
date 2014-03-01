@@ -1,0 +1,105 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cancellato
+      author: GS
+      pen: matita nera
+    lines: "1o e 2o dei Nuovi 4 Pezzi "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS
+      pen: matita nera
+    lines: "4 nuovi pezzi (con tagli) "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "Hurqualya "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "pezzi coro "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS?
+      pen: matita nera
+    lines: "310 (o 352) 382-400-426 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cerchiato
+      author: GS?
+      pen: matita nera
+    lines: "436-37 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS?
+      pen: matita nera
+    lines: "434-435//439-444 (+) //445 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: copre tutta la scatola
+      author: ??
+      pen: penna blu
+    lines: "X "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Improvvisazioni per due ondiole\n "
+  tag_end: A05
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Rumori di riavvolgimento di nastro\n "
+  tag_end: A08
+  tag_start: A07
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Esempi vocalici\n "
+  tag_end: A10
+  tag_start: A09
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Riversamenti \"scratch\" da disco (musica elettronica)\n "
+  tag_end: A12
+  tag_start: A12
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Riversamenti \"scratch\" da disco (musica elettronica)\n "
+  tag_end: A14
+  tag_start: A14
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Riversamenti \"scratch\" da disco (musica elettronica)\n "
+  tag_end: A17
+  tag_start: A17
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Riversamenti \"scratch\" da disco (musica elettronica)\n "
+  tag_end: A21
+  tag_start: A19
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Improvvisazioni per due ondiole\n "
+  tag_end: A22
+  tag_start: A22
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Riversamenti \"scratch\" da disco (musica elettronica)\n "
+  tag_end: A25
+  tag_start: A23
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    Riversamenti "scratch" da disco (musica elettronica)
+    
+  tag_end: A27
+  tag_start: A27
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato su una traccia sola e presenta numerose particolarit\xC3\xA0. La prima \xC3\xA8 quella di una notevole quantit\xC3\xA0 di giunture di rottura (23) risalenti all'epoca dell'incisione (non ascrivibili a rotture recenti) ad intervalli talvolta molto vicini tra loro. Dai rumori ancillari la registrazione appare fatta col Revox G36 (ting caratteristico) Le interruzioni sono improvvise e senza rumori ancillari: si potrebbe quindi presumere che si tratti del riversamento di un nastro editato in precedenza (le interruzioni sembrano risultare da tagli che per\xC3\xB2 non corrispondono alle giunture che si trovano sul nastro) All'inizio sezione [A07] si ascolta il Maestro che con voce giovanile dice \"Funziona? Funziona? Funziona? Uno, due, tre, quattro, cinque, sei, sette, otto, nove, dieci\" A met\xC3\xA0 della sezione [A07] si sente il Maestro che dice \"Uno, due\" e poco pi\xC3\xB9 in l\xC3\xA0 lo si ascolta che dice \"Ah, ah\" Il materiale musicale di [A07] \xC3\xA8 costituito da spirali di suono in accelerazione dati da un registratore che riavvolge. Sulle prime, sembrerebbe che il Maestro stia cercando qualcosa su un altro nastro e con un altro registratore; tuttavia, il fatto che egli non ascolti mai dopo aver riavvolto porta a pensare che egli sia interessato *proprio* al rumore di riavvolgimento del nastro. Nella sezione [A09] si ascolta invece un'altra voce, non identificata, che fa degli esempi vocalici. Gli esempi vengono annunciati prima e sono: \"Effe e erre, insieme\", poi dice \"contrario? e si sente \"[GS] s\xC3\xAC\" e poi \"[GS] ancora una volta io faccio un soffio\" e poi \"Acca semplice\", \"Acca con accento\" Nelle sezioni [A12,A14,A17,A19-A21,A23- A25] c'\xC3\xA8 invece il riversamento di un disco pi\xC3\xB9 volte interrotto (come una specie di \"scratching\") Il disco contiene un brano con note lunghe di strumenti a fiato ed effetti elettronici. In [A29] si ascolta il Maestro che dice \"Pronto, pronto, pronto. Uno, due, tre, quattro, cinque\" In [A13] si ascolta il Maestro che dice \"Andiamo, andiamo\" in sovrapposizione ad un feedback da registratore in registrazione e ascolto contemporaneamente.\n L'elenco delle giunture \xC3\xA8:\n [Splice01 00'23\"] [Splice02 02'16\"] [Splice03 02'19\"] [Splice04 02'22\"] [Splice05 02'36\"] [Splice06 02'46\"] [Splice07 03'14\"] [Splice08 03'44\"] [Splice09 03'54\"] [Splice10 04'03\"] [Splice11 04'15\"] [Splice12 04'19\"] [Splice13 08'09\"] [Splice14 11'01\"] [Splice15 11'31\"] [Splice16 12'20\"] [Splice17 15'08\"] [Splice18 15'51\"] [Splice19 15'56\"] [Splice20 16'00\"] [Splice21 16'16\"] [Splice22 16'20\"] [Splice23 53'40\"]"
+  tag: NMGS0097-558
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2006-10-31
+  location: Studio Schiavoni
+  transferrers: 
+  - Bernardini, Nicola
+  - Schiavoni, Piero

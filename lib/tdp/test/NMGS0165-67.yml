@@ -1,0 +1,62 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: "rotto "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: "??) "
+      pen: biro blu
+    lines: |
+      A OTT.'61 SUITE N.8 (I rivers.) 4-324 19 cm" A " " 5 INCANTESIMI (id.) 330-445 "
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??)
+      pen: matita nera
+    lines: "(445 min 7'-10') "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??)
+      pen: biro blu
+    lines: "B SUITE N.11 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: "il 3 da orchestra "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: pennarello viola
+    lines: |
+      ? solo Incantesimi 
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    sovrapposizioni di improvvisazioni per pianoforte
+     e improvvisazioni per strumenti percussivi indiani
+    
+  tag_end: A06
+  tag_start: A01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " il nastro \xC3\xA8 registrato stereofonicamente in un'unica\n direzione. Contiene improvvisazioni di pianoforte accompagnato da\n strumenti a percussione indiani (tablas) Alcuni dettagli lasciano\n intendere che la registrazione sia una combinazione di registrazioni\n precedenti sovrapposte: 1) le registrazioni sono in una chiara\n relazione musicale tra loro; 2) il primo riversamento\n dell'accompagnamento \xC3\xA8 stato fatto a velocit\xC3\xA0 di scorrimento\n dimezzata; 3) il pianoforte rientra nell'accompagnamento percussivo ma\n non il contrario, segno che \xC3\xA8 stato prima registrato il pianoforte e\n poi sovrapposto l'accompagnamento; 4) il rientro del pianoforte ha il\n classico ritardo dei registratori a tre testine. Il nastro ha subito\n una rottura a [12'58\"] durante il trasferimento ed \xC3\xA8 stato riparato\n di conseguenza senza deterioramenti per il riversamento stesso.\n\n"
+  tag: NMGS0165-67
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2008-05-13
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

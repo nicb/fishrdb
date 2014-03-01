@@ -1,0 +1,42 @@
+<!-- $Id: credits.html.erb 562 2010-11-27 22:19:39Z nicb $ -->
+<h1><%= @appname -%> <%= @svn_revision -%></h1>
+<br />
+<br />
+<br />
+<%= @appname -%> &egrave; un'interfaccia di rete gerarchico/relazionale
+per tipologie diversificate di record archivistici.
+<%= @appname -%> &egrave; stata scritta e realizzata da Nicola Bernardini
+per la <%= link_to('Fondazione Isabella Scelsi', 'http://www.scelsi.it') -%>.
+</br>
+<%= @appname -%> non sarebbe mai esistita senza il fondamentale apporto di:
+Mauro Tosti Croce (Coordinatore dell'Archivio),
+Alessandra Carlotta Pellegrini (Direttore Scientifico della Fondazione),
+Barbara Boido (Responsabile del Museo di Casa Scelsi),
+Maria Elena Moro, Fabio Simonelli, Giulia D'Angelo e Marta Cardillo (archivisti),
+Giorgio Parisi (records bibliografici).
+<br />
+<br />
+<%= @appname -%> ha anche un debito di riconoscenza verso Piero Schiavoni
+(Studio Coltempo -- Roma), e Bruno Quaresima e Carlo Cursi
+(<%= link_to('Discoteca di Stato ', 'http://www.dds.it') -%>
+-- Roma) per la strutturazione ed il riempimento delle schede catalografiche
+dei nastri magnetici.
+<br />
+Infine, <%= @appname -%> &egrave; il risultato della (forse immeritata)
+fiducia del Presidente della
+<%= link_to(' Fondazione Isabella Scelsi ', 'http://www.scelsi.it') -%>
+Nicola Sani nei confronti dell'autore.
+<br />
+<br />
+<%= @appname -%> utilizza il framework
+<%= link_to(image_tag('rails.png', :size => '24x32', :align => 'middle') + ' Ruby on Rails ', 'http://www.rubyonrails.org', :alt => 'Ruby on Rails') -%>
+ed &egrave; licenziata con licenza  
+<%= link_to('GNU/GPL 2.0', 'http://www.gnu.org/licenses/old-licenses/gpl-2.0.html') -%>.
+<br />
+<br />
+Le sorgenti e la gestione dello sviluppo dell'applicazione si trovano su
+<%= link_to('http://trac.sme-ccppd.org/fishrdb', 'http://trac.sme-ccppd.org/fishrdb') -%>.
+<br />
+<br />
+<br />
+<%= link_to('indietro', { :action => '#' }, { :onclick => 'window.back(); return false;' }) -%>

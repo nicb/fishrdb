@@ -1,0 +1,7 @@
+<% sn = name && name.is_a?(Name) ? name : Name.new -%>
+<%= text_field 'doc[' + subkey + '][' + association + '_' + index + ']', 'first_name', :size => 8, :maxsize => 256, :value => sn.first_name -%>
+<%= text_field 'doc[' + subkey + '][' + association + '_' + index + ']', 'last_name', :size => 8, :maxsize => 256, :value => sn.last_name -%>
+<%= text_field 'doc[' + subkey + '][' + association + '_' + index + ']', 'disambiguation_tag', :size => 8, :maxsize => 256, :value => sn.disambiguation_tag -%>
+<%= text_field 'doc[' + subkey + '][' + association + '_' + index + ']', 'pseudonym', :size => 8, :maxsize => 128, :value => sn.pseudonym -%>
+<% session[unitag] = index -%>
+<!-- $Id: _name.html.erb 616 2012-06-21 11:47:43Z nicb $ -->

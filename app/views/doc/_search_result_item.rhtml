@@ -1,0 +1,61 @@
+<!-- $Id: _search_result_item.rhtml 343 2009-03-22 22:57:05Z nicb $ -->
+<tr valign="top">
+	<td width="1%" align="left">
+		Ril.
+	</td>
+	<td width="2%" align="right">
+		<%= search_result_item.relevance -%>:
+	</td>
+	<td width="2%"></td>
+	<td width="60%" align="left">
+    <b>
+      <%= link_to(truncate(search_result_item.document.sidebar_name,80), { :action => 'show', :id => search_result_item.id, }, { :title => search_result_item.document.sidebar_tip }) -%>
+  </b>
+  </td>
+  <td width="35%" align="left">
+    <% unless search_result_item.document.date.to_display.blank? -%>
+      <b>[<%= search_result_item.document.date.to_display -%>]</b>
+    <% end -%>
+  </td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td colspan="2">
+		<%
+			navbar = search_result_item.document.ancestors.reverse.dup
+			navbar.shift
+			navbar.each do
+				|r|
+		-%>
+				&raquo;  
+		<%=
+        link_to(truncate(r.sidebar_name,80), { :action => 'show', :id => r.id, }, { :title => r.sidebar_tip })
+		-%>
+		<%-
+			end
+		-%>
+  </td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td colspan="2">
+		<%
+			search_result_item.search_terms.each do
+				|st|
+				if s = excerpt(search_result_item.context(st), st.to_s, 60)
+		-%>
+			<%= 
+					s
+			-%>
+			<%
+					break
+				end
+			-%>
+		<% end -%>
+		<br />
+	</td>
+</tr>

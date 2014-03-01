@@ -1,0 +1,71 @@
+#
+# $Id: tape_box_marks.yml 502 2010-05-30 20:56:50Z nicb $
+#
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+#
+
+tbm_1_if:
+  tape_box_marker_collection: tbmc_if_01
+  marker: penna biro blu
+  modifiers: sottolineato
+  text: single line text
+  name: gs
+  reliability: true
+  css_style:  'color: blue; text-decoration: underline;'
+
+tbm_2_if:
+  tape_box_marker_collection: tbmc_if_01
+  marker: penna stilografica verde
+  name: gs
+  reliability: false
+  text: |
+    multiple line text
+    with several newlines
+    with several newlines
+    with several newlines
+  css_style:  'color: green;'
+
+tbm_3_if:
+  tape_box_marker_collection: tbmc_if_01
+  marker: feltro rosso
+  modifiers: etichetta
+  name: fmu
+  reliability: false
+  text: |
+    another multiple line text
+    with several newlines
+    with several newlines
+    with several newlines
+  css_style:  'border-style: solid; color: red;'
+
+tbm_4_ir:
+  tape_box_marker_collection: tbmc_ir_01
+  marker: penna biro blu
+  modifiers: sottolineato
+  text: single line text
+  reliability: true
+  css_style:  'color: blue; text-decoration: underline;'
+
+tbm_5_ir:
+  tape_box_marker_collection: tbmc_ir_01
+  marker: penna stilografica verde
+  name: gs
+  reliability: false
+  text: |
+    multiple line text
+    with several newlines
+    with several newlines
+    with several newlines
+  css_style:  'color: green;'
+
+tbm_6_ir:
+  tape_box_marker_collection: tbmc_ir_01
+  marker: feltro rosso
+  modifiers: etichetta
+  reliability: false
+  text: |
+    another multiple line text
+    with several newlines
+    with several newlines
+    with several newlines
+  css_style:  'border-style: solid; color: red;'

@@ -1,0 +1,12 @@
+#
+# $Id: rtunnels-test.yml 593 2010-12-25 20:27:48Z nicb $
+#
+ssh_test_01:
+  from_port: 16298
+  to_address: 22
+  connect_server: ssh.sme-ccppd.org
+
+ssh_test_02:
+  from_port: 16299
+  to_address: 22
+  connect_server: ssh.sme-ccppd.org

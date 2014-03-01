@@ -1,0 +1,6 @@
+<!-- $Id: _edit.html.erb 468 2009-10-17 02:21:36Z nicb $ -->
+<%=
+  link_to_remote(
+       image_tag("fishrdb/#{icon}.png", :border => 0, :alt => label, :title => label),
+		            :update => "doc_content", :url => { :action => "edit", :id => edit.id, :page => page })
+%>

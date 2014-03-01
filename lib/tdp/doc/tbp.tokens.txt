@@ -1,0 +1,11 @@
+
+Tape Box Parser recognizes (and converts the following special tokens):
+
+LPAR            -> '('
+RPAR            -> ')'
+__LBRACE__      -> '{'
+__RBRACE__      -> '}'
+__BLANK_LINE__  -> '\n'
+
+----
+$Id: tbp.tokens.txt 379 2009-04-23 03:45:04Z nicb $

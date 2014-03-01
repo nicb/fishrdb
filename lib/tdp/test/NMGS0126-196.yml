@@ -1,0 +1,114 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: pennarello nero
+    lines: "piccoli capricci "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: pennarello viola
+    lines: "S "
+- !ruby/object:Tdp::Box::Display 
+  location: fronte interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "Piccoli capricci "
+- !ruby/object:Tdp::Box::Display 
+  location: fronte interno foglietto
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: FMU?
+      pen: penna rossa
+    lines: |
+      from disc - ____
+      Tr.1 ch 1 |7.5
+      ----
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: FMU?
+      pen: penna blu
+    lines: |
+      _____ RADIO |3.75
+      -----
+      Ondes Martenot
+      perc ---
+      Not his
+      -------------------
+      _____
+      = 17.27 |7.5 
+      -----
+      piano his
+      21.30
+
+- !ruby/object:Tdp::Box::Display 
+  location: retro interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cancellato
+      author: GS
+      pen: penna blu
+    lines: "Profeti "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cancellato
+      author: GS
+      pen: matita nera
+    lines: "piccoli capricci "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS
+      pen: matita nera
+    lines: "Profeti (ottimi) "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamenti da vinile di improvvisazioni per pianoforte\n "
+  tag_end: A12
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento da nastro di improvvisazioni per pianoforte\n "
+  tag_end: A14
+  tag_start: A14
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento da nastro di improvvisazioni per pianoforte\n "
+  tag_end: A16
+  tag_start: A16
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento da nastro di improvvisazioni per pianoforte\n "
+  tag_end: B01
+  tag_start: B01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento di un brano di altro autore (Maurice\n Jarre) da una emissione radiofonica RAI\n "
+  tag_end: B03
+  tag_start: B02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazioni per pianoforte
+    
+  tag_end: B04
+  tag_start: B04
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato su due tracce fronte- retro. La traccia 1 contiene riversamenti da vinile vinile presumibilmente a velocit\xC3\xA0 33 1/3 rpm (ascoltando la ciclicit\xC3\xA0 di alcuni rumori tipici) Alla fine di [A06 12'49\"], alla fine di [A11] e alla fine di [A12] c'\xC3\xA8 un fenomeno curioso: ci sono rumori di stop di registatore a nastro *incisi* sul vinile riversato, perch\xC3\xA9 sotto ai rumori si sente un continuum del rumore di fondo del vinile. La sezione [A14] sembra un riversamento tra un nastro a nastro di una improvvisazione che potrebbe aver avuto una terza persona a regolare il guadagno di registrazione (che \xC3\xA8 regolato impropriamente) In [B01] compare un frammento di riversamento che appare anche in [A16] Il riversamento che compare in [B02] presenta uno strano fenomeno di sovrapposizione tra il frammento sottostante (pianoforte, [B01]) e il riversamento dalla radio [B02] L'ipotesi \xC3\xA8 che la registrazione di [B02] sia partita con il nastro non aderente alla testina di cancellazione. Nella confezione si trova anche sul fronte un foglio di carta attaccato con nastro adesivo che reca alcune scritte *non* di pugno del Maestro Scelsi. Ad ogni modo, il foglio *non* copre scritte sottostanti.\n Frammenti parlati:\n [B02][VF - speaker radiofonico] \"Abbiamo trasmesso Danses Sacr\xC3\xA9es, Danses Rituelles per Ondes Martenot e percussioni, di Maurice Jarre\" [B02][VF - speaker radiofonico] \"Avete ascoltato S."
+  tag: NMGS0126-196
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2007-02-09
+  location: Studio Schiavoni
+  transferrers: 
+  - Bernardini, Nicola
+  - Schiavoni, Piero

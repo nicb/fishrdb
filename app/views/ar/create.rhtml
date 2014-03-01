@@ -1,0 +1,23 @@
+<!-- $Id: show.rhtml 211 2008-05-05 20:43:33Z nicb $ -->
+<%= render(:partial => 'sidebar') -%>
+<div class="innerdoc">
+  <div class="innerdoc_dashboard">
+		<%=
+        link_to_if(false, image_tag("fishrdb/add_16.png", :border => 0,
+		                    :alt => "Crea un Nuovo Record", :title => "Crea un Nuovo Record"),
+                        :url => { :action => "create", :class_name => @ar.class.name })
+		-%> 
+  </div>
+	<div class="doc_content" id="doc_content">
+    <%= render(:partial => 'share/error_messages') -%>
+	  <ul class="doc_content">
+      <li class="doc_content">Authority File: <strong>
+          <%= link_to(@ar.class.authority_file_name, :action => @ar.class.controller_show_set_method) -%>
+        </strong>
+	    </li>
+	    <%=
+          render(:partial => @ar.class.edit_action, :object => @ar)
+	    -%>
+	  </ul>
+	</div> <!-- doc_content -->
+</div> <!-- innerdoc -->

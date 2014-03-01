@@ -1,0 +1,36 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cancellato
+      author: GS)
+      pen: penna nera
+    lines: "Aitsi "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna nera
+    lines: |
+      Quartetto N. 5 (1985) Base di solo PF
+      (pista 2) 9.5 cm/s
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazione per pianoforte distorto
+    
+  tag_end: B02
+  tag_start: B01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " Il nastro ha due tracce. Il nastro \xC3\xA8 stato\n trovato in testa, ma con le tracce registrate in ordine inverso: in\n testa \xC3\xA8 registrata la traccia B. La scatola riporta la dicitura\n riguardante un brano (il Quartetto N.5) registrato a 9.5 cm/sec ma dal\n rilevamento del hum a 50 Hz a 19 cm/sec nonch\xC3\xA9 la presenza della\n frequenza di bias a 9.5 cm/sec la velocit\xC3\xA0 di scorrimento \xC3\xA8\n presumibilmente di 19 cm/sec. Inoltre, sembra trattarsi proprio di una\n prova o di un'esecuzione del brano Aitsi (come riportato in una dicitura\n cancellata della scatola)\n\n"
+  tag: NMGS0161-492
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2008-04-11
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

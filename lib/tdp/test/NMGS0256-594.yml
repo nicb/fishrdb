@@ -1,0 +1,92 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      ultimo tagliare un finale per vc
+      pezzetto tra la fine del
+      "corale" e
+      la intro
+      lunga
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "finale cello rovescio (meglio)\n\
+      oboe 1o tempo sassofono ?\n\
+      \" 2 da provare al rovescio\n\
+      \" 3 \" \" \" \"\n\
+      oboe 1 2 3 velocit\xC3\xA0 piccola\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cancellato
+      author: GS
+      pen: matita nera
+    lines: "\" \" velocit\xC3\xA0 grande viola (adagio) velocit\xC3\xA0 piccola\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      qui un pezzo dopo l'adagio da fare per il Divertimento N3
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS
+      pen: pennarello viola
+    lines: "vedere 19 per cl "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "esperimenti con la retroazione di echi\n ribattuti\n "
+  tag_end: A03
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "esperimenti con la retroazione di echi\n ribattuti con frammenti registrati\n "
+  tag_end: A08
+  tag_start: A04
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "esperimenti con la retroazione di echi\n ribattuti con pianoforte e percussioni\n "
+  tag_end: A09
+  tag_start: A09
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "esperimenti con la retroazione di echi\n ribattuti con parlato\n "
+  tag_end: A10
+  tag_start: A10
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "esperimenti con la retroazione di echi\n ribattuti con parlato\n "
+  tag_end: A13
+  tag_start: A11
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "esperimenti con i cambi di velocit\xC3\xA0\n "
+  tag_end: A14
+  tag_start: A14
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola\n "
+  tag_end: B15
+  tag_start: B02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    esperimenti con la retroazione di echi
+     ribattuti con parlato
+    
+  tag_end: B18
+  tag_start: B18
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato su due tracce fronte retro. Il nastro contiene degli esperimenti che coinvolgono la variazione di velocit\xC3\xA0 del nastro e l'effetto eco tra testina di scrittura e testina di lettura. Quindi la velocit\xC3\xA0 del nastro \xC3\xA8 selezionata secondo le condizioni al contorno del frammento e in base alla frequenza caratteristica (Hum) del rumore di fondo. Nel nastro sono presenti frammenti parlati di una voce maschile non meglio identificata (che evidentemente assiste GS negli esperimenti) Sulla traccia B c'\xC3\xA8 invece un'improvvisazione di ondiola ripetuta nel verso di scorrimento [B03] e poi ri-registrata con lo scorrimento invertito [B05]: considerando che l'inversione sembra costruita ad hoc per ottenere un risultato musicale, essa \xC3\xA8 stata mantenuta tale e quale nel montaggio del nastro.\n Frammenti parlati:\n [A10][VM] \"cos\xC3\xAC incide normale\" [VM] \"cos\xC3\xAC incide con la risonanza\" [A11][VM] \"cos\xC3\xAC incide con la risonanza\" [VM] \"ecco l'eco\""
+  tag: NMGS0256-594
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2010-04-16
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

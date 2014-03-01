@@ -1,0 +1,44 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cancellato
+      author: GS
+      pen: penna biro blu
+    lines: |
+      disco fatto Tetratkis I
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cerchiato
+      author: GS
+      pen: penna biro blu
+    lines: "5 "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola\n "
+  tag_end: A06
+  tag_start: A03
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola\n "
+  tag_end: B05
+  tag_start: B01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazioni per ondiola con
+     metallofoni
+    
+  tag_end: B07
+  tag_start: B06
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro aveva una giuntura in coda che si \xC3\xA8 spezzata durante la prima misura della lunghezza (nessun problema per i contenuti audio) E` un nastro fragile che si \xC3\xA8 spezzato *a valle* della trascrizione (quindi senza conseguenze per il riversamento) a 2'16\" ed \xC3\xA8 stato conseguentemente riparato. E` registrato 2 tracce fronte- retro e contiene improvvisazioni per ondiola e suoni di strumenti a percussione. Nella sezione [A01] si sente all'inizio si sente una voce lontana che dice \"Incide! Incide! alla quale risponde la voce (molto pi\xC3\xB9 vicina) del Maestro che dice: \"Incide? S\xC3\xAC, incide. Dopo inizia subito l'improvvisazione, il che potrebbe lasciare ad intendere che l'improvvisazione del Maestro sia avvenuta di fronte ad un'altra persona. Il contenitore del nastro riporta una scritta cancellata \"Tetraxis I\" ed un'altra scritta a matita \"disco fatto\", entrambi con la calligrafia del Maestro. In effetti, risulta una corrispondenza approssimativa col primo movimento del pezzo per flauto \"Tetratkys\" La traccia 1 si interrompe mentre l'improvvisazione sta ancora avendo luogo. La traccia 2 inizia con un'improvvisazione molto rapsodica (fatto peculiare per la musica di Scelsi) La sezione [B05] contiene dei suoni di tam-tam percosso. Le sezioni [B06], [B07] contengono improvvisazioni di ondiola congiunte alla percussione di strumenti metallici (tam-tam, campanelli) Entrambi le tracce contengono un \"tick\" di corrente statica a 2'40\" dall'inizio della traccia 1. Tale rumore \xC3\xA8 stato riportato senza correzioni nel riversamento."
+  tag: NMGS0054-22B
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2006-07-21
+  location: Studio Schiavoni
+  transferrers: 
+  - Bernardini, Nicola
+  - Schiavoni, Piero

@@ -1,0 +1,45 @@
+#!/usr/bin/env ruby
+
+require File.join(File.dirname(__FILE__),"..","config","environment")
+
+require_dependency "search_system"
+#-----------------------------------------------------------------------
+# load the config
+#-----------------------------------------------------------------------
+search_config = YAML.load(File.open(File.join(RAILS_ROOT,"config","search.yml")))
+
+#-----------------------------------------------------------------------
+# grab the first word on the command line as the term to search for
+#-----------------------------------------------------------------------
+search_terms = Array.new
+if ARGV.size > 0 then
+    search_terms << ARGV[0]
+else
+    puts "no search term given, searching for #{search_config['default_search_terms'].join(',')}"
+    search_terms = search_config['default_search_terms']
+end
+
+case search_config['search_backend'] 
+when 'simple'
+    #-----------------------------------------------------------------------
+    # a mock contents so that we use the cache
+    #-----------------------------------------------------------------------
+    contents = MockContents.new
+    s = Search::Simple::Searcher.load(contents,search_config['simple_backend']['index_filename'])
+
+    #-----------------------------------------------------------------------
+    # do the search
+    #-----------------------------------------------------------------------
+    sr = s.find_words(search_terms)
+
+    if sr.contains_matches then
+        puts "Score\t#File"
+        sr.results.sort.each do |res|
+            puts "#{res.score}\t#{res.name}"
+        end
+    else
+        puts sr.warnings
+        puts "No matches"
+    end
+        
+end

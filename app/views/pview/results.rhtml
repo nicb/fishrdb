@@ -1,0 +1,20 @@
+<!-- $Id: results.rhtml 541 2010-09-07 06:08:21Z nicb $ -->
+<%= render(:partial => 'sidebar_display', :object => @display.sidebar_root) %>
+<div class='content_plus_dashboard'>
+	<% sel = Hash.new('unselected'); sel[@display.selected_tab] = 'selected'; -%>
+	<%= render(:partial => 'search_tabs', :object => sel) -%>
+	<div class="content_area">
+	  <% unless @display.blank? -%>
+	    <h2><span class="content_area_title">Risultati della ricerca <%= @display.search_section -%></span></h2>
+	    <div class="search_term">Ricerca: <%= @display.search_term -%></div>
+	    <div class="series_search_result_list">
+	      Trovati: <%= @display.print -%>.
+	    </div>
+	    <ul class="search_result_series_list">
+	      <%= render(:partial => 'search_results', :collection => @display.results.values) -%>
+	    </ul>
+	  <% else -%>
+	    <span class="content_area_title">La ricerca non ha prodotto alcun risultato.</span>
+	  <% end -%>
+	</div>
+</div> <!-- content_plus_dashboard -->

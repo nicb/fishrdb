@@ -1,0 +1,12 @@
+#
+# $Id: bad_with_non_existing_segments.yml 599 2011-01-05 01:04:07Z nicb $
+# 
+#
+system:
+  format: targz
+  output_filename:  full_data_bundle.tar.gz
+
+NMGS0136-580: 
+  files: []
+  images: []
+  fragments: [ A1@9,5-A3@9,5 ] # these segments do not exist

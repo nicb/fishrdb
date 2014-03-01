@@ -1,0 +1,14 @@
+<!-- $Id: _cn_list.rhtml 214 2008-05-11 21:47:15Z nicb $ -->
+<li>
+  <%=
+    link_to(cn_list.name, :controller => 'ar', :action => 'show',
+            :id => cn_list.read_attribute('id'))
+  -%>
+  <%=
+    link_to_remote(image_tag('fishrdb/remove_16.png', :border => 0, :size => '11x11',
+                             :alt => 'Rimuovi', :title => 'Rimuovi'), 
+                             :update => 'denominazioni_equivalenti', :confirm => 'Sicuro?',
+                  :url => { :action => 'detach_collective_name',
+                    :cneq_id => cneq_id, :id => cn_list.read_attribute('id'), })
+  -%>
+</li>

@@ -1,0 +1,16 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+#
+# $Id: performers.yml 462 2009-10-12 01:07:40Z nicb $
+#
+
+wambach_p:
+  name: wambach
+  instrument: piano
+  creator: staffbob
+  last_modifier: staffbob
+
+tallini_p:
+  name: tallini
+  instrument: chitarra
+  creator: staffbob
+  last_modifier: staffbob

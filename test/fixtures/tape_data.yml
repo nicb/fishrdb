@@ -1,0 +1,51 @@
+#
+# $Id: tape_data.yml 617 2012-07-15 16:30:06Z nicb $
+#
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+tape_data_01:
+  tape_record: tape_record_01
+  inventory:   100
+  bb_inventory: 100
+  brand:        Test_tape
+  brand_evidence: B
+  reel_diameter:  18.0
+  tape_material: PVC
+  serial_number:
+  speed:        9,5-19
+  recording_typology: MO A/B
+  analog_transfer_machine: Studer A802
+  plugins:
+  digital_transfer_software: ProTools7.3.1
+  digital_file_format: AIFF
+  digital_sampling_rate: 96000
+  bit_depth: 24
+  transfer_session_start: <%= DateTime.now - 1.year - 10.days %>
+  transfer_session_end: <%= DateTime.now - 1.year %>
+  transfer_session_location: DDS
+
+tape_data_02:
+  tape_record: tape_record_02
+  inventory:   101
+  bb_inventory: 101bis
+  brand:        Test_tape
+  brand_evidence: B
+  reel_diameter:  18.0
+  tape_material: PVC
+  serial_number:
+  speed:        9,5-19
+  recording_typology: MO A/B
+  analog_transfer_machine: Studer A802
+  plugins:
+  digital_transfer_software: ProTools7.3.1
+  digital_file_format: AIFF
+  digital_sampling_rate: 96000
+  bit_depth: 24
+  transfer_session_start: <%= DateTime.now - 1.year - 12.days %>
+  transfer_session_end: <%= DateTime.now - 1.year %>
+  transfer_session_location: DDS
+  tape_length_m: 2256
+  reel_material: PLAST
+  serial_number: ABCDE1234
+  found: TAIL
+  plugins: Pitch-Shifter

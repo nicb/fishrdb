@@ -1,0 +1,46 @@
+<!-- $Id: _sound.html.erb 601 2011-01-05 14:46:10Z nicb $ -->
+<ul class='playlist'>
+<% sound.sound_collection.each_with_index do |tnc, idx| %>
+  <li>
+    <div class='tape_filename'>Traccia: <%= h(tnc.filename) %></div>
+    <div class='tape_description'><%= h(tnc.display) -%></div>
+    <div class="flash_player" id="flowplayer_<%= idx -%>">
+      <object width="100%" height="100%" id="flowplayer_<%= idx.to_s -%>_api" name="flowplayer_<%= idx.to_s -%>_api" data="/swf/flowplayer.swf" type="application/x-shockwave-flash">
+      <param name="allowfullscreen" value="true">
+      <param name="allowscriptaccess" value="always">
+      <param name="quality" value="high">
+      <param name="cachebusting" value="true">
+      <param name="flashvars"
+      value="config={
+              &quot;plugins&quot;: {
+	                &quot;controls&quot;:{
+                  &quot;url&quot;: &quot;/swf/flowplayer.controls.swf&quot;,
+	                &quot;fullscreen&quot;:false,
+	                &quot;height&quot;:25,
+                  &quot;top&quot;: 0,
+	                &quot;autoHide&quot;:false,
+	                &quot;backgroundColor&quot;: &quot;#382B56&quot;,
+                  &quot;backgroundGradient&quot;: &quot;medium&quot;,
+                  &quot;tooltips&quot;: {
+                    &quot;buttons&quot;: true
+                  }
+                },
+                &quot;audio&quot;:{
+                  &quot;url&quot;:&quot;/swf/flowplayer.audio.swf&quot;
+                }
+                },
+                &quot;clip&quot;:{
+                  &quot;url&quot;: &quot;<%= h(tnc.url_filename.clean_url) -%>&quot;,
+                  &quot;autoPlay&quot;:false
+                },
+                  &quot;playerId&quot;:&quot;flowplayer_<%= idx.to_s -%>&quot;,
+                &quot;playlist&quot;:[{
+                  &quot;url&quot;: &quot;<%= h(tnc.url_filename.clean_url) -%>&quot;,
+                  &quot;autoPlay&quot;: false
+                  }]
+                }">
+      </object>
+    </div>
+  </li>
+<% end %>
+</ul>

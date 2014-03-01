@@ -1,0 +1,51 @@
+<!-- $Id: _edit.rhtml 254 2008-07-22 21:58:46Z nicb $ -->
+<% form_tag(:action => :score_title_edit_from_form, :id => edit.id, :class_name => edit.class.name) do -%>
+	<span class="ar_form_element">
+    <table>
+	    <tr class="ar_form_element"><th class="ar_form_element"><%= edit.class.label -%>:</th><td colspan="2" class="ar_form_element">
+	        <%= text_field 'score_title', 'name', :size => 46, :maxsize => 256, :value => edit.name -%></td>
+	    </tr>
+      <tr class="ar_form_element"><th class="ar_form_element">Organico:</th><td colspan="2" class="ar_form_element">
+	        <%= text_area 'score_title', 'organico', :cols => 53, :rows => 8, :value => edit.organico  -%></td>
+	    </tr>
+      <% ScoreTitle.extended_fields.each do |sf| -%>
+        <tr class="ar_form_element"><th class="ar_form_element"><%= sf.values[0] -%></th>
+        <td class="ar_form_element" width="40%">
+          <%
+            person = edit.send(sf.keys[0])
+            if person
+              name = person.name
+              first_name = person.first_name
+            else
+              name = first_name = ''
+            end
+          -%>
+	        <%=
+	          text_field_with_auto_complete(:score_title, sf.keys[0],
+                                          { :size => 25, :maxsize => 256, :value => name }, :skip_style => true)
+          -%>
+        </td>
+        <td class="ar_form_element">
+	        <%=
+	          text_field_with_auto_complete(:score_title, sf.keys[0].to_s + '_first_name',
+                                          { :size => 15, :maxsize => 256, :value => first_name }, :skip_style => true)
+          -%>
+          <%= 
+            observe_field('score_title_' + sf.keys[0].to_s, :frequency => 1,
+                    :url => { :controller => :ar, :action => "update_score_title_#{sf.keys[0].to_s}_first_name" })
+          -%>
+	<div class="form_buttons">
+        </td>
+	      </tr>
+	    <% end -%>
+    </table>
+	</span>
+	<div class="form_buttons">
+	  <%= 
+	      submit_tag('salva', :name => 'commit')
+	  -%>
+	  <%= 
+	      submit_tag('cancella', :name => 'commit')
+	  -%>
+	</div> <!-- form_buttons -->
+<% end -%>

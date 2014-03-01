@@ -1,0 +1,10 @@
+<!-- $Id: _paginator.rhtml 241 2008-07-16 19:45:45Z nicb $ -->
+<%
+	form_tag(:controller => 'doc', :action => 'set_pagination') {
+-%>
+	<label for="doc_per_page">Schede per pagina</label>
+	<%= text_field 'doc', 'per_page', :size => 4, :maxsize => 10, :value => controller.per_page -%>
+	<%= submit_tag('Aggiorna') -%>
+<%
+	}
+-%>

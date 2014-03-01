@@ -1,0 +1,93 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cancellato
+      author: GS)
+      pen: penna biro blu
+    lines: "turangalila "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: "7 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cancellato
+      author: GS)
+      pen: penna biro blu
+    lines: "L'art et Satan "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: stilografica blu
+    lines: "L'art et Satan ([...t] "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: "[...] "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: stilografica blu
+    lines: "Traccia internazionale Copia nastro m.8 Velocit\xC3\xA0 19.5 cm/s\n\
+      pianoforte\n"
+- !ruby/object:Tdp::Box::Display 
+  location: retro - foglio staccato
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: FMU?)
+      pen: penna biro nera
+    lines: |
+      Side 2" tr. |7.5 taped a record?
+      ---------------
+      ven+po rehearsal
+      5+ con gs - beautifully played
+      | (Devy??)
+      v
+      26 27 --
+      |
+      | po solo
+      |
+      32 50
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "trasferimento di brano per pianoforte da\n vinile\n "
+  tag_end: A05
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "prova pubblica di brani per violino e\n pianoforte\n "
+  tag_end: A13
+  tag_start: A06
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    Lunghi frammenti parlati in francese da GS e
+     una voce femminile, inframmezzati da
+     un brano "vaudeville" (probabilmente
+     sottostante in una registrazione
+     precedente)
+    
+    Frammenti parlati:
+    
+  tag_end: B11
+  tag_start: B01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " il nastro \xC3\xA8 stato trovato disposto in coda,\n registrato su entrambe le tracce nello stesso verso di scorrimento. Le\n registrazioni sembrano per\xC3\xB2 essere completamente scollegate. In testa\n presenta un trasferimento di un lavoro (presumibilmente di altro\n compositore - sembra essere un lavoro serialista integrale) a 19\n cm/sec. Poi c'\xC3\xA8 un brano per violino e pianoforte registrato dal vivo\n con un violinista (con applausi finali - ma non sembra una situazione\n da concerto) In [A06] si sente una voce maschile con accento\n americano.\n\n Frammenti parlati:\n\n [A06][VM] \"Adesso allora facciamo eh. il secondo tempo, dove \xC3\xA8 forte\"\n\n [A11][VM] \"It's a lovely work\"\n\n [A12][VM] \"Here we go\"\n [GS] \"Do you want to sit here?\n\n [B11][GS] \"E lei come si sente quando parla?\n [VF] \"Con un terribile 'esse' parmigiano\"\n [GS] \"Sempre?\n [VF] \"Sempre perch\xC3\xA9 io ci sono affezionata\"\n [GS] \"Ma non si \xC3\xA8 mai sentita alla radio?\n [VF] \"Non mi son mai curata\"\n [GS] \"Certo che insomma, le voci sono sempre molto diverse. Uno non si\n riconosce mai da s\xC3\xA9\"\n [VF] \"Non mi sono mai curata di niente, perch\xC3\xA9 so che non parlo bene.\n C'\xC3\xA8 tanta gente che si occupa di questo.\n [GS] \"Tu hai parlato alla radio?\n [VM] \"Si anche per questa settimana tutta la settimana\"\n [GS] \"Tutta la settimana?\n [VM] \"Si. con un. come si chiama questa cosa.\n [VF] \"E che effetto fa?\n [VM] \"L'effetto? Ha-ehm, non ho riconosciuto la mia voce ma non la\n riconosco mai la mia voce; ma abbastanza chiaro, in inglese\"\n [VF] \"Si ma adesso chiuda questo affare perch\xC3\xA9 fa un effetto []\n mi sento come l'aspirapolvere con quell'affare l\xC3\xAC aperto. Veniva\n su la corrent.\n\n"
+  tag: NMGS0187-643
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2008-12-16
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

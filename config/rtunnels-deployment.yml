@@ -1,0 +1,52 @@
+#
+# $Id: rtunnels-deployment.yml 592 2010-12-25 10:24:57Z nicb $
+#
+ssh_0:
+  from_port: 16222
+  to_address: 22
+  connect_server: ssh.sme-ccppd.org
+
+ssh_1:
+  from_port: 16223
+  to_address: 22
+  connect_server: ssh.sme-ccppd.org
+
+ssh_2:
+  from_port: 16224
+  to_address: 22
+  connect_server: ssh.sme-ccppd.org
+
+ssh_3:
+  from_port: 16225
+  to_address: 22
+  connect_server: ssh.sme-ccppd.org
+
+ssh_4:
+  from_port: 16226
+  to_address: 22
+  connect_server: ssh.sme-ccppd.org
+
+ssh_5:
+  from_port: 16227
+  to_address: 22
+  connect_server: ssh.sme-ccppd.org
+
+ssh_6:
+  from_port: 16228
+  to_address: 22
+  connect_server: ssh.sme-ccppd.org
+
+ssh_7:
+  from_port: 16229
+  to_address: 22
+  connect_server: ssh.sme-ccppd.org
+
+web_0:
+  from_port: 16280
+  to_address: 'localhost:80'
+  connect_server: ssh.sme-ccppd.org
+
+fishrdb_0:
+  from_port: 16201
+  to_address: '192.168.0.252:3000'
+  connect_server: ssh.sme-ccppd.org

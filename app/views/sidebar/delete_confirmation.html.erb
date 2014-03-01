@@ -1,0 +1,19 @@
+<!-- $Id: delete_confirmation.html.erb 326 2009-03-08 22:30:58Z nicb $ -->
+<center>
+  <h1>Conferma Cancellazione</h1>
+	<p>
+	  Hai richiesto la cancellazione dei seguenti documenti:
+	</p>
+	<table class="delete_confirmation_list">
+	  <%= render(:partial => 'selected_item', :collection => @docs) -%>
+	</table>
+	<p>
+	Confermi la cancellazione?
+	</p>
+</center>
+<center>
+	<% form_tag(:controller => :sidebar, :action => :delete_or_cancel, :selection => @docs.map { |d| d.id }) do -%>
+	  <%= submit_tag("confermo", :name => "delete") -%>
+	  <%= submit_tag("annulla", :name => "cancel") -%>
+	<% end -%>
+</center>

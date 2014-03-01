@@ -1,0 +1,7 @@
+<!-- $Id: _search_result_details_item.rhtml 239 2008-07-16 03:49:33Z nicb $ -->
+<li class="search_result_detail_list">
+  <%=
+      link_to(truncate(search_result_details_item.name, 50), :action => :show,
+              :id => search_result_details_item.id)
+  -%>
+</li>

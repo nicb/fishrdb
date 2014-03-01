@@ -1,0 +1,92 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: "  (fronte interno)"
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato
+      author: GS
+      pen: pastello bordeaux
+    lines: "visto "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "nuovissimo[?] "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: etichetta
+      author: FMU?
+      pen: penna rossa
+    lines: "REWIND 1ST "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS?
+      pen: penna blu
+    lines: "250 "
+- !ruby/object:Tdp::Box::Display 
+  location: "  (foglio all'interno) "
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: |
+      rosso 8 acuto 2 strumenti nel grave
+      95 acuto vlno con battimenti
+      poi vuoto fino al *[?]
+      300 cori poi vuoto fino al
+      400 pezzo per orchestra poi vuoto fino al
+      525 acuto
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: |
+      verde 10 acuto vla con tutti e bassi (2 str[umenti?] ?
+      poi prove per Quartetto N.4 fino al
+      350 cori poi
+      altre cose -- niente buono
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola (con overdub)\n "
+  tag_end: A25
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "overdub di ondiola (stesso senso di A)\n "
+  tag_end: B02
+  tag_start: B02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "overdub di ondiola (stesso senso di A)\n "
+  tag_end: B04
+  tag_start: B04
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "frammento pre-registrato (non ondiola?) montato\n assieme alla traccia A\n "
+  tag_end: B06
+  tag_start: B06
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "frammento pre-registrato (ondiola?) montato\n assieme a A015\n "
+  tag_end: B08
+  tag_start: B08
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazione per ondiola (in reverse)
+    
+  tag_end: B13
+  tag_start: B11
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " Il nastro presenta alcune peculiarit\xC3\xA0. Il nastro\n appare in coda (coda rossa), ma ci sono alcuni passaggi in testa e con\n dubbing di piste tra un canale e l'altro. La velocit\xC3\xA0 ed il verso di\n scorrimento del nastro sono di difficile discriminazione. L'ipotesi\n pi\xC3\xB9 plausibile \xC3\xA8 che si tratti di riversamenti (al dritto e al\n rovescio) di altri nastri, sovrapposti per ottenere specifici\n risultati musicali. In particolare, c'\xC3\xA8 un punto [A20] in cui compare\n una registrazione orchestrale che si sovrappone (con un piccolo\n overlap legato alla distanza tra testina di cancellazione e testina di\n registrazione) ad una improvvisazione di ondiola, presumibile\n cancellazione accidentale dell'improvvisazione stessa. In [] il\n secondo nastro sembra scorrere al contrario mentre GS improvvisa con\n l'ondiola. L'ipotesi di montaggio \xC3\xA8 stata fatta a 19 cm/sec perch\xC3\xA9 i\n suoni ancillari della traccia A indicano quest'ultima come la velocit\xC3\xA0\n pi\xC3\xB9 probabile per la prima met\xC3\xA0 del nastro (misurazioni di hum) La\n seconda met\xC3\xA0 del nastro sembra invece essere registrata a 9.5cm/sec.\n L'ultima parte sembra invece una improvvisazione per ondiola a\n 19cm/sec registrata rovesciando il nastro.\n\n"
+  tag: NMGS0138-165
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2007-11-13
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

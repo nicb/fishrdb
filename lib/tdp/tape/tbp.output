@@ -1,0 +1,882 @@
+state 11 contains 1 shift/reduce conflicts
+state 17 contains 1 shift/reduce conflicts
+state 24 contains 1 shift/reduce conflicts
+state 41 contains 2 shift/reduce conflicts
+state 60 contains 1 shift/reduce conflicts
+state 66 contains 1 shift/reduce conflicts
+
+
+-------- Grammar --------
+
+rule 1 box: TAPE_BOX_HEADER EOL display
+rule 2 display: display empty_lines DISPLAY_TERM_SEPARATOR empty_lines display_term
+rule 3 display: display empty_lines DISPLAY_TERM_SEPARATOR full_term
+rule 4 display: display full_term
+rule 5 display: display empty_lines
+rule 6 display: empty_lines NO_DISPLAYS empty_lines
+rule 7 display: full_term
+rule 8 full_term: DISPLAY_LOCATION empty_lines display_term
+rule 9 display_term: display_term WHITE_SPACE filled_line EOL
+rule 10 display_term: filled_line LPAR calligraphy EOL
+rule 11 calligraphy: pen COMMA WHITE_SPACE additional_info_words COMMA WHITE_SPACE author
+rule 12 calligraphy: pen COMMA WHITE_SPACE author
+rule 13 pen: calligraphy_words
+rule 14 author: CALLIGRAPHY WHITE_SPACE author_initials
+rule 15 author_initials: AUTHOR_INITIALS
+rule 16 author_initials: QUESTION_MARKS RPAR
+rule 17 calligraphy_words: calligraphy_words WHITE_SPACE calligraphy_word
+rule 18 calligraphy_words: calligraphy_words calligraphy_word
+rule 19 calligraphy_words: calligraphy_word
+rule 20 calligraphy_word: ANYWORD
+rule 21 calligraphy_word: QUESTION_MARKS
+rule 22 additional_info_words: additional_info_words WHITE_SPACE additional_info_word
+rule 23 additional_info_words: additional_info_words additional_info_word
+rule 24 additional_info_words: additional_info_word
+rule 25 additional_info_word: ANYWORD
+rule 26 additional_info_word: LBRACE
+rule 27 additional_info_word: RBRACE
+rule 28 additional_info_word: punctuation
+rule 29 filled_line: filled_line word
+rule 30 filled_line: word
+rule 31 word: ANYWORD
+rule 32 word: punctuation
+rule 33 word: WHITE_SPACE
+rule 34 word: QUESTION_MARKS
+rule 35 word: AUTHOR_INITIALS
+rule 36 punctuation: punctuation PUNCTUATION
+rule 37 punctuation: PUNCTUATION
+rule 38 punctuation: COMMA
+rule 39 punctuation: COLON
+rule 40 punctuation: DASH
+rule 41 punctuation: LSQ
+rule 42 punctuation: RSQ
+rule 43 punctuation: LPAR
+rule 44 punctuation: RPAR
+rule 45 punctuation: QUESTION_MARK
+rule 46 punctuation: EQ
+rule 47 empty_lines: empty_lines EMPTY_LINE
+rule 48 empty_lines: EMPTY_LINE
+
+------- Symbols -------
+
+**Nonterminals, with rules where they appear
+
+  $start (34)
+    on right: 
+    on left : 
+  box (35)
+    on right: 
+    on left : 1
+  display (36)
+    on right: 1 2 3 4 5
+    on left : 2 3 4 5 6 7
+  empty_lines (37)
+    on right: 2 3 5 6 8 47
+    on left : 47 48
+  display_term (38)
+    on right: 2 8 9
+    on left : 9 10
+  full_term (39)
+    on right: 3 4 7
+    on left : 8
+  filled_line (40)
+    on right: 9 10 29
+    on left : 29 30
+  calligraphy (41)
+    on right: 10
+    on left : 11 12
+  pen (42)
+    on right: 11 12
+    on left : 13
+  additional_info_words (43)
+    on right: 11 22 23
+    on left : 22 23 24
+  author (44)
+    on right: 11 12
+    on left : 14
+  calligraphy_words (45)
+    on right: 13 17 18
+    on left : 17 18 19
+  author_initials (46)
+    on right: 14
+    on left : 15 16
+  calligraphy_word (47)
+    on right: 17 18 19
+    on left : 20 21
+  additional_info_word (48)
+    on right: 22 23 24
+    on left : 25 26 27 28
+  punctuation (49)
+    on right: 28 32 36
+    on left : 36 37 38 39 40 41 42 43 44 45 46
+  word (50)
+    on right: 29 30
+    on left : 31 32 33 34 35
+
+**Terminals, with rules where they appear
+
+  $end (0) 
+  error (1) 
+  COMMA (2) 11 12 38
+  COLON (3) 39
+  RPAR (4) 16 44
+  RSQ (5) 42
+  DASH (6) 40
+  RBRACE (7) 27
+  QUESTION_MARK (8) 45
+  EQ (9) 46
+  LPAR (10) 10 43
+  LSQ (11) 41
+  LBRACE (12) 26
+  SESSION_HEADER (13) 
+  DATE (14) 
+  LOCATION (15) 
+  TRANSFERRER (16) 
+  ANYWORD (17) 20 25 31
+  TAPE_TAG (18) 
+  WHITE_SPACE (19) 9 11 12 14 17 22 33
+  PUNCTUATION (20) 36 37
+  ID_TAG (21) 
+  EMPTY_LINE (22) 47 48
+  EOL (23) 1 9 10
+  TAPE_CONTENT_HEADER (24) 
+  TAPE_SEGMENT (25) 
+  DOLLAR (26) 
+  TAPE_BOX_HEADER (27) 1
+  NO_DISPLAYS (28) 6
+  DISPLAY_TERM_SEPARATOR (29) 2 3
+  CALLIGRAPHY (30) 14
+  QUESTION_MARKS (31) 16 21 34
+  DISPLAY_LOCATION (32) 8
+  AUTHOR_INITIALS (33) 15 35
+
+--------- State ---------
+
+state 0
+
+
+  TAPE_BOX_HEADER  shift, and go to state 2
+
+  box           go to state 1
+
+state 1
+
+
+  $end          shift, and go to state 3
+
+
+state 2
+
+   1) box : TAPE_BOX_HEADER _ EOL display
+
+  EOL           shift, and go to state 4
+
+
+state 3
+
+
+  $end          shift, and go to state 5
+
+
+state 4
+
+   1) box : TAPE_BOX_HEADER EOL _ display
+
+  EMPTY_LINE    shift, and go to state 6
+  DISPLAY_LOCATION  shift, and go to state 10
+
+  display       go to state 7
+  empty_lines   go to state 8
+  full_term     go to state 9
+
+state 5
+
+
+  $default      accept
+
+
+state 6
+
+  48) empty_lines : EMPTY_LINE _
+
+  $default      reduce using rule 48 (empty_lines)
+
+
+state 7
+
+   1) box : TAPE_BOX_HEADER EOL display _
+   2) display : display _ empty_lines DISPLAY_TERM_SEPARATOR empty_lines display_term
+   3) display : display _ empty_lines DISPLAY_TERM_SEPARATOR full_term
+   4) display : display _ full_term
+   5) display : display _ empty_lines
+
+  EMPTY_LINE    shift, and go to state 6
+  DISPLAY_LOCATION  shift, and go to state 10
+  $default      reduce using rule 1 (box)
+
+  empty_lines   go to state 11
+  full_term     go to state 12
+
+state 8
+
+   6) display : empty_lines _ NO_DISPLAYS empty_lines
+  47) empty_lines : empty_lines _ EMPTY_LINE
+
+  EMPTY_LINE    shift, and go to state 13
+  NO_DISPLAYS   shift, and go to state 14
+
+
+state 9
+
+   7) display : full_term _
+
+  $default      reduce using rule 7 (display)
+
+
+state 10
+
+   8) full_term : DISPLAY_LOCATION _ empty_lines display_term
+
+  EMPTY_LINE    shift, and go to state 6
+
+  empty_lines   go to state 15
+
+state 11
+
+   2) display : display empty_lines _ DISPLAY_TERM_SEPARATOR empty_lines display_term
+   3) display : display empty_lines _ DISPLAY_TERM_SEPARATOR full_term
+   5) display : display empty_lines _
+  47) empty_lines : empty_lines _ EMPTY_LINE
+
+  EMPTY_LINE    shift, and go to state 13
+  EMPTY_LINE    [reduce using rule 5 (display)]
+  DISPLAY_TERM_SEPARATOR  shift, and go to state 16
+  $default      reduce using rule 5 (display)
+
+
+state 12
+
+   4) display : display full_term _
+
+  $default      reduce using rule 4 (display)
+
+
+state 13
+
+  47) empty_lines : empty_lines EMPTY_LINE _
+
+  $default      reduce using rule 47 (empty_lines)
+
+
+state 14
+
+   6) display : empty_lines NO_DISPLAYS _ empty_lines
+
+  EMPTY_LINE    shift, and go to state 6
+
+  empty_lines   go to state 17
+
+state 15
+
+   8) full_term : DISPLAY_LOCATION empty_lines _ display_term
+  47) empty_lines : empty_lines _ EMPTY_LINE
+
+  COMMA         shift, and go to state 20
+  COLON         shift, and go to state 21
+  RPAR          shift, and go to state 22
+  RSQ           shift, and go to state 23
+  DASH          shift, and go to state 26
+  QUESTION_MARK  shift, and go to state 30
+  EQ            shift, and go to state 32
+  LPAR          shift, and go to state 35
+  LSQ           shift, and go to state 18
+  ANYWORD       shift, and go to state 27
+  WHITE_SPACE   shift, and go to state 31
+  PUNCTUATION   shift, and go to state 33
+  EMPTY_LINE    shift, and go to state 13
+  QUESTION_MARKS  shift, and go to state 34
+  AUTHOR_INITIALS  shift, and go to state 19
+
+  display_term  go to state 25
+  punctuation   go to state 24
+  word          go to state 28
+  filled_line   go to state 29
+
+state 16
+
+   2) display : display empty_lines DISPLAY_TERM_SEPARATOR _ empty_lines display_term
+   3) display : display empty_lines DISPLAY_TERM_SEPARATOR _ full_term
+
+  EMPTY_LINE    shift, and go to state 6
+  DISPLAY_LOCATION  shift, and go to state 10
+
+  empty_lines   go to state 36
+  full_term     go to state 37
+
+state 17
+
+   6) display : empty_lines NO_DISPLAYS empty_lines _
+  47) empty_lines : empty_lines _ EMPTY_LINE
+
+  EMPTY_LINE    shift, and go to state 13
+  EMPTY_LINE    [reduce using rule 6 (display)]
+  $default      reduce using rule 6 (display)
+
+
+state 18
+
+  41) punctuation : LSQ _
+
+  $default      reduce using rule 41 (punctuation)
+
+
+state 19
+
+  35) word : AUTHOR_INITIALS _
+
+  $default      reduce using rule 35 (word)
+
+
+state 20
+
+  38) punctuation : COMMA _
+
+  $default      reduce using rule 38 (punctuation)
+
+
+state 21
+
+  39) punctuation : COLON _
+
+  $default      reduce using rule 39 (punctuation)
+
+
+state 22
+
+  44) punctuation : RPAR _
+
+  $default      reduce using rule 44 (punctuation)
+
+
+state 23
+
+  42) punctuation : RSQ _
+
+  $default      reduce using rule 42 (punctuation)
+
+
+state 24
+
+  32) word : punctuation _
+  36) punctuation : punctuation _ PUNCTUATION
+
+  PUNCTUATION   shift, and go to state 38
+  PUNCTUATION   [reduce using rule 32 (word)]
+  $default      reduce using rule 32 (word)
+
+
+state 25
+
+   8) full_term : DISPLAY_LOCATION empty_lines display_term _
+   9) display_term : display_term _ WHITE_SPACE filled_line EOL
+
+  WHITE_SPACE   shift, and go to state 39
+  $default      reduce using rule 8 (full_term)
+
+
+state 26
+
+  40) punctuation : DASH _
+
+  $default      reduce using rule 40 (punctuation)
+
+
+state 27
+
+  31) word : ANYWORD _
+
+  $default      reduce using rule 31 (word)
+
+
+state 28
+
+  30) filled_line : word _
+
+  $default      reduce using rule 30 (filled_line)
+
+
+state 29
+
+  10) display_term : filled_line _ LPAR calligraphy EOL
+  29) filled_line : filled_line _ word
+
+  COMMA         shift, and go to state 20
+  COLON         shift, and go to state 21
+  RPAR          shift, and go to state 22
+  RSQ           shift, and go to state 23
+  DASH          shift, and go to state 26
+  QUESTION_MARK  shift, and go to state 30
+  EQ            shift, and go to state 32
+  LPAR          shift, and go to state 41
+  LSQ           shift, and go to state 18
+  ANYWORD       shift, and go to state 27
+  WHITE_SPACE   shift, and go to state 31
+  PUNCTUATION   shift, and go to state 33
+  QUESTION_MARKS  shift, and go to state 34
+  AUTHOR_INITIALS  shift, and go to state 19
+
+  punctuation   go to state 24
+  word          go to state 40
+
+state 30
+
+  45) punctuation : QUESTION_MARK _
+
+  $default      reduce using rule 45 (punctuation)
+
+
+state 31
+
+  33) word : WHITE_SPACE _
+
+  $default      reduce using rule 33 (word)
+
+
+state 32
+
+  46) punctuation : EQ _
+
+  $default      reduce using rule 46 (punctuation)
+
+
+state 33
+
+  37) punctuation : PUNCTUATION _
+
+  $default      reduce using rule 37 (punctuation)
+
+
+state 34
+
+  34) word : QUESTION_MARKS _
+
+  $default      reduce using rule 34 (word)
+
+
+state 35
+
+  43) punctuation : LPAR _
+
+  $default      reduce using rule 43 (punctuation)
+
+
+state 36
+
+   2) display : display empty_lines DISPLAY_TERM_SEPARATOR empty_lines _ display_term
+  47) empty_lines : empty_lines _ EMPTY_LINE
+
+  COMMA         shift, and go to state 20
+  COLON         shift, and go to state 21
+  RPAR          shift, and go to state 22
+  RSQ           shift, and go to state 23
+  DASH          shift, and go to state 26
+  QUESTION_MARK  shift, and go to state 30
+  EQ            shift, and go to state 32
+  LPAR          shift, and go to state 35
+  LSQ           shift, and go to state 18
+  ANYWORD       shift, and go to state 27
+  WHITE_SPACE   shift, and go to state 31
+  PUNCTUATION   shift, and go to state 33
+  EMPTY_LINE    shift, and go to state 13
+  QUESTION_MARKS  shift, and go to state 34
+  AUTHOR_INITIALS  shift, and go to state 19
+
+  display_term  go to state 42
+  punctuation   go to state 24
+  word          go to state 28
+  filled_line   go to state 29
+
+state 37
+
+   3) display : display empty_lines DISPLAY_TERM_SEPARATOR full_term _
+
+  $default      reduce using rule 3 (display)
+
+
+state 38
+
+  36) punctuation : punctuation PUNCTUATION _
+
+  $default      reduce using rule 36 (punctuation)
+
+
+state 39
+
+   9) display_term : display_term WHITE_SPACE _ filled_line EOL
+
+  COMMA         shift, and go to state 20
+  COLON         shift, and go to state 21
+  RPAR          shift, and go to state 22
+  RSQ           shift, and go to state 23
+  DASH          shift, and go to state 26
+  QUESTION_MARK  shift, and go to state 30
+  EQ            shift, and go to state 32
+  LPAR          shift, and go to state 35
+  LSQ           shift, and go to state 18
+  ANYWORD       shift, and go to state 27
+  WHITE_SPACE   shift, and go to state 31
+  PUNCTUATION   shift, and go to state 33
+  QUESTION_MARKS  shift, and go to state 34
+  AUTHOR_INITIALS  shift, and go to state 19
+
+  punctuation   go to state 24
+  word          go to state 28
+  filled_line   go to state 43
+
+state 40
+
+  29) filled_line : filled_line word _
+
+  $default      reduce using rule 29 (filled_line)
+
+
+state 41
+
+  10) display_term : filled_line LPAR _ calligraphy EOL
+  43) punctuation : LPAR _
+
+  ANYWORD       shift, and go to state 46
+  ANYWORD       [reduce using rule 43 (punctuation)]
+  QUESTION_MARKS  shift, and go to state 48
+  QUESTION_MARKS  [reduce using rule 43 (punctuation)]
+  $default      reduce using rule 43 (punctuation)
+
+  calligraphy_words  go to state 44
+  calligraphy_word  go to state 45
+  calligraphy   go to state 47
+  pen           go to state 49
+
+state 42
+
+   2) display : display empty_lines DISPLAY_TERM_SEPARATOR empty_lines display_term _
+   9) display_term : display_term _ WHITE_SPACE filled_line EOL
+
+  WHITE_SPACE   shift, and go to state 39
+  $default      reduce using rule 2 (display)
+
+
+state 43
+
+   9) display_term : display_term WHITE_SPACE filled_line _ EOL
+  29) filled_line : filled_line _ word
+
+  COMMA         shift, and go to state 20
+  COLON         shift, and go to state 21
+  RPAR          shift, and go to state 22
+  RSQ           shift, and go to state 23
+  DASH          shift, and go to state 26
+  QUESTION_MARK  shift, and go to state 30
+  EQ            shift, and go to state 32
+  LPAR          shift, and go to state 35
+  LSQ           shift, and go to state 18
+  ANYWORD       shift, and go to state 27
+  WHITE_SPACE   shift, and go to state 31
+  PUNCTUATION   shift, and go to state 33
+  EOL           shift, and go to state 50
+  QUESTION_MARKS  shift, and go to state 34
+  AUTHOR_INITIALS  shift, and go to state 19
+
+  punctuation   go to state 24
+  word          go to state 40
+
+state 44
+
+  13) pen : calligraphy_words _
+  17) calligraphy_words : calligraphy_words _ WHITE_SPACE calligraphy_word
+  18) calligraphy_words : calligraphy_words _ calligraphy_word
+
+  ANYWORD       shift, and go to state 46
+  WHITE_SPACE   shift, and go to state 52
+  QUESTION_MARKS  shift, and go to state 48
+  $default      reduce using rule 13 (pen)
+
+  calligraphy_word  go to state 51
+
+state 45
+
+  19) calligraphy_words : calligraphy_word _
+
+  $default      reduce using rule 19 (calligraphy_words)
+
+
+state 46
+
+  20) calligraphy_word : ANYWORD _
+
+  $default      reduce using rule 20 (calligraphy_word)
+
+
+state 47
+
+  10) display_term : filled_line LPAR calligraphy _ EOL
+
+  EOL           shift, and go to state 53
+
+
+state 48
+
+  21) calligraphy_word : QUESTION_MARKS _
+
+  $default      reduce using rule 21 (calligraphy_word)
+
+
+state 49
+
+  11) calligraphy : pen _ COMMA WHITE_SPACE additional_info_words COMMA WHITE_SPACE author
+  12) calligraphy : pen _ COMMA WHITE_SPACE author
+
+  COMMA         shift, and go to state 54
+
+
+state 50
+
+   9) display_term : display_term WHITE_SPACE filled_line EOL _
+
+  $default      reduce using rule 9 (display_term)
+
+
+state 51
+
+  18) calligraphy_words : calligraphy_words calligraphy_word _
+
+  $default      reduce using rule 18 (calligraphy_words)
+
+
+state 52
+
+  17) calligraphy_words : calligraphy_words WHITE_SPACE _ calligraphy_word
+
+  ANYWORD       shift, and go to state 46
+  QUESTION_MARKS  shift, and go to state 48
+
+  calligraphy_word  go to state 55
+
+state 53
+
+  10) display_term : filled_line LPAR calligraphy EOL _
+
+  $default      reduce using rule 10 (display_term)
+
+
+state 54
+
+  11) calligraphy : pen COMMA _ WHITE_SPACE additional_info_words COMMA WHITE_SPACE author
+  12) calligraphy : pen COMMA _ WHITE_SPACE author
+
+  WHITE_SPACE   shift, and go to state 56
+
+
+state 55
+
+  17) calligraphy_words : calligraphy_words WHITE_SPACE calligraphy_word _
+
+  $default      reduce using rule 17 (calligraphy_words)
+
+
+state 56
+
+  11) calligraphy : pen COMMA WHITE_SPACE _ additional_info_words COMMA WHITE_SPACE author
+  12) calligraphy : pen COMMA WHITE_SPACE _ author
+
+  COMMA         shift, and go to state 20
+  COLON         shift, and go to state 21
+  RPAR          shift, and go to state 22
+  RSQ           shift, and go to state 23
+  DASH          shift, and go to state 26
+  RBRACE        shift, and go to state 62
+  QUESTION_MARK  shift, and go to state 30
+  EQ            shift, and go to state 32
+  LPAR          shift, and go to state 35
+  LSQ           shift, and go to state 18
+  LBRACE        shift, and go to state 58
+  ANYWORD       shift, and go to state 61
+  PUNCTUATION   shift, and go to state 33
+  CALLIGRAPHY   shift, and go to state 63
+
+  author        go to state 57
+  additional_info_word  go to state 59
+  punctuation   go to state 60
+  additional_info_words  go to state 64
+
+state 57
+
+  12) calligraphy : pen COMMA WHITE_SPACE author _
+
+  $default      reduce using rule 12 (calligraphy)
+
+
+state 58
+
+  26) additional_info_word : LBRACE _
+
+  $default      reduce using rule 26 (additional_info_word)
+
+
+state 59
+
+  24) additional_info_words : additional_info_word _
+
+  $default      reduce using rule 24 (additional_info_words)
+
+
+state 60
+
+  28) additional_info_word : punctuation _
+  36) punctuation : punctuation _ PUNCTUATION
+
+  PUNCTUATION   shift, and go to state 38
+  PUNCTUATION   [reduce using rule 28 (additional_info_word)]
+  $default      reduce using rule 28 (additional_info_word)
+
+
+state 61
+
+  25) additional_info_word : ANYWORD _
+
+  $default      reduce using rule 25 (additional_info_word)
+
+
+state 62
+
+  27) additional_info_word : RBRACE _
+
+  $default      reduce using rule 27 (additional_info_word)
+
+
+state 63
+
+  14) author : CALLIGRAPHY _ WHITE_SPACE author_initials
+
+  WHITE_SPACE   shift, and go to state 65
+
+
+state 64
+
+  11) calligraphy : pen COMMA WHITE_SPACE additional_info_words _ COMMA WHITE_SPACE author
+  22) additional_info_words : additional_info_words _ WHITE_SPACE additional_info_word
+  23) additional_info_words : additional_info_words _ additional_info_word
+
+  COMMA         shift, and go to state 66
+  COLON         shift, and go to state 21
+  RPAR          shift, and go to state 22
+  RSQ           shift, and go to state 23
+  DASH          shift, and go to state 26
+  RBRACE        shift, and go to state 62
+  QUESTION_MARK  shift, and go to state 30
+  EQ            shift, and go to state 32
+  LPAR          shift, and go to state 35
+  LSQ           shift, and go to state 18
+  LBRACE        shift, and go to state 58
+  ANYWORD       shift, and go to state 61
+  WHITE_SPACE   shift, and go to state 68
+  PUNCTUATION   shift, and go to state 33
+
+  additional_info_word  go to state 67
+  punctuation   go to state 60
+
+state 65
+
+  14) author : CALLIGRAPHY WHITE_SPACE _ author_initials
+
+  QUESTION_MARKS  shift, and go to state 71
+  AUTHOR_INITIALS  shift, and go to state 69
+
+  author_initials  go to state 70
+
+state 66
+
+  11) calligraphy : pen COMMA WHITE_SPACE additional_info_words COMMA _ WHITE_SPACE author
+  38) punctuation : COMMA _
+
+  WHITE_SPACE   shift, and go to state 72
+  WHITE_SPACE   [reduce using rule 38 (punctuation)]
+  $default      reduce using rule 38 (punctuation)
+
+
+state 67
+
+  23) additional_info_words : additional_info_words additional_info_word _
+
+  $default      reduce using rule 23 (additional_info_words)
+
+
+state 68
+
+  22) additional_info_words : additional_info_words WHITE_SPACE _ additional_info_word
+
+  COMMA         shift, and go to state 20
+  COLON         shift, and go to state 21
+  RPAR          shift, and go to state 22
+  RSQ           shift, and go to state 23
+  DASH          shift, and go to state 26
+  RBRACE        shift, and go to state 62
+  QUESTION_MARK  shift, and go to state 30
+  EQ            shift, and go to state 32
+  LPAR          shift, and go to state 35
+  LSQ           shift, and go to state 18
+  LBRACE        shift, and go to state 58
+  ANYWORD       shift, and go to state 61
+  PUNCTUATION   shift, and go to state 33
+
+  additional_info_word  go to state 73
+  punctuation   go to state 60
+
+state 69
+
+  15) author_initials : AUTHOR_INITIALS _
+
+  $default      reduce using rule 15 (author_initials)
+
+
+state 70
+
+  14) author : CALLIGRAPHY WHITE_SPACE author_initials _
+
+  $default      reduce using rule 14 (author)
+
+
+state 71
+
+  16) author_initials : QUESTION_MARKS _ RPAR
+
+  RPAR          shift, and go to state 74
+
+
+state 72
+
+  11) calligraphy : pen COMMA WHITE_SPACE additional_info_words COMMA WHITE_SPACE _ author
+
+  CALLIGRAPHY   shift, and go to state 63
+
+  author        go to state 75
+
+state 73
+
+  22) additional_info_words : additional_info_words WHITE_SPACE additional_info_word _
+
+  $default      reduce using rule 22 (additional_info_words)
+
+
+state 74
+
+  16) author_initials : QUESTION_MARKS RPAR _
+
+  $default      reduce using rule 16 (author_initials)
+
+
+state 75
+
+  11) calligraphy : pen COMMA WHITE_SPACE additional_info_words COMMA WHITE_SPACE author _
+
+  $default      reduce using rule 11 (calligraphy)
+

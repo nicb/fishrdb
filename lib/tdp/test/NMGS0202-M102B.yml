@@ -1,0 +1,82 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato
+      author: GS)
+      pen: matita nera
+    lines: "flauto "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: "non c'\xC3\xA8 altro mi pare da fare\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: penna biro blu
+    lines: |
+      + Tetratkis |
+      Clarinetto < Preghiera
+      |
+      + Iscion
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: penna biro blu
+    lines: |
+      pezzi per violino staccati fatti " " da vedere ancora
+
+- !ruby/object:Tdp::Box::Display 
+  location: retro interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: penna biro blu
+    lines: "divertimenti per Vno "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: penna biro blu
+    lines: "pezzi da vedere per Vno "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola\n "
+  tag_end: A12
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola\n "
+  tag_end: B04
+  tag_start: B01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola\n "
+  tag_end: B07
+  tag_start: B06
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento da disco e da\n nastro (a partire da 72:04) con\n sovrapposta improvvisazione per\n ondiola\n "
+  tag_end: B08
+  tag_start: B08
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazioni per ondiola
+    
+  tag_end: B11
+  tag_start: B09
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " il nastro \xC3\xA8 registrato su entrambi i lati\n fronte/retro. Il rumore di \"hum\" presente sul nastro sembra indicare\n chiaramente la velocit\xC3\xA0 di scorrimento a 19 cm/sec.\n\n"
+  tag: NMGS0202-M102B
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2009-03-24
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola

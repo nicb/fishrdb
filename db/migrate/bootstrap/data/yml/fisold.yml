@@ -1,0 +1,54 @@
+#
+# $Id: fisold.yml 94 2007-12-04 10:05:55Z nicb $
+#
+# This is the collection of old data tables for
+# the FIS database
+#
+scores:
+    gs:
+        oldtable: Partiture_Scelsi
+        parent:   Partiture Giacinto Scelsi
+    aa: 
+        oldtable: Partiture_altri_autori
+        parent:   Partiture Altri Autori
+series:
+    ammi:
+        oldtable: 01_Documenti_personali_e_patrimoniali_1923_1988
+        parent:   Documenti Personali e Patrimoniali
+    corr:
+        oldtable: 02_Corrispondenza_1934_1991
+        parent:   Corrispondenza
+        position: 2
+    filo:
+        oldtable: 03_Scritti_filosofici_e_poetici_sd
+        parent:   Scritti Filosofici e Poetici
+    appu:
+        oldtable: 04_Appunti_e_note_1935_1991
+        parent:   Appunti e Note
+    cart:
+        oldtable: 05_Carte_Isabella_Scelsi_1928_1975
+        parent:   Carte Isabella Scelsi
+    broc:
+        oldtable: 06_Materiali_a_stampa___Brochure_e_d__pliant
+        parent:   Brochures e Dépliants
+    invi:
+        oldtable: 06_Materiali_a_stampa___Inviti
+        parent:   Inviti
+    mani:
+        oldtable: 06_Materiali_a_stampa___Manifesti_e_locandine
+        parent:   Manifesti e Locandine
+    opus:
+        oldtable: 06_Materiali_a_stampa___Opuscoli
+        parent:   Opuscoli
+    prog:
+        oldtable: 06_Materiali_a_stampa___Programmi
+        parent:   Programmi
+    rivi:
+        oldtable: 06_Materiali_a_stampa___Riviste__periodici_
+        parent:   Riviste
+    rass:
+        oldtable: 07_Rassegna_stampa_1934_1991
+        parent:   Rassegna Stampa
+    dise:
+        oldtable: 08_Disegni_e_collezione_fotografica
+        parent:   Collezione di Disegni e di Fotografie

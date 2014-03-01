@@ -1,0 +1,80 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: |
+      G- Scelsi "Pranam"
+      C Copyright
+
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro blu
+    lines: |
+      Side A 
+      
+      I "PRANAM"
+      complete = voice instruments
+      and tape
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: |
+      II tape solo (base) (accomapnimental tape part)
+      
+      
+      III "KHOOM"
+      7 episodes for voice
+      string Quarte percussion - horn
+      voice Michiko Hirayama
+      (episodes N 1-2-3)
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: "(19 cps 7.5 ips) "
+- !ruby/object:Tdp::Box::Display 
+  location: flangia
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna biro nera
+    lines: |
+      At the sign of the Swinging
+      Cymbal
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    trasferimento da sorgente non identificata
+     (presumibilmente nastro) di una versione
+     del brano "At the Sign of the Swinging
+     Cymbal" di Brian Fahey
+    
+  tag_end: A01
+  tag_start: A01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "questo nastro fa parte della donazione effettuata dalla Sig.ra Ornella Cogliolo alla Fondazione Scelsi. Nel caso specifico, \xC3\xA8 chiaro che la scatola non corrisponde al nastro poich\xC3\xA9 il nastro contiene una versione di \"At the Sign of the Swinging Cymbal\" di Brian Fahey, brano del 1960. In effetti, un'etichetta posta sulla flangia indica questo brano."
+  tag: NMGS0247-XXX
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2010-03-09
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola

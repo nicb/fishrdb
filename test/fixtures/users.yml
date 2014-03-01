@@ -1,0 +1,72 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+#
+# $Id
+#
+# the following users are  bound to stay also in production databases
+#
+
+nicb:
+  login: nicb
+  name: Nicola Bernardini
+  password: 174c3e10375dc4fca5d5fdfdb5359bb31f437dea # will_be_changed
+  user_type: admin
+  email: nicb@sme-ccppd.org
+
+giorgio:
+  login: giorgio
+  name: Giorgio Parisi # needed by the cd_importer_test object
+  password: 174c3e10375dc4fca5d5fdfdb5359bb31f437dea # will_be_changed
+  user_type: staff
+  email: giorgioparisi1@gmail.com
+
+anonymous:
+  login: anonymous
+  name: anonymous user
+  password: 24f6833a664abd28849e88e50679cd2bb4069535 # 12345
+  user_type: public
+  email: nobody@nowhere.com
+
+bootstrap:
+  login: bootstrap
+  name: Initial Bootstrap
+  password: 65805efd01374399dde1c73fa186fabe133e3d1b # __fishrdb_bootstrap__
+  user_type: admin
+  email: nobody@bootstrap.com
+#
+# these are just for testing
+#
+
+bob:
+  login: bob
+  name: Bob Test Public
+  password: 4df57d678cd8d7b43b0ac48f9b605d872da05a1e # testtest
+  user_type: public
+  email: nobody@nowhere.com
+  
+existingbob:
+  login: existingbob
+  name: ExistingBob Test Public
+  password: 4df57d678cd8d7b43b0ac48f9b605d872da05a1e # testtest
+  user_type: public
+  email: nobody@nowhere.com
+  
+longbob:
+  login: longbob
+  name: Longbob Test Specialist
+  password: 830ef24be1662165a9ac73b53498b5c7da5039cf # longtest
+  user_type: specialist
+  email: nobody@nowhere.com
+
+staffbob:
+  login: staffbob
+  name: Staffbob Test Staff
+  password: 4df57d678cd8d7b43b0ac48f9b605d872da05a1e # testtest
+  user_type: staff
+  email: nobody@nowhere.com
+
+editbob:
+  login: editbob
+  name: Edidbob Test Staff Editor-in-Chief
+  password: 4df57d678cd8d7b43b0ac48f9b605d872da05a1e # testtest
+  user_type: staff
+  email: nobody@nowhere.com

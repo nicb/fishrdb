@@ -1,0 +1,47 @@
+======= NOTE: this README is OBSOLETE! ========
+
+We now have a rake task and a library that do all the nitty-gritty.
+
+To install:
+
+rake fishrdb:install (RAILS_ENV is by default 'production')
+
+To uninstall:
+
+rake fishrdb:uninstall
+
+also, the rails framework is now saved into svn, so there's no need to install
+it/deinstall it.
+
+=== The old notes below are kept just for history documentation ===
+
+To pull out the git rails repository:
+
+git clone git://github.com/rails/rails.git
+
+and then:
+
+cd rails
+git checkout <selected version tag>
+
+(as in git checkout v2.1.0, for example)
+
+all plugins should be pulled out with
+
+ruby script/plugin install <plugin_name>
+
+On Wed Jul  9 15:02:18 CEST 2008, plugins are:
+
+acts_as_list
+acts_as_tree
+auto_complete
+enum-column
+will_paginate
+
+(will_paginate is broken, as of rails 2.2.0, in the normal installation;
+it should be installed with
+ruby script/plugin install git://github.com/mislav/will_paginate.git,
+while enum-column is still under svn)
+
+----
+$Id: rails-git.README 636 2013-07-26 15:27:28Z nicb $

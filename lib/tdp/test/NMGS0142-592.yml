@@ -1,0 +1,127 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: su etichetta
+      author: FMU?)
+      pen: feltro rosso
+    lines: |
+      3,75 I ONDIOLA full
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: su etichetta
+      author: FMU?)
+      pen: feltro rosso
+    lines: |
+      ONDIOLA-12min II MICIKO - 7,5-6 min
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: su etichetta
+      author: "FMU?)\t"
+      pen: feltro rosso
+    lines: |
+      electronics end of side II
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: su etichetta
+      author: "FMU?)\t"
+      pen: feltro rosso
+    lines: "1hr 38min "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: pennarello viola
+    lines: "X "
+- !ruby/object:Tdp::Box::Display 
+  location: fronte interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita
+    lines: |
+      [master?] dalle 2 parti
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: pennarello viola
+    lines: "X "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita
+    lines: "come da libetto "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita
+    lines: "verde "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita
+    lines: "dal 150 al 196 i 3 pezzi.\n\
+      l'ultimo non \xC3\xA8\n\
+      terminato e il seguito\n\
+      sta in altra bobina\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita
+    lines: |
+      201 (I) ((350)) 221 (III)
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita
+    lines: "il 2o di Igghur "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: pastello bordeaux
+    lines: "visto "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamenti di improvvisazioni per ondiola\n "
+  tag_end: A25
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamenti di improvvisazioni per ondiola\n "
+  tag_end: B03
+  tag_start: B01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "prove registrate con Michiko Hirayama\n "
+  tag_end: B05
+  tag_start: B04
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    riversamenti di improvvisazioni per ondiola
+    
+  tag_end: B08
+  tag_start: B07
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " Il nastro \xC3\xA8 registrato fronte-retro su entrambe\n le tracce. La traccia A inizia col caratteristico 'ting' di valvole\n del Revox G36. Altra peculiarit\xC3\xA0 dell'inizio \xC3\xA8 il malfunzionamento\n dell'ondiola, che tende a perdere la nota. Tutto il nastro \xC3\xA8 a 9,5\n cm/sec salvo un breve passaggio sulla traccia B con la voce di Michiko\n Hirayama a 19 cm/sec. La traccia A sembra essere un montaggio sequenziale di\n diversi riversamenti molto brevi, tutti di improvvisazioni di ondiola.\n\n"
+  tag: NMGS0142-592
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2007-12-03
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

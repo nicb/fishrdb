@@ -1,0 +1,125 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte busta
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: FMU
+      pen: feltro rosso
+    lines: |
+      ondiola - fragments towards middle longer material
+      
+      
+      (2 tracks: each same direction
+      but not simultaneous)
+
+- !ruby/object:Tdp::Box::Display 
+  location: retro flangia etichetta 1
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna nera
+    lines: "2 toccate "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cancellato
+      author: ??
+      pen: penna nera
+    lines: |
+      3 pezzi per fiati
+      before [...]
+      pieces
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna stilografica blu
+    lines: |
+      [finale?] [ca?]pricorno
+      320
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna stilografica nera
+    lines: "Capricorno con [sviso?] "
+- !ruby/object:Tdp::Box::Display 
+  location: retro flangia etichetta 2
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna stilografica nera
+    lines: |
+      capricorno con [...]
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "materiale sperimentale, risultato\n dal riversamento di pi\xC3\xB9 sorgenti\n "
+  tag_end: A02
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "materiale sperimentale, risultato\n dal riversamento di pi\xC3\xB9 sorgenti\n "
+  tag_end: A07
+  tag_start: A04
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "materiale sperimentale, risultato\n dal riversamento di pi\xC3\xB9 sorgenti,\n combinato con frammenti sulla\n traccia 2 (B02-B09)\n "
+  tag_end: A18
+  tag_start: A09
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per due ondiole\n "
+  tag_end: A21
+  tag_start: A20
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per due ondiole\n "
+  tag_end: A24
+  tag_start: A23
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "frammenti di musica etnica per\n percussioni\n "
+  tag_end: A28
+  tag_start: A25
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per due ondiole\n "
+  tag_end: A32
+  tag_start: A30
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per pianoforte\n "
+  tag_end: A36
+  tag_start: A33
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "materiale sperimentale, risultato\n dal riversamento di pi\xC3\xB9 sorgenti,\n combinato con frammenti sulla\n traccia 1 (A09-A18)\n "
+  tag_end: B08
+  tag_start: B02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per ondiola\n "
+  tag_end: B10
+  tag_start: B10
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per ondiola\n "
+  tag_end: B12
+  tag_start: B12
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per ondiola\n (coincidente con A18)\n "
+  tag_end: B13
+  tag_start: B13
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazioni per ondiola 
+    
+  tag_end: B16
+  tag_start: B14
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato su entrambi i lati con sovrapposizioni nello stesso senso di scorrimento. Presenta materiali vari combinati assieme di cui \xC3\xA8 difficile discernere la velocita e il senso di scorrimento. Per la velocit\xC3\xA0 di scorrimento, ci si \xC3\xA8 affidati al rilevamento del \"hum\" (che \xC3\xA8 molto evidente alla velocita di 9,5 cm/sec) Per il senso di scorrimento, premesso che il nastro \xC3\xA8 stato trovato in testa (coda verde in testa e tracce in sequenza A/B), si \xC3\xA8 tenuto conto dei rumori ancillari \"esterni\" (cio\xC3\xA8 quelli estremi) di ciascuna sequenza.\n Frammenti parlati:\n [A09][VM]: \"Allora. quello \xC3\xA8 il piatto? Il disco hai messo? [GS]: \"Cosa? S\xC3\xAC, quello l\xC3\xA0\" [VM]: \"Questo non da niente. [GS]: \"Ecco: questo. [VM]: \"Questo? non sar\xC3\xA0 per caso radio, no? [GS]: \"Mmmh. questo. questo, questo, questo\" [VM]: \"Questo qui? Non reagisce niente. [GS]: \"Ecco, questo \xC3\xA8 come ieri. [VM]: \"[] Ecco. [GS]: \"Eh? [VM]: \"Adesso arriva. [GS]: \"Adesso arriva? [VM]: \"S\xC3\xAC\" [GS]: \"Beh, dobbiamo ricominciare."
+  tag: NMGS0271-620
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2010-06-23
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola

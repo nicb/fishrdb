@@ -1,0 +1,500 @@
+#
+# $Id: score_fisold_reference.yml 179 2008-03-02 03:11:07Z nicb $
+#
+# This contains all records that have already been changed and that therefore
+# need to be set by hand because their description will not match with the old
+# fisold description
+#
+FisoldGS_1112:
+  fisold: 1403
+#
+# I episodio
+#
+FisoldGS_1813:
+  fisold: 'none'
+#
+# I episodio
+#
+FisoldGS_1790:
+  fisold: 397
+#
+# I episodio
+#
+FisoldGS_1555:
+  fisold: 708
+#
+# I episodio
+#
+FisoldGS_1557:
+  fisold: 709
+#
+# I episodio
+#
+FisoldGS_1556:
+  fisold: 710
+#
+# II episodio
+#
+FisoldGS_1814:
+  fisold: 'none'
+#
+# II episodio
+#
+FisoldGS_1794:
+  fisold: 712
+#
+# II episodio
+#
+FisoldGS_1519:
+  fisold: 398
+#
+# III episodio
+#
+FisoldGS_1815:
+  fisold: 'none'
+#
+# III episodio
+#
+FisoldGS_1154:
+  fisold: 713
+#
+# IV episodio
+#
+FisoldGS_1816:
+  fisold: 'none'
+#
+# IV episodio
+#
+FisoldGS_1114:
+  fisold: 714
+#
+# IV episodio
+#
+FisoldGS_1793:
+  fisold: 715
+#
+# IV episodio
+#
+FisoldGS_1117:
+  fisold: 718
+#
+# IV episodio
+#
+FisoldGS_1115:
+  fisold: 716
+#
+# IV episodio
+#
+FisoldGS_1116:
+  fisold: 717
+#
+# V episodio
+#
+FisoldGS_1841:
+  fisold: 'none'
+#
+# V episodio
+#
+FisoldGS_1488:
+  fisold: 1423
+#
+# V episodio (batteria)
+#
+FisoldGS_1121:
+  fisold: 721
+#
+# V episodio
+#
+FisoldGS_1486:
+  fisold: 1422
+#
+# V episodio
+#
+FisoldGS_1485:
+  fisold: 1421
+#
+# V episodio
+#
+FisoldGS_1118:
+  fisold: 719
+#
+# V episodio
+#
+FisoldGS_1489:
+  fisold: 1424
+#
+# V episodio
+#
+FisoldGS_1119:
+  fisold: 720
+#
+# VI episodio
+#
+FisoldGS_1842:
+  fisold: 'none'
+#
+# VI episodio
+#
+FisoldGS_1490:
+  fisold: 1425
+#
+# VI episodio
+#
+FisoldGS_1616:
+  fisold: 723
+#
+# VI episodio
+#
+FisoldGS_1122:
+  fisold: 724
+#
+# VI episodio
+#
+FisoldGS_1123:
+  fisold: 725
+#
+# VI episodio
+#
+FisoldGS_1124:
+  fisold: 726
+#
+# VII episodio
+#
+FisoldGS_1843:
+  fisold: 'none'
+#
+# VII episodio
+#
+FisoldGS_1796:
+  fisold: 731
+#
+# VII episodio
+#
+FisoldGS_1792:
+  fisold: 727
+#
+# VII episodio
+#
+FisoldGS_1795:
+  fisold: 728
+#
+# VII episodio
+#
+FisoldGS_1789:
+  fisold: 729
+#
+# VII episodio
+#
+FisoldGS_1125:
+  fisold: 730
+#
+# Konx om Pax (I-II-III parte)
+#
+FisoldGS_1844:
+  fisold: 'none'
+#
+# Konx om Pax (I-II-III parte)
+#
+FisoldGS_987:
+  fisold: 247
+#
+# Konx om Pax (I-II-III parte)
+#
+FisoldGS_1451:
+  fisold: 1334
+#
+# Konx om Pax (I-II-III parte)
+#
+FisoldGS_1452:
+  fisold: 1336
+#
+# Konx om Pax (I-II-III parte)
+#
+FisoldGS_1470:
+  fisold: 1357
+#
+# Konx om Pax (I-II-III parte)
+#
+FisoldGS_1471:
+  fisold: 1359
+#
+# Konx om Pax (I-II-III parte)
+#
+FisoldGS_1472:
+  fisold: 1360
+#
+# Konx om Pax (I-II-III parte)
+#
+FisoldGS_1473:
+  fisold: 1361
+#
+# Konx om Pax (I-II-III parte)
+#
+FisoldGS_1474:
+  fisold: 1362
+#
+# Nomos
+#
+FisoldGS_1750:
+  fisold: 1300
+#
+# Nomos
+#
+FisoldGS_1751:
+  fisold: 1301
+#
+# Nomos
+#
+FisoldGS_1752:
+  fisold: 1299
+#
+# Nomos
+#
+FisoldGS_1753:
+  fisold: 1284
+#
+# Nomos
+#
+FisoldGS_1754:
+  fisold: 1283
+#
+# Nomos
+#
+FisoldGS_1755:
+  fisold: 1293
+#
+# Nomos
+#
+FisoldGS_1756:
+  fisold: 1282
+#
+# Nomos
+#
+FisoldGS_1757:
+  fisold: 1297
+#
+# Nomos
+#
+FisoldGS_1758:
+  fisold: 1295
+#
+# Nomos
+#
+FisoldGS_1759:
+  fisold: 1290
+#
+# Nomos
+#
+FisoldGS_1760:
+  fisold: 1292
+#
+# Nomos
+#
+FisoldGS_1761:
+  fisold: 1281
+#
+# Nomos
+#
+FisoldGS_1762:
+  fisold: 1296
+#
+# Nomos
+#
+FisoldGS_1763:
+  fisold: 1294
+#
+# Nomos
+#
+FisoldGS_1764:
+  fisold: 1289
+#
+# Nomos
+#
+FisoldGS_1765:
+  fisold: 1291
+#
+# Nomos
+#
+FisoldGS_1766:
+  fisold: 1288
+#
+# Nomos
+#
+FisoldGS_1767:
+  fisold: 1286
+#
+# Nomos
+#
+FisoldGS_1768:
+  fisold: 1287
+#
+# Nomos
+#
+FisoldGS_1769:
+  fisold: 1285
+#
+# Nomos
+#
+FisoldGS_1770:
+  fisold: 1298
+#
+# Nomos
+#
+FisoldGS_1771:
+  fisold: 1266
+#
+# Nomos
+#
+FisoldGS_1772:
+  fisold: 1265
+#
+# Nomos
+#
+FisoldGS_1773:
+  fisold: 1275
+#
+# Nomos
+#
+FisoldGS_1774:
+  fisold: 1264
+#
+# Nomos
+#
+FisoldGS_1775:
+  fisold: 1279
+#
+# Nomos
+#
+FisoldGS_1776:
+  fisold: 1277
+#
+# Nomos
+#
+FisoldGS_1777:
+  fisold: 1270
+#
+# Nomos
+#
+FisoldGS_1778:
+  fisold: 1274
+#
+# Nomos
+#
+FisoldGS_1779:
+  fisold: 1263
+#
+# Nomos
+#
+FisoldGS_1780:
+  fisold: 1278
+#
+# Nomos
+#
+FisoldGS_1781:
+  fisold: 1276
+#
+# Nomos
+#
+FisoldGS_1782:
+  fisold: 1269
+#
+# Nomos
+#
+FisoldGS_1783:
+  fisold: 1273
+#
+# Nomos
+#
+FisoldGS_1784:
+  fisold: 1268
+#
+# Nomos
+#
+FisoldGS_1785:
+  fisold: 1272
+#
+# Nomos
+#
+FisoldGS_1786:
+  fisold: 1280
+#
+# Nomos
+#
+FisoldGS_1787:
+  fisold: 1271
+#
+# Nomos
+#
+FisoldGS_1788:
+  fisold: 1267
+#
+# Partitura per voce e corno in fa
+#
+FisoldGS_1036:
+  fisold: 123
+#
+# Pfhat
+#
+FisoldGS_1845:
+  fisold: 'none'
+#
+# Pfhat
+#
+FisoldGS_1045:
+  fisold: 120
+#
+# Quattro pezzi per orchestra (ciascuno su una nota)
+#
+FisoldGS_942:
+  fisold: 701
+#
+# Rito II. Il funerale di Achille
+#
+FisoldGS_1559:
+  fisold: 'none'
+#
+# Three Latin Prayers for solo voice or women's unison choir or men's unison choir
+#
+FisoldGS_790:
+  fisold: 507
+#
+# fisoldAA
+#
+FisoldAA_758:
+  fisold: 31
+#
+FisoldAA_629:
+  fisold: 110
+#
+FisoldAA_697:
+  fisold: 6
+#
+FisoldAA_779:
+  fisold: 7
+#
+FisoldAA_781:
+  fisold: 161
+#
+FisoldAA_885:
+  fisold: 'none'
+#
+FisoldAA_887:
+  fisold: 'none'
+#
+FisoldAA_940:
+  fisold: 'none'
+#
+FisoldAA_965:
+  fisold: 'none'
+#
+FisoldAA_1440:
+  fisold: 'none'
+#
+FisoldAA_1454:
+  fisold: 'none'
+#
+FisoldAA_1501:
+  fisold: 'none'
+#
+FisoldAA_1502:
+  fisold: 'none'

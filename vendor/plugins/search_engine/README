@@ -1,0 +1,104 @@
+SearchEngine
+============
+
+Indexed search engine. It works running a re-indexer process (built upon
+the SearchEngine::IndexBuilder::Builder.build method) which  will  build
+an index  for  every  ActiveRecord::Base  object  that  has  defined  an
+allow_search_in [fields] without excluding options.
+
+Pre-requisites
+==============
+
+1) the following migration to be performed on the relevant database:
+
+------------------------------------------------------------------------
+#
+# $Id: README 539 2010-09-05 15:53:58Z nicb $
+#
+class CreateSearchIndexAndFriends < ActiveRecord::Migration
+
+  class <<self
+
+	  def up
+      create_search_indices
+      create_search_index_classes
+      create_search_index_class_references
+	  end
+	
+	  def down
+	    drop_table :search_indices
+	    drop_table :search_index_classes
+	    drop_table :search_index_class_references
+	  end
+
+private
+
+    def create_search_indices
+      common_creator(:search_indices) do |t|
+		    t.string :string, :limit => 16384, :null => false
+		    t.string :field, :limit => 512, :null => false
+		    t.references :record
+        t.string :reference_roots, :limit => 4096, :null => false # marshaled ids in hash format
+      end
+      add_index(:search_indices, :record_id)
+    end
+
+    def create_search_index_classes
+      common_creator(:search_index_classes) do |t|
+		    t.string :class_name, :limit => 512, :null => false
+      end
+    end
+
+    def create_search_index_class_references
+      common_creator(:search_index_class_references, :id => false) do |t|
+        t.references :search_index
+        t.references :search_index_class
+      end
+      add_index(:search_index_class_references, :search_index_id)
+      add_index(:search_index_class_references, :search_index_class_id)
+    end
+
+    def common_creator(table_name, options = {})
+	    ActiveRecord::Base.transaction do
+        create_table(table_name, options) do
+          |t|
+          yield(t)
+        end
+      end
+    end
+
+  end
+
+end
+------------------------------------------------------------------------
+
+2) the FindOptionHelper plugin
+
+Example
+=======
+
+class User < ActiveRecord::Base
+
+    allow_search_in [:first_name, :last_name, :email, :notes]
+
+end
+
+class Customer < User
+
+   # this will be indexed too
+
+end
+
+class VipCustomer < User
+
+    # these will be added to the previous indexed fields
+
+    allow_search_in [:bonus_points, :discount]
+
+end
+
+
+Copyright (c) 2010 Nicola Bernardini, released under the GNU GPL 2 license
+
+====
+$Id: README 539 2010-09-05 15:53:58Z nicb $

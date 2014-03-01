@@ -1,0 +1,114 @@
+How to do a scheme migration:
+
+1)  ruby script/generate migration add_author_name
+
+    the third parameter must be a significant name that indicates  which
+    migration is being done. In  this  example  (picked  up  from  DHH's
+    podcast on migrations), we add an author_name to a blog structure
+
+2)  a db/migrate/nnn_add_author_name.rb file is automatically generated and it
+    contains:
+
+    class AddAuthorName < ActiveRecord::Migration
+      def self.up
+      end
+    
+      def self.down
+      end
+    end
+
+    NOTE: as found in the 'good programming policies' in the Rails wiki, it is
+	a good policy to nest every migration in a single transaction, so that it
+	is completely atomic and it does not zonk your database if it fails. Like
+	this:
+
+  	ActiveRecord::Base.transaction do
+		.... your code here ....
+	end
+
+3)  add/remove a column in the migration methods
+
+    class AddAuthorName < ActiveRecord::Migration
+      def self.up
+	    add_column "posts", "author_name", :string  # <------
+      end
+    
+      def self.down
+	    remove_column "posts", "author_name"        # <-----
+      end
+    end
+
+    These procedures get called by 'rake db:migrate' when stepping up or
+    backtracking on a database change
+
+4)  add a procedure that sets all already present data to a default value
+
+    class AddAuthorName < ActiveRecord::Migration
+      def self.up
+	    add_column "posts", "author_name", :string
+		Post.find(:all).each { |posts| posts.update_attribute :author_name, "Anonymous" } # <-----
+      end
+    
+      def self.down
+	    remove_column "posts", "author_name"
+      end
+    end
+
+5)  when the schema_format is set to :ruby in  the  config/environment.rb
+    file, the schema gets automatically updated with the migration done.
+    Also, it tracks the  version  of  the  schema  (in  the  schema_info
+    table). The number that is prepended to the migration is the version
+    number to migrate to when actually doing a migration. So,  say  that
+    you   have   done   five   db   migrations,   they   are    numbered
+    001_<something>.rb  to  005_<something>.rb,  by  keeping  all  these
+    migrations in the svn repository  all  your  developer  buddies  can
+    migrate  their  database  in  parallel  with  yours  when  you  have
+    performed migrations.
+
+6)  let's add another table to the blog database. Now we have:
+
+    class Post < ActiveRecord::Base
+    	 has_many :comments, :counter_cache => true
+    end
+ 
+    class Comment < ActiveRecord::Base
+      belongs_to :post
+    end
+
+7)  we add another migration:
+
+    ruby script/generate migration add_comment
+
+	which will generate 002_add_comment.rb which will contain
+
+    class AddComments < ActiveRecord::Migration
+      def self.up
+	  	create_table 'comments' do |t|
+			t.column 'body', :text
+			t.column 'post_id', :integer
+		end
+		# we need the next line for the counter_cache
+		# this says: 'look here before trying to access the comments'
+		add_column 'posts', 'comments_count', :integer, :default => 0
+		# and update all existing posts with comments_count = 0
+		Post.update_all "comments_count = 0"
+      end
+    
+      def self.down
+	  	drop_table 'comments'
+		# clean up after ourselves in the posts table
+		remove_column 'posts', 'comments_count'
+      end
+    end
+
+	The schema.rb will be updated to version 2.
+
+8)  If you want to step back, you just write
+
+    rake db:migrate VERSION=1
+
+More info can be found at: 
+[http://garrettsnider.backpackit.com/pub/367902 rails migration cheatsheet]
+
+----
+$Id: MIGRATIONS.HOWTO 124 2008-01-06 16:19:17Z nicb $

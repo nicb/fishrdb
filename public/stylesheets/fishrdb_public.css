@@ -1,0 +1,293 @@
+/*
+ *  $Id: fishrdb_public.css 619 2012-09-23 15:59:12Z nicb $
+ */
+
+div.public_content {
+  /* border: 3px solid red; */
+  position: relative;
+  float: left;
+  height: 88%;
+  width: 100%;
+  left: 0.5em;
+  top: -2%;
+}
+
+div.public_content_inner {
+  /* border: 3px solid green; */
+  display: block;
+  position: absolute;
+  left: 0%;
+  height: 96%;
+  width: 99.9%;
+}
+
+div.menu {
+	/* border:		3px solid #DADAFF; */
+  position:	relative;
+  float:  left;
+	height:		86%;
+	padding:	0px;
+	width:		42%;
+  height:   99.5%;
+}
+
+div.inner_menu {
+  /* border: 3px solid white; */
+	width:		100%;
+  height:   100%;
+	overflow-y:	auto;
+	overflow-x:	hidden;
+  margin-bottom: 0.5em;
+  padding: 0px;
+}
+
+div.content_plus_dashboard {
+  /* border: 3px solid cyan; */
+  position: relative;
+  float:    left;
+  width:    55%;
+  height:   100%;
+  border-top: 0.5px solid gray;
+  border-left: 0.5px solid gray;
+  border-bottom: 0.5px solid gray;
+  border-right: 2px solid blue;
+}
+
+div.content_area {
+  /* border: 3px solid yellow; */
+  display: block;
+  position: relative;
+  float:  left;
+  width: 100%;
+  height: 89.5%;
+  overflow: auto;
+}
+
+span.content_area_title {
+  position: relative;
+  float: left;
+  left: 1em;
+  top: 1em;
+}
+
+div.search_term {
+  position: absolute;
+  top: 10ex;
+  left: 1.5em;
+}
+
+div.series_search_result_list {
+  position: relative;
+  float: left;
+  margin-top: 8ex;
+  left: 1.5em;
+  width: 90%;
+}
+
+ul.search_result_series_list {
+  position: relative;
+  float: left;
+  margin-top: 1ex; 
+  left: 0em;
+  list-style-type: none;
+}
+
+li.search_result_series_list {
+  margin: 3ex 0.5em;
+}
+
+ul.search_result_document_list {
+  list-style-type: none;
+  margin-left: 0em;
+  left: 0em;
+}
+
+/*
+ * footers
+ */
+div.footer {
+  position: relative;
+	left:		  1em;
+	width:		inherit;
+  height:   1em;
+  bottom:   20px;
+}
+
+/*
+ * search tabs
+ */
+
+table.search_dashboard {
+  /* border: 3px solid yellow; */
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+td.search_tab {
+  width: 20%;
+  height: 1.5em;
+  text-align: center;
+  padding-top: 0.33em;
+  vertical-align: middle;
+  border-top: 3px solid blue;
+  border-right: 2px solid blue;
+  border-bottom: 1px solid lightblue;
+  border-left: none;
+}
+
+td.search_tab#selected {
+  border-bottom: none;
+  background: darkBlue;
+}
+
+/*
+ * search forms
+ */
+
+div.generic_search_form {
+  position: absolute;
+  top: 49%;
+  left: 18%;
+}
+
+div.score_search_form {
+  position: absolute;
+  top: 45%;
+  left: 22%;
+}
+
+div.tape_search_form {
+  position: absolute;
+  top: 45%;
+  left: 18%;
+}
+
+div.archive_search_form {
+  position: absolute;
+  top: 25%;
+  left: 22%;
+  height: 60%;
+}
+
+div.archive_search_text_form {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+}
+
+/*
+ * autocomplete settings
+ */
+
+div.auto_complete {
+  color: black;
+}
+
+/*
+ * document record settings
+ */
+
+div.document_record {
+  display: block;
+  margin: 2ex 0.8em;
+}
+
+div.document_record_title {
+  display: block;
+  margin-bottom: 1ex;
+}
+
+div.document_record_breadcrumbs {
+  display: block;
+  margin-top: 1ex;
+  margin-bottom: 1ex;
+}
+
+div.document_record_content {
+  display: block;
+  background-color: #382B56;
+  padding: 0.5ex 0.5em;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 61%;
+  top: 150px;
+  width: 95%;
+  position: absolute;
+}
+
+div.document_record_backlink {
+  display: block;
+  position: absolute;
+  bottom: 0.5ex;
+  left: 2em;
+}
+
+/*
+ * sidebar difs
+ */
+ul.sidebar_top_list {
+  margin: 0em;
+  padding: 0px;
+  list-style-type: none;
+}
+
+ul.sidebar_children_list {
+  margin-left: 1.5em;
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+td.sidebar_list_content {
+  /* border: 1px solid white; */
+  text-align: left;
+  padding: 0px 0px;
+  vertical-align: middle;
+  left: -0.5em;
+  min-width: 18em;
+}
+
+td.sidebar_list_corda {
+  text-align: right;
+  padding: 0px 3px 0px 0px;
+  vertical-align: middle;
+  min-width: 1.5em;
+	font-size: 1.1ex;
+}
+
+td.sidebar_date_content {
+  /* border: 1px solid white; */
+  padding: 0px 0px;
+  vertical-align: middle;
+  min-width: 9em;
+}
+
+span.sidebar_list_marker {
+  display: -moz-stack;
+  /* border: 1px solid white; */
+  width: 5em;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 0px;
+}
+
+table.sidebar_list_table td tr {
+  padding: 0px;
+  margin: 0px;
+  vertical-align: top;
+  width: 100%;
+  border: 1px solid white;
+}
+
+/*
+ * item selection
+ */
+
+li#selected.sidebar_list_item {
+  background-color: #0909e0;
+  font-weight: bold;
+}
+
+a#selected.sidebar_list_content:hover {
+  background-color: #0909e0;
+}

@@ -1,0 +1,13 @@
+<% if flash[:notice] -%>
+  <div class="errorExplanation" >
+    <h2 class="errorExplanation"><%= flash[:notice] %></h2>
+    <% if flash.has_key?(:errors) -%>
+      <ul class="errorExplanation">
+        <% flash[:errors].italian_each do |attr, msg| %>
+          <li><%= attr + ' ' + msg -%></li>
+        <% end %>
+      </ul>
+    <% end -%>
+  </div> <!-- #errorExplanation -->
+<% end -%>
+<!-- $Id: _error_messages.rhtml 482 2010-04-02 23:28:42Z nicb $ -->

@@ -1,0 +1,94 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: |
+      C Copyright by G Scelsi 1962 no duplication
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: "ornella "
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: |
+      A KHOOM (1962)
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: matita nera
+    lines: "(c. 18'/20') "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: |
+      B PRANAM (1972)
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: matita nera
+    lines: "(c.7') "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: |
+      XNOYBIS (1964) soliste Devy Erlih
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: matita nera
+    lines: "violino + orch "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: "19 "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento presumibilmente da\n vinile, in parti separate, di Khoom\n "
+  tag_end: A07
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento di Pranam\n "
+  tag_end: B01
+  tag_start: B01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    riversamento di Xnoybis
+    
+  tag_end: B03
+  tag_start: B02
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "questo nastro fa parte della donazione effettuata dalla Sig.ra Ornella Cogliolo alla Fondazione Scelsi. Il nastro \xC3\xA8 registrato su entrambe le tracce fronte- retro e contiene dei riversamenti compiuti di esecuzioni di brani di GS (Khoom, Pranam, Xnoybis)"
+  tag: NMGS0248-XXX
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2010-03-09
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

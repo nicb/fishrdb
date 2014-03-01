@@ -1,0 +1,31 @@
+<!-- $Id: archive_search_form.rhtml 396 2009-05-04 11:23:32Z nicb $ -->
+<%= render(:partial => 'sidebar_display', :object => @sidebar_root) -%>
+<div class="content_plus_dashboard">
+	<% sel = Hash.new('unselected'); sel['archive'] = 'selected'; -%>
+	<%= render(:partial => 'search_tabs', :object => sel) -%>
+	<div class="content_area">
+	  <div class="archive_search_form">
+	    <center>
+	      <p>Cerca nelle serie seguenti:</p>
+			  <% form_tag(:action => 'archive_search') do -%>
+	        <table class="archive_search_form_checkboxes">
+	          <% n = 0; @series.each do |s| %>
+	            <% if (n % 2) == 0 -%>
+	              <tr>
+	            <% end -%>
+	                <td><%= check_box(:search, 'series_' + s.id.to_s, { :checked => 'checked' }, 'yes', 'no') -%></td>
+	                <td><%= s.name -%></td>
+	            <% if (n % 2) != 0 -%>
+	              </tr>
+	            <% end; n += 1 -%>
+	          <% end -%>
+	        </table>
+	    </center>
+	    <div class="archive_search_text_form">
+	      <%= text_field_with_auto_complete(:search, :term, { :size => 40, :maxsize => 256 }, :skip_style => true) -%>
+			  <%= submit_tag('cerca', :name => 'search') -%>
+	    </div>
+			<% end -%>
+	  </div>
+	</div>
+</div> <!-- content_plus_dashboard -->

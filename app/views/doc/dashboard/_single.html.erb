@@ -1,0 +1,9 @@
+<!-- $Id: _single.html.erb 468 2009-10-17 02:21:36Z nicb $ -->
+<%
+  meth = "allowed_#{kind}_classes"
+  the_class = single.send(meth).is_a?(Array) ?  single.send(meth)[0] : single.send(meth)
+-%>
+<%=
+   link_to_remote(image_tag("fishrdb/#{icon}.png", :border => 0, :alt => label, :title => label),
+     :update => "doc_content", :url => { :action => method , :id => single.id, :position => single.position, :classname => the_class, :page => page })
+-%>

@@ -1,0 +1,119 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: "Quartetto 4o "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "Intero "
+- !ruby/object:Tdp::Box::Display 
+  location: fronte interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato
+      author: GS
+      pen: matita nera
+    lines: |
+      A 332 finale quartetto
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "Y "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "dal 70 trasporti "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro blu
+    lines: "257 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato
+      author: GS
+      pen: matita nera
+    lines: |
+      inizio (235) dal (314) saltare al
+      (322)
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "185 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS
+      pen: matita rossa
+    lines: "Intero N4 "
+- !ruby/object:Tdp::Box::Display 
+  location: retro interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS
+      pen: penna stilografica blu
+    lines: "rosso "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna stilografica blu
+    lines: |
+      prove Miciko Le jour per piano
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS
+      pen: penna stilografica blu
+    lines: "Verde "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "prove canto e pianoforte (con Michiko\n Hirayama)\n "
+  tag_end: A02
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "trasferimento da vinile o lacca di\n improvvisazioni per pianoforte\n "
+  tag_end: A05
+  tag_start: A04
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per ondiole sovrapposte\n "
+  tag_end: B12
+  tag_start: B01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazione per ondiole sovrapposte
+     (sovrapposto con B02-B04)
+    
+  tag_end: A11
+  tag_start: A09
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato su entrambe le tracce fronte- retro. Il nastro \xC3\xA8 stato trovato con la coda rossa in testa e cos\xC3\xAC \xC3\xA8 stato trasferito. Una regione [A08] del nastro sembra essere stata usata per una sovraincisione su due piste. Anzi, le regioni A sembrano essere state registrate e nel verso delle regioni B per poi essere cancellate per una prima parte del nastro. Le regioni B sembrano essere state suonate nel verso di scorrimento giusto (cio\xC3\xA8 quello invertito), ma con la sovrapposizione di un nastro suonato simultaneamente in senso opposto (perch\xC3\xA9 ci sono rumori sia al dritto che al rovescio)\n Frammenti parlati:\n [A07][GS] \"Uno, due, tre, quattro, cinque, sei. Vediamo se va meglio al primo o al secondo buco. Vediamo se va meglio al primo o al secondo buco. [GS] \"Questo \xC3\xA8 la seconda entrata. Vediamo se va meglio in questa o nella prima entrata. Uno due tre quattro cinque sei. Mi pare che va meglio nella prima entrata. Vediamo un po'"
+  tag: NMGS0252-154
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2010-03-22
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

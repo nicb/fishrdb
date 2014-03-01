@@ -1,0 +1,25 @@
+<!-- $Id: report.rhtml 329 2009-03-12 23:27:58Z nicb $ -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    	<title>Archivio Fondazione Isabella Scelsi -- Report</title>
+      <%= stylesheet_link_tag 'fishrdb_report' -%>
+	    <%= javascript_include_tag "prototype", "effects" -%>
+		<!-- compliance patch for microsoft browsers -->
+		<!--[if lt IE 7]>
+        	<%= javascript_include_tag "ie7/ie7-standard-p" -%>
+		<![endif]-->
+	</head>
+  <body>
+  <%= render(:partial => 'share/common_header') -%>
+
+  <div class="content">
+    <%= yield  -%>
+  </div>
+
+  <br /><br />
+
+  <%# render(:partial => 'share/backoffice_footer') -%>
+</body>
+</html>

@@ -1,0 +1,97 @@
+#!/usr/bin/env ruby
+
+# load the rails environment
+require File.join(File.dirname(__FILE__),"..","config", "environment")
+
+puts "Loading config [#{File.expand_path(File.join(RAILS_ROOT,"config","search.yml"))}]"
+SEARCH_CONFIG = YAML.load(File.open(File.join(RAILS_ROOT,"config","search.yml")))
+
+#-----------------------------------------------------------------------
+# define how to build a index using SimpleSearch
+#-----------------------------------------------------------------------
+def simple_index
+    require_gem "SimpleSearch"
+
+    #-----------------------------------------------------------------------
+    # the container for all the contents to be indexed
+    #-----------------------------------------------------------------------
+    contents = Search::Simple::Contents.new
+
+    #-----------------------------------------------------------------------
+    # the current time is used to invalidate the Searcher's cache so it will
+    # force an indexing
+    #-----------------------------------------------------------------------
+    ts = Time.now
+
+    #-----------------------------------------------------------------------
+    # iterate over all the files in the models directory looking for those
+    # Models that are descendants of ActiveRecord
+    #-----------------------------------------------------------------------
+    puts "Searching for Models..."
+    Dir.glob(File.join(RAILS_ROOT,"app","models","*.rb")).each do |rbfile|
+
+        bname = File.basename(rbfile,'.rb')
+        classname = Inflector.camelize(bname)
+        classvar = eval(classname)
+        
+        if classvar.respond_to?(:descends_from_active_record?) and
+            classvar.descends_from_active_record? then
+            puts "\tFound #{classname} "
+
+        
+            #---------------------------------------------------------------
+            # if the class that is a dscendant from ActiveRecord also has
+            # the special method :searchable_fields then those fields are
+            # considered searchable
+            #---------------------------------------------------------------
+            if classvar.respond_to?(:searchable_fields) then
+
+                if not classvar.searchable_fields.nil?
+
+                    cnames = classvar.searchable_fields.collect {|c| c.to_s}
+                    puts "\t\t- searching columns #{cnames.join(",")}"
+                    indexed_records = 0
+
+                    #-----------------------------------------------------------
+                    # now we interate over all the records of the particular
+                    # type and record all the information for indexing.  
+                    #-----------------------------------------------------------
+                    classvar.find_all.each do |ar|
+                        record_id = "#{classname}.#{ar.send(classvar.primary_key)}"
+                        indexed_records = indexed_records + 1
+
+                        classvar.searchable_fields.each do |column|
+                            column_id = "#{record_id}.#{column.to_s}"
+                            data = ar.send(column)
+
+                            # only index non-nil content
+                            if not data.nil? then
+                                contents << Search::Simple::Content.new(ar.send(column).to_s, column_id, ts)
+                            end
+                        end
+                    end
+
+                    puts "\t\t- indexed #{indexed_records} records"
+                else
+                    puts "\t\t- no make_searchable fields"
+                end 
+
+            else
+                puts "\t\t- class is not searchable"
+            end
+        end
+    end
+
+    #-----------------------------------------------------------------------
+    # this is where the actual indexing is done.  There previous sections of
+    # code just collected the data to do the indexing.  
+    #-----------------------------------------------------------------------
+    index_file = File.join(RAILS_ROOT,SEARCH_CONFIG['simple_backend']['index_filename'])
+    puts "creating index file #{File.expand_path(index_file)}"
+    s = Search::Simple::Searcher.load(contents,index_file)
+end
+
+case SEARCH_CONFIG['search_backend']
+when 'simple'
+    simple_index
+end

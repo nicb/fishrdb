@@ -1,0 +1,7 @@
+<div class="record_name" id="<%= subkey + '_' + association + '_' + index -%>">
+  <%= render(:partial => single, :object => name_single_template, :locals => { :subkey => subkey, :association => association, :index => index, :unitag => unitag }) -%>
+  <%= hidden_field 'doc[' + subkey + '][' + association + '_' + index + ']', 'creator_id', :size => 8, :maxsize => 256, :value => creator_id -%>
+  <%= hidden_field 'doc[' + subkey + '][' + association + '_' + index + ']', 'last_modifier_id', :size => 8, :maxsize => 256, :value => last_modifier_id -%>
+  <%= link_to_function("rimuovi", "if (confirm('Vuoi davvero rimuovere questo elemento?')) Element.remove('#{subkey}_#{association}_#{index}')") %>
+</div>
+<!-- $Id: _name_single_template.html.erb 462 2009-10-12 01:07:40Z nicb $ -->

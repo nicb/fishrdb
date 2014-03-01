@@ -1,0 +1,28 @@
+<!-- $Id: _user.rhtml 13 2007-10-07 03:04:30Z nicb $ -->
+<tr>
+	<% user_tag = 'user[' + user.id.to_s + ']' -%>
+	<td>
+		<% if !last_administrator?(user) && !anonymous_user?(user) -%>	
+			<%= check_box user_tag, 'delete', :value => 0 -%>
+		<% end -%>	
+	</td>
+	<td>
+		<%= user.login %>
+	</td>
+	<td>
+		<%= user.name %>
+	</td>
+	<td>
+		<%= mail_to(user.email, user.email, :subject => "[FisHRDB]", :encode => "javascript") %>
+	</td>
+	<td>
+		<% if last_administrator?(user) || anonymous_user?(user) -%>
+			<%= user.user_type %>
+		<% else -%>
+			<%=
+				@types = User.columns_hash['user_type'].values
+				select(user_tag, 'user_type', @types, :selected => user.user_type)
+			%>
+		<% end -%>
+	</td>
+</tr>

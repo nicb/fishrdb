@@ -1,0 +1,201 @@
+/*
+ * $Id: tbp.racc 494 2010-05-02 03:39:44Z nicb $
+ */
+
+class Tdp::Tape::BoxParser
+
+    prechigh
+        left COMMA COLON RPAR RSQ DASH RBRACE QUESTION_MARK EQ
+        right LPAR LSQ LBRACE
+    preclow
+        token SESSION_HEADER DATE LOCATION TRANSFERRER ANYWORD
+        token TAPE_TAG WHITE_SPACE PUNCTUATION ID_TAG EMPTY_LINE EOL
+        token TAPE_CONTENT_HEADER TAPE_SEGMENT
+        token COMMA COLON RPAR RSQ DASH LPAR LSQ DOLLAR LBRACE RBRACE
+        token TAPE_BOX_HEADER NO_DISPLAYS DISPLAY_TERM_SEPARATOR
+        token CALLIGRAPHY QUESTION_MARKS DISPLAY_LOCATION AUTHOR_INITIALS
+
+rule
+    box
+      : TAPE_BOX_HEADER EOL display
+      {
+        tape.box = val[2]
+        result = tape
+      }
+
+    display
+        : display empty_lines DISPLAY_TERM_SEPARATOR empty_lines display_term
+        {
+            d = val[0].last
+            d.notes << val[4]
+            result = val[0]
+        } 
+        | display empty_lines DISPLAY_TERM_SEPARATOR full_term
+        {
+            val[0] << val[3]
+            result = val[0]
+        }
+        | display full_term
+        {
+            val[0] << val[1]
+            result = val[0]
+        }
+        | display empty_lines
+        | empty_lines NO_DISPLAYS empty_lines                 { result = [] }
+        | full_term
+        {
+            result = [ val[0] ]
+        }
+
+    full_term
+        : DISPLAY_LOCATION empty_lines display_term
+        {
+            d = Tdp::Box::Display.new(val[0].sub(/\A(@==@)+\s+\(/,'').sub(/\)@@\Z/,''))
+            d.notes << val[2]
+            result = d
+        }
+
+    display_term
+        : display_term WHITE_SPACE filled_line EOL
+        { 
+            n = val[0]
+            n.lines = val[1..3].join.sub(/\A /, '')
+            result = n
+        }
+        | filled_line LPAR calligraphy EOL            
+        {
+            n = Tdp::Box::Note.new
+            n.lines = val[0].sub(/\A /, '')
+            n.calligraphy = val[2]
+            result = n
+        }
+
+    calligraphy
+        : pen COMMA WHITE_SPACE additional_info_words COMMA WHITE_SPACE author
+        {
+            result = Tdp::Tape::CalligraphyDescription.new(val[0], val[6], val[3])
+        }
+        | pen COMMA WHITE_SPACE author  { result = Tdp::Tape::CalligraphyDescription.new(val[0], val[3]) }
+
+    pen
+        : calligraphy_words
+
+    author
+        : CALLIGRAPHY WHITE_SPACE author_initials           { result = val[2] }
+
+    author_initials
+        : AUTHOR_INITIALS
+        | QUESTION_MARKS RPAR
+
+    calligraphy_words
+        : calligraphy_words WHITE_SPACE calligraphy_word     { result = val.join }
+        | calligraphy_words calligraphy_word                 { result = val.join }
+        | calligraphy_word
+
+    calligraphy_word
+        : ANYWORD
+        | QUESTION_MARKS
+
+    additional_info_words
+        : additional_info_words WHITE_SPACE additional_info_word     { result = val.join }
+        | additional_info_words additional_info_word                 { result = val.join }
+        | additional_info_word
+
+    additional_info_word
+        : ANYWORD
+        | LBRACE
+        | RBRACE
+        | punctuation
+
+    filled_line
+        : filled_line word                                  { result = val.join }
+        | word
+
+    word
+        : ANYWORD 
+        | punctuation
+        | WHITE_SPACE
+        | QUESTION_MARKS
+        | AUTHOR_INITIALS
+
+    punctuation
+        : punctuation PUNCTUATION                           { result = val.join }
+        | PUNCTUATION
+        | COMMA /* commas are sometime significant, sometimes not */
+        | COLON /* colons are sometime significant, sometimes not */
+        | DASH  /* dashes are sometime significant, sometimes not */
+        | LSQ   /* left sq par are sometime significant, sometimes not */
+        | RSQ   /* right sq par are sometime significant, sometimes not */
+        | LPAR
+        | RPAR
+        | QUESTION_MARK
+        | EQ
+
+    empty_lines
+        : empty_lines EMPTY_LINE                            { result = val.join }
+        | EMPTY_LINE
+
+end
+
+---- header
+#
+# $Id: tbp.racc 494 2010-05-02 03:39:44Z nicb $
+#
+
+require File.dirname(__FILE__) + '/../tape'
+
+require 'yaml'
+
+class DescriptionTapeParseError < StandardError
+end
+
+---- inner
+
+  attr_accessor :line, :yydebug, :tape
+
+  require 'lexer'
+
+  include Tdp::Tape::Lexer
+
+  def initialize(tape, debug = false)
+    @line = 1
+    @yydebug = debug
+    @tape = tape
+  end
+
+  def parse(one_line)
+    begin
+        result = tbp_lexer(one_line, :bump_line, yydebug) { do_parse }
+    rescue ParseError
+        raise ParseError.new("Box Description failed at line #{line}: #{$!}")
+    end
+    return result
+  end
+
+  def next_token
+    @q.shift
+  end
+
+  def bump_line(inc = 1)
+    self.line += inc
+  end
+
+  def dump
+    fh = File.open(tape.filename, 'w') do
+        |out|
+        YAML.dump(tape, out)
+    end
+  end
+
+---- footer
+#
+# test code - to be commented out in production
+#
+#
+# require '../tape'
+# tape = Tdp::Tape::Item.new
+# tbp = Tdp::Tape::BoxParser.new(tape, true)
+# fh = File.open(ARGV[0], 'r')
+# one_line = fh.gets
+# tape = tbp.parse(one_line)
+# $stderr.puts("tape: #{tape.inspect}")

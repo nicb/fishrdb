@@ -1,0 +1,15 @@
+#
+# $Id: ensembles.yml 462 2009-10-12 01:07:40Z nicb $
+#
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+#
+wallonie:
+  name: Orchestre Royal de Chambre de Wallonie
+  conductor: dessy
+  creator: staffbob
+  last_modifier: staffbob
+
+modern:
+  name: 'Ensemble Modern'
+  creator: staffbob
+  last_modifier: staffbob

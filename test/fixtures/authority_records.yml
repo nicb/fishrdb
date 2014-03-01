@@ -1,0 +1,87 @@
+#
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+#
+# $Id: authority_records.yml 617 2012-07-15 16:30:06Z nicb $
+#
+
+one:
+   name:               Torino
+   type:               SiteName
+   creator_id:         staffbob
+   last_modifier_id:   staffbob
+
+two:
+   name:               Scelsi
+   first_name:         Giacinto
+   type:               PersonName
+   pseudonym:          Elmer
+   creator_id:         staffbob
+   last_modifier_id:   staffbob
+
+three:
+   name:               Khoom
+   type:               ScoreTitle
+   creator_id:         staffbob
+   last_modifier_id:   staffbob
+
+four:
+   name:               Ministero delle Finanze
+   type:               CollectiveName
+   creator_id:         staffbob
+   last_modifier_id:   staffbob
+
+five:
+    name:               Bela Turìn!
+    type:               SiteNameVariant
+    accepted_form:      one
+    creator_id:         staffbob
+    last_modifier_id:   staffbob
+
+six:
+    name:               "D'Ajala Valva"
+    first_name:         Giacinzio
+    pseudonym:          Jack
+    type:               PersonNameVariant
+    accepted_form:      two
+    creator_id:         staffbob
+    last_modifier_id:   staffbob
+
+seven:
+    name:               Cummme!
+    type:               ScoreTitleVariant
+    accepted_form:      three
+    creator_id:         staffbob
+    last_modifier_id:   staffbob
+
+eight:
+    name:               Ministero della Finanza Facista
+    type:               CollectiveNameVariant
+    accepted_form:      four
+    creator_id:         staffbob
+    last_modifier_id:   staffbob
+    date_start:         13-01-1919
+    date_end:           13-01-1943
+
+#
+# this last one should never be connected to any document through the
+# ard_references.yml fixtures. It is tested exactly for the characteristic of
+# being unconnected
+#
+unconnected:
+   name:               Unconnected
+   first_name:         Guy
+   type:               PersonName
+   pseudonym:          Giggi
+   creator_id:         staffbob
+   last_modifier_id:   staffbob
+
+#
+# this one has a funky character set that breaks indexing :(
+#
+funny_collation:
+   name:               Gurdjieff
+   first_name:         "Georges Ivanovič "
+   type:               PersonName
+   pseudonym:          Juju
+   creator_id:         staffbob
+   last_modifier_id:   staffbob

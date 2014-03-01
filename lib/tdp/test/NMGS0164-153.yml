@@ -1,0 +1,155 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: etichette su fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: FMU?)
+      pen: pennarello rosso
+    lines: "1 hrs "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: FMU?)
+      pen: pennarello rosso
+    lines: "3.75 ONDIOLA:SIDE I "
+- !ruby/object:Tdp::Box::Display 
+  location: fronte interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: |
+      - penult. 208 - ultimo 231
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: "N1 Nuovi 4 pezzi (101) A "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita blu
+    lines: |
+      piu` niente solo battaglia
+
+- !ruby/object:Tdp::Box::Display 
+  location: foglio aggiuntivo faccia 1
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita rossa
+    lines: "segni rossi = risentire "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: "A velocit\xC3\xA0 piccola "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: + in rosso
+      author: GS)
+      pen: matita nera
+    lines: "1 | credo fatti\n\
+      2\n\
+      + 3 acuto buono\n\
+      4 sentire anche a velocit\xC3\xA0 doppia\n\
+      mi sembra buono anche per strumento solo\n\
+      + 5 buono (potrebbe andare col 3 forse\n\
+      + 6 buono parte con tagli\n\
+      7 buono per archi vla o cello\n\
+      8 prima parte buona con tagli\n\
+      9\n\
+      | fatti\n\
+      10\n\
+      11 possibile risentire\n\
+      + 12 possibile\n\
+      13 possibile\n\
+      14 inizio meno buono 2da+ parte movimentata\n\
+      forse prendere in parte buona\n\
+      + 15 abbastanza buono in parte\n\
+      + 16 buono con tagli o aggiungendo\n\
+      il finale movimentato del 14 o del 6B\n\
+      + 17\n\
+      + 18\n\
+      - 19 corno buono mi sembra\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: "B velocit\xC3\xA0 piccola "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: "1+ buono con piccoli tagli 2 sentire (forse inizio [Pfhat?]) ? \n\
+      3 trombone o corno sentire\n\
+      | + pu\xC3\xB2 essere introduzione o parte\n\
+      4 orchestrale che segue\n\
+      sentire forse possibile\n\
+      5+ buono con tagli\n\
+      6+ lungo sono quasi due pezzi\n\
+      + il finale potrebbe essere aggiunto\n\
+      ad un altro mi sembra buono\n\
+      forse con taglio\n\
+      7 corno inglese risentire\n\
+      8 buono ma difficile forse archi ma?\n\
+      9+ tromba bassa trombone corno buono\n\
+      10 buono simile ad un altro\n\
+      11+ buono con tagli altamente frammentario\n\
+      12+ acuto forse possibile e buono risentire\n\
+      13+ buono anche per [????]\n\
+      14+ corno buono con molti tagli\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: |
+      15 monotono +16 con tagli
+      17 qualche parte buona interrotto
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Riversamenti() di improvvisazioni per ondiola\n "
+  tag_end: A16
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Riversamenti() di improvvisazioni per ondiola\n "
+  tag_end: B05
+  tag_start: B01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Riversamenti() di improvvisazioni per ondiola\n "
+  tag_end: B10
+  tag_start: B07
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Riversamento di una registrazione sottostante\n "
+  tag_end: B11
+  tag_start: B11
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    Riversamenti() di improvvisazioni per ondiola
+    
+  tag_end: B18
+  tag_start: B12
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " il nastro \xC3\xA8 registrato sulle due tracce fronte-retro.\n La scatola del nastro conteneva un foglio aggiuntivo (in pessimo stato\n di conservazione) con numerose indicazioni (riportate qui) All'inizio\n di [A08] si sente il classico 'ting' del Revox G36.\n\n"
+  tag: NMGS0164-153
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2008-05-13
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

@@ -1,0 +1,126 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna biro nera
+    lines: "SCELSI "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cerchiato
+      author: GS
+      pen: matita nera
+    lines: "A 8 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato
+      author: GS
+      pen: penna biro blu
+    lines: "Merton sonata per Vl Grundig "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: "Traccia internazionale copia nastro 7 L'art et Satan velocit\xC3\xA0 9,5 cm/s\n\
+      sinistra a destra\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      destra a sinistra traccia Grundig
+      da sinistra a destra
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato
+      author: GS
+      pen: penna biro blu
+    lines: "L'art et Satan (internazionale) "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: "1/2 banda l'altra disponibile "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro blu
+    lines: "destra a sinistra "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "frammento di musica leggera\n "
+  tag_end: A01
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "prove di registrazione, parla GS\n "
+  tag_end: A02
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "frammento di musica leggera\n "
+  tag_end: A04
+  tag_start: A03
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "prove di registrazione, parla GS\n "
+  tag_end: A05
+  tag_start: A05
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "frammento di musica leggera\n "
+  tag_end: A07
+  tag_start: A06
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "prove di registrazione, parla GS\n "
+  tag_end: A10
+  tag_start: A08
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "saggio \"L'Art et Satan\", detto da GS\n e da una voce femminile\n "
+  tag_end: A13
+  tag_start: A11
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "dialoghi tra GS e altre persone, tra le\n quali una voce femminile con forte\n accento parmigiano\n "
+  tag_end: A14
+  tag_start: A14
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "trasferimenti da vinile di brani per\n pianoforte dodecafonici (l'inizio\n \xC3\xA8 vagamente reminescente\n dell'opera 25 di Arnold\n Schoenberg)\n "
+  tag_end: B04
+  tag_start: B01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "prove di brano per violino e pianoforte\n "
+  tag_end: B06
+  tag_start: B05
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "dialoghi durante le prove\n "
+  tag_end: B07
+  tag_start: B07
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "prove ed esecuzione di brano per\n violino e pianoforte, presumibilmente in\n casa ma con un piccolo pubblico che\n applaude alla fine\n "
+  tag_end: B10
+  tag_start: B08
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "esecuzione di brano per violino,\n presumibilmente in casa ma con un\n piccolo pubblico che\n "
+  tag_end: B11
+  tag_start: B11
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    esecuzione di brani per pianoforte,
+     presumibilmente in casa ma con un
+     piccolo pubblico che
+    
+  tag_end: B13
+  tag_start: B12
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 stato trovato disposto in coda. E` registrato su entrambe le tracce nello stesso verso di scorrimento. Sulla traccia A, ci sono dettagliate verifiche di registrazione di parlato, ed infine la lettura del saggio \"L'Art et Satan\" eseguita dallo stesso GS e da una voce femminile non meglio identificata (presumibilmente non madrelingua francese, ma con ottima propriet\xC3\xA0 di linguaggio) Sulla traccia B vi sono invece improvvisazioni per pianoforte, quindi le due tracce non sono correlate in alcun modo."
+  tag: NMGS0233-656
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2009-10-16
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola

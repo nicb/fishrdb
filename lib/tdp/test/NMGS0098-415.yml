@@ -1,0 +1,70 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita
+    lines: |
+      Nota 1a sulla musica
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cerchiato
+      author: GS
+      pen: matita
+    lines: "N3 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita
+    lines: |
+      Nota 2 1 chiaccheroni
+
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna nera
+    lines: |
+      Note Introduzione
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS
+      pen: matita
+    lines: "al verso "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita
+    lines: "verso i chiaccheroni "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "saggio recitato da GS\n "
+  tag_end: A45
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    saggio recitato da GS
+    
+  tag_end: B29
+  tag_start: B01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato su una traccia sola e contiene una sorta di \"manifesto artistico\" spiegato a parole dal Maestro. Il nastro contiene alcuni rumori ancillari tipici del registratore Revox G36 (ting) La spiegazione inizia [A02] con la storia zen del pittore cinese che aspetta dieci anni prima di fare il quadro pi\xC3\xB9 bello della cina per l'imperatore - quadro che esegue poi in cinque minuti. Da questo poi il Maestro passa alle considerazioni che lo legano alla creazione della sua musica - in mezzo a [A03] - diventando quindi un vero e proprio \"manifesto artistico\" Il Maestro si definisce \"un piccolo intermediario\" e dice che gli intermediari si sono sempre stati derisi e lapidati dalla societ\xC3\xA0 perch\xC3\xA9 non si sono mai sentiti proprietari di ci\xC3\xB2 che hanno prodotto. Sostiene di non volerne n\xC3\xA9 agli amici n\xC3\xA9 ai nemici per queste derisioni e lapidazioni, perch\xC3\xA9 \xC3\xA8 naturale che non possano capire ci\xC3\xB2 che nessun capire. [A13] \"E perch\xC3\xA9, tu di questo non dici? Perch\xC3\xA9 ti limiti a raccontare i fattarelli e non ci\xC3\xB2 che sai? Perch\xC3\xA9 non parli? Perch\xC3\xA9 non dici ci\xC3\xB2 che non sai? Tu lo sai, perch\xC3\xA9 non lo dici? Una sequenza di brevi frammenti fatti di queste domande. In un terzo troncone [A18] riprende la spiegazione che era gi\xC3\xA0 stata fatta in [A03], variando leggermente la spiegazione. In questa spiegazione parla di Chopin e cita anche la memoria formidabile di Mozart, ritenendosi scettico riguardo alla possibilit\xC3\xA0 di trascrivere \"a memoria\" un'ispirazione immediata. In questo troncone torna indietro sul gi\xC3\xA0 registrato per ridire le cose. Un quarto troncone [A30] comincia con \"Essa mi port\xC3\xB2 in uno di quei salotti letterari. e parla delle sue esperienze francesi. Racconta del salotto della contessa de Rochefoucalt. Racconta di un fatto di cui si \"vergogna ancora adesso\" - in una riunione di scrittori francesi molto sussiegosi nei suoi confronti. Rispose male ad un famoso scrittore che gli aveva chiesto \"Vous interessez-vous \xC3\xA0 la litterature? in maniera cos\xC3\xAC casuale e voltando poi subito le spalle lui rispose \"Oui monsieur, \xC3\xA0 la chinoise\" [A32] inizia con \"A Lausanne c'era anche un pianista, un buon pianista, La[], che per\xC3\xB2 aveva dei complessi e si portava dietro un suo amico ipnotizzatore che doveva essere in sala ovunque suonava\" Parla di \"storielle che circolavano a Losanna\" Parla della pittrice \"S\xC3\xA9raphine\" Parla di Jacques Mazouit[] [B02] \"Forse qualcuno vorrebbe che parlassi del fascismo, di Mussolini. Non posso proprio farlo. Tutte le ideologie mi sembrano ridicole\" Racconta di aver incontrato Mussolini una volta a tavola nel '22. Racconta di aver incontrato anche alcune volte Ciano e Edda Mussolini. [B08] \"Che cos'\xC3\xA8 la musica per me. Sostiene che la definizione di quello che \xC3\xA8 musica e di quello che non \xC3\xA8 musica \"non c'\xC3\xA8\" Parla del concetto di \"giustezza\" [B26] \"O tre chiaccheroni, con me sono, ovunque sono. Talvolta mi aiutano. I \"chiaccheroni\" chiedono al Maestro di raccontare i suoi sogni perch\xC3\xA9 \"sono indiscreti\" Ci sono numerosi punti nei quali il Maestro interrompe la registrazione e torna leggermente indietro. In quei punti si sentono due voci, ma che sono solo il risultato del piccolo frammento che non \xC3\xA8 passato dalla testina di cancellazione e che viene ri-registrato.\n Frammenti parlati:\n [B04][GS] \"E ti \xC3\xA8 rimasta una certa facilit\xC3\xA0 di mano. [B05][GS] \"Vi furono molti altri sogni tuoi, dei quali non ti diciamo niente! Ne avrai l'eco pi\xC3\xB9 tardi. [B06][GS] \"Grazie Chiacchieroni! Questa volta non siete stati troppo impertinenti, malgrado. E ora? (pausa lunga) Non ti preoccupare, racconta della tua musica, dei tuoi dottori."
+  tag: NMGS0098-415
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2006-11-03
+  location: Studio Schiavoni
+  transferrers: 
+  - Bernardini, Nicola
+  - Schiavoni, Piero

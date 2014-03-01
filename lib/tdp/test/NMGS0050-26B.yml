@@ -1,0 +1,31 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cerchiato
+      author: GS
+      pen: penna biro blu
+    lines: "15 "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola\n "
+  tag_end: A05
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazioni per ondiola
+    
+  tag_end: B08
+  tag_start: B01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro era sprovvisto di code: sono state quindi applicate code gialle ad entrambe le estremit\xC3\xA0. Durante la misurazione della lunghezza (quindi *prima* del riversamento), il nastro si \xC3\xA8 spezzato ca. 5\" dopo l'inizio (dove c'era gi\xC3\xA0 suono) E` stato conseguentemente riparato e la riparazione \xC3\xA8 documentata fotograficamente. Il nastro \xC3\xA8 stato registrato su due traccie fronte retro e contiene due improvvisazioni per ondiola. All'inizio della sezione [B04] si sentono dei rumori intriganti (come se il Maestro canticchiasse) e altri suoni di contesto potenzialmente interessanti (passaggi di automobili, persone che parlano nella stanza accanto, ecc.)"
+  tag: NMGS0050-26B
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2006-07-11
+  location: Studio Schiavoni
+  transferrers: 
+  - Bernardini, Nicola
+  - Schiavoni, Piero

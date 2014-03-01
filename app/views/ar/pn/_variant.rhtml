@@ -1,0 +1,13 @@
+<!-- $Id: _variant.rhtml 196 2008-04-14 23:25:53Z nicb $ -->
+<% form_tag(:action => :add_variant_form, :id => variant.id) do -%>
+  Cognome: <%= text_field 'authority_record', 'name', :size => 20, :maxsize => 256 -%>
+  Nome: <%= text_field 'authority_record', 'first_name', :size => 10, :maxsize => 256 -%>
+	<div class="form_buttons">
+    <%= 
+        submit_tag('aggiungi', :name => 'commit')
+    -%>
+    <%= 
+        submit_tag('cancella', :name => 'commit')
+    -%>
+	</div> <!-- form_buttons -->
+<% end -%>

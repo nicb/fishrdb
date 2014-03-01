@@ -1,0 +1,16 @@
+<!-- $Id: _sidebar.rhtml 214 2008-05-11 21:47:15Z nicb $ -->
+<div class="sidebar" id="sidebar">
+  <div class="menu" id="menu">
+    <div class="inner_menu" id="inner_menu">
+      <ul>
+        <li><%= link_to('Nomi di Persone', :controller => 'ar', :action => 'show_person_names') -%></li>
+        <li><%= link_to('Enti', :controller => 'ar', :action => 'show_collective_names') -%>
+            (<%= link_to('Denominazioni Equivalenti', :controller => :cneq, :action => 'show_set') -%>)
+        </li>
+        <li><%= link_to('Luoghi', :controller => 'ar', :action => 'show_site_names') -%></li>
+        <li><%= link_to('Titoli', :controller => 'ar', :action => 'show_score_titles') -%></li>
+      </ul>
+      <br />
+    </div>
+  </div>
+</div>

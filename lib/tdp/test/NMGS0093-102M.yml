@@ -1,0 +1,75 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: "inciso da sinistra a destra "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato-sbarrato
+      author: GS
+      pen: penna blu
+    lines: "fatto "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: |
+      Tre studi picoli
+      (fatto)
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      elettronica e 2 improvv. moderne
+
+- !ruby/object:Tdp::Box::Display 
+  location: flangia fronte
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      2 improvv. moderne
+      ----------
+      elettronica
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per pianoforte\n "
+  tag_end: A05
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per pianoforte\n "
+  tag_end: B02
+  tag_start: B02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento di musica elettronica non identificata (forse Maderna\n alternato con Pousseur?)\n "
+  tag_end: B06
+  tag_start: B03
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazioni per pianoforte
+    
+  tag_end: B13
+  tag_start: B08
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato due tracce fronte-retro. Il nastro ha una giuntura recente (presumibilmente di Frances-Marie Uitti) in [A02 Splice1 1'31\" ca.] La giuntura non interrompe la continuit\xC3\xA0 ed \xC3\xA8 quindi da considerare di riparazione. Da [B03, 16'50\"] si possono anche udire due voci che discutono sotto la musica. Si capisce che parlano in francese, ed che una delle due voci \xC3\xA8 quella del Maestro. Ci\xC3\xB2 che dicono non \xC3\xA8 discernibile, salvo i seguenti\n Frammenti parlati:\n [B03][] \" des permutations. [B04][GS] \" un peu plus fort peut-\xC3\xAAtre\" [] \"non non c'est pianissimo\" [GS] \"ah c'est pianissimo\" [GS] \"juste un peu plus. [B06][] \"vous entendez bien? [] \"c'est Maderna\" [GS] \"Alors \xC3\xA7a je trouve qu'on peut faire \xC3\xA7a exactement avec des instruments indochinois, de la russie [] et toutes ces choses-l\xC3\xA0 egalment\" [] \"ah pas tout \xC3\xA0 fait quand-m\xC3\xAAme\" [] \"moi j'ai voulu essayer une pens\xC3\xA9e purement, enfin, \xC3\xA9l\xC3\xA9ctronique\""
+  tag: NMGS0093-102M
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2006-10-17
+  location: Studio Schiavoni
+  transferrers: 
+  - Bernardini, Nicola
+  - Schiavoni, Piero

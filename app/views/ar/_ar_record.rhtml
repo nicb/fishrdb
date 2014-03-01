@@ -1,0 +1,22 @@
+<!-- $Id: _ar_record.rhtml 208 2008-05-01 16:54:22Z nicb $ -->
+<% 
+  nd = ar_record.documents.size
+  nds = case nd
+	         when 0 then 'nessun documento'
+	         when 1 then "#{nd} documento"
+	         else
+	           "#{nd} documenti"
+	       end
+  eq = ar_record.variants.size
+  eqs = case eq
+         when 0 then ''
+         when 1 then ", #{eq} #{ar_record.class.variant_form_term.downcase}"
+         else
+           ", #{eq} #{ar_record.class.variant_form_terms.downcase}"
+         end
+-%>
+<li>
+  <%=
+    link_to(ar_record.display, :action => 'show', :id => ar_record.read_attribute('id'))
+  -%> (<%= nds -%><%= eqs -%>)
+</li>

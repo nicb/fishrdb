@@ -1,0 +1,31 @@
+<!-- $Id: login.rhtml 160 2008-02-05 18:46:35Z nicb $ -->
+<div title="Account login" id="loginform" class="form" style="position:absolute; top:50px;">
+<% form_tag(:action => "login") { %>
+
+    <h3>Login</h3>
+    
+    <% if @message %>
+      <div id="message"><%= @message -%></div>
+    <% end %>
+
+    <label for="user_login">Login:</label><br/>
+	<%= text_field('user', 'login', :size => 30, :maxsize => 40) %>
+	
+	<br/>
+    <label for="user_password">Password:</label><br/>
+	<%= password_field('user', 'password', :size => 30, :maxsize => 41) %>
+
+    <br/>
+	<%= submit_tag('Login &#187;', :class => "primary") %>
+<% } %>
+<br><br>
+<% form_tag(:action => "login") { %>
+	<%= hidden_field('user', 'login', :value => 'anonymous') %>
+	<%=
+		hidden_field('user', 'password', :value => '12345'); # two spaces
+	%>
+    <%= submit_tag('Ingresso Pubblico &#187;', :disabled => true) %>
+<% } %>
+<br><br>
+<%= link_to_if(false, 'Nuovo Login? &#187;', :action => :signup) %>
+</div>

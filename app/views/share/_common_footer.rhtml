@@ -1,0 +1,11 @@
+<!-- $Id: _common_footer.rhtml 563 2010-11-27 22:22:46Z nicb $ -->
+<%= link_to('Fondazione Isabella Scelsi', "http://www.scelsi.it", { :class => 'footerelement' }) -%>  
+<%=
+  link_to(image_tag('fishrdb/FisHRDB_logo.png', :alt => 'FisHRDB',
+                    :size => '63x11', :border => 0),
+                    "http://trac.sme-ccppd.org/fishrdb")
+-%>  
+<%= link_to("r#{svn_revision} (#{DocController.rails_environment})", "http://trac.sme-ccppd.org/fishrdb/changeset/#{svn_revision}", { :class => 'footerelement' }) -%>  
+<%= link_to('Crediti', url_for(:controller => :pview, :action => :credits)) -%>
+<%= link_to(' - 2008-2011 - ', "http://trac.sme-ccppd.org/fishrdb", { :class => 'footerelement' }) -%>  
+<%= link_to('GNU/GPL 2.0', 'http://www.gnu.org/licenses/old-licenses/gpl-2.0.html', { :class => 'footerelement' }) -%>  

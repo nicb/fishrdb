@@ -1,0 +1,33 @@
+<!-- $Id: doc.rhtml 395 2009-05-04 09:44:16Z nicb $ -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   	<title>Archivio Fondazione Isabella Scelsi</title>
+  	<%= stylesheet_link_tag 'fishrdb_common', 'fishrdb_backoffice' %>
+	  <%= javascript_include_tag :defaults %>
+		<!-- compliance patch for microsoft browsers -->
+		<!--[if lt IE 7]>
+   	  <%= javascript_include_tag "ie7/ie7-standard-p" %>
+		<![endif]-->
+	  <%= javascript_include_tag 'fishrdb' %>
+	</head>
+  <body onload="menuScrollToActiveItem(); return false;">
+  <div class="page">
+    <%= render(:partial => 'share/common_header') %>
+    <%=
+        render(:partial => 'share/backoffice_dashboard',
+               :locals => { :ardblink => 'share/db_to_ar_link',
+                 :maybe_docs_per_page => 'share/paginator'})
+    -%>
+
+    <div class="outerdoc">
+	    <%= yield  -%>
+
+	  </div> <!-- outer doc -->
+    <%= render(:partial => 'share/backoffice_footer') -%>
+  </div><!-- page -->
+  <!-- this javascript tag *HAS* top be placed here, otherwise it doesn't work :( -->
+  <%= javascript_include_tag 'wz_tooltip' %>
+  </body>
+</html>

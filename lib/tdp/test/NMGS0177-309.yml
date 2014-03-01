@@ -1,0 +1,91 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: penna biro blu
+    lines: "Violino !!! "
+- !ruby/object:Tdp::Box::Display 
+  location: fronte interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: |
+      Sandro Gazzelloni
+      ore 10
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: penna stilografica nera
+    lines: "poi vuoto "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: penna biro blu
+    lines: "// Violino "
+- !ruby/object:Tdp::Box::Display 
+  location: retro interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: penna biro blu
+    lines: |
+      pezzo per vl e piccola orchestra in parte
+      su due bande
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: penna stilografica nera
+    lines: |
+      vlno poi vuoto
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento da vinile di improvvisazione\n per ondiola (mono)\n "
+  tag_end: A01
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento da vinile di improvvisazione\n per ondiola(stereo)\n "
+  tag_end: B02
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento da vinile di improvvisazione\n per ondiola (mono)\n "
+  tag_end: A03
+  tag_start: A03
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento da vinile di improvvisazione\n per ondiola(stereo)\n "
+  tag_end: B04
+  tag_start: A04
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "esecuzione n.1 di Tetratkys \n "
+  tag_end: B10
+  tag_start: B09
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    esecuzione n.2 di Tetratkys 
+    
+  tag_end: B13
+  tag_start: B13
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " il nastro ha dei problemi di riavvolgimento (non\n ben allineato) In [A02-B02] la registrazione passa da una traccia\n singola (lato A) ad una traccia stereo (probabilmente una vecchia\n registrazione sottostante) In [A04-B04] invece c'e` una registrazione\n sottostante stereofonica ma con scorrimento invertito.\n\n Frammenti parlati:\n\n [B07]\n\n [VM] (fischietta)\n [GS] \"Va bene, no?\n [VF] \"Io posso fare un passaggio in questa posizione.\n\n [B08]\n\n [VM] \"Si\"\n\n [B12]\n\n [VM1] \"Per\xC3\xB2 sento. sento rumore\"\n [VF] \"E questo qui non va bene.\n [VM1] \"E` pieno di rumori\"\n [VM2] \"Cerca a imparare prima.\n\n [B13]\n\n [VM1] \"Quando vuoi\"\n\n"
+  tag: NMGS0177-309
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2008-10-03
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

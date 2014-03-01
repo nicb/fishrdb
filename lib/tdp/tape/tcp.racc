@@ -1,0 +1,123 @@
+/*
+ * $Id: tcp.racc 379 2009-04-23 03:45:04Z nicb $
+ */
+
+class Tdp::Tape::ContentParser
+
+    prechigh
+        left COMMA COLON RPAR RSQ DASH 
+        right LPAR LSQ
+    preclow
+        token SESSION_HEADER DATE LOCATION TRANSFERRER ANYWORD
+        token TAPE_TAG WHITE_SPACE PUNCTUATION ID_TAG EMPTY_LINE EOL
+        token TAPE_CONTENT_HEADER TAPE_SEGMENT
+        token COMMA COLON RPAR RSQ DASH LPAR LSQ DOLLAR
+
+rule
+    tape_content
+      : tape_content_header empty_lines WHITE_SPACE tape_content_lines { tape.content = content_buffer.flatten; result = tape }
+
+    tape_content_header
+      : WHITE_SPACE TAPE_CONTENT_HEADER EOL
+
+    tape_content_lines
+      : tape_content_lines tape_content_line
+      | tape_content_line
+
+    tape_content_line
+      : tape_content_line filled_line EOL WHITE_SPACE   { val[0].description = val[1..3].join.sub(/\A /, ''); result = val[0] }
+      | tape_content_line filled_line EOL empty_lines   { val[0].description = val[1..3].join.sub(/\A /, ''); result = val[0] }
+      | tape_content_tag filled_line EOL WHITE_SPACE    { val[0].description = val[1..3].join.sub(/\A /, ''); result = val[0] }
+      | tape_content_tag filled_line EOL empty_lines    { val[0].description = val[1..3].join.sub(/\A /, ''); result = val[0] }
+
+    tape_content_tag
+      : LSQ TAPE_SEGMENT RSQ                          { content_buffer << TapeContent.new(val[1], val[1]); result = content_buffer.last }
+      | LSQ TAPE_SEGMENT DASH TAPE_SEGMENT RSQ        { content_buffer << TapeContent.new(val[1], val[3]); result = content_buffer.last }
+
+    filled_line
+        : filled_line word                            { result = val[0..2].join }
+        | word
+
+    word
+        : ANYWORD 
+        | punctuation
+        | TAPE_SEGMENT
+        | WHITE_SPACE
+
+    punctuation
+        : punctuation PUNCTUATION
+        | PUNCTUATION
+        | LPAR
+        | RPAR
+        | DASH
+        | COMMA /* commas are sometime significant, sometimes not */
+        | COLON /* colons are sometime significant, sometimes not */
+
+    empty_lines
+        : empty_lines EMPTY_LINE
+        | EMPTY_LINE
+
+end
+
+---- header
+#
+# $Id: tcp.racc 379 2009-04-23 03:45:04Z nicb $
+#
+
+require File.dirname(__FILE__) + '/../tape'
+
+require 'yaml'
+
+class DescriptionTapeParseError < StandardError
+end
+
+---- inner
+
+  attr_accessor :line, :yydebug, :tape, :content_buffer
+
+  require 'lexer'
+
+  include Tdp::Tape::Lexer
+
+  def initialize(tape, debug = false)
+    @line = 1
+    @yydebug = debug
+    @tape = tape
+    @content_buffer = []
+  end
+
+  def parse(one_line)
+    begin
+        result = tcp_lexer(one_line, :bump_line) { do_parse }
+    rescue ParseError
+        raise ParseError.new("Content Description failed at line #{line}: #{$!}")
+    end
+    return result
+  end
+
+  def next_token
+    @q.shift
+  end
+
+  def bump_line(inc = 1)
+    self.line += inc
+  end
+
+  def dump
+    fh = File.open(session.filename, 'w') do
+        |out|
+        YAML.dump(session, out)
+    end
+  end
+
+---- footer
+#
+# test code - to be commented out in production
+#
+#
+# session = SessionDescription.new
+# tcp = Tape::ContentParser.new(session, true)
+# fh = File.open(ARGV[0], 'r')
+# one_line = fh.gets
+# session = tcp.parse(one_line)
+# $stderr.puts("Session: #{session.inspect}")

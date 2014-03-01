@@ -1,0 +1,127 @@
+<!-- $Id: _edit.rhtml 638 2013-09-11 07:27:21Z nicb $ -->
+<%= javascript_tag("update_page_var = false;") -%>
+<% form_tag({ :controller => 'doc', :action => :create_or_update_form }, { :class => 'form_content'}) { %>
+	<%= hidden_field('doc', 'id', :value => edit.read_attribute('id')) -%>
+	<%= hidden_field('doc', 'parent_id', :value => edit.parent_id) -%>
+	<%= hidden_field('doc', 'position', :value => edit.position) -%>
+	<%= hidden_field('doc', 'type', :value => edit.read_attribute('type')) -%>
+	<%= hidden_field('doc', 'creator_id', :value => edit.creator.read_attribute('id')) -%>
+	<%= hidden_field('doc', 'last_modifier_id', :value => session["user"].read_attribute('id')) -%>
+	<%# hidden_field_tag('page', @page) if @page -%>
+	<%= error_messages_for 'doc' %>
+	
+	<!--[form:doc]-->
+  <table class='form_content'>
+    <%= render(:partial => 'share/create_multiple_items') if edit.read_attribute('id').blank? -%>
+ 		<tr valign="bottom">
+ 		<td width="10%">
+ 		<label for="doc_description_level_id">Livello di Descrizione:</label>
+ 		</td>
+ 		<td width="90%">
+ 		<%=
+ 			dls = DescriptionLevel.selection
+ 			select('doc', 'description_level_position', dls, :selected => dls[edit.description_level.position])
+ 		%>
+ 		</td>
+ 		</tr>
+ 		<tr valign="top">
+ 		<td>
+ 		<label for="doc_corda">Corda:</label>
+ 		</td>
+ 		<td>
+ 		<%= text_field 'doc', 'corda', :size => 10, :maxsize => 10, :value => edit.corda_for_edit_forms %>
+    <%= text_field 'doc', 'corda_alpha', :size => 10, :maxsize => 16, :value => edit.corda_alpha  %><br />
+    <font size="-2">(campi: numerico, alfanumerico - il campo numerico verrà trasformato in numeri romani per le serie)</font>
+ 		</td>
+ 		</tr>
+ 		<tr valign="top">
+ 		<td>
+ 		<label for="doc_name">Titolo:</label>
+ 		</td>
+ 		<td>
+      <%= text_field 'doc', 'name_prefix', :size => '4%', :maxsize => 128, :value => edit.name_prefix -%>
+      <%= text_field 'doc', 'name', :size => '52%', :maxsize => 1024, :value => edit.name  %><br />
+      <font size='-2'><i>(Prefisso/Nome)</i></font>
+ 		</td>
+ 		</tr>
+ 		<tr valign="top">
+ 		<td>
+ 		<label for="doc_data_dal">Data/e:</label>
+ 		</td>
+ 		<td>
+      <%=
+          render(:partial => 'share/doc_date_interval', :object => edit)
+      -%>
+ 		</td>
+ 		</tr>
+ 		<tr valign="top">
+ 		<td>
+ 		<label for="doc_consistenza">Consistenza:</label>
+ 		</td>
+ 		<td>
+ 		<%= text_field 'doc', 'consistenza', :size => '64%', :maxsize => 100, :value => edit.consistenza  %>
+ 		</td>
+ 		</tr>
+ 		<tr valign="top">
+ 		<td>
+ 		<label for="doc_container_type_id">Contenitore:</label>
+ 		</td>
+ 		<td>
+ 		<%=
+ 			ct = ContainerType.find(:all, :order => "id").map { |ct| [ ct.container_type, ct.id ] };
+ 			select('doc', 'container_type_id', ct, :selected => edit.container_type.id)
+ 		%>
+ 		<%= text_field 'doc', 'container_number', :size => 12, :maxsize => 12, :value => edit.container_number %>
+ 		</td>
+ 		</tr>
+ 		<tr class="display_separator" style="height: 15px;"><td></td></tr>
+ 		<tr valign="top">
+ 		<td align="left">
+ 		<label for="doc_description">Contenuto:</label>
+ 		</td>
+ 		<td>
+ 		<%= text_area 'doc', 'description', :cols => '56.5%', :rows => 8, :value => edit.raw_description -%>
+ 		</td>
+ 		</tr>
+ 		<tr valign="top">
+ 		<td>
+ 		<label for="doc_note">Note:</label>
+ 		</td>
+ 		<td>
+ 		<%= text_area 'doc', 'note', :cols => '56.5%', :rows => 4, :value => edit.raw_note  %>
+ 		</td>
+ 		</tr>
+ 		<tr valign="bottom">
+ 		<td align="left">
+ 		  <label for="doc_public_access">Consultabile?:</label>
+    </td>
+    <td style="padding-left: 1em;">
+      S&igrave; <%= radio_button 'doc', 'public_access', true, { :checked => edit.public_access_check }  -%>
+      No <%= radio_button 'doc', 'public_access', false, { :checked => edit.public_access_uncheck }  -%>
+    </td>
+    </tr>
+ 		<tr valign="bottom">
+ 		<td align="left">
+ 		  <label for="doc_public_visibility">Visibile?:</label>
+    </td>
+    <td style="padding-left: 1em;">
+      S&igrave; <%= radio_button 'doc', 'public_visibility', true, { :checked => edit.public_visibility_check }  -%>
+      No <%= radio_button 'doc', 'public_visibility', false, { :checked => edit.public_visibility_uncheck }  -%>
+    </td>
+    </tr>
+ 		<tr class="display_separator" style="height: 15px;"><td></td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+  </table><!-- form content -->
+<br />
+<div class="form_buttons">
+  <%= submit_tag(" salva ", :name => 'update') -%>
+  <%= submit_tag(" cancella ", :name => 'cancel') -%>
+</div> <!-- form_buttons -->
+<% } -%>
+<!--[eoform:doc]-->
+<table width="100%">
+  <%= render(:partial => 'ar_show', :collection => edit.authority_record_collection) -%>
+</table>

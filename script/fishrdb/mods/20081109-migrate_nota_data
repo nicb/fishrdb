@@ -1,0 +1,13 @@
+#
+# $Id: 20081109-migrate_nota_data 327 2009-03-09 21:34:37Z nicb $
+#
+# this is the driver for the Nota Data Migration, used in conjunction with the
+# 'lib/migrate_nota_data.rb' library. The library and the driver are
+# idempotent, so they can be used only once. Use as:
+#
+# cat <file> | ruby script/console production
+#
+
+mnd = MigrateNotaData.new
+
+mnd.process

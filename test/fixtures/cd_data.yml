@@ -1,0 +1,17 @@
+#
+# $Id: cd_data.yml 454 2009-10-02 20:51:29Z nicb $
+#
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+#
+
+test_cd_data:
+  cd_record: test_record_01
+  record_label: Test Records
+  catalog_number: 'TESTTEST001'
+  publishing_year_db_record: 2009-01-01
+
+action_music_data:
+  cd_record: action_music
+  record_label:   Kairos
+  catalog_number: '0012312KAI'
+  publishing_year_db_record: 2003-01-01

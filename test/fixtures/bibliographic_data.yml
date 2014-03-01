@@ -1,0 +1,41 @@
+#
+# $Id: bibliographic_data.yml 617 2012-07-15 16:30:06Z nicb $
+#
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+bib_data_01:
+  bibliographic_record: bib_record_01
+  author_last_name:   Author
+  author_first_name:  The
+  journal:            The Journal
+  volume:             42
+  number:             42
+  publishing_date_db_record:    2009-01-01 
+  publishing_date_format: '%Y'
+  publishing_date_input_parameters: 'XXX'
+  start_page:         42
+  end_page:           84
+  language:           italian
+  abstract:           Abstract of the bibliographic record 01
+
+bib_data_02:
+  bibliographic_record: bib_record_02
+  author_last_name:   Author
+  author_first_name:  The
+  journal:            The Journal
+  volume:             43
+  number:             43
+  publishing_date_db_record:    2012-01-01 
+  publishing_date_format: '%Y'
+  publishing_date_input_parameters: 'XXX'
+  start_page:         43
+  end_page:           86
+  language:           italian
+  abstract:           Abstract of the bibliographic record 01
+  translator_first_name: Aldous
+  translator_last_name:  Huxley
+  issue_year_db_record: 1956-01-01
+  volume_title: The adventures of bibliographic records
+  address: Testaccio, Rome
+  publisher: Saatchi & Saatchi
+  academic_year: 1956-1957

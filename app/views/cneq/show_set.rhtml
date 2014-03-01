@@ -1,0 +1,9 @@
+<!-- $Id: show_set.rhtml 214 2008-05-11 21:47:15Z nicb $ -->
+<%= render(:partial => 'ar/sidebar') -%>
+<div class="innerdoc" id="innerdoc">
+  <ul>
+    <%=
+        render(:partial => 'list', :collection => @set)
+    -%>
+  </ul>
+</div> <!-- innerdoc -->

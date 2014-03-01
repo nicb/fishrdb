@@ -1,0 +1,13 @@
+#
+# $Id: search.yml 55 2007-11-11 18:36:02Z nicb $
+#
+---
+search_backend: "simple"
+    
+simple_backend: 
+    index_filename: db/simple_search_index
+
+default_search_terms:
+    - giacinto
+    - scelsi
+

@@ -1,0 +1,54 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: etichetta
+      author: FMU
+      pen: feltro nero
+    lines: "da sentire "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita blu
+    lines: "[????] "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      una parte Improvvisazioni e [???]
+      [gip???]
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato
+      author: GS
+      pen: matita nera
+    lines: "da fare il disco "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS
+      pen: penna stilografica nera
+    lines: "il 1o per pf "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazioni per pianoforte
+    
+  tag_end: B11
+  tag_start: B01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "Il nastro \xC3\xA8 stato trovato tail out. La prima parte, a 9.5 cm, contiene una improvvisazione per pianoforte. La seconda parte, a 4.75 cm, contiene una voce (giapponese? orientale?) che canta una melodia (etnica?) Nella regione B07 c'\xC3\xA8 un frammento di parlato incomprensibile (non sembra la voce del Maestro) [Nota: queste annotazioni non sembrano esatte e andranno verificate]"
+  tag: NMGS0024-113
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2006-05-19
+  location: Studio Schiavoni
+  transferrers: 
+  - Bernardini, Nicola
+  - Schiavoni, Piero

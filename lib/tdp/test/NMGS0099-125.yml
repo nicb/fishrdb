@@ -1,0 +1,49 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: "cattivo[?] "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      LBRACE unico|muro RBRACE [?] LBRACE in parte|in ponte RBRACE [?]
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna nera
+    lines: "vuoto "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "suoni rumorosi strani (provenienti dalla radio?\n provenienti da una precedente registrazione di\n suoni radiofonici parassiti?)\n "
+  tag_end: A01
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per ondiole\n "
+  tag_end: A11
+  tag_start: A03
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    suoni rumorosi strani (provenienti dalla radio ?)
+    
+  tag_end: A16
+  tag_start: A13
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "Il nastro \xC3\xA8 sprovvisto di coda. Una coda gialla \xC3\xA8 stata aggiunta a monte del riversamento. Il nastro \xC3\xA8 inciso solo sulla traccia 1. Il nastro ha una giunta (presumibilmente recente) a [Splice01 32'25\"]"
+  tag: NMGS0099-125
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2006-11-03
+  location: Studio Schiavoni
+  transferrers: 
+  - Bernardini, Nicola
+  - Schiavoni, Piero

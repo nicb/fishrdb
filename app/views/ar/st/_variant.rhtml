@@ -1,0 +1,12 @@
+<!-- $Id: _variant.rhtml 245 2008-07-20 03:29:36Z nicb $ -->
+<% form_tag(:action => :add_variant_form, :id => variant.id) do -%>
+  <%= text_field 'authority_record', 'name', :size => 40, :maxsize => 256 -%>
+	<div class="form_buttons">
+    <%= 
+        submit_tag('aggiungi', :name => 'commit')
+    -%>
+    <%= 
+        submit_tag('cancella', :name => 'commit')
+    -%>
+	</div> <!-- form_buttons -->
+<% end -%>

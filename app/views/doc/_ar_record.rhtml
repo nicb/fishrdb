@@ -1,0 +1,10 @@
+<!-- $Id: _ar_record.rhtml 199 2008-04-15 03:06:02Z nicb $ -->
+<%= link_to(ar_record.display, :controller => 'ar', :action => 'show', :id => ar_record.id) -%>
+<%=
+    link_to_remote(image_tag('fishrdb/remove_16.png', :border => 0, :size => '11x11',
+                             :alt => 'Rimuovi', :title => 'Rimuovi'), 
+                  :update => 'ar_collection_' + ar_display.number.to_s,
+                  :url => { :action => 'detach_authority_record', :id => ar_display.doc.read_attribute('id'),
+                            :ar_record_id => ar_record.read_attribute('id'),
+                            :ar_form_number => ar_display.number })
+-%>;

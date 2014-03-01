@@ -1,0 +1,11 @@
+<!-- $Id: _tape_box_mark.html.erb 614 2012-05-11 17:25:14Z nicb $ -->
+<tr class="tape_box_mark">
+  <td class="tape_box_mark_content">
+    <div class="tape_box_mark_content_string" style="<%= tape_box_mark.css_style -%>">
+      <%= tape_box_mark.text.newlines_to_html %>
+    </div>
+  </td>
+  <td class="tape_box_mark_calligraphy">
+    <%= tape_box_mark.full_calligraphy_display %>
+  </td>
+</tr>

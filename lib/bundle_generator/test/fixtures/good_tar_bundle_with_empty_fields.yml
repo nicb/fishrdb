@@ -1,0 +1,43 @@
+#
+# $Id: good_tar_bundle_with_empty_fields.yml 597 2011-01-03 17:42:50Z nicb $
+# 
+# The fields of the yaml file are organized as follow:
+#
+# system: # this is a mandatory set
+#   format:       targz  # should have: targz, zip (optional, default: targz)
+#   output_filename: <name> 
+#
+# NMGS0123-348:  # tag (which gets translated into a directory name)
+#   files: [ Riv@19-L-128.mp3, Riv@9,5-RVRS-R-128.mp3 ] # files to be included
+#                                                       # (if no files field is included, 
+#                                                       # all 128 br mp3 files are
+#                                                       # included)
+#  images: [ Snapshot348-768.tiff, 348_001-768.jpg ]    # images to be included
+#                                                       # (if no images field is included,
+#                                                       # all 768 px files are
+#                                                       # included)
+#  fragments: [ A0*-A12*, B23@9,5 ]                     # fragments to be generated
+#                                                       # as separate 128 br mp3 files
+#                                                       # Note: if a segment is followed
+#                                                       # by an '*', then it is
+#                                                       # considered to be a pattern, otherwise it
+#                                                       # is looked up literally
+#  time_fragments: [ [<file>, [00:03, 12:28.5]], [ <file>, [18:23, 19:36]] ] # absolute
+#                                                       # reference time fragments to be generated
+#                                                       # as separate 128 br mp3 files
+#
+system:
+  format: targz
+  output_filename:  full_data_bundle.tar.gz
+
+NMGS0136-580:  # this one of the two tapes that we have in the development repository
+  files:
+  images:
+  fragments:
+  time_fragments:
+
+NMGS0147-134:  # this is a difficult tape
+  files: 
+  images:
+  fragments:
+  time_fragments:

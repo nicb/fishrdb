@@ -1,0 +1,23 @@
+<!-- $Id: _doc_form.rhtml 253 2008-07-22 21:51:13Z nicb $ -->
+<form>
+  <%= hidden_field 'doc', 'ar_form_number', :value => doc_form.number -%>
+  <%= hidden_field 'doc', 'id', :value => doc_form.doc.id -%>
+  Cognome: <%= text_field_with_auto_complete 'person_name', 'name', { :size => 20, :maxsize => 256 }, :skip_style => true -%>
+  Nome: <%= text_field_with_auto_complete 'person_name', 'first_name', { :size => 10, :maxsize => 256 }, :skip_style => true -%>
+  <%= 
+      observe_field('person_name_name', :frequency => 1,
+                    :url => { :controller => :ar, :action => :update_person_name_first_name })
+  -%>
+	<div class="form_buttons">
+    <%=
+        submit_to_remote('add', 'aggiungi', :update => 'ar_collection_' + doc_form.number.to_s,
+                         :url => { :controller => 'doc', :action => 'add_authority_record',
+                         :id => doc_form.doc.id })
+    -%>
+    <%=
+        submit_to_remote('cancel', 'cancella', :update => 'ar_collection_' + doc_form.number.to_s,
+                         :url => { :controller => 'doc', :action => 'cancel_add_authority_record',
+                         :id => doc_form.doc.id })
+    -%>
+	</div> <!-- form_buttons -->
+</form>

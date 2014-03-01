@@ -1,0 +1,8 @@
+<!-- $Id: _sidebar_display.html.erb 392 2009-05-04 04:09:11Z nicb $ -->
+<div class='menu'>
+  <div class='inner_menu' id='inner_menu'>
+    <ul class='sidebar_top_list'>
+      <%= render(:partial => 'pview/sidebar/show', :collection => sidebar_display.public_children) -%>
+    </ul>
+  </div><!-- inner_menu -->
+</div><!-- menu -->

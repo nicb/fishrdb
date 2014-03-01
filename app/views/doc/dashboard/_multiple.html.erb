@@ -1,0 +1,10 @@
+<!-- $Id: _multiple.html.erb 477 2009-10-26 10:51:10Z nicb $ -->
+<span class="dashboard_label"><%= label -%>:
+<%=
+  select('classname', '', multiple.send("display_allowed_#{kind}_classes"), { :selected => "" },
+	{
+    :onchange => "new Ajax.Updater('doc_content', '/doc/#{method}/" + multiple.id.to_s + "?position=" + multiple.position.to_s + '&classname' + "=' + this[this.selectedIndex].value, { asynchronous: true, evalScripts: true });",
+    :style => 'width: 5.5em;',
+	})
+-%>
+</span>

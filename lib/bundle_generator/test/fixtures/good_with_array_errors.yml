@@ -1,0 +1,12 @@
+#
+# $Id: good_with_array_errors.yml 599 2011-01-05 01:04:07Z nicb $
+# 
+#
+system:
+  format: targz
+  output_filename:  full_data_bundle.tar.gz
+
+NMGS0136-580: 
+  files: []
+  images: []
+  fragments: [ [A01@9,5-A03@9,5], A18@9,5-A19@9,5, [A10@9,5-A12@9,5, A03*-A04*] ]

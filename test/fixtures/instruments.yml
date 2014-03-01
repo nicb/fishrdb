@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+#
+# $Id: instruments.yml 462 2009-10-12 01:07:40Z nicb $
+#
+
+tuba:
+  name: Basso Tuba in Sib
+  creator: staffbob
+  last_modifier: staffbob
+
+soprano:
+  name: Soprano
+  creator: staffbob
+  last_modifier: staffbob
+
+piano:
+  name: Pianoforte
+  creator: staffbob
+  last_modifier: staffbob
+
+chitarra:
+  name: Chitarra
+  creator: staffbob
+  last_modifier: staffbob
+
+celesta:
+  name: Celesta
+  creator: staffbob
+  last_modifier: staffbob

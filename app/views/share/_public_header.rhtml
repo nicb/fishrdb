@@ -1,0 +1,9 @@
+<!-- $Id: _public_header.rhtml 241 2008-07-16 19:45:45Z nicb $ -->
+<div id="fis_header" style="display:block;position:absolute;top:1px;left:1em;">
+  <h2 id="fis_header_title" style="font-size: 12pt;">
+    <%=
+        link_to(image_tag('fishrdb/FIS_logo.png', :size => '266x41', :border => 0),
+                { :controller => :pview, :action => :index})
+    -%>
+  </h2>
+</div>

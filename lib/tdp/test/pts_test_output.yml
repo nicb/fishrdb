@@ -1,0 +1,228 @@
+--- !ruby/object:Tdp::ProTools::DataAggregator 
+filename: ../../../public/private/session-notes/version-1/refurbished/NMGS0077-32B/NMGS0077-32B.txt
+line_number: 0
+regions: 
+- &id001 !ruby/object:Tdp::ProTools::Region 
+  end_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:00:32.076000 +01:00
+  event_num: 1
+  name: A01@9,5
+  num_channels: 1
+  original_position_on_tape_in_cm: 0
+  reference: RivRiv@9,5_01.L.aif
+  speed: 9.5
+  start_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:00:00 +01:00
+  tape_direction: :STRAIGHT
+- &id002 !ruby/object:Tdp::ProTools::Region 
+  end_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:03:50.024000 +01:00
+  event_num: 2
+  name: A02@9,5
+  num_channels: 1
+  original_position_on_tape_in_cm: 304.722
+  reference: RivRiv@9,5_01.L.aif
+  speed: 9.5
+  start_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:00:32.076000 +01:00
+  tape_direction: :STRAIGHT
+- &id003 !ruby/object:Tdp::ProTools::Region 
+  end_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:04:10.881000 +01:00
+  event_num: 3
+  name: A03@9,5
+  num_channels: 1
+  original_position_on_tape_in_cm: 2185.228
+  reference: RivRiv@9,5_01.L.aif
+  speed: 9.5
+  start_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:03:50.024000 +01:00
+  tape_direction: :STRAIGHT
+- &id004 !ruby/object:Tdp::ProTools::Region 
+  end_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:06:57.180000 +01:00
+  event_num: 4
+  name: A04@9,5
+  num_channels: 1
+  original_position_on_tape_in_cm: 2383.3695
+  reference: RivRiv@9,5_01.L.aif
+  speed: 9.5
+  start_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:04:10.881000 +01:00
+  tape_direction: :STRAIGHT
+- &id005 !ruby/object:Tdp::ProTools::Region 
+  end_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:10:13.355000 +01:00
+  event_num: 5
+  name: A05@9,5
+  num_channels: 1
+  original_position_on_tape_in_cm: 3963.21
+  reference: RivRiv@9,5_01.L.aif
+  speed: 9.5
+  start_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:06:57.180000 +01:00
+  tape_direction: :STRAIGHT
+- &id006 !ruby/object:Tdp::ProTools::Region 
+  end_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:10:19.701000 +01:00
+  event_num: 6
+  name: A06@9,5
+  num_channels: 1
+  original_position_on_tape_in_cm: 5826.8725
+  reference: RivRiv@9,5_01.L.aif
+  speed: 9.5
+  start_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:10:13.355000 +01:00
+  tape_direction: :STRAIGHT
+- &id007 !ruby/object:Tdp::ProTools::Region 
+  end_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:11:33.384000 +01:00
+  event_num: 7
+  name: A07@9,5
+  num_channels: 1
+  original_position_on_tape_in_cm: 5887.1595
+  reference: RivRiv@9,5_01.L.aif
+  speed: 9.5
+  start_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:10:19.701000 +01:00
+  tape_direction: :STRAIGHT
+- &id008 !ruby/object:Tdp::ProTools::Region 
+  end_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:12:22.065000 +01:00
+  event_num: 8
+  name: A08@9,5
+  num_channels: 1
+  original_position_on_tape_in_cm: 6587.148
+  reference: RivRiv@9,5_01.L.aif
+  speed: 9.5
+  start_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:11:33.384000 +01:00
+  tape_direction: :STRAIGHT
+- &id009 !ruby/object:Tdp::ProTools::Region 
+  end_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:13:40.257000 +01:00
+  event_num: 9
+  name: A09@9,5
+  num_channels: 1
+  original_position_on_tape_in_cm: 7049.6175
+  reference: RivRiv@9,5_01.L.aif
+  speed: 9.5
+  start_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:12:22.065000 +01:00
+  tape_direction: :STRAIGHT
+- &id010 !ruby/object:Tdp::ProTools::Region 
+  end_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:17:51.309000 +01:00
+  event_num: 10
+  name: A10@9,5
+  num_channels: 1
+  original_position_on_tape_in_cm: 7792.4415
+  reference: RivRiv@9,5_01.L.aif
+  speed: 9.5
+  start_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:13:40.257000 +01:00
+  tape_direction: :STRAIGHT
+- &id011 !ruby/object:Tdp::ProTools::Region 
+  end_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:17:55.839000 +01:00
+  event_num: 11
+  name: A11@9,5
+  num_channels: 1
+  original_position_on_tape_in_cm: 10177.4355
+  reference: RivRiv@9,5_01.L.aif
+  speed: 9.5
+  start_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:17:51.309000 +01:00
+  tape_direction: :STRAIGHT
+- &id012 !ruby/object:Tdp::ProTools::Region 
+  end_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:19:20.549000 +01:00
+  event_num: 12
+  name: A12@9,5
+  num_channels: 1
+  original_position_on_tape_in_cm: 10220.4705
+  reference: RivRiv@9,5_01.L.aif
+  speed: 9.5
+  start_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:17:55.839000 +01:00
+  tape_direction: :STRAIGHT
+- !ruby/object:Tdp::ProTools::Region 
+  name: A13@9,5
+  original_position_on_tape_in_cm: 0
+  reference: RivRiv@9,5_01.L.aif
+  speed: 9.5
+  tape_direction: :STRAIGHT
+- &id017 !ruby/object:Tdp::ProTools::Region 
+  end_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:21:53.984000 +01:00
+  event_num: 17
+  name: A13@9,5REV
+  num_channels: 1
+  original_position_on_tape_in_cm: 12379.3075
+  reference: RivA13@9,5REV.aif
+  speed: 9.5
+  start_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:21:43.085000 +01:00
+  tape_direction: :REVERSE
+- !ruby/object:Tdp::ProTools::Region 
+  name: A14@9,5
+  original_position_on_tape_in_cm: 0
+  reference: RivRiv@9,5_01.L.aif
+  speed: 9.5
+  tape_direction: :STRAIGHT
+- &id016 !ruby/object:Tdp::ProTools::Region 
+  end_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:21:43.085000 +01:00
+  event_num: 16
+  name: A14@9,5REV
+  num_channels: 1
+  original_position_on_tape_in_cm: 12296.078
+  reference: RivA14@9,5REV.aif
+  speed: 9.5
+  start_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:21:34.324000 +01:00
+  tape_direction: :REVERSE
+- !ruby/object:Tdp::ProTools::Region 
+  name: A15@9,5
+  original_position_on_tape_in_cm: 0
+  reference: RivRiv@9,5_01.L.aif
+  speed: 9.5
+  tape_direction: :STRAIGHT
+- &id015 !ruby/object:Tdp::ProTools::Region 
+  end_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:21:34.324000 +01:00
+  event_num: 15
+  name: A15@9,5REV
+  num_channels: 1
+  original_position_on_tape_in_cm: 11681.7605
+  reference: RivA15@9,5REV.aif
+  speed: 9.5
+  start_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:20:29.659000 +01:00
+  tape_direction: :REVERSE
+- !ruby/object:Tdp::ProTools::Region 
+  name: A16@9,5
+  original_position_on_tape_in_cm: 0
+  reference: RivRiv@9,5_01.L.aif
+  speed: 9.5
+  tape_direction: :STRAIGHT
+- &id014 !ruby/object:Tdp::ProTools::Region 
+  end_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:20:29.659000 +01:00
+  event_num: 14
+  name: A16@9,5REV
+  num_channels: 1
+  original_position_on_tape_in_cm: 11327.2965
+  reference: RivA16@9,5REV.aif
+  speed: 9.5
+  start_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:19:52.347000 +01:00
+  tape_direction: :REVERSE
+- !ruby/object:Tdp::ProTools::Region 
+  name: A17@9,5
+  original_position_on_tape_in_cm: 0
+  reference: RivRiv@9,5_01.L.aif
+  speed: 9.5
+  tape_direction: :STRAIGHT
+- &id013 !ruby/object:Tdp::ProTools::Region 
+  end_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:19:52.347000 +01:00
+  event_num: 13
+  name: A17@9,5REV
+  num_channels: 1
+  original_position_on_tape_in_cm: 11025.2155
+  reference: RivA17@9,5REV.aif
+  speed: 9.5
+  start_time: !timestamp:Tdp::ProTools::SessionTime 2000-01-01 00:19:20.549000 +01:00
+  tape_direction: :REVERSE
+tape_length_cache: 12483.0
+tracks: 
+- !ruby/object:Tdp::ProTools::Track 
+  channel: 1
+  cm_cache: 12482.848
+  regions: 
+  - *id001
+  - *id002
+  - *id003
+  - *id004
+  - *id005
+  - *id006
+  - *id007
+  - *id008
+  - *id009
+  - *id010
+  - *id011
+  - *id012
+  - *id013
+  - *id014
+  - *id015
+  - *id016
+  - *id017
+  tape_length: 12483.0

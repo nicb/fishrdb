@@ -1,0 +1,7 @@
+#
+# $Id: sidebar_trees.yml 478 2010-03-03 22:16:14Z nicb $
+#
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  session_id:  one

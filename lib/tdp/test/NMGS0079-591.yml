@@ -1,0 +1,112 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: matita nera
+    lines: "G "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna nera
+    lines: "da vedere tutto "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: matita nera
+    lines: "NOMOS "
+- !ruby/object:Tdp::Box::Display 
+  location: fronte interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna nera
+    lines: "da vedere tutto "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "Alcune sovrapposiz. "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato
+      author: GS
+      pen: pastello rosso
+    lines: "Nomos intero "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: verticale
+      author: GS
+      pen: pastello rosso
+    lines: "visto "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cerchiato
+      author: GS
+      pen: matita nera
+    lines: |
+      [21][75]0 222 222 |
+      |
+      al 266
+      comb[...]
+      1a b[...]
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cerchiato
+      author: GS
+      pen: matita nera
+    lines: "225 177 ? 285 255 250 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: verticale
+      author: GS
+      pen: matita nera
+    lines: "300 trombone e vc "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato
+      author: GS
+      pen: penna biro blu
+    lines: |
+      Con sovrapposizione al finale (da completare)
+      (dal 460 del NOMOS I)
+
+- !ruby/object:Tdp::Box::Display 
+  location: costa destra
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna nera
+    lines: "NONOS "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola\n "
+  tag_end: A33
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazioni per ondiola
+    
+  tag_end: B23
+  tag_start: B01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro possiede il leader tape originale con banda metallica. Il nastro \xC3\xA8 inciso su entrambe le tracce in un solo senso di scorrimento e i rumori ancillari indicano che si tratta di un lavoro di sovrapposizione tra le due tracce svolto in sequenza. Il nastro contiene improvvisazioni per ondiola. Il nastro ha alcune giunture di editing (== combinano parti diverse) [Splice1 37'21\", Splice 2 37'37\", Splice 3 41'49\", Splice 4 43'02\", Splice 5 43'08\", Splice 6 43'12\", Splice 7 43'13\", Splice 8 43'29\", Splice 9 54'24\"] In [A02] si sente uno strano rumore di manipolazione del microfono (dita? labbra?) di cui \xC3\xA8 difficile identificare la provenienza. Un quesito particolare lo pongono le regioni [A10-A11] e [B06-B07], che sono la stessa regione ascoltata in senso opposto. L'effetto \xC3\xA8 evidentemente voluto, per cui la traccia 2 \xC3\xA8 stata comunque mantenuta nello stesso senso (i.e. quello rovesciato) della traccia 1. In [A23] c'\xC3\xA8 una giuntura [Splice2] che unisce due registrazioni effettuate la prima al dritto e la seconda in senso opposto (pur contenendo anche rumori ancillari - probabilmente da un riversamento - in senso dritto) Alcune sezioni contengono sovrapposizioni molto dense di materiale che sono evidentemente il risultato di numerosi passaggi. In generale, pur contenendo delle improvvisazioni per ondiola il nastro sembra il prodotto di un lavoro di composizione e di montaggio. All'inizio di [A18] si sente la voce del Maestro che dice: \"Funziona? Funziona?"
+  tag: NMGS0079-591
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2006-09-14
+  location: Studio Schiavoni
+  transferrers: 
+  - Bernardini, Nicola
+  - Schiavoni, Piero

@@ -1,0 +1,246 @@
+#
+# $Id: series.yml 105 2007-12-11 11:50:33Z nicb $
+#
+#
+# Archivio Privato
+#    +--> Documenti Personali e Patrimoniali
+#
+priv:
+    name: Documenti Personali e Patrimoniali
+    parent: Archivio Privato
+    description_level: Serie
+    data_dal: '1923-01-01'
+    data_al: '1988-12-31'
+    oldtable: 02_Amministrazione_1923_1988
+    position: 1
+    children_ordering: logic
+cpef:
+    name: Carte personali e familiari
+    parent: Documenti Personali e Patrimoniali
+    description_level: SottoSerie
+    oldtable: 02_Amministrazione_1923_1988
+    data_dal: '1923-01-01'
+    data_al: '1988-12-31'
+    position: 1
+    children_ordering: timeasc
+bdfa:
+    name: Beni di famiglia
+    parent: Documenti Personali e Patrimoniali
+    description_level: SottoSerie
+    oldtable: 02_Amministrazione_1923_1988
+    data_dal: '1923-01-01'
+    data_al: '1988-12-31'
+    position: 2
+    children_ordering: timeasc
+dcam:
+    name: Documenti contabili-amministrativi
+    parent: Documenti Personali e Patrimoniali
+    description_level: SottoSerie
+    oldtable: 02_Amministrazione_1923_1988
+    data_dal: '1923-01-01'
+    data_al: '1988-12-31'
+    position: 3
+    children_ordering: timeasc
+rclb:
+    name: Rapporti con le banche
+    parent: Documenti Personali e Patrimoniali
+    description_level: SottoSerie
+    oldtable: 02_Amministrazione_1923_1988
+    data_dal: '1923-01-01'
+    data_al: '1988-12-31'
+    position: 4
+    children_ordering: timeasc
+aisc:
+    name: Associazione Isabella Scelsi
+    parent: Documenti Personali e Patrimoniali
+    description_level: SottoSerie
+    oldtable: 02_Amministrazione_1923_1988
+    data_dal: '1923-01-01'
+    data_al: '1988-12-31'
+    position: 5
+    children_ordering: timeasc
+fosc:
+    name: Fondazione Isabella Scelsi
+    parent: Documenti Personali e Patrimoniali
+    description_level: SottoSerie
+    oldtable: 02_Amministrazione_1923_1988
+    data_dal: '1923-01-01'
+    data_al: '1988-12-31'
+    position: 6
+    children_ordering: timeasc
+#
+# Archivio Privato
+#    +--> Corrispondenza
+#
+corr:
+    name: Corrispondenza
+    parent: Archivio Privato
+    description_level: Serie
+    oldtable: 01_Corrispondenza_1934_1991
+    data_dal: '1934-01-01'
+    data_al: '1991-12-31'
+    position: 2
+    children_ordering:  alpha
+#
+# Archivio Privato
+#    +--> Scritti filosofici e poetici
+#
+filo:
+    name: Scritti Filosofici e Poetici
+    parent: Archivio Privato
+    description_level: Serie
+    oldtable: 03_Scritti_filosofici_e_poetici_sd
+    position: 3
+    children_ordering:  alpha
+#
+# Archivio Privato
+#    +--> Appunti e Note
+#
+appu:
+    name: Appunti e Note
+    parent: Archivio Privato
+    description_level: Serie
+    oldtable: 04_Appunti_e_note_1935_1991
+    data_dal: '1935-01-01'
+    data_al: '1991-12-31'
+    position: 4
+    children_ordering: timeasc
+appe:
+    name: Appunti personali
+    parent: Appunti e Note
+    description_level: SottoSerie
+    oldtable: 04_Appunti_e_note_1935_1991
+    data_dal: '1935-01-01'
+    data_al: '1991-12-31'
+    position: 1
+    children_ordering: timeasc
+asmu:
+    name: Annotazioni sulla musica
+    parent: Appunti e Note
+    description_level: SottoSerie
+    oldtable: 04_Appunti_e_note_1935_1991
+    data_dal: '1935-01-01'
+    data_al: '1991-12-31'
+    position: 2
+    children_ordering: timeasc
+#
+# Archivio Privato
+#    +--> Carte Isabella Scelsi
+#
+cart:
+    name: Carte Isabella Scelsi
+    parent: Archivio Privato
+    description_level: Serie
+    oldtable: 05_Carte_Isabella_Scelsi_1928_1975
+    data_dal: '1928-01-01'
+    data_al: '1975-12-31'
+    position: 8
+    children_ordering: timeasc
+#
+# Archivio Privato
+#    +--> Materiale a Stampa
+#
+stam:
+    name: Materiale a Stampa
+    parent: Archivio Privato
+    description_level: Serie
+    position: 7
+    children_ordering: timeasc
+broc:
+    name: Brochures e Dépliants
+    parent: Materiale a Stampa
+    description_level: SottoSerie
+    oldtable: 06_Materiali_a_stampa___Brochure_e_d_pliant
+    position: 6
+    children_ordering: timeasc
+invi:
+    name: Inviti
+    parent: Materiale a Stampa
+    description_level: SottoSerie
+    oldtable: 06_Materiali_a_stampa___Inviti
+    position: 5
+    children_ordering: timeasc
+mani:
+    name: Manifesti e Locandine
+    parent: Materiale a Stampa
+    description_level: SottoSerie
+    oldtable: 06_Materiali_a_stampa___Manifesti_e_locandine
+    position: 2
+    children_ordering: timeasc
+opus:
+    name: Opuscoli
+    parent: Materiale a Stampa
+    description_level: SottoSerie
+    oldtable: 06_Materiali_a_stampa___Opuscoli
+    position: 4
+    children_ordering:  alpha
+prog:
+    name: Programmi
+    parent: Materiale a Stampa
+    description_level: SottoSerie
+    oldtable: 06_Materiali_a_stampa___Programmi
+    position: 1
+    children_ordering: timeasc
+rivi:
+    name: Riviste
+    parent: Materiale a Stampa
+    description_level: SottoSerie
+    oldtable: 06_Materiali_a_stampa___Riviste__periodici_
+    position: 3
+    children_ordering:  alpha
+#
+# Archivio Privato
+#    +--> Rassegna Stampa
+#
+rass:
+    name: Rassegna Stampa
+    parent: Archivio Privato
+    description_level: Serie
+    oldtable: 07_Rassegna_stampa_1934_1991
+    data_dal: '1934-01-01'
+    data_al: '1991-12-31'
+    position: 6
+    children_ordering: timeasc
+rmag:
+    name: Recensioni musicali e articoli di Giornale
+    parent: Rassegna Stampa
+    description_level: SottoSerie
+    oldtable: 07_Rassegna_stampa_1934_1991
+    data_dal: '1934-01-01'
+    data_al: '1991-12-31'
+    position: 1
+    children_ordering: timeasc
+evmu:
+    name: Eventi musicali
+    parent: Rassegna Stampa
+    description_level: SottoSerie
+    oldtable: 07_Rassegna_stampa_1934_1991
+    data_dal: '1934-01-01'
+    data_al: '1991-12-31'
+    position: 2
+    children_ordering: timeasc
+#
+# Archivio Privato
+#    +--> Collezione di Disegni e di Fotografie
+#
+dise:
+    name: Collezione di Disegni e di Fotografie
+    parent: Archivio Privato
+    description_level: Serie
+    oldtable: 08_Disegni_e_collezione_fotografica
+    position: 5
+    children_ordering: timeasc
+cddi:
+    name: Raccolta di disegni
+    parent: Collezione di Disegni e di Fotografie
+    description_level: SottoSerie
+    oldtable: 08_Disegni_e_collezione_fotografica
+    position: 1
+    children_ordering: timeasc
+cofo:
+    name: Collezione fotografica
+    parent: Collezione di Disegni e di Fotografie
+    description_level: SottoSerie
+    oldtable: 08_Disegni_e_collezione_fotografica
+    position: 2
+    children_ordering: timeasc

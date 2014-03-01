@@ -1,0 +1,11 @@
+<%
+  e = ensemble && ensemble.is_a?(Ensemble) ? ensemble : Ensemble.new
+  c = e.conductor ? e.conductor : Name.new
+-%>
+<%= text_field 'doc[' + subkey + '][' + association + '_' + index + ']', 'name', :size => 8, :maxsize => 256, :value => e.name -%>
+<%= text_field 'doc[' + subkey + '][' + association + '_' + index + '][conductor]', 'first_name', :size => 8, :maxsize => 256, :value => c.first_name -%>
+<%= text_field 'doc[' + subkey + '][' + association + '_' + index + '][conductor]', 'last_name', :size => 8, :maxsize => 256, :value => c.last_name -%>
+<%= text_field 'doc[' + subkey + '][' + association + '_' + index + '][conductor]', 'pseudonym', :size => 8, :maxsize => 128, :value => c.pseudonym -%>
+<%= text_field 'doc[' + subkey + '][' + association + '_' + index + '][conductor]', 'disambiguation_tag', :size => 8, :maxsize => 256, :value => c.disambiguation_tag -%>
+<% session[unitag] = index -%>
+<!-- $Id: _ensemble.html.erb 616 2012-06-21 11:47:43Z nicb $ -->

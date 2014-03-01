@@ -1,0 +1,5 @@
+<!-- $Id: _backoffice_footer.rhtml 236 2008-07-14 21:01:57Z nicb $ -->
+<div class="footer">
+  <%= render(:partial => 'share/common_footer') -%>  
+  <%= link_to('logout&#187;', { :controller => :account, :action => :logout }, { :class => 'footerelement' }) -%>  
+</div>

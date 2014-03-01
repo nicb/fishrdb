@@ -1,0 +1,62 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita
+    lines: "prova per Quartetti "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato + cancellato
+      author: GS)
+      pen: matita
+    lines: "pezzi in lavoro "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: 1 cerchiato
+      author: GS??)
+      pen: matita
+    lines: "1 120 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cerchiato
+      author: GS??)
+      pen: matita rossa
+    lines: "908 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: pennarello viola
+    lines: "X X "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita
+    lines: "tutto fatto "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Riversamenti sovrapposti di improvvisazioni\n di ondiola\n "
+  tag_end: A25
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    Riversamenti sovrapposti di improvvisazioni
+     di ondiola
+    
+  tag_end: B06
+  tag_start: B01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " Il nastro \xC3\xA8 registrato sulle due tracce fronte-\n retro. Contiene vari riversamenti sovrapposti di improvvisazioni di\n ondiola. In alcuni inizi di regione si pu\xC3\xB2 ascoltare il classico\n 'ting' delle valvole del registratore Revox G36. \n\n"
+  tag: NMGS0152-287
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2008-03-28
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

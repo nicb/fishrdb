@@ -1,0 +1,30 @@
+To convert from Access data (Maria-Elena and Fabrizio's databases):
+
+- running 'make' should do it
+
+- however, this process relies in the following assumptions:
+
+  - there must be three Access files in the data/access directory:
+
+    ARCHIVIO MUSICA ALTRI AUTORI.mdb, ARCHIVIO MUSICA GS.mdb,
+	SERIE DATABASE.mdb
+
+	(that's what the dump_access.sh script does)
+
+  - these files need to be converted into .sql statements, but before doing
+	that
+
+  - they need to be cleansed (that's what the ./cleanse-data.rb script does)
+
+  - and then they can be inserted into the new fishrdb database
+
+- so, if things go wrong you should check (through the Makefile) that all
+  files get created properly and that the cleanse function in the
+  cleanse-data.rb does all the cleansing required
+
+- we do everything for the development database, but *NOT* for the
+  production  database  (to  make  sure  we  don't   scratch   something
+  important). The test database is always built from scratch so we don't
+  do anything there.
+--
+$Id: README 22 2007-10-15 23:27:36Z nicb $

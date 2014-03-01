@@ -1,0 +1,4 @@
+# 
+# $Id: update_person_name_first_name.rjs 245 2008-07-20 03:29:36Z nicb $
+# 
+page[@div].value = @first_name

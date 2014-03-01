@@ -1,0 +1,18 @@
+<!-- $Id: _ar_show_inner.rhtml 210 2008-05-04 21:37:48Z nicb $ -->
+<td width="15%">
+  <%
+    divf = 'ar_form_' + ar_show_inner.number.to_s
+    divd = 'ar_display_' + ar_show_inner.number.to_s
+  -%>
+	<%= link_to_remote(image_tag('fishrdb/add_16.png', :border => 0,
+	    :size => '11x11', :alt => 'Aggiungi', :title => 'Aggiungi'),
+	    :update => divf, :url => { :action => :render_ar_form,
+        :id => ar_show_inner.doc.id, :number => ar_show_inner.number })
+  -%> <%= ar_show_inner.class.tag -%>:
+</td>
+<td width="85%">
+  <div id="<%= divd -%>">
+    <%= render(:partial => 'ar_record', :collection => ar_show_inner.all_records, :locals => { :ar_display => ar_show_inner }) -%>
+  </div>
+  <div id="<%= divf -%>"></div>
+</td>

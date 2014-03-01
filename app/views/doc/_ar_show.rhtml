@@ -1,0 +1,4 @@
+<!-- $Id: _ar_show.rhtml 208 2008-05-01 16:54:22Z nicb $ -->
+<tr valign="<%= ar_show.class.calc_valign -%>" id="ar_collection_<%= ar_show.number.to_s -%>">
+  <%= render(:partial => 'ar_show_inner', :object => ar_show) -%>
+</tr>

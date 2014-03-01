@@ -1,0 +1,28 @@
+<!-- $Id: _show.rhtml 214 2008-05-11 21:47:15Z nicb $ -->
+<li>
+  <% dtu = 'ente_equivalente_' + show.id.to_s -%>
+  <div id="<%= dtu -%>">
+    Ente: <strong><%= show.name -%></strong>
+		<%=
+		    link_to_remote(image_tag("fishrdb/edit_16.png", :border => 0, :size => '12x12',
+		                    :alt => "Modifica", :title => "Modifica"),
+		    :update => dtu, :url => { :action => "edit", :id => show.id })
+		-%> 
+		<%=
+		    link_to(image_tag("fishrdb/delete_16.png", :border => 0, :size => '12x12',
+		            :alt => "Cancella", :title => "Cancella"),
+		            { :action => 'delete', :id => show.id },
+		            :confirm => 'Sicuro?', :method => :delete)
+		%>
+  </div>
+</li>
+<li>Denominazioni Equivalenti:
+  <ul>
+  <div id='denominazioni_equivalenti'>
+    <%=
+        render(:partial => 'cn_list', :collection => show.collective_names,
+               :locals => { :cneq_id => show.id })
+    -%>
+  </div>
+  </ul>
+</li>

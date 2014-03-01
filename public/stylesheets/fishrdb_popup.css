@@ -1,0 +1,23 @@
+/*
+ * $Id: fishrdb_popup.css 329 2009-03-12 23:27:58Z nicb $
+ */
+
+div.outerdoc {
+	position:	relative;
+	top:		10px;
+	left:		0%;
+	height:	80%;
+	width:	inherit;
+  /* border: 1px solid yellow; */
+}
+
+/*
+ * footers
+ */
+div.footer {
+  position: relative;
+	left:		  1em;
+	width:		inherit;
+  height:   1em;
+  top: 10px;
+}

@@ -1,0 +1,18 @@
+<!-- $Id: _show.rhtml 208 2008-05-01 16:54:22Z nicb $ -->
+<li>
+  <% dtu = show.class.div_name + show.id.to_s -%>
+  <div id="<%= dtu -%>">
+		<%= show.class.label -%>: <%= show.display -%>  
+		<%=
+		    link_to_remote(image_tag("fishrdb/edit_16.png", :border => 0, :size => '12x12',
+		                    :alt => "Modifica", :title => "Modifica"),
+		    :update => dtu, :url => { :action => "edit", :id => show.id })
+		-%> 
+		<%=
+		    link_to(image_tag("fishrdb/delete_16.png", :border => 0, :size => '12x12',
+		            :alt => "Cancella", :title => "Cancella"),
+		            { :action => 'delete', :id => show.id },
+		            :confirm => show.confirm_delete_message, :method => :delete)
+		-%>
+  </div>
+</li>

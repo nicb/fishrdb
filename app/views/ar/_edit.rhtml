@@ -1,0 +1,12 @@
+<!-- $Id: _edit.rhtml 253 2008-07-22 21:51:13Z nicb $ -->
+<%= edit.class.label -%>: <% form_tag(:action => :edit_from_form, :id => edit.id, :class_name => edit.class.name) do -%>
+  <%= text_field 'authority_record', 'name', :size => 40, :maxsize => 256, :value => edit.name -%>
+	<div class="form_buttons">
+    <%= 
+        submit_tag('salva', :name => 'commit')
+    -%>
+    <%= 
+        submit_tag('cancella', :name => 'commit')
+    -%>
+	</div> <!-- form_buttons -->
+<% end -%>

@@ -1,0 +1,19 @@
+<%
+  unitag = names.class.generate_association_adder_key(association)
+  idx = 0
+  names.send(association).each do
+    |n|
+    sk = names.class.subkey
+-%>
+  <%= render(:partial => 'share/name_single_template', :object => n, :locals => { :subkey => sk.to_s, :index => idx.to_ssss, :association => association.to_s, :unitag => unitag, :single => single, :creator_id => creator_id, :last_modifier_id => last_modifier_id }) -%>
+<%
+    idx += 1
+  end
+-%>
+<div id="<%= unitag -%>">
+	<%=
+	  link_to_remote("Aggiungi un altro elemento", :update => unitag, :position => :before,
+                   :url => { :action => :add_a_record_name, :class => names.class.name, :association => association.to_s, :unitag => unitag, :single => single, :creator_id => creator_id, :last_modifier_id => last_modifier_id })
+	%>
+</div>
+<!-- $Id: _names.html.erb 470 2009-10-18 16:18:58Z nicb $ -->

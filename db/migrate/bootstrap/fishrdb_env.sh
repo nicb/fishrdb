@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# $Id: fishrdb_env.sh 22 2007-10-15 23:27:36Z nicb $
+#
+OLDDB=${OLDDB:-fisold}
+FISHRDB_ROOT=fishrdb
+NEWDB_DEV=${NEWDB_DEV:-${FISHRDB_ROOT}_development}
+NEWDB_TEST=${NEWDB_TEST:-${FISHRDB_ROOT}_test}
+NEWDB_PRO=${NEWDB_PRO:-${FISHRDB_ROOT}_production}
+NEW_DBS="${NEWDB_DEV}:${NEWDB_TEST}"
+FISHRDB_USER=${FISHRDB_USER:-fishrdb}
+FISHRDB_PASSWORD=${FISHRDB_PASSWORD:-fishrdb}
+MYSQL=${MYSQL:-/usr/bin/mysql}
+FISHRDB_TOP=${FISHRDB_TOP:-../../..}
+FISHRDB_DB_DIR=${FISHRDB_DB_DIR:-$FISHRDB_TOP/db}
+FISHRDB_SQL_DIR=${FISHRDB_SQL_DIR:-"./data/sql"}

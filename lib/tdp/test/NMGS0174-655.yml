@@ -1,0 +1,102 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: |
+      bobina destra 1,40 da fare 4 improvvisazioni magnifiche 3.10 disco
+      4 Preludi eseguiti a Parigi 3.40 disco
+      malissimo da 4.25 disco
+      Ivette Grimaud
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: |
+      Improvvisazioni N. 2
+      3
+      4
+      5
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato
+      author: GS)
+      pen: penna biro blu
+    lines: "cominciare col verde "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: penna biro nera
+    lines: |
+      disponibile da sinistra a destra esatto
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS)
+      pen: matita nera
+    lines: "N 2 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: penna biro nera
+    lines: |
+      traccia internazionale in parte copia trasportato dal Grundig
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato matita rossa
+      author: GS)
+      pen: penna biro nera
+    lines: "resto Grundig "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Improvvisazioni per pianoforte\n "
+  tag_end: B05
+  tag_start: B02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "frammento di riversamento da vinile di musica\n per ensemble\n "
+  tag_end: B07
+  tag_start: B07
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento da trasmissione radiofonica dei 4\n Preludi per pianoforte\n "
+  tag_end: B08
+  tag_start: B08
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento da vinile di brano per orchestra\n e coro\n "
+  tag_end: B10
+  tag_start: B10
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento da vinile di improvvisazioni per\n pianoforte\n "
+  tag_end: B13
+  tag_start: B11
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "frammento di conversazione\n "
+  tag_end: B14
+  tag_start: B14
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    frammento di riversamento da vinile di musica
+     per ensemble
+    
+  tag_end: A05
+  tag_start: A05
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " il nastro presenta alcune peculiarit\xC3\xA0. E`\n registrato fronte retro ma con i canali invertiti (il lato B \xC3\xA8\n registrato con scorrimento dritto mentre il lato A \xC3\xA8 registrato con\n scorrimento invertito) Il nastro contiene presumibilmente vari\n riversamenti: da una radio francese (un annuncio alla fine di [B08]\n sembrerebbe avvalorare questa ipotesi) (4 preludi) e altro.\n\n Frammenti parlati:\n\n [B08][Annuncio VF] \"Les quatre pr\xC3\xA9ludes pour piano de Giacinto Scelsi.\n\n [B09][VM] \"mi dici quando \xC3\xA8 pronto.\n\n [B14][VF] \"\n [GS] \"What?\n [VF] \"I did ask her []\n [VM] \"Cause she comes always during the day?\n [VF] \"If not every day, every other day, she would. And\n then, besides, where she lives [] fixes the\n dresses up the skirt. So many times she\n comes twice a day to bring back a dress or\n [] to get a dress [] Sometimes visits,\n sometimes at twelve o'clock at night.\n [VM] \"Really? oh really?\n\n [A01][GS] \"Un attimo.\n [A07][GS] \"\xC3\x87a n'est encore l\xC3\xA0, pas encore\"\n [A08][GS] \"Je crois que c'est toujours trop fort pour \xC3\xA7a\"\n [A09][VF] \"e la musica.\n [GS] \"per questa \xC3\xA8 un po' un'espressione. 'capire' - si\n deve 'sentire' la musica moderna\"\n [VF] \"si insomma eh mettiamola cos\xC3\xAC forse non la sento\n molto la musica moderna\"\n [GS] \"la senti?\n [VF] \"non adesso quel momen. quella cosa l\xC3\xAC ma, insomma\n la musica moder. forse la sento meno\n [GS] \"senti meno la musica moderna?\n [VF] \"la sento meno\"\n [GS] \"pi\xC3\xB9 la musica classica?\n [VF] \"s\xC3\xAC, quella la sento moltissimo\"\n [VF] \"\xC3\xA8 quasi una poesia\"\n\n"
+  tag: NMGS0174-655
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2008-09-19
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

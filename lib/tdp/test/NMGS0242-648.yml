@@ -1,0 +1,84 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro blu
+    lines: "traccia internazionale "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna biro nera
+    lines: "Spur 1 Concerto con a solo di piano 9,5 cm/s "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna biro nera
+    lines: "Spur 2 Concerto piano (inizio con la piccola F[...?]) 9,5 cm/s "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna biro nera
+    lines: "Concerto vocale "
+- !ruby/object:Tdp::Box::Display 
+  location: retro interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      trasportato da [...?] 
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per pianoforte\n "
+  tag_end: A04
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "trasferimento da vinile di\n improvvisazioni per pianoforte\n "
+  tag_end: A06
+  tag_start: A05
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per pianoforte \n "
+  tag_end: A10
+  tag_start: A07
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "esecuzioni di lieder per canto e pianoforte\n "
+  tag_end: A18
+  tag_start: A11
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "trasferimento da vinile di\n concerto per pianoforte\n "
+  tag_end: B06
+  tag_start: B01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per pianoforte\n "
+  tag_end: B07
+  tag_start: B07
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "trasferimento da vinile di\n concerto per pianoforte\n "
+  tag_end: B08
+  tag_start: B08
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazioni per pianoforte
+    
+  tag_end: B11
+  tag_start: B09
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato su entrambi i lati fronte retro. Le peculiarit\xC3\xA0 di questo nastro sono: \xC3\xA8 stato trovato in testa ma con code invertite (rosse in testa, verdi in coda) e contiene un brevissimo frammento iniziale registrato a velocit\xC3\xA0 di scorrimento 4,75 cm/sec. Il frammento \xC3\xA8 stato ricostruito in studio attraverso il plug-in PitchShift incluso nel bundle ProTools 7.3. In [A07] si sente una voce maschile non identificata.\n Frammenti parlati:\n [A07][VM] \"e pi\xC3\xB9 alto?"
+  tag: NMGS0242-648
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2010-02-05
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

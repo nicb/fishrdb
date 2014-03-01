@@ -1,0 +1,158 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: "{1 5 7 9 13} sottolineati"
+      author: GS)
+      pen: stilografica blu
+    lines: |
+      1. corno-(2. corno) 3 viola o voce 4 voce 5 voce o cl (6. tromba) 7 cl (fatto) o vcl[?]) 8 fatto 9 trb 10 fatto[?] 111 fatto
+      12 fatto 13.14?15?
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: etichetta
+      author: FMU?)
+      pen: feltro
+    lines: "da sentire "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita
+    lines: "bobina I "
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sovrascritto
+      author: GS)
+      pen: matita
+    lines: |
+      CKCKC, visto molto corto
+      da vedere
+      retro quasi vuoto
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sovrascritto
+      author: GS)
+      pen: matita
+    lines: "Zen [????] "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sovrascritto
+      author: GS)
+      pen: matita
+    lines: |
+      retro [stulli????]
+      non buono
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: "{12 15} cerchiati"
+      author: ??
+      pen: pennarello
+    lines: |
+      - 1. GIA` FATTO - 2. GIA` FATTO
+      - 3. VOCE
+      - 4. ? Forse KL o SAX
+      - 5. NON CARATTERISTICO
+      - 6. ?
+      - 7. GIA` FATTO
+      - 8. FORSE VC
+      - 9. GIA` FATTO
+      - 10. GIA` FATTO
+      - 11. GIA` FATTO
+      - 12. BUONO X
+      - 13. ?
+      - 14. NO
+      - 15. BUONO X
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: penna blu
+    lines: |
+      Improvvisazione per due tromboni
+      ultima per corno
+
+- !ruby/object:Tdp::Box::Display 
+  location: retro foglio aggiunto
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: FMU?)
+      pen: pennarello rosso
+    lines: |
+      Side I tr.I Ondiola 3.75
+      | (short pieces)
+      v
+      12 - Ondiola 7.5
+      
+      
+      31'07 3.5
+      Ondiola + echo
+      ----
+      new piece
+      36 - 37
+      
+      
+      SIDE 2 
+      empty
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento da nastro di improvvisazioni per\n ondiola (9.5 cm/sec)\n "
+  tag_end: A12
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento da registrazioni vocali, scorrimento\n invertito a met\xC3\xA0 velocit\xC3\xA0 (registrato a 19 cm/sec)\n "
+  tag_end: A21
+  tag_start: A14
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per ondiola (9,5 cm/sec)\n "
+  tag_end: A22
+  tag_start: A22
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento di musica etnica (presumibilmente\n orientale - 9,5 cm/sec)\n "
+  tag_end: A23
+  tag_start: A23
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per ondiola (9,5 cm/sec)\n "
+  tag_end: A24
+  tag_start: A24
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento da effetti sonori, presumibilmente\n ottenuti strisciando corde di metallo\n (scorrimento invertito, registrazione a 9,5\n cm/sec)\n "
+  tag_end: A25
+  tag_start: A25
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento di una registrazione di Michiko\n Hirayama (9,5 cm/sec)\n "
+  tag_end: A27
+  tag_start: A26
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Montaggio in sequenza di effetti sonori,\n presumibilmente ottenuti strisciando corde\n di metallo (scorrimento invertito,\n registrazione a 9,5 cm/sc) alternato con una\n registrazione di Michiko Hirayama\n (scorrimento invertito, riversamento a 9,5\n cm/sec di un nastro precedentemente\n registrato a 19 cm/sec)\n "
+  tag_end: B18
+  tag_start: B01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    Montaggio di frammenti di riversamento di flauto,
+     (presumibilmente scorrimento invertito)
+    
+  tag_end: B28
+  tag_start: B19
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " Il nastro \xC3\xA8 registrato per la maggior parte solo\n sulla traccia A. Ad un certo punto [A07], si sente un nastro che\n riavvolge, quindi questo nastro contiene probabilmente dei\n riversamenti da altri nastri. In [A14-A27] ci sono dei passaggi vocali\n a velocit\xC3\xA0 doppia (19 cm/sec) (sempre riversamenti da altri nastri)\n che sono riversamenti rovesciati da un registratore fatto scorrere a\n met\xC3\xA0 velocit\xC3\xA0 (i rumori ancillari del registratore. Questa procedura\n continua anche in [B01-B18] con una alternanza fissa tra riversamenti\n di effetti sonori e voce, sempre suonati rovesciati e con le voci a\n met\xC3\xA0 velocit\xC3\xA0. Sulla traccia B, a met\xC3\xA0 nastro [B29] c'\xC3\xA8 anche un\n frammento che sembra essere invece un tentativo di sovraincisione\n della traccia A, poi abortito.\n\n"
+  tag: NMGS0146-243
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2007-12-14
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

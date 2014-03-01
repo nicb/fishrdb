@@ -1,0 +1,271 @@
+<!-- $Id: _edit.html.erb 621 2012-10-17 08:18:15Z nicb $ -->
+<%= javascript_tag("update_page_var = false;") -%>
+<% form_tag({ :controller => 'doc', :action => :create_or_update_form }, { :class => 'form_content'}) { %>
+	<%= error_messages_for 'doc' %>
+			
+	<!--[form:doc]-->
+ <%
+   biblio = edit.read_attribute('id').blank? ? BibliographicData.new : edit.bibliographic_data
+   bkey = edit.class.subkey
+   if !edit.read_attribute('id').blank? && biblio.issue_year
+     i_year = edit.proper_date_class(:issue_year, ExtDate::Year)
+   else
+     i_year = ExtDate::Year.new
+   end
+   if !edit.read_attribute('id').blank? && biblio.publishing_date
+     p_date = edit.proper_date_class(:publishing_date, ExtDate::Base)
+   else
+     p_date = ExtDate::Base.new
+   end
+ -%>
+<%# debug(biblio.inspect.to_s + ' || ' + biblio.issue_year.inspect.to_s + ' || ' + biblio.publishing_date.inspect.to_s) %>
+ <table class='form_content'>
+    <%= render(:partial => 'share/create_multiple_items') if edit.read_attribute('id').blank? -%>
+		<tr valign="bottom">
+		<td width="10%">
+		<label for="doc_description_level_id">Livello di Descrizione:</label>
+		</td>
+		<td width="90%">
+		<%=
+			dls = DescriptionLevel.selection
+			select('doc', 'description_level_position', dls, :selected => dls[edit.description_level.position])
+		%>
+		</td>
+    </tr>
+		<tr valign="top">
+		<td>
+		<label for="doc_corda">Corda:</label>
+		</td>
+		<td>
+		<%= text_field 'doc', 'corda', :size => 10, :maxsize => 10, :value => edit.read_attribute('corda') -%>
+    <%= text_field 'doc', 'corda_alpha', :size => 10, :maxsize => 10, :value => edit.corda_alpha -%><br />
+    <span class="form_italic_label">
+      (campi: numerico, alfanumerico)
+    </span>
+		</td>
+		</tr>
+		<tr valign="top">
+		<td>
+		<label for="doc_author">Autore:</label>
+		</td>
+		<td>
+      <%= text_field "doc[#{bkey}]", 'author_first_name', :size => '25%', :maxsize => 1024, :value => biblio.author_first_name -%>
+      <%= text_field "doc[#{bkey}]", 'author_last_name', :size => '25%', :maxsize => 1024, :value => biblio.author_last_name  %><br />
+      <font size='-2'><i>(Nome&nbsp;Cognome)</i></font>
+		</td>
+		</tr>
+		<tr valign="top">
+		<td>
+		<label for="doc_name">Titolo:</label>
+		</td>
+		<td>
+      <%= text_field 'doc', 'name_prefix', :size => '4%', :maxsize => 128, :value => edit.name_prefix -%>
+      <%= text_field 'doc', 'name', :size => '46%', :maxsize => 1024, :value => edit.name  %><br />
+      <font size='-2'><i>(Prefisso/Nome)</i></font>
+		</td>
+		</tr>
+		<tr valign="top">
+		<td>
+		<label for="doc_journal">Periodico:</label>
+		</td>
+		<td>
+      <%= text_field "doc[#{bkey}]", 'journal', :size => '52%', :maxsize => 1024, :value => biblio.journal -%>
+		</td>
+		</tr>
+		<tr valign="top">
+		<td>
+		<label for="doc_issue_year">Annata:</label>
+		</td>
+		<td>
+      <%=
+          select_year(i_year.year,
+                      i_year.date_select_options("doc[#{bkey}][issue_year]"))
+      -%>
+		</td>
+		</tr>
+		<tr valign="top">
+		<td>
+		<label for="doc_volume">Volume:</label>
+		</td>
+		<td>
+      <%= text_field "doc[#{bkey}]", 'volume', :size => '12%', :maxsize => 8, :value => biblio.volume -%>
+		</td>
+		</tr>
+		<tr valign="top">
+		<td>
+		<label for="doc_number">Numero:</label>
+		</td>
+		<td>
+      <%= text_field "doc[#{bkey}]", 'number', :size => '12%', :maxsize => 8, :value => biblio.number -%>
+		</td>
+		</tr>
+		<tr valign="bottom">
+		<td>
+		<label for="doc_volume_title">Titolo del Volume:</label>
+		</td>
+		<td>
+      <%= text_field "doc[#{bkey}]", 'volume_title', :size => '52%', :maxsize => 1024, :value => biblio.volume_title -%>
+		</td>
+		</tr>
+		<tr valign="top">
+		<td>
+		<label for="doc_address">Citt&agrave;:</label>
+		</td>
+		<td>
+      <%= text_field "doc[#{bkey}]", 'address', :size => '52%', :maxsize => 1024, :value => biblio.address -%>
+		</td>
+		</tr>
+		<tr valign="top">
+		<td>
+		<label for="doc_publisher">Editore:</label>
+		</td>
+		<td>
+      <%= text_field "doc[#{bkey}]", 'publisher', :size => '52%', :maxsize => 1024, :value => biblio.publisher -%>
+		</td>
+		</tr>
+		<tr valign="top">
+		<td>
+		<label for="doc_date">Data:</label>
+		</td>
+    <td>
+     <table>
+       <tr>
+         <td>
+           <%=
+             select_day(p_date.day,
+                         p_date.date_select_options("doc[#{bkey}][publishing_date]"))
+           -%>
+         </td>
+         <td>
+           <%=
+             select_month(p_date.month,
+                           p_date.date_select_options("doc[#{bkey}][publishing_date]"))
+           -%>
+         </td>
+         <td>
+           <%=
+             select_year(p_date.year,
+                          p_date.date_select_options("doc[#{bkey}][publishing_date]"))
+           -%>
+         </td>
+       </tr>
+     </table>
+    </td>
+		</tr>
+		<tr valign="bottom">
+		<td>
+		<label for="doc_academic_year">Anno Accademico:</label>
+		</td>
+		<td>
+      <%= text_field "doc[#{bkey}]", 'academic_year', :size => '12%', :maxsize => 128, :value => biblio.academic_year -%>
+		</td>
+		</tr>
+		<tr valign="bottom">
+		<td>
+		<label for="doc_pages">Numeri di Pagina:</label>
+		</td>
+		<td>
+      <%= text_field "doc[#{bkey}]", 'start_page', :size => '12%', :maxsize => 32, :value => biblio.start_page -%>
+      <%= text_field "doc[#{bkey}]", 'end_page', :size => '12%', :maxsize => 32, :value => biblio.end_page  %><br />
+      <font size='-2'><i>(Prima pagina&nbsp;Ultima pagina)</i></font>
+		</td>
+		</tr>
+		<tr valign="top">
+		<td>
+		<label for="doc_language">Lingua:</label>
+		</td>
+		<td>
+      <%= text_field "doc[#{bkey}]", 'language', :size => '52%', :maxsize => 1024, :value => biblio.language -%>
+		</td>
+		</tr>
+		<tr valign="top">
+		<td>
+		<label for="doc_translator">Traduttore:</label>
+		</td>
+		<td>
+      <%= text_field "doc[#{bkey}]", 'translator_first_name', :size => '25%', :maxsize => 1024, :value => biblio.translator_first_name -%>
+      <%= text_field "doc[#{bkey}]", 'translator_last_name', :size => '25%', :maxsize => 1024, :value => biblio.translator_last_name  %><br />
+      <font size='-2'><i>(Nome&nbsp;Cognome)</i></font>
+		</td>
+		</tr>
+		<tr valign="top">
+		<td>
+		<label for="doc_editor">Curatore:</label>
+		</td>
+		<td>
+      <%= text_field "doc[#{bkey}]", 'editor_first_name', :size => '25%', :maxsize => 1024, :value => biblio.editor_first_name -%>
+      <%= text_field "doc[#{bkey}]", 'editor_last_name', :size => '25%', :maxsize => 1024, :value => biblio.editor_last_name  %><br />
+      <font size='-2'><i>(Nome&nbsp;Cognome)</i></font>
+		</td>
+		</tr>
+		<tr valign="top">
+		<td>
+		<label for="doc_abstract">Abstract:</label>
+		</td>
+		<td>
+		  <%= text_area "doc[#{bkey}]", 'abstract', :cols => '56.5%', :rows => 4, :value => biblio.abstract  %>
+		</td>
+		</tr>
+		<tr valign="top">
+		<td>
+		<label for="doc_note">Note:</label>
+		</td>
+		<td>
+		  <%= text_area 'doc', 'note', :cols => '56.5%', :rows => 4, :value => edit.raw_note  %>
+		</td>
+		</tr>
+		<tr valign="top">
+		<td>
+		<label for="doc_consistenza">Consistenza:</label>
+		</td>
+		<td>
+		<%= text_field 'doc', 'consistenza', :size => 16, :maxsize => 32, :value => edit.consistenza  %>
+		</td>
+		</tr>
+		<tr valign="top">
+		<td>
+		<label for="doc_container_type_id">Contenitore:</label>
+		</td>
+		<td>
+		<%=
+			ct = ContainerType.find(:all, :order => "id").map { |ct| [ ct.container_type, ct.id ] };
+			select('doc', 'container_type_id', ct, :selected => edit.container_type.id)
+		%>
+		<%= text_field 'doc', 'container_number', :size => 12, :maxsize => 12, :value => edit.container_number %>
+		</td>
+		</tr>
+		<tr valign="bottom">
+		<td align="left">
+		  <label for="doc_public_access">Consultabile?:</label>
+    </td>
+    <td style="padding-left: 1em;">
+      S&igrave; <%= radio_button 'doc', 'public_access', true, { :checked => edit.public_access_check }  -%>
+      No <%= radio_button 'doc', 'public_access', false, { :checked => edit.public_access_uncheck }  -%>
+    </td>
+    </tr>
+		<tr valign="bottom">
+		<td align="left">
+		  <label for="doc_public_visibility">Visibile?:</label>
+    </td>
+    <td style="padding-left: 1em;">
+      S&igrave; <%= radio_button 'doc', 'public_visibility', true, { :checked => edit.public_visibility_check }  -%>
+      No <%= radio_button 'doc', 'public_visibility', false, { :checked => edit.public_visibility_uncheck }  -%>
+    </td>
+    </tr>
+  </table><!-- form_content -->
+	<%= hidden_field('doc', 'id', :value => edit.read_attribute('id')) -%>
+	<%= hidden_field('doc', 'parent_id', :value => edit.parent_id) -%>
+	<%= hidden_field('doc', 'position', :value => edit.position) -%>
+	<%= hidden_field('doc', 'creator_id', :value => edit.creator.read_attribute('id')) -%>
+	<%= hidden_field('doc', 'type', :value => edit.read_attribute('type')) -%>
+	<%= hidden_field('doc', 'last_modifier_id', :value => session["user"].read_attribute('id')) -%>
+	<br />
+	<div class="form_buttons">
+    <%= submit_tag(" salva ", :name => 'update') -%>
+    <%= submit_tag(" cancella ", :name => 'cancel') -%>
+	</div> <!-- form_buttons -->
+<% } %>
+<!--[eoform:doc]-->
+<table width="100%">
+  <%= render(:partial => 'ar_show', :collection => edit.authority_record_collection) -%>
+</table>

@@ -1,0 +1,15 @@
+#
+# $Id: cd_tracks.yml 445 2009-09-24 14:19:25Z nicb $
+#
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+#
+
+action_music_n_1:
+  cd_track_record: action_music_n_1_ctr
+  for: pianoforte
+  duration: <%= Time.local(0, 1, 1, 0, 18, 1).to_s %>
+
+action_music_n_2:
+  cd_track_record: action_music_n_2_ctr
+  for: pianoforte, chitarra
+  duration: <%= Time.local(0, 1, 1, 0, 5, 9).to_s %>

@@ -1,0 +1,10 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+#
+# $Id: fisold_reference_dbs.yml 173 2008-02-22 11:52:00Z nicb $
+#
+
+one:
+  name: Partiture_Scelsi
+
+two:
+  name: Partiture_altri_autori

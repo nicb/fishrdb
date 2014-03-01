@@ -1,0 +1,41 @@
+<!-- $Id: show.rhtml 619 2012-09-23 15:59:12Z nicb $ -->
+<%= render(:partial => 'sidebar_display', :object => @sidebar_root) %>
+<div class='content_plus_dashboard'>
+	<% sel = Hash.new('unselected'); sel[@selected_tab] = 'selected'; -%>
+	<%= render(:partial => 'search_tabs', :object => sel) -%>
+	<div class="content_area">
+	  <div class="document_record">
+      <%= render(:partial => 'share/error_messages') %>
+	    <div class="document_record_title">
+	      <h2><%= truncate(@doc.cleansed_name,60) -%></h2>
+	      <%= link_to('indietro', { :action => '#' }, { :onclick => 'window.back(); return false;' }) -%>
+	    </div>
+	    <div class="document_record_breadcrumbs">
+		    <% @doc.breadcrumbs.each do |d| -%> 
+				  &raquo; <%= d.description_level.level -%>:
+	        <%=
+	          link_to(truncate(d.public_description_level_title,50), url_for(:action => 'show', :id => d.id), :title => d.public_description_level_title)
+		      -%>
+	      <% end -%>
+	    </div><!-- record_breadcrumbs -->
+	    <div class="document_record_content">
+				<table cellpadding="1px" cellspacing="1px" valign="top">
+				  <tr valign="top">
+				    <td class="record_item_tag">
+				      <%= @doc.description_level.level -%>:
+				    </td>
+				    <td class="record_item_content">
+				    <%=
+	              link_to(@doc.public_description_level_title, url_for(:action => 'show', :id => @doc.id), :title => @doc.public_description_level_title, :class => 'record_item_content')
+				    -%>
+				    </td>
+				  </tr>
+				  <%= render(:inline => @doc.display_fields(session_user)) -%>
+				</table>
+	    </div><!-- document_record_content -->
+	  </div><!-- document_record -->
+	  <div class="document_record_backlink">
+	      <%= link_to('indietro', { :action => '#' }, { :onclick => 'window.back(); return false;' }) -%>
+	  </div>
+	</div><!-- content_area -->
+</div> <!-- content_plus_dashboard -->

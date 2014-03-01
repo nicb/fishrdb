@@ -1,0 +1,9 @@
+<!-- $Id: _search_results.rhtml 535 2010-08-21 01:42:42Z nicb $ -->
+<li class="search_result_series_list">
+  <hr />
+  <h3><a name="<%= search_results.series.name -%>">Serie: <%= search_results.series.name -%></a></h3>
+  <ul class="search_result_document_list">
+    <%= render(:partial => 'search_result_details', :collection => search_results.documents) -%>
+  </ul>
+  <hr />
+</li>

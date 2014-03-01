@@ -1,0 +1,14 @@
+<!-- $Id: tape_search_form.rhtml 396 2009-05-04 11:23:32Z nicb $ -->
+<%= render(:partial => 'sidebar_display', :object => @sidebar_root) -%>
+<div class="content_plus_dashboard">
+	<% sel = Hash.new('unselected'); sel['tape'] = 'selected'; -%>
+	<%= render(:partial => 'search_tabs', :object => sel) -%>
+	<div class="content_area">
+	  <div class="tape_search_form">
+			<% form_tag(:action => 'tape_search') do -%>
+			  <%= text_field_with_auto_complete(:search, :term, { :size => 40, :maxsize => 256 }, :skip_style => true) -%>
+			  <%= submit_tag('cerca', :name => 'search') -%>
+			<% end -%>
+    </div> <!-- tape_search_form -->
+  </div> <!-- content_area -->
+</div> <!-- content_plus_dashboard -->

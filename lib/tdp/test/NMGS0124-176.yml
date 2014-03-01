@@ -1,0 +1,102 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna rossa
+    lines: "piano GS "
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cerchiato
+      author: GS?
+      pen: penna blu
+    lines: "61 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS?
+      pen: penna blu
+    lines: |
+      20 P.11,40 21 P.9,45
+      22 P.8,35
+      23 P.7,30
+      24 P.6,50
+      25 P.6,05
+      26 P.5,20
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS?
+      pen: matita rossa
+    lines: |
+      24 P.4,40 25 P.3,40
+      26 P.3,00
+      27 P.2,15
+      28 P.1,40
+      29 P.1,00
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS?
+      pen: penna blu
+    lines: |
+      27 P.12,25 28 P.11,55
+      29 P.11,20
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: pennarello viola
+    lines: |
+      Sonata 2a
+      valse
+      
+      
+      la p[????]ra
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS?
+      pen: penna blu
+    lines: |
+      30 P.10,45 31 P.11,55
+      32 P.12,20
+      12,35 vuoto
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: pennarello viola
+    lines: "tutti visto "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per pianoforte\n "
+  tag_end: A11
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazioni per pianoforte
+    
+  tag_end: B02
+  tag_start: B02
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro su due tracce fronte-retro. La traccia 2 \xC3\xA8 incisa solo all'inizio e per il resto \xC3\xA8 vuota. In [A04 22'41\"] si ode il Maestro interrompere un altro registratore (o qualcosa di simile), ma la registrazione non si interrompe l\xC3\xAC. Il contenitore reca sul retro un foglio di carta incollato che copre scritte sottostanti. Le scritte sottostanti sono del tutto illegibili, per cui vengono riportate solo le scritte sul foglio incollato. Il contenuto sembra comunque ragionevolmente aderente alle scritte riportate sul foglio incollato sul retro del contenitore.\n Frammenti parlati:\n [A02][GS] \"Funziona? funziona. [A08][GS] \"Funziona?"
+  tag: NMGS0124-176
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2007-02-05
+  location: Studio Schiavoni
+  transferrers: 
+  - Bernardini, Nicola
+  - Schiavoni, Piero

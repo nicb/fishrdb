@@ -1,0 +1,12 @@
+<%
+  ctp = performer && performer.is_a?(Performer) ? performer : Performer.new
+  n = ctp.name ? ctp.name : Name.new
+  i = ctp.instrument ? ctp.instrument : Instrument.new
+-%>
+<%= text_field 'doc[' + subkey + '][' + association + '_' + index + '][name]', 'first_name', :size => 8, :maxsize => 256, :value => n.first_name -%>
+<%= text_field 'doc[' + subkey + '][' + association + '_' + index + '][name]', 'last_name', :size => 8, :maxsize => 256, :value => n.last_name -%>
+<%= text_field 'doc[' + subkey + '][' + association + '_' + index + '][name]', 'pseudonym', :size => 8, :maxsize => 128, :value => n.pseudonym -%>
+<%= text_field 'doc[' + subkey + '][' + association + '_' + index + '][name]', 'disambiguation_tag', :size => 8, :maxsize => 256, :value => n.disambiguation_tag -%>
+<%= text_field 'doc[' + subkey + '][' + association + '_' + index + '][instrument]', 'name', :size => 8, :maxsize => 256, :value => i.name -%>
+<% session[unitag] = index -%>
+<!-- $Id: _performer.html.erb 616 2012-06-21 11:47:43Z nicb $ -->

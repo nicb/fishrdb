@@ -1,0 +1,63 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: su etichetta
+      author: FMU?)
+      pen: feltro nero
+    lines: |
+      da sentire (ondiola)
+
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: "{fare?} in rosso"
+      author: GS)
+      pen: penna blu
+    lines: |
+      1 Il Terrore 2 ? fare?
+      3 Il primo delle 4 Illustrazioni
+      4 L'ultimo di KA
+      5 ? fare
+      6 Il secondo delle 4 Illustrazioni
+      7 Il 3o " "
+      8 Il 4 " "
+      9 ? fare?
+      10 ? ------------------------ a 7 1/2
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: pennarello rosso
+    lines: "a posto "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento (presumibilmente) da nastro di una\n improvvisazione per pianoforte\n "
+  tag_end: A01
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamenti da vinile di improvvisazioni per\n pianoforte\n "
+  tag_end: A09
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    riversamento (presumibilmente) da nastro di una
+     improvvisazione per pianoforte
+    
+  tag_end: A11
+  tag_start: A11
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " Il nastro \xC3\xA8 registrato esclusivamente sulla\n traccia A. Nell'ultima parte [A10], al contrario di quanto scritto sul\n contenitore la velocita` di scorrimento e` di 9.5 cm/sec.\n\n"
+  tag: NMGS0149-496
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2008-01-11
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

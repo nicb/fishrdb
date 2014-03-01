@@ -1,0 +1,104 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: |
+      incominciato vari pezzi per vc
+      e finale vc col rovescio
+      alla fine del nastro
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: penna stilografica blu
+    lines: "\"Toccata\" per pianoforte "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cerchiato
+      author: ??)
+      pen: penna biro blu
+    lines: "64 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: penna stilografica blu
+    lines: |
+      Dithome originale
+      Toccata pf
+
+- !ruby/object:Tdp::Box::Display 
+  location: foglio interno, dattiloscritto su carta intestata Lions International) @@
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: "??) "
+      pen: macchina da scrivere meccanica
+    lines: "Roma 21-6-60 \n\n\
+      Caro Lion,\n\
+      il 29 corrente - festivit\xC3\xA0 di San Pietro -\n\
+      unitamente agli Amici degli altri Clubs romani e\n\
+      delle localit\xC3\xA0 vicine ci riuniremo alle ore 13,30 per\n\
+      un pranzo sociale al restaurant \"Medusa\" di Terra-\n\
+      cina (4.Km. sulla via di Sperlonga).\n\n\n\
+      Dopo il pranzo, sar\xC3\xA0 solennizzato il passag-\n\
+      gio della campana presidenziale dall'attuale Presiden-\n\
+      [...] Sen.Prof.Dott. Eugenio Morelli al Presidente eletto Dr. Michele Grossi.\n\n\n\
+      Nella stessa occasione con la partecipazione del Governat[...] [...]scente\n"
+- !ruby/object:Tdp::Box::Display 
+  location: foglio interno, retro
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: "1 no 2 no velocit\xC3\xA0 piccola\n\
+      3 no\n\
+      4 piano a velocit\xC3\xA0 grande\n\
+      toccata (buona)\n\
+      5 adagio velocit\xC3\xA0 piccola\n\
+      buona\n\
+      6 vedere (adagio N2)\n\
+      (lungo)\n\
+      7 toccata buona\n"
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola\n "
+  tag_end: A03
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per pianoforte\n "
+  tag_end: A07
+  tag_start: A04
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola\n "
+  tag_end: A12
+  tag_start: A08
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola\n "
+  tag_end: B04
+  tag_start: B02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazioni per pianoforte
+    
+  tag_end: B06
+  tag_start: B05
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " Il nastro \xC3\xA8 un BASF LGS (partita 75412) mentre il\n contenitore \xC3\xA8 quello di un Scotch 111 A-12. All'interno del\n contenitore c'\xC3\xA8 un foglietto strappato da una lettera al Lions Club\n di Roma datata 21/6/60. Sul retro della lettera vi sono indicazioni\n riguardanti il contenuto del nastro. Il nastro \xC3\xA8 registrato in gran\n parte sul lato A e per i primi 32' \xC3\xA8 registrato con scorrimento a 9,5\n cm/sec. Dopo i primi 32' la velocit\xC3\xA0 di scorrimento passa a 19 cm/sec\n e lo scorrimento si inverte, salvo due frammenti (evidentemente\n sottostante) a due velocit\xC3\xA0 diverse con scorrimento non invertito.\n\n Frammenti parlati:\n\n [B02]\n [GS] \"Funziona?\n\n"
+  tag: NMGS0178-593
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2008-10-07
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

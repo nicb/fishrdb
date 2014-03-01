@@ -1,0 +1,4 @@
+#
+# $Id: change_date_formats.rjs 270 2008-11-09 12:06:14Z nicb $
+#
+page[@vizdate_id].value = @vizdate_value

@@ -1,0 +1,91 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      Triphon 1-2-3 Contrabasso 8 4
+      Ottavino 158
+      Flauto 220
+      Clarinetto (Preghiera[?]) 325
+
+- !ruby/object:Tdp::Box::Display 
+  location: retro interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita rossa
+    lines: |
+      da fare il 1o dopo
+      Div.
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sbarrato
+      author: GS
+      pen: matita nera
+    lines: "piccoli capricci (da fare) "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "Divertimento vl[aino?] "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      N1 N2 da scegliere gli adagi
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      + altri pezzi da vedere 2 ottimi per viola (da fare)
+      2 Tzigano
+
+- !ruby/object:Tdp::Box::Display 
+  location: costola destra
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna nera
+    lines: "ondiola - Contrabassi Triphon "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Riversamento da radio (pubblicit\xC3\xA0)\n "
+  tag_end: A01
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Improvvisazioni per ondiola singola\n "
+  tag_end: A23
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    Improvvisazioni per ondiola singola (riversamenti da
+     vinile?)
+    
+  tag_end: B14
+  tag_start: B01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "nastro due tracce fronte retro. Il nastro presenta uno stiramento a [Stretch1 2'59\"] e una giuntura originale di rottura [Splice1 43'41\"] Il nastro inizia con un brevissimo frammento di pubblicit\xC3\xA0 riversata dalla radio: \"[VF] . il formaggino che piace ai bambini. \"[VM] Su ogni astuccio la. Nella traccia 2 ci sono vari presunti riversamenti da vinile di improvvisazione per ondiola la cui velocit\xC3\xA0 di scorrimento \xC3\xA8 difficilmente discernibile. Si \xC3\xA8 optato per due ipotesi (9,5 e 19 cm/sec) sulla base del hum da giradischi presente nei riversamenti (50 Hz) All'inizio di numerose regioni si pu\xC3\xB2 ascoltare il \"ting\" caratteristico del registratore G36."
+  tag: NMGS0105-383
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2006-11-13
+  location: Studio Schiavoni
+  transferrers: 
+  - Bernardini, Nicola
+  - Schiavoni, Piero

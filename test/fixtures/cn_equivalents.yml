@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+#
+# $Id: cn_equivalents.yml 256 2008-07-23 06:06:42Z nicb $
+#
+one:
+  name: Cn Equivalent Fixture N.1
+  creator_id: 7
+  last_modifier_id: 7
+
+two:
+  name: Cn Equivalent Fixture N.2
+  creator_id: 7
+  last_modifier_id: 7

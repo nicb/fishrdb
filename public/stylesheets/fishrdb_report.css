@@ -1,0 +1,44 @@
+/*
+ * $Id: fishrdb_report.css 329 2009-03-12 23:27:58Z nicb $
+ */
+
+@page {
+  size: auto;
+  margin: 2cm;
+}
+
+body {
+  background: #ffffff;
+  color: #000000;
+  font-size: 9pt;
+}
+
+div.content {
+  display: block;
+  position: absolute;
+  top: 12ex;
+  height: auto;
+}
+
+div.footer {
+  position: absolute;
+  bottom: 3ex;
+}
+
+a {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+a:visited {
+  color: inherit;
+  background-color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover { color: #4F4F5C; background-color: #FFFFFF; }

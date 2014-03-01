@@ -1,0 +1,62 @@
+#
+# $Id: nodes.yml 19 2007-10-11 16:57:56Z nicb $
+#
+fis:
+    name: __Fondazione_Isabella_Scelsi__
+    description_level:  Fondo
+    position: 1
+#
+# Archivio Privato
+#
+arcp:
+    name: Archivio Privato
+    parent: fis
+    description_level: Sezione
+    position: 1
+#
+# Archivio Musicale
+#
+arcm:
+    name: Archivio Musicale
+    parent: fis
+    description_level: Sezione
+    position: 2
+part:
+    name: Partiture
+    parent: arcm
+    description_level: Serie
+    position: 1
+disc:
+    name: Dischi
+    parent: arcm
+    description_level: Serie
+    position: 2
+nast:
+    name: Nastri
+    parent: arcm
+    description_level: Serie
+    position: 3
+#
+# Archivio Musicale
+#        |
+#    Partiture
+#        +--> Partiture Giacinto Scelsi
+#
+pags:
+    name: Partiture Giacinto Scelsi
+    parent: part
+    description_level: SottoSerie
+    position: 1
+    children_ordering: alpha
+#
+# Archivio Musicale
+#        |
+#    Partiture
+#        +--> Partiture Altri Autori
+#
+paaa:
+    name: Partiture Altri Autori
+    parent: part
+    description_level: SottoSerie
+    position: 2
+    children_ordering: alpha

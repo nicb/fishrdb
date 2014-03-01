@@ -1,0 +1,81 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno, biglietto aggiunto
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: FMU?)
+      pen: matita
+    lines: |
+      SIDE I TR |3.75 8?? --------> |7.5
+      26^3?+- | |3.75
+      v
+      -----------
+      50+- silence
+      ----------------------
+      SIDE 2 TR1 --
+      Violin (Devy?)
+      (fabulous playing)
+      | 25??+-
+      | end
+      v
+      empty
+
+- !ruby/object:Tdp::Box::Display 
+  location: fronte interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS?)
+      pen: penna stilografica nera
+    lines: |
+      da vedere dopo il
+      cl.
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita
+    lines: |
+      ultimo per clarinetto III 250
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita
+    lines: |
+      fare il 15 per viola sola 1?10 - 215
+      250 cl fatto
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: pennarello viola
+    lines: "110 funerale ([+t?]agli) "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "riversamento da vinile di improvvisazioni per ondiola\n "
+  tag_end: A07
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    registrazione radiofonica della Sonata per Violino
+     Solo di Bela Bartok
+    
+  tag_end: B01
+  tag_start: B01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " Il nastro e presumibilmente stato riciclato\n alcune volte. Presenta un frammento di riversamento da vinile\n all'inizio della traccia A, poi un'improvvisazione per ondiola che\n copre tutta la traccia A, mentre sulla traccia B (con scorrimento\n inverso e velocita 9,5cm/sec) presenta la registrazione dalla radio\n della Sonata per violino di Bela Bartok. Alla fine della Sonata, un\n annunciatore radiofonico dice: \"di Bela Bartok avete ascoltato Sonata\n per Violino Solo\" [B02]\n\n"
+  tag: NMGS0141-576
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2007-11-23
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

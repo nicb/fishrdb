@@ -1,0 +1,85 @@
+<!-- $Id: show.html.erb 483 2010-04-04 01:48:36Z nicb $ -->
+<div class='sidebar'>
+	<div class="sorter">
+		<% unless @tree_root.no_children? -%>
+      <center>
+		    <%= @tree_root.description_level.level -%>
+		    "<i><%= truncate(@tree_root.cleansed_full_name,40) -%></i>"<br />ordinat<%= @tree_root.description_level.termination -%> per
+		    <% form_tag(:action => 'reorder_siblings_and_render', :id => @tree_root.id, :page => @page) do -%>
+		      <%=
+		        so = [];
+		        Document.sort_hash.map { |k, v| so << [v, k.to_s] };
+		        select('doc', 'sort_order', so, { :selected => 'logic' },
+		              { :style => 'width: 12em;' })
+		      -%>
+		      <%= submit_tag(" riordina ", :name => 'reorder'); -%>
+		    <% end -%>
+      </center>
+	  <% end -%>
+	</div> <!-- class: sorter id: sorter -->
+  <%= render(:partial => 'sidebar/sidebar_display', :object => @root) -%>
+</div> <!-- SIDEBAR -->
+<!-- END OF SIDEBAR -->
+<div class="innerdoc" id="innerdoc">
+  <div class="innerdoc_dashboard">
+		<%= javascript_tag("update_page_var = true;") -%>
+		<%=
+			periodically_call_remote(:condition => "update_page_var == true",
+									 :url => { :action => 'show', :id => @doc.id, :page => @page },
+									 :frequency =>  300,
+									 :complete => "followLink(#{@doc.id})" )
+		-%>
+    <%= render(@doc.child_button(@page)) -%>
+    <%= render(@doc.sibling_button(@page)) -%>
+    <%= render(@doc.edit_button(@page)) -%>
+		<%= link_to(image_tag("fishrdb/delete_16.png", :border => 0, :alt => "Elimina", :title => "Elimina"),
+				{ :action => "delete", :id => @doc.id, :page => @page }, :confirm => @doc.delete_confirm_message)
+		%>
+		<font size="-3">
+		<%= 
+	      link_to_unless(SidebarTree.clipboard_empty?(session),
+	        image_tag('fishrdb/paste_16.png', :alt => 'Incolla figlia qui sotto', :title => 'Incolla figlia qui sotto'),
+	                :controller => :sidebar, :action => 'paste_child_below_here', :id => @doc.id)
+		-%>
+    <span class="dashboard_label">
+		  <%= link_to('aggiorna', :action => "show", :id => @doc.id, :page => @page) -%>
+    </span>
+    <% if @doc.children.reload.size > 0 -%>
+      <% form_tag(:action => :renumber_children_cordas, :id => @doc.id) do -%>
+        <%= submit_tag("rin. corde", :name => 'renumber'); -%>
+        <%= text_field_tag('start_corda_number', 1, { :size => 1, :maxsize => 10 }) -%>
+        <span class="dashboard_label">rel?</span><%= check_box_tag('corda_number_relative_to_year') -%>
+      <% end -%>
+    <% end -%>
+	  </font>
+		<br>
+		<%# end -%>
+  </div>
+  <div class="doc_content" id="doc_content">
+		<table cellpadding="1px" cellspacing="1px" valign="top">
+			<% @doc.ancestors.reverse.each do |d| -%> 
+      <tr valign="<%= d.description_level.level.size > 15 ? 'bottom' : 'top' -%>">
+				<td width="10%">
+				  <%= d.description_level.level -%>:</td>
+				<td width="90%">
+                  <%=
+                      link_to(truncate(d.cleansed_full_name,50), url_for(:action => 'show', :id => d.id), :title => d.cleansed_full_name)
+				  -%>
+				</td>
+			</tr>
+    <% end -%>
+      <tr valign="<%= @doc.description_level.level.size > 15 ? 'bottom' : 'top' -%>">
+        <td width="10%">
+          <%= @doc.description_level.level -%>:
+        </td>
+        <td width="90%">
+          <%=
+              link_to(truncate(@doc.cleansed_full_name,50), url_for(:action => 'show', :id => @doc.id), :title => @doc.cleansed_full_name)
+          -%>
+        </td>
+      </tr>
+       <%= render(:inline => @doc.display_fields(session_user)) -%>
+       <%= render(:partial => 'ar_show', :collection => @doc.authority_record_collection) -%>
+		</table>
+  </div> <!-- doc_content -->
+</div> <!-- innerdoc -->

@@ -1,0 +1,48 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: etichetta
+      author: FMU
+      pen: feltro rosso
+    lines: |
+      ONDIOLA 3.75 I. MOSTLY piano 7.5
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: etichetta
+      author: FMU
+      pen: feltro rosso
+    lines: |
+      / ONE 44 min / SIDE
+      /
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: pennarello nero
+    lines: "[1en?] "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per due ondiole\n "
+  tag_end: A01
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazioni per pianoforte
+    
+  tag_end: A07
+  tag_start: A02
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato solo sulla traccia 1. Nonostante le indicazioni di Frances-Marie Uitti sulla scatola, dal rilevamento del hum il nastro sembra essere registrato inizialmente a 19 cm/sec ed in seguito a 38 cm/sec (fatto peculiare per le registrazioni di Scelsi) In un frammento si sente poi la voce di GS che dice \"Funziona? e la velocit\xC3\xA0 \xC3\xA8 inequivocabilmente 38 cm/sec."
+  tag: NMGS0268-162
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2010-06-28
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

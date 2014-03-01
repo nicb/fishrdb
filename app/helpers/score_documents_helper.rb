@@ -1,0 +1,2 @@
+module ScoreDocumentsHelper
+end

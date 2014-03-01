@@ -1,0 +1,484 @@
+state 28 contains 1 shift/reduce conflicts
+
+
+-------- Grammar --------
+
+rule 1 tape_content: tape_content_header empty_lines WHITE_SPACE tape_content_lines
+rule 2 tape_content_header: WHITE_SPACE TAPE_CONTENT_HEADER EOL
+rule 3 tape_content_lines: tape_content_lines tape_content_line
+rule 4 tape_content_lines: tape_content_line
+rule 5 tape_content_line: tape_content_line filled_line EOL WHITE_SPACE
+rule 6 tape_content_line: tape_content_line filled_line EOL empty_lines
+rule 7 tape_content_line: tape_content_tag filled_line EOL WHITE_SPACE
+rule 8 tape_content_line: tape_content_tag filled_line EOL empty_lines
+rule 9 tape_content_tag: LSQ TAPE_SEGMENT RSQ
+rule 10 tape_content_tag: LSQ TAPE_SEGMENT DASH TAPE_SEGMENT RSQ
+rule 11 filled_line: filled_line word
+rule 12 filled_line: word
+rule 13 word: ANYWORD
+rule 14 word: punctuation
+rule 15 word: TAPE_SEGMENT
+rule 16 word: WHITE_SPACE
+rule 17 punctuation: punctuation PUNCTUATION
+rule 18 punctuation: PUNCTUATION
+rule 19 punctuation: LPAR
+rule 20 punctuation: RPAR
+rule 21 punctuation: DASH
+rule 22 punctuation: COMMA
+rule 23 punctuation: COLON
+rule 24 empty_lines: empty_lines EMPTY_LINE
+rule 25 empty_lines: EMPTY_LINE
+
+------- Symbols -------
+
+**Nonterminals, with rules where they appear
+
+  $start (23)
+    on right: 
+    on left : 
+  tape_content (24)
+    on right: 
+    on left : 1
+  tape_content_header (25)
+    on right: 1
+    on left : 2
+  empty_lines (26)
+    on right: 1 6 8 24
+    on left : 24 25
+  tape_content_lines (27)
+    on right: 1 3
+    on left : 3 4
+  tape_content_line (28)
+    on right: 3 4 5 6
+    on left : 5 6 7 8
+  filled_line (29)
+    on right: 5 6 7 8 11
+    on left : 11 12
+  tape_content_tag (30)
+    on right: 7 8
+    on left : 9 10
+  word (31)
+    on right: 11 12
+    on left : 13 14 15 16
+  punctuation (32)
+    on right: 14 17
+    on left : 17 18 19 20 21 22 23
+
+**Terminals, with rules where they appear
+
+  $end (0) 
+  error (1) 
+  COMMA (2) 22
+  COLON (3) 23
+  RPAR (4) 20
+  RSQ (5) 9 10
+  DASH (6) 10 21
+  LPAR (7) 19
+  LSQ (8) 9 10
+  SESSION_HEADER (9) 
+  DATE (10) 
+  LOCATION (11) 
+  TRANSFERRER (12) 
+  ANYWORD (13) 13
+  TAPE_TAG (14) 
+  WHITE_SPACE (15) 1 2 5 7 16
+  PUNCTUATION (16) 17 18
+  ID_TAG (17) 
+  EMPTY_LINE (18) 24 25
+  EOL (19) 2 5 6 7 8
+  TAPE_CONTENT_HEADER (20) 2
+  TAPE_SEGMENT (21) 9 10 15
+  DOLLAR (22) 
+
+--------- State ---------
+
+state 0
+
+
+  WHITE_SPACE   shift, and go to state 3
+
+  tape_content  go to state 1
+  tape_content_header  go to state 2
+
+state 1
+
+
+  $end          shift, and go to state 4
+
+
+state 2
+
+   1) tape_content : tape_content_header _ empty_lines WHITE_SPACE tape_content_lines
+
+  EMPTY_LINE    shift, and go to state 6
+
+  empty_lines   go to state 5
+
+state 3
+
+   2) tape_content_header : WHITE_SPACE _ TAPE_CONTENT_HEADER EOL
+
+  TAPE_CONTENT_HEADER  shift, and go to state 7
+
+
+state 4
+
+
+  $end          shift, and go to state 8
+
+
+state 5
+
+   1) tape_content : tape_content_header empty_lines _ WHITE_SPACE tape_content_lines
+  24) empty_lines : empty_lines _ EMPTY_LINE
+
+  WHITE_SPACE   shift, and go to state 9
+  EMPTY_LINE    shift, and go to state 10
+
+
+state 6
+
+  25) empty_lines : EMPTY_LINE _
+
+  $default      reduce using rule 25 (empty_lines)
+
+
+state 7
+
+   2) tape_content_header : WHITE_SPACE TAPE_CONTENT_HEADER _ EOL
+
+  EOL           shift, and go to state 11
+
+
+state 8
+
+
+  $default      accept
+
+
+state 9
+
+   1) tape_content : tape_content_header empty_lines WHITE_SPACE _ tape_content_lines
+
+  LSQ           shift, and go to state 14
+
+  tape_content_lines  go to state 12
+  tape_content_line  go to state 13
+  tape_content_tag  go to state 15
+
+state 10
+
+  24) empty_lines : empty_lines EMPTY_LINE _
+
+  $default      reduce using rule 24 (empty_lines)
+
+
+state 11
+
+   2) tape_content_header : WHITE_SPACE TAPE_CONTENT_HEADER EOL _
+
+  $default      reduce using rule 2 (tape_content_header)
+
+
+state 12
+
+   1) tape_content : tape_content_header empty_lines WHITE_SPACE tape_content_lines _
+   3) tape_content_lines : tape_content_lines _ tape_content_line
+
+  LSQ           shift, and go to state 14
+  $default      reduce using rule 1 (tape_content)
+
+  tape_content_line  go to state 16
+  tape_content_tag  go to state 15
+
+state 13
+
+   4) tape_content_lines : tape_content_line _
+   5) tape_content_line : tape_content_line _ filled_line EOL WHITE_SPACE
+   6) tape_content_line : tape_content_line _ filled_line EOL empty_lines
+
+  COMMA         shift, and go to state 17
+  COLON         shift, and go to state 19
+  RPAR          shift, and go to state 20
+  DASH          shift, and go to state 23
+  LPAR          shift, and go to state 24
+  ANYWORD       shift, and go to state 18
+  WHITE_SPACE   shift, and go to state 21
+  PUNCTUATION   shift, and go to state 22
+  TAPE_SEGMENT  shift, and go to state 27
+  $default      reduce using rule 4 (tape_content_lines)
+
+  filled_line   go to state 25
+  word          go to state 26
+  punctuation   go to state 28
+
+state 14
+
+   9) tape_content_tag : LSQ _ TAPE_SEGMENT RSQ
+  10) tape_content_tag : LSQ _ TAPE_SEGMENT DASH TAPE_SEGMENT RSQ
+
+  TAPE_SEGMENT  shift, and go to state 29
+
+
+state 15
+
+   7) tape_content_line : tape_content_tag _ filled_line EOL WHITE_SPACE
+   8) tape_content_line : tape_content_tag _ filled_line EOL empty_lines
+
+  COMMA         shift, and go to state 17
+  COLON         shift, and go to state 19
+  RPAR          shift, and go to state 20
+  DASH          shift, and go to state 23
+  LPAR          shift, and go to state 24
+  ANYWORD       shift, and go to state 18
+  WHITE_SPACE   shift, and go to state 21
+  PUNCTUATION   shift, and go to state 22
+  TAPE_SEGMENT  shift, and go to state 27
+
+  filled_line   go to state 30
+  word          go to state 26
+  punctuation   go to state 28
+
+state 16
+
+   3) tape_content_lines : tape_content_lines tape_content_line _
+   5) tape_content_line : tape_content_line _ filled_line EOL WHITE_SPACE
+   6) tape_content_line : tape_content_line _ filled_line EOL empty_lines
+
+  COMMA         shift, and go to state 17
+  COLON         shift, and go to state 19
+  RPAR          shift, and go to state 20
+  DASH          shift, and go to state 23
+  LPAR          shift, and go to state 24
+  ANYWORD       shift, and go to state 18
+  WHITE_SPACE   shift, and go to state 21
+  PUNCTUATION   shift, and go to state 22
+  TAPE_SEGMENT  shift, and go to state 27
+  $default      reduce using rule 3 (tape_content_lines)
+
+  filled_line   go to state 25
+  word          go to state 26
+  punctuation   go to state 28
+
+state 17
+
+  22) punctuation : COMMA _
+
+  $default      reduce using rule 22 (punctuation)
+
+
+state 18
+
+  13) word : ANYWORD _
+
+  $default      reduce using rule 13 (word)
+
+
+state 19
+
+  23) punctuation : COLON _
+
+  $default      reduce using rule 23 (punctuation)
+
+
+state 20
+
+  20) punctuation : RPAR _
+
+  $default      reduce using rule 20 (punctuation)
+
+
+state 21
+
+  16) word : WHITE_SPACE _
+
+  $default      reduce using rule 16 (word)
+
+
+state 22
+
+  18) punctuation : PUNCTUATION _
+
+  $default      reduce using rule 18 (punctuation)
+
+
+state 23
+
+  21) punctuation : DASH _
+
+  $default      reduce using rule 21 (punctuation)
+
+
+state 24
+
+  19) punctuation : LPAR _
+
+  $default      reduce using rule 19 (punctuation)
+
+
+state 25
+
+   5) tape_content_line : tape_content_line filled_line _ EOL WHITE_SPACE
+   6) tape_content_line : tape_content_line filled_line _ EOL empty_lines
+  11) filled_line : filled_line _ word
+
+  COMMA         shift, and go to state 17
+  COLON         shift, and go to state 19
+  RPAR          shift, and go to state 20
+  DASH          shift, and go to state 23
+  LPAR          shift, and go to state 24
+  ANYWORD       shift, and go to state 18
+  WHITE_SPACE   shift, and go to state 21
+  PUNCTUATION   shift, and go to state 22
+  EOL           shift, and go to state 31
+  TAPE_SEGMENT  shift, and go to state 27
+
+  word          go to state 32
+  punctuation   go to state 28
+
+state 26
+
+  12) filled_line : word _
+
+  $default      reduce using rule 12 (filled_line)
+
+
+state 27
+
+  15) word : TAPE_SEGMENT _
+
+  $default      reduce using rule 15 (word)
+
+
+state 28
+
+  14) word : punctuation _
+  17) punctuation : punctuation _ PUNCTUATION
+
+  PUNCTUATION   shift, and go to state 33
+  PUNCTUATION   [reduce using rule 14 (word)]
+  $default      reduce using rule 14 (word)
+
+
+state 29
+
+   9) tape_content_tag : LSQ TAPE_SEGMENT _ RSQ
+  10) tape_content_tag : LSQ TAPE_SEGMENT _ DASH TAPE_SEGMENT RSQ
+
+  RSQ           shift, and go to state 34
+  DASH          shift, and go to state 35
+
+
+state 30
+
+   7) tape_content_line : tape_content_tag filled_line _ EOL WHITE_SPACE
+   8) tape_content_line : tape_content_tag filled_line _ EOL empty_lines
+  11) filled_line : filled_line _ word
+
+  COMMA         shift, and go to state 17
+  COLON         shift, and go to state 19
+  RPAR          shift, and go to state 20
+  DASH          shift, and go to state 23
+  LPAR          shift, and go to state 24
+  ANYWORD       shift, and go to state 18
+  WHITE_SPACE   shift, and go to state 21
+  PUNCTUATION   shift, and go to state 22
+  EOL           shift, and go to state 36
+  TAPE_SEGMENT  shift, and go to state 27
+
+  word          go to state 32
+  punctuation   go to state 28
+
+state 31
+
+   5) tape_content_line : tape_content_line filled_line EOL _ WHITE_SPACE
+   6) tape_content_line : tape_content_line filled_line EOL _ empty_lines
+
+  WHITE_SPACE   shift, and go to state 38
+  EMPTY_LINE    shift, and go to state 6
+
+  empty_lines   go to state 37
+
+state 32
+
+  11) filled_line : filled_line word _
+
+  $default      reduce using rule 11 (filled_line)
+
+
+state 33
+
+  17) punctuation : punctuation PUNCTUATION _
+
+  $default      reduce using rule 17 (punctuation)
+
+
+state 34
+
+   9) tape_content_tag : LSQ TAPE_SEGMENT RSQ _
+
+  $default      reduce using rule 9 (tape_content_tag)
+
+
+state 35
+
+  10) tape_content_tag : LSQ TAPE_SEGMENT DASH _ TAPE_SEGMENT RSQ
+
+  TAPE_SEGMENT  shift, and go to state 39
+
+
+state 36
+
+   7) tape_content_line : tape_content_tag filled_line EOL _ WHITE_SPACE
+   8) tape_content_line : tape_content_tag filled_line EOL _ empty_lines
+
+  WHITE_SPACE   shift, and go to state 41
+  EMPTY_LINE    shift, and go to state 6
+
+  empty_lines   go to state 40
+
+state 37
+
+   6) tape_content_line : tape_content_line filled_line EOL empty_lines _
+  24) empty_lines : empty_lines _ EMPTY_LINE
+
+  EMPTY_LINE    shift, and go to state 10
+  $default      reduce using rule 6 (tape_content_line)
+
+
+state 38
+
+   5) tape_content_line : tape_content_line filled_line EOL WHITE_SPACE _
+
+  $default      reduce using rule 5 (tape_content_line)
+
+
+state 39
+
+  10) tape_content_tag : LSQ TAPE_SEGMENT DASH TAPE_SEGMENT _ RSQ
+
+  RSQ           shift, and go to state 42
+
+
+state 40
+
+   8) tape_content_line : tape_content_tag filled_line EOL empty_lines _
+  24) empty_lines : empty_lines _ EMPTY_LINE
+
+  EMPTY_LINE    shift, and go to state 10
+  $default      reduce using rule 8 (tape_content_line)
+
+
+state 41
+
+   7) tape_content_line : tape_content_tag filled_line EOL WHITE_SPACE _
+
+  $default      reduce using rule 7 (tape_content_line)
+
+
+state 42
+
+  10) tape_content_tag : LSQ TAPE_SEGMENT DASH TAPE_SEGMENT RSQ _
+
+  $default      reduce using rule 10 (tape_content_tag)
+

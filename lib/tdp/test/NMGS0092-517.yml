@@ -1,0 +1,110 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato-cancellato
+      author: GS
+      pen: matita nera
+    lines: |
+      vio[???] rituali 
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: "Studio per Vla N.2 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "violino ([???]) "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: |
+      scampolo! prove stereo e contrabasso
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "Ottavino // Contrabasso "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato
+      author: GS
+      pen: matita nera
+    lines: "pezzi per vc "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: "dall'altra parte "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      scherzo finale viola - scherzo vc finale vc in 3 pezzetti
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: |
+      1 adagio per viola da mettere fra i due
+      (al limite del verde[?])
+      (prima di quello fatto)
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS
+      pen: penna nera
+    lines: "niente "
+- !ruby/object:Tdp::Box::Display 
+  location: retro interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sbarrato
+      author: GS
+      pen: matita nera
+    lines: "flauto? "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna nera
+    lines: "forse per el. "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola\n "
+  tag_end: A15
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazioni per ondiola
+    
+  tag_end: B14
+  tag_start: B01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato due tracce fronte-retro in maniera discontinua. Contiene improvvisazioni per ondiola. Sulla traccia 1 la registrazione ha, all'inizio, dei problemi di falsi contatti che vengono corretti solo in seguito. In [A03, 6'20] c'\xC3\xA8 uno strano passaggio in cui si incrociano i registri delle ondiole. Sembrerebbe (ma il passaggio \xC3\xA8 strano assai) che entri la seconda ondiola (grave) mentre sta ancora suonando l'ondiola acuta. Si pu\xC3\xB2 anche udire il registratore che fa saltare il nastro sulla testina (fatto peculiare - inizi di [A04-A06]) La velocit\xC3\xA0 di scorrimento della traccia 2 \xC3\xA8 di difficile discernimento a causa del riverbero molto pronunciato: si \xC3\xA8 optato per la velocit\xC3\xA0 di 9,5 cm/sec comparando i suoni di cambio di registro presenti in entrambe le tracce (la velocit\xC3\xA0 di scorrimento della traccia 1 \xC3\xA8 senza dubbio 9,5 cm/sec)"
+  tag: NMGS0092-517
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2006-10-17
+  location: Studio Schiavoni
+  transferrers: 
+  - Bernardini, Nicola
+  - Schiavoni, Piero

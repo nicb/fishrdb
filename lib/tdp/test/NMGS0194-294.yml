@@ -1,0 +1,72 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: "  (fronte esterno)"
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: matita nera
+    lines: "M V "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: matita nera
+    lines: "OK "
+- !ruby/object:Tdp::Box::Display 
+  location: "  (fronte interno)"
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS
+      pen: penna biro nera
+    lines: |
+      verde IV
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: |
+      guerra - Svizzera storie dei [???].
+      gas - Adolfo Zio
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: "continuazione Zio casata . Don Diego . Valva\n\
+      storie del Nonno . pap\xC3\xA0 .\n\
+      matrimonio della Mamma\n\
+      mia giovent\xC3\xB9 . mia infanzia\n\
+      a Valva, Anna la pazza ecc.\n"
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "voce parlata di GS che racconta le sue\n memorie\n "
+  tag_end: A88
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "tag di prova\n "
+  tag_end: A89
+  tag_start: A89
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    voce parlata di GS che racconta le sue
+     memorie
+    
+  tag_end: B93
+  tag_start: B02
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " il nastro \xC3\xA8 registrato su due tracce\n fronte/retro. E` un nastro di memorie, presumibilmente il quinto della\n serie.\n\n Personaggi e luoghi citati: Castello di Valva, la madre Giovanna\n d'Ayala Valva, la sorella Isabella Scelsi, lo Zio Giuseppe, Fra\xC3\xBClein\n Anna la Pazza, Principe Lotfal.\n\n"
+  tag: NMGS0194-294
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2009-01-23
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

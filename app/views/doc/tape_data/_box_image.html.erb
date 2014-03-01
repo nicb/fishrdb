@@ -1,0 +1,10 @@
+<!-- $Id: _box_image.html.erb 483 2010-04-04 01:48:36Z nicb $ -->
+<% if box_image -%>
+	<%=
+	    image_tag(box_image.rails_name, :title => box_image.stripped_filename,
+	              :border => '0',
+	              :onmouseover => "this.T_HEIGHT='#{box_image.bms_height}'; this.T_WIDTH='#{box_image.bms_width}'; return escape('<img src=\\'#{box_image.ms_equivalent}\\' width=\\'#{box_image.bms_width}\\' height=\\'#{box_image.bms_height}\\'>');",
+	               :onmouseout => "this.src='#{box_image.rails_name}'; this.width='#{box_image.width}'; this.height='#{box_image.height}';"
+	   )
+	-%>
+<% end -%>

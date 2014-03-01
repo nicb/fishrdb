@@ -1,0 +1,5 @@
+* create csv tape db parser
+* create pro_tools_session parser
+- create parse accumulation
+- create rake task to generate all yaml files from version 1 session files + pro_tools session parsers
+  - test over all version 1 files and generalize + debug

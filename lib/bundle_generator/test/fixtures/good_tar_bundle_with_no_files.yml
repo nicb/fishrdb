@@ -1,0 +1,34 @@
+#
+# $Id: good_tar_bundle_with_no_files.yml 582 2010-12-19 00:31:56Z nicb $
+# 
+# The fields of the yaml file are organized as follow:
+#
+# system: # this is a mandatory set
+#   format:       targz  # should have: targz, zip (optional, default: targz)
+#   output_filename: <name> 
+#
+# NMGS0123-348:  # tag (which gets translated into a directory name)
+#   files: [ Riv@19-L-128.mp3, Riv@9,5-RVRS-R-128.mp3 ] # files to be included
+#                                                       # (if no files field is included, 
+#                                                       # all 128 br mp3 files are
+#                                                       # included)
+#  images: [ Snapshot348-768.tiff, 348_001-768.jpg ]    # images to be included
+#                                                       # (if no images field is included,
+#                                                       # all 768 px files are
+#                                                       # included)
+#  fragments: [ A0*-A12*, B23@9\,5 ]                    # fragments generated
+#                                                       # as separate 128 br mp3 files
+#                                                       # Note: if a segment is followed
+#                                                       # by an '*', then it is
+#                                                       # considered to be a pattern, otherwise it
+#                                                       # is looked up literally
+#
+system:
+  format: targz
+  output_filename:  full_data_bundle_with_only_fragments.tar.gz
+
+NMGS0136-580:  # this the only tape that is in the development repository
+  files: [ ]
+  images: [ ]
+  fragments: [ A08*-A12*, 'B04@9,5' ]
+  time_fragments: [ ['Riv@9,5_01.L-128.mp3', [00:05.518, 04:04]], ['Riv@9,5-RVRS_01.R-128.mp3', [08:23, 08:28.23]] ]

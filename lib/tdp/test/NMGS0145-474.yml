@@ -1,0 +1,51 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: []
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per pianoforte\n "
+  tag_end: A02
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione su membrana di pelle\n "
+  tag_end: A03
+  tag_start: A03
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per pianoforte\n "
+  tag_end: A06
+  tag_start: A04
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "esperimenti con corda di chitarra()\n "
+  tag_end: A09
+  tag_start: A07
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "esperimenti con la voce\n "
+  tag_end: A10
+  tag_start: A10
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni/esperimenti col flauto (suonato\n da terzi)\n "
+  tag_end: A14
+  tag_start: A12
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per pianoforte\n "
+  tag_end: A16
+  tag_start: A16
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per pianoforte\n "
+  tag_end: A18
+  tag_start: A18
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazione per ondiola
+    
+  tag_end: A19
+  tag_start: A19
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " Il nastro \xC3\xA8 registrato solo sulla traccia A. GS,\n in compagnia di altre persone non identificate, compie vari\n esperimenti con strumenti diversi. Il contenuto del nastro \xC3\xA8 altamente\n sperimentale e va verificato prima della concederne la disponibilit\xC3\xA0\n pubblica. A [A04 3'19\"] c'\xC3\xA8 una sovrapposizione tra rumore di fondo e\n improvvisazione di pianoforte, il che indica che il rumore di fondo \xC3\xA8\n posteriore, entrato a cancellare. A [A04 10'05\"] c'\xC3\xA8 una citazione di\n \"Greensleeves\" La regione [A18] sembra avere una velocit\xC3\xA0 di\n scorrimento inferiore di difficile identificazione (la velocit\xC3\xA0 \xC3\xA8 gi\xC3\xA0\n 9,5 cm/sec)\n\n Passaggi parlati (intellegibili):\n\n [A04, VF]: \"yes yes. I think it must be very\n motonomous, mo-no-to-nous, to hear\"\n [A07, VF]: \"\xC3\xA8 tuo anche l'anello?\n [A07, GS]: \"son tutte la stessa cosa, se tu fai con\n l'unghia.\n [A07, VF]: \"bello questo\"\n [A08, GS]: \"suonali.\n [A09, VF]: \"vedi, c'\xC3\xA8 troppo subito.\n [A09, GS]: \"cos\xC3\xAC non da pi\xC3\xB9 la risonanza, come pizzicati.\n [A09, GS]: \"cos\xC3\xAC con l'unghia lo fermi.,\n [A09, GS]: \"ma si pu\xC3\xB2 un sacco di cose, studiandoci un po' sopra, e\n poi bisogna far la musica\"\n [A09, VF]: \"penso che la musica si possa fare con qualsiasi\n cosa.\n [A09, GS]: \"no io la faccio con un tavolo anche qualche volta, posso\n farlo, con i vari posti della mano, delle nocche, delle cose\"\n [A09, VF]: \"pensi con tutte le parti del corpo, si pu\xC3\xB2?\n [A11, GS]: \"ecco.\n [A11, GS]: \"mangia, mangia.\n [A12, GS]: \"c'\xC3\xA8 l'aria. ?\n\n"
+  tag: NMGS0145-474
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2007-12-14
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

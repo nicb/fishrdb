@@ -1,0 +1,8 @@
+#
+# $Id: change_date_values.rjs 270 2008-11-09 12:06:14Z nicb $
+#
+page[@date_id].value = @date_value
+page[@intv_id].value = @intv_value
+page[@dfips_id].value = @dfips_value
+page[@dtips_id].value = @dtips_value
+#page.alert('js called with vizdate_id: ' + @vizdate_id + ' and vizdate value ' + @vizdate)

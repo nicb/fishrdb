@@ -1,0 +1,10 @@
+<ul>
+  <%
+    n = 0; autocomplete_first_name.each do
+      |ac|
+  -%>
+   <li class="<%= 'selected' if n == 0 -%>"><%= h ac.first_name -%></li>
+  <% n += 1; end -%>
+</ul>
+<!-- NO COMMENTS ABOVE HERE! (they break the view) -->
+<!-- $Id: _autocomplete_first_name.rhtml 229 2008-07-08 20:38:01Z nicb $ -->

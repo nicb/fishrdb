@@ -1,0 +1,60 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna stilografica nera
+    lines: |
+      GIACINTO Scelsi - TRIPHON (1956) violoncello:
+      FRANCES-MARIE UITTI
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna stilografia nera
+    lines: "(3 TEMPI) "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna stilografica nera
+    lines: "7 1/2 MONO, left Channel "
+- !ruby/object:Tdp::Box::Display 
+  location: copertina interna
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna stilografica nera
+    lines: |
+      GIACINTO SCELSI - TRIPHON (1956) violoncello: FRANCES-MARIE UITTI
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna stilografica nera
+    lines: "7 1/2 MONO, left Channel "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    riversamento da nastro di una
+     registrazione di Triphon
+    
+  tag_end: A01
+  tag_start: A01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "questo nastro fa parte della donazione effettuata dalla Sig.ra Ornella Cogliolo alla Fondazione Scelsi. Il nastro \xC3\xA8 registrato soltanto sulla traccia A e contiene un riversamento compiuto di una esecuzione di Triphon (presumibilmente di Frances Marie Uitti) Dentro la scatola c'\xC3\xA8 anche un articolo de l'Unit\xC3\xA0 di Domenica 9 Settembre 1973 intitolato \"Il linguaggio musicale nel dibattito e nell'esecuzione\" (autore Marcello De Angelis)"
+  tag: NMGS0249-XXX
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2010-03-09
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

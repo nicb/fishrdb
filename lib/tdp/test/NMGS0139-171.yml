@@ -1,0 +1,112 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: "  (fronte esterno)"
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: etichetta bianca
+      author: FMU?
+      pen: penna rossa
+    lines: "ondiola "
+- !ruby/object:Tdp::Box::Display 
+  location: "  (retro esterno)"
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: pennarello viola
+    lines: |
+      i primi 2 XX
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: "bobina piccola N4 trasferito LPAR ultimo banda - A e tutto banda B ascoltato velocit\xC3\xA0 piccola\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna turchina
+    lines: "da rivedere tutto "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cerchiato
+      author: ??
+      pen: matita nera
+    lines: "Clarinetto piccolo adagio "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna turchina
+    lines: |
+      qualcosa per corno o fagotto o cl/basso
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna turchina
+    lines: "trombone e cello o cl [omle???] "
+- !ruby/object:Tdp::Box::Display 
+  location: "  (foglietto interno - lato 1)"
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: "i primi 2 "
+- !ruby/object:Tdp::Box::Display 
+  location: "  (foglietto interno - lato 2)"
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: |
+      3250 3250
+      1850
+      ---------
+      8350 x 7
+      ---------
+      5845,0
+      controllare
+      l'altro lato
+      per voce
+      ecc.
+      visto tutto
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Parlato e breve preludiare di pianoforte\n "
+  tag_end: A01
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Improvvisazione per pianoforte\n "
+  tag_end: A02
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Improvvisazione per ondiola (riversamento?)\n "
+  tag_end: A07
+  tag_start: A03
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    Improvvisazione per ondiola (riversamento?)
+    
+  tag_end: B06
+  tag_start: B01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " Il nastro presenta inizialmente alcuni\n cambiamenti di velocit\xC3\xA0, un breve frammento di una improvvisazione al\n pianoforte preceduta dalle frasi \"Funziona, o non Funziona? Funziona,\n o non Funziona? [A01] pronunciate da GS.\n\n"
+  tag: NMGS0139-171
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2007-11-19
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

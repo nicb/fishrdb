@@ -1,0 +1,38 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: "Dal Bardo Todol "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS)
+      pen: matita nera
+    lines: "N2 Le Deit\xC3\xA0 cor[...] "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "trasferimento di materiali eterogenei a\n con trasformazioni (cori, trombe tibetane,\n percussioni indiane, ecc.)\n "
+  tag_end: A04
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    sessione di prova di un pezzo per violoncello
+     percosso
+    
+  tag_end: A09
+  tag_start: A06
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: " il nastro \xC3\xA8 registrato soltanto sulla traccia A,\n all'inizio a 19 cm/sec con scorrimento rovesciato, e poi a 9,5 cm/sec\n con scorrimento al dritto. La velocit\xC3\xA0 di scorrimento della prima\n parte \xC3\xA8 di difficile discernimento: presumibilmente, si tratta di una\n trasformazione fatta dallo stesso GS, ri-registrando un frammento\n registrato a 19 cm/sec facendolo scorrere a 9,5 cm/sec (ottenendo\n quindi un dimezzamento della velocit\xC3\xA0 di scorrimento) Questa ipotesi\n sembra avvalorata dalla presenza, in alcuni punti, di due frequenze di\n hum, una a 25 Hz e l'altra a 50 Hz. La seconda parte contiene invece\n una sessione di prova con un violoncelllo percosso (presumibilmente\n con FMU)\n\n Frammenti parlati:\n\n [A06][VF1] \"Mettiamo un poco pi\xC3\xB9 vicino, baster\xC3\xA0 spostarlo\"\n [GS] \"Bastava.\n [VF1] \"Anche cos\xC3\xAC va bene; noo abbastanza simile\"\n [GS] \"S\xC3\xAC?\n [VF1] \"Non far\xC3\xA0 tanto differenza\"\n [GS] \"Pi\xC3\xB9 di cos\xC3\xAC non va\"\n [VF1] \"Quelle tre sono tutta un'altra cosa\"\n [GS] \"E certo\"\n [VF1] \"Ok\"\n .\n [VF] \"No questo lo lego a un pezzo di cartone\"\n [VF2] \"S\xC3\xAC s\xC3\xAC ti porto subito\"\n [VF1] \"No no dopo per la registrazione, non c'\xC3\xA8 bisogno ora Vera;\n dopo fra una settimana\"\n [GS] \"Ma dove lo metti il cartone?\n [VF1] \"Ce l'ho gi\xC3\xB9, solo che stavo giocando con questo.\n Pazienza, stringer\xC3\xB2.\n [VF2] \"Non c'\xC3\xA8 luce.\n [VF1] \"No io vedo\"\n [GS] \"Ho lasciato com'era [ieri|all'inizio]\n\n [A07][VF1] \"Scusa\"\n [GS] \"Vado.[]\n\n [A08][GS] \"Ripetizione ultima frase\"\n\n [A09][GS] \"Hai mangiato?\n [VF1] \"m-m\"\n [GS] \"Non hai mangiato?\n\n"
+  tag: NMGS0186-173
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2008-12-12
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno
