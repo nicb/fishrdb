@@ -12,3 +12,5 @@ gem 'exifr'
 gem 'rtunnel' # required for convenience remote access scripts
 
 gem 'archive' # required to run the 'recover' library
+
+gem 'racc' # require to compile tape compilers
