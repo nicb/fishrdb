@@ -19,3 +19,8 @@ pickle-email-*.html
 .project
 config/initializers/secret_token.rb
 Gemfile.lock
+#
+# the next ones are racc output cruft
+#
+/lib/tdp/tape/*.tab.rb
+/lib/tdp/tape/*.output

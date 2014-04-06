@@ -27,6 +27,7 @@ GEM
       gem_plugin (>= 0.2.3)
     mysql (2.9.1)
     net-ssh (2.6.8)
+    racc (1.4.11)
     rails (2.1.0)
       actionmailer (= 2.1.0)
       actionpack (= 2.1.0)
@@ -48,5 +49,6 @@ DEPENDENCIES
   exifr
   mongrel
   mysql
+  racc
   rails (= 2.1.0)
   rtunnel
