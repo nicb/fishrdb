@@ -168,13 +168,7 @@ module Tdp
         end
 
         def create_tape_records_from_scratch
-          #
-          # let's put a mock session into it
-          #
-          Test::Unit::TestCase.fixtures(:sessions, :users)
-          s = Session.first
-          u = User.find_by_login('bootstrap')
-          s['user'] = u
+					s = create_session
           return create_tape_records(s)
         end
 
@@ -186,6 +180,19 @@ module Tdp
             tr.children.reload
           end
         end
+
+			private
+
+				def create_session
+          #
+          # let's put a mock session into it
+          #
+          Test::Unit::TestCase.fixtures(:sessions, :users)
+          s = Session.first
+          u = User.find_by_login('bootstrap')
+          s['user'] = u
+					s
+				end
 
       end
 

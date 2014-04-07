@@ -22,6 +22,10 @@ rule
         tape.box = val[2]
         result = tape
       }
+      | error
+      {
+        logger.info("Box Parser error for token \"#{val.inspect}\"")
+      }
 
     display
         : display empty_lines DISPLAY_TERM_SEPARATOR empty_lines display_term

@@ -1,6 +1,7 @@
 #
 # $Id: builder.rb 588 2010-12-23 15:44:27Z nicb $
 #
+# require 'debugger'
 
 builder_cwd = File.dirname(__FILE__)
 
@@ -66,7 +67,7 @@ module Tdp
           yield
         rescue
           error += 1
-          logger.error(msg + ":\n#{$!}, from\n#{caller(3).join("\n")}")
+          logger.error(msg + ":\n#{$!}, from\n#{caller(3).first}")
         end
         return error
       end
@@ -74,6 +75,7 @@ module Tdp
     public
 
       def build
+# debugger
         csv.tape_items.each do
           |ti|
           tdp = self.class.find_tape_description(ti)
