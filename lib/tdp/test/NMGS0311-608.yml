@@ -1,0 +1,27 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterna
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato
+      author: GS
+      pen: penna biro nera
+    lines: "Bolena "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    esperimenti
+    
+  tag_end: A04
+  tag_start: A01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato solo sulla traccia 1. Si tratta presumibilmente di un nastro di esperimenti, per cui la velocit\xC3\xA0 \xC3\xA8 di difficile interpretazione."
+  tag: NMGS0311-608
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2011-11-21
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

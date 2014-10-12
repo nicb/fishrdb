@@ -26,20 +26,20 @@ module Tdp
 
       def map
         if tape_item
-	        raise(AlreadyMapped, "Cowardly refusing to map already mapped tape box (tape: #{tape_record.name} - #{tape_record.id})") unless tape_record.tape_box_marker_collections.size == 0
-	        tape_item.physical.box.each do
-	          |b|
-	          tbmc = TapeBoxMarkerCollection.create(:tape_data => tape_record.tape_data, :location => b.location)
-	          raise(TapeBoxMarkerCollectionCreationFailure, "#{tbmc.errors.full_messages.join(', ')}") unless tbmc && tbmc.valid?
-	          b.notes.each do
-	            |m|
-	            (name, rel) = name_map(m.calligraphy.author)
-	            tbm = TapeBoxMark.create(:tape_box_marker_collection => tbmc, :text => m.lines, :name => name,
-	                                     :reliability => rel, :marker => m.calligraphy.pen,
-	                                     :modifiers => m.calligraphy.additional_info)
-	            raise(TapeBoxMarkCreationFailure, "#{tbm.errors.full_messages.join(', ')}") unless tbm && tbm.valid?
-	          end
-	        end
+          raise(AlreadyMapped, "Cowardly refusing to map already mapped tape box (tape: #{tape_record.name} - #{tape_record.id})") unless tape_record.tape_box_marker_collections.size == 0
+          tape_item.physical.box.each do
+            |b|
+            tbmc = TapeBoxMarkerCollection.create(:tape_data => tape_record.tape_data, :location => b.location)
+            raise(TapeBoxMarkerCollectionCreationFailure, "#{tbmc.errors.full_messages.join(', ')}") unless tbmc && tbmc.valid?
+            b.notes.each do
+              |m|
+              (name, rel) = name_map(m.calligraphy.author)
+              tbm = TapeBoxMark.create(:tape_box_marker_collection => tbmc, :text => m.lines, :name => name,
+                                       :reliability => rel, :marker => m.calligraphy.pen,
+                                       :modifiers => m.calligraphy.additional_info)
+              raise(TapeBoxMarkCreationFailure, "#{tbm.errors.full_messages.join(', ')}") unless tbm && tbm.valid?
+            end
+          end
         end
       end
 
@@ -63,6 +63,7 @@ module Tdp
         'GS' => { :last_name => 'Scelsi', :first_name => 'Giacinto' },
         'FMU' => { :last_name => 'Uitti', :first_name => 'Frances-Marie' },
         'AC' => { :last_name => 'Curran', :first_name => 'Alvin' },
+        'NB' => { :last_name => 'Bernardini', :first_name => 'Nicola' },
       }
 
       def acro_to_name(acro)

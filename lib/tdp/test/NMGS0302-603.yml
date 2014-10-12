@@ -1,0 +1,44 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: etichetta
+      author: ??
+      pen: stampato blu
+    lines: "10, av.Massenet B - 1190 BRUXELLES\n\
+      T\xC3\xA9l.: 345 94 05\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: timbro verde
+    lines: "Echantillon sans valeur "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna stilografica blu
+    lines: |
+      Monsieur Giaconto Scelsi
+      8, viale San Theodoro
+      I - ROMA
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    campionario numerato di suoni di chitarra
+    
+  tag_end: A07
+  tag_start: A01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato solo sulla traccia 1. Sembrerebbe essere stato registrato da un corrispondente francofono di GS e poi a lui inviato con alcuni esperimenti di suoni di chitarra registrati. Il nastro contiene anche la voce del corrispondente che descrive in anticipo ciascun esperimento."
+  tag: NMGS0302-603
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2011-11-07
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

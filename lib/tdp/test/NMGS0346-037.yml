@@ -1,0 +1,113 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno - foglio sovrapposto
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: NB
+      pen: penna stilografica nera
+    lines: "GIACINTO SCELSI _ ANANDA N.3 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: ??
+      pen: penna biro nera
+    lines: "NAB "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: NB
+      pen: penna stilografica nera
+    lines: "Facciata A: __BLANK_SPACE__\n\
+      - H\xC3\xB4: parte 1\n\
+      \" \" 2\n\
+      \" \" 3\n\
+      \" \" 4\n\
+      \" \" 5\n\
+      - PRANAM\n\
+      CCIR --> 6\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: NB
+      pen: penna stilografica nera
+    lines: "Tempo: 22'14\" "
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno - box
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: AC
+      pen: pennarello nero
+    lines: |
+      Scelsi Pranam tape part
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna biro blu
+    lines: |
+      ANANDA 3 FACC A
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: AC
+      pen: pennarello nero
+    lines: |
+      38 cps 15 ips 1/2 channel "stereo"
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: AC
+      pen: pennarello nero
+    lines: "HEAD OUT "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: AC
+      pen: pennarello nero
+    lines: |
+      note: engineer may liberally filter tape "hiss" (frequecies above 10 kHz) by -6dB
+
+- !ruby/object:Tdp::Box::Display 
+  location: fronte foglio staccato
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna biro nera
+    lines: |
+      1 - 2 A 2 - 0
+      3 - +2
+      4 - 0
+      5 - 2
+      6 - 4
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "esecuzione in studio di H\xC3\xB4 da parte di Michiko\n Hirayama\n "
+  tag_end: A06
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    registrazione dell'esecuzione completa
+     di Pranam II
+    
+  tag_end: A07
+  tag_start: A07
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato stereofonicamente su entrambe le tracce e presenta evidenti difetti di magnetizzazione e distorsioni nelle tracce vocali. Dovrebbe trattarsi di uno dei due nastri fatti masterizzare da GS per il disco Ananda n.3. All'interno del contenitore \xC3\xA8 stato rinvenuto un foglio che probabilmente riporta le correzioni in dB per ciascun brano annotate dall'ingegnere del suono che ha masterizzato il vinile."
+  tag: NMGS0346-037
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2013-07-19
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

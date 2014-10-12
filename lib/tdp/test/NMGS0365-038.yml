@@ -1,0 +1,54 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: feltro nero
+    lines: "2 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: feltro nero
+    lines: |
+      15 ips COPY STEREO NAB
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: feltro nero
+    lines: |
+      GIACINTO SCELSI - OKANAGON
+      - KYA
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: feltro nero
+    lines: "COPIA DI RISERVA "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Okanagon\n "
+  tag_end: A01
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    Kya
+    
+  tag_end: A04
+  tag_start: A02
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato stereofonicamente su due tracce in un unico verso di scorrimento. Si tratta di una registrazione professionale in studio di due lavori di GS, Okanagon e Kya. Trattandosi di un nastro Ampex 456 notoriamente soggetto a perdita di polvere magnetica, il suddetto \xC3\xA8 stato sottoposto a pre-riscaldamento a 47 C per quattro ore prima del riversamento."
+  tag: NMGS0365-038
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2014-02-24
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

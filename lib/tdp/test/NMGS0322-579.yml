@@ -1,0 +1,69 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: foglio staccato
+      author: ??
+      pen: penna biro blu
+    lines: "Giacinto Scelsi ---------------\n\
+      Canti del Capricorno 43'37\"\n\
+      Bd. I b _RPAR_ Liede 1-17\n\
+      f\xC3\xBCr Sopran und Schlagzeug\n"
+- !ruby/object:Tdp::Box::Display 
+  location: foglio interno 1
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: scritto a macchina
+    lines: |
+      08 - 31 292/85 Datum 26.09.85
+      Conte Giacinto Scelsi 19 XXXX
+      Via S.Teodoro 8 Redaktion Schallarchiv
+      I - 00186 Roma Bearbeiter Erich Well
+      Ihre Bestellung vom 18.04.85 Redaktion
+      
+      
+      10 Musiktitel siehe Anhang
+
+- !ruby/object:Tdp::Box::Display 
+  location: foglio interno 2
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: scritto a macchina
+    lines: "Titel Bandnummer Laufzeit \n\n\
+      \"Pwyll\" 3130114 0 3'39\"\n\
+      \"Rucke di Guck\" 3130115 0 9'22\"\n\
+      \"Kho - Lo\" 3130116 0 7'15\"\n\
+      \"Hyxos\" 3130117 0 10'27\"\n\
+      \"Canti del Capricorno\" 3119245 1-2 50'42\"\n\
+      \"Suite Nr8 f\xC3\xBCr Klavier\" 3116551 0 29'10\"\n\
+      \"Manto\" 3042944 0 6'03\"\n\
+      \"2. Quartett\" 3041769 0 20'35\"\n\
+      \"8. Suite f\xC3\xBCr Pianoforte\" 3116551 0 29'10\"\n\
+      \"Cinque Incantesime\" 3036868 0 10'35\"\n"
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    registrazione stereofonica professionale
+     di tre Canti del Capricorno cantati
+     da Michiko Hirayama.
+    
+  tag_end: A03
+  tag_start: A01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 una registrazione stereofonica professionale di brani dei Canti del Capricorno cantati da Michiko Hirayama. La confezione esterna e il tipo di nastro sembrerebbero riportare il nastro ad una registrazione effettuata alla WDR (West- Deutscher Rundfunk K\xC3\xB6ln) All'interno del contenitore \xC3\xA8 stato rinvenuto un foglio di ricevuta della WDR che ripora una lista di brani. E` per\xC3\xB2 evidente che tale foglio \xC3\xA8 da attribuirsi ad altro gruppo di registrazione (almeno per una parte preponderante) Anche la scritta esterna alla scatola fa riferimento a materiale non (o solo in parte) esistente sul nastro."
+  tag: NMGS0322-579
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2012-03-26
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

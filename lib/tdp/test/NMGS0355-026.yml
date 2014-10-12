@@ -1,0 +1,56 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: ??
+      pen: penna biro blu
+    lines: |
+      SONIC RECORDING ROMA 30 LUGLIO 1982
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: ??
+      pen: penna biro blu
+    lines: "M. GIACINTO SCELSI "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna biro blu
+    lines: "1 - L'\xC3\x82ME OUVERTE circa 5 minuti 2 - \" \" (VERSIONE BUONA)\n\n\n\
+      1 - L'\xC3\x82ME AILEE\n\
+      2 - \" \" (VERSIONE BUONA circa 3 minuti\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: ??
+      pen: penna biro blu
+    lines: "VIOLINO SOLO DEVY ERLIH "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna biro blu
+    lines: "MASTER VELOCIT\xC3\x80 38 cm (15) STEREO CCIR "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    esecuzione (presumibilmente in studio) di
+     brani per violino solo
+    
+  tag_end: A03
+  tag_start: A01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 una registrazione in studio dei brani \"L'\xC3\x82me Ail\xC3\xA9e - L'\xC3\x82me Ouverte\" in una esecuzione del violinista Devy Erlih."
+  tag: NMGS0355-026
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2013-11-25
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

@@ -1,0 +1,51 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: matita nera
+    lines: |
+      19. Suite 8 Copies van A'damse opname op Revox
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna stilografica nera
+    lines: |
+      Geoffrey Madge Suite 8 - G.Scelsi
+      opname 15/9 77 Concertgebouw
+      Amsterdam
+
+- !ruby/object:Tdp::Box::Display 
+  location: costola destra
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: matita nera
+    lines: |
+      Copy Suite 8 Scelsi Revox A'dam
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    esecuzione dal vivo (presumibilmente
+     della Suite n.8 per pianoforte di GS) 
+    
+  tag_end: A04
+  tag_start: A01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato in stereofonia."
+  tag: NMGS0309-322
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2011-11-21
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

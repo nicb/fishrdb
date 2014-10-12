@@ -1,0 +1,74 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: NA
+      pen: timbro
+    lines: |
+      sOnic Via Gabriele Camozzi n.1
+      Tel. 318.519 - R O M A
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna biro blu
+    lines: |
+      250 
+      
+      30 agosto 1965
+      
+      
+      XNOYBIS 3 parti
+      vel. 19 cm/sec
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cerchiato
+      author: GS
+      pen: pennarello viola
+    lines: "S "
+- !ruby/object:Tdp::Box::Display 
+  location: costa sinistra
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro nera
+    lines: "XNOYBIS "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: NA
+      pen: timbro
+    lines: "COPIA "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: NA
+      pen: timbro
+    lines: |
+      sOnic Via Gabriele Camozzi n.1
+      Tel. 318.519 - R O M A
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    registrazione semi-professionale
+     presumibilmente del brano Xnoybis
+    
+  tag_end: A04
+  tag_start: A01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato solo sulla traccia 1. Sembra essere una registrazione professionale fatta in studio di un'esecuzione del brano Xnoybis per violino."
+  tag: NMGS0341-609
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2012-11-26
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola

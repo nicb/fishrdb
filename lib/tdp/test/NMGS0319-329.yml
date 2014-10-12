@@ -1,0 +1,36 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro blu
+    lines: "Erlich "
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro blu
+    lines: "Erlich "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    brano per violino e sintetizzatore
+    
+  tag_end: A01
+  tag_start: A01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: il nastro contiene una registrazione di un brano per violino solo e sintetizzatore (presumibilmente si tratta di un'improvvisazione.
+  tag: NMGS0319-329
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2012-03-09
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

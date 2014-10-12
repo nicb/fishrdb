@@ -1,0 +1,57 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "Preludi alla 4a Era "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      prove Miciko Ave Maria
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna stilografica nera
+    lines: "pro Miciko Liturgie "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: etichetta
+      author: FMU
+      pen: feltro rosso
+    lines: "MICIKO - ON[14?] "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "prove con Michiko Hirayama\n "
+  tag_end: A03
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "prove con Michiko Hirayama con due\n registrazioni della voce sovrapposte\n "
+  tag_end: A05
+  tag_start: A04
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    registrazione (presumibilmente dalla
+     radio) di un'esecuzione di un brano orchestrale
+     non identificato
+    
+  tag_end: B01
+  tag_start: B01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 inciso inizialmente sulle due tracce nello stesso verso di scorrimento. Sembra essere una doppia incisione sovrapposta di una prova con Michiko Hirayama. Nella seconda parte invece il nastro \xC3\xA8 inciso fronte retro."
+  tag: NMGS0291-602
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2011-09-23
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

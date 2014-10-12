@@ -63,6 +63,8 @@ rule
         | TAPE_SEGMENT
         | WHITE_SPACE
         | AUTHOR_INITIALS
+        | TRANSFERRER                                /* a transferrer may be inside the description */
+        | DATE                                       /* a date may be inside the description */
 
     punctuation
         : punctuation PUNCTUATION

@@ -1,0 +1,27 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna stilografica nera
+    lines: "Prima Materia "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    registrazione 
+    
+  tag_end: A04
+  tag_start: A04
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato prevalentemente sulla prima traccia con un piccolo frammento alla fine sulla seconda traccia. Sembra essere la registrazione, effettuata da GS e Roberto Laneri, di una sessione di canto del gruppo di tecniche vocali estese Prima Materia. Si sentono distintamente le voci di GS, Roberto Laneri, Gianni Nebbiosi e Barbara Hendricks."
+  tag: NMGS0333-522
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2012-11-06
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

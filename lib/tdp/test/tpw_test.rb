@@ -14,7 +14,7 @@ class TpwTest < ActiveSupport::TestCase
     @debug = false # sets lexing debug to verbose when true
   end
 
-  test "compile" do
+  def test_compile
     assert tpw = Tdp::Tape::TapeParserWrapper.new(@filename, @debug)
 
     assert tape = tpw.compile

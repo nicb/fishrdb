@@ -1,0 +1,362 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: "4350 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "Quartetto "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "N 2 (rosso) "
+- !ruby/object:Tdp::Box::Display 
+  location: fronte interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: pastello bordeaux
+    lines: "visto "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "Quartetto N 2 rosso "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS
+      pen: matita nera
+    lines: "riversamento dal [To????] "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "vedere nuovi (iniziati) "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: "tutto [?????] "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato
+      author: GS
+      pen: matita nera
+    lines: |
+      da vedere per vln vc archi ecc.
+
+- !ruby/object:Tdp::Box::Display 
+  location: fronte foglio interno 1
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS
+      pen: matita nera
+    lines: "adagio passionale I "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: "+ 307 ottimo Quartetto "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "+ 330 ((con melismi)) "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: |
+      400 corretto contrappunto 410 " "
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato
+      author: GS
+      pen: penna blu
+    lines: "+ 430 ottimo Quartetto "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      adagio fare I IV
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: |
+      + 454 buono (sentire) + 472 " "
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "adagio "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS
+      pen: penna blu
+    lines: "+ 489 sentire forse I "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: "504 buono Quartetto "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: |
+      522 ottimo sentire Quartetto
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS
+      pen: matita nera
+    lines: "adagio [vento?] "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      128 I se non troppo simile o
+      166 fare orchestrale
+
+- !ruby/object:Tdp::Box::Display 
+  location: fronte foglio interno 2
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: |
+      (rosso) Retro del Quartetto
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS
+      pen: penna blu
+    lines: "(Incominciato) Verde "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: |
+      1 strumento (clarinetto) mediocre --
+      gorgheggia voce
+      26 " "
+      --
+      35 " corno "
+      --
+      54 voce baassa (risentire) tagli)
+      --
+      88 " " " no "
+      --
+      115 risentire (una nota) fare
+      sembra monotono tagli
+      --
+      148 buono orchestra o quartetto
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna azzurra
+    lines: "170 ottimo "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: |
+      192 buono " " --
+      235 buono con tagli forse meno
+      dei precedenti
+      --
+      272 niente
+      --
+      282 buono ritimizzare i | tipo
+      complessi battimenti | [????]
+      --
+      313 mediocre
+      --
+      341 no
+      --
+      350 voce risentire sembra mediocre
+
+- !ruby/object:Tdp::Box::Display 
+  location: retro foglio interno 2
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: |
+      370 mediocre 387 no
+      392 buono per Quartetto orchestra
+      con piccole modifiche e 
+      tagli (parti ottime)
+      provare anche il ritorno
+      406
+      meno buono risentire con tagli
+      sembra quasi per voci (lungo)
+      427 buono risentire parti
+      ottime forse prendere solo
+      quelle con ritorno
+      452 sembra ottimo
+      470 buono con tagli ottimo
+      la parte alla fine con 8va [ritorno?]
+      487 buono risentire
+      504 buono "
+      buoni acuti 
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS
+      pen: penna azzurra
+    lines: |
+      522 seguono altri buoni fino al fine
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna azzurra
+    lines: |
+      207 - 310 - 400 - 410 Quartt. Quartt. voce voce
+
+- !ruby/object:Tdp::Box::Display 
+  location: fronte foglio interno 3
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna blu
+    lines: |
+      hom te him de
+      hom ve
+      ram ghe
+      rem ha
+      ram
+      ran he
+      ren hi
+      ron ho
+      van hu
+      ur
+      ar el
+      ar em
+      er al
+      am
+      om
+      on
+
+- !ruby/object:Tdp::Box::Display 
+  location: retro foglio interno 3
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      440 buono 386 pezzetto
+      da risentire e
+      aggiungere [ritmo?]
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato
+      author: GS
+      pen: matita nera
+    lines: |
+      393 risentire per voci
+      (aggiungere ritorno)
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "(400) "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "registrazione di un quartetto d'archi\n (presumibilimente il Quartetto n.2)\n "
+  tag_end: A05
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per due ondiole\n "
+  tag_end: B06
+  tag_start: B01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per due ondiole\n "
+  tag_end: B09
+  tag_start: B08
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per due ondiole\n "
+  tag_end: B16
+  tag_start: B11
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per due ondiole\n "
+  tag_end: B18
+  tag_start: B18
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per due ondiole\n "
+  tag_end: B20
+  tag_start: B20
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per due ondiole\n "
+  tag_end: B25
+  tag_start: B22
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazione per due ondiole
+    
+  tag_end: B32
+  tag_start: B27
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato su entrambi i lati fronte/retro. E` stato trovato in coda nonostante la coda di testa sia rossa."
+  tag: NMGS0274-009
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2011-02-07
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

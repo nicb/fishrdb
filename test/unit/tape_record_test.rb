@@ -1,9 +1,9 @@
 #
 # $Id: tape_record_test.rb 614 2012-05-11 17:25:14Z nicb $
 #
-require File.dirname(__FILE__) + '/../test_helper'
-require File.dirname(__FILE__) + '/document_subclass_test_case'
-require File.dirname(__FILE__) + '/../utilities/multiple_test_runs'
+require 'test_helper'
+require 'document_subclass_test_case'
+require 'utilities/multiple_test_runs'
 
 class TapeRecordTest < ActiveSupport::TestCase
 
@@ -15,18 +15,16 @@ class TapeRecordTest < ActiveSupport::TestCase
   fixtures :documents, :tape_data, :tape_box_marker_collections
 
   def setup
-    special_args = {:data_dal => :time_arg }
-    configure(TapeRecord, special_args) do
-      |args, s, n|
-      args.update(get_full_params)
-    end
+    assert @troot = TapeData.tape_root
   end
 
   def test_subtests
+    configure_tapes
     run_subtests
   end
 
   def test_reorder
+    configure_tapes
     orders =
     {
       :logic => :position,
@@ -118,7 +116,6 @@ class TapeRecordTest < ActiveSupport::TestCase
   end
 
   def test_destroy_from_tape_root
-    assert troot = TapeData.tape_root
     parms = get_full_params
     #
     # create intermediate directory if it's not there
@@ -126,23 +123,42 @@ class TapeRecordTest < ActiveSupport::TestCase
     dir_name = TapeData.deduced_parent_name(parms[:tape_data][:tag])
     parent = Folder.find_by_name(dir_name)
     unless parent and parent.valid?
-      assert parent = Folder.create_from_form({ :parent => troot, :creator => parms[:creator], 
-                                    :name => dir_name,
-                                    :last_modifier => parms[:last_modifier],
-                                    :container_type => parms[:container_type],
-                                    :description_level_position => DescriptionLevel.sottoserie.position }, @s_1)
+    assert parent = Folder.create_from_form({ :parent => @troot, :creator => parms[:creator], 
+                                  :name => dir_name,
+                                  :last_modifier => parms[:last_modifier],
+                                  :container_type => parms[:container_type],
+                                  :description_level_position => DescriptionLevel.sottoserie.position }, @s_1)
     end
     parms.update(:parent => parent)
     assert tr = TapeRecord.create_from_form(parms, @s_1)
     assert tr.valid?
     #
+    # check that the tape records are hooked to the troot tree
+    #
+    assert_equal count_tape_records_recursively(@troot), TapeRecord.count
+    #
     # now destroy from the top
     #
-    troot.reload
-    troot.children(true).each { |c| c.delete_from_form }
-    assert troot.valid?
-    assert !troot.frozen?
-    assert_equal 0, troot.children(true).size
+    @troot.reload
+    traverse_tree(@troot) do
+      |c|
+      if c.class == TapeRecord
+        assert c.tape_data(true)
+        assert c.tape_data.tape_box_marker_collections(true)
+        c.tape_data.tape_box_marker_collections.each { |tbmc| assert tbmc.tape_box_marks(true) }
+        assert c.delete_from_form
+        assert c.frozen?
+        assert c.tape_data.frozen?
+        c.tape_data.tape_box_marker_collections.map { |tbmc| assert tbmc.frozen? }
+      end
+    end
+    assert @troot.valid?
+    assert !@troot.frozen?
+    assert_equal 0, @troot.children(true).all(:conditions => ["type = 'TapeRecord'"]).count
+    assert_equal 0, TapeRecord.count
+    assert_equal 0, TapeData.count
+    assert_equal 0, TapeBoxMarkerCollection.count
+    assert_equal 0, TapeBoxMark.count
   end
 
   def test_sound_collection
@@ -155,6 +171,7 @@ class TapeRecordTest < ActiveSupport::TestCase
 private
 
   def get_full_params
+    setup_config_variables(TapeRecord)
     result =
     {
       :description => 'Nastro di prova assai',
@@ -192,6 +209,32 @@ private
   def convert_to_date_object(date_string)
     (y, m, d) = date_string.split('-')
     return Date.civil(y.to_i, m.to_i, d.to_i)
+  end
+
+  def configure_tapes
+    assert special_args = {:data_dal => :time_arg, :parent => @troot }
+    configure(TapeRecord, special_args) do
+      |args, s, n|
+      args.update(get_full_params)
+    end
+  end
+
+  def count_tape_records_recursively(parent)
+    total = parent.children(true).all(:conditions => ["type = 'TapeRecord'"]).count
+    parent.children.each do
+      |c|
+      total += count_tape_records_recursively(c)
+    end
+    total
+  end
+
+  def traverse_tree(top)
+debugger
+    top.children(true).each do
+      |c|
+      traverse_tree(c)
+    end
+    yield(top) if block_given?
   end
 
 end

@@ -1,0 +1,5 @@
+- How to test specific compilations from command line (starting from RAILS_ROOT):
+
+  TPW_TEST_FILENAME=<file name from RAILS_ROOT> ruby -I.:lib/tdp/test lib/tdp/test/tpw_test.rb
+
+  (this will substantially try to compile globally that filename)

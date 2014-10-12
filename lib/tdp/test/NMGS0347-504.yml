@@ -1,0 +1,60 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: pennarello nero
+    lines: |
+      GIACINTO SCELSI 
+      
+      PIANOFORTE 2
+      COPIA DA 1A COPIA
+      19 cms 2 TRACCE
+
+- !ruby/object:Tdp::Box::Display 
+  location: costola esterna destra
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: pennarello nero
+    lines: "SCELSI PIANOFORTE 2 "
+- !ruby/object:Tdp::Box::Display 
+  location: centro flangia
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: pennarello nero
+    lines: "GIACINTO SCELSI PIANOFORTE 2 "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "trasferimenti di registrazioni su nastro di improvvisazioni\n per pianoforte.\n "
+  tag_end: A04
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "registrazioni di improvvisazioni per pianoforte.\n L'inizio di questa sezione contiene anche un altro\n strumento non meglio identificato e dell'eco\n ribattuto, probabilmente eseguito col registratore\n stesso.\n "
+  tag_end: A05
+  tag_start: A05
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    trasferimenti di registrazioni su vinile di improvvisazioni
+     per pianoforte.
+    
+  tag_end: A26
+  tag_start: A06
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato stereofonicamente su entrambe le tracce. Contiene trasferimenti di registrazioni di brani/improvvisazioni per pianoforte, presumibilmente di GS stesso."
+  tag: NMGS0347-504
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2013-07-19
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

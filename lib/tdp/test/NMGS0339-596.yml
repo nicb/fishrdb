@@ -1,0 +1,71 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: matita nera
+    lines: |
+      RAPPORTO UOMO
+      MACCHINA
+      UOMO
+
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      Campionario ORIGINALI
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS
+      pen: matita nera
+    lines: |
+      in XVI [ottimo?]
+      niente
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "da sviluppare "
+- !ruby/object:Tdp::Box::Display 
+  location: costola sinistra
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cerchiato
+      author: GS
+      pen: penna biro blu
+    lines: "15 "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "prove con Michiko Hirayama\n "
+  tag_end: A04
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    considerazioni del tecnico del suono,
+     di GS e di Michiko Hirayama
+    
+  tag_end: A05
+  tag_start: A05
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato in un solo verso di scorrimento. E` stato trovato in coda, cos\xC3\xAC \xC3\xA8 stato invertito per l'editing."
+  tag: NMGS0339-596
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2012-11-12
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

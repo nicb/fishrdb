@@ -1,0 +1,93 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: ??
+      pen: feltro nero
+    lines: "Giacinto "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: ??
+      pen: feltro nero
+    lines: |
+      ROYAUMONT 30 - 5 - 87
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: ??
+      pen: feltro nero
+    lines: "H\xC3\xB4 8' Taiagaru 14'\n\
+      Canti del Capricorno 36'\n\
+      Bis 7'15\"\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: ??
+      pen: feltro nero
+    lines: |
+      31 - 5 - 87 piece pour cor solo 3'
+      piece pour trombone solo 2'30"
+
+- !ruby/object:Tdp::Box::Display 
+  location: fronte centro flangia
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: etichetta
+      author: ??
+      pen: feltro nero
+    lines: |
+      Royaumont 30-5-87 et 31-5-87
+      19 st.
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "registrazione di un'esecuzione pubblica di H\xC3\xB4\n solista Michiko Hirayama\n "
+  tag_end: A04
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "registrazione di un'esecuzione pubblica di Taiagaru\n solista Michiko Hirayama\n "
+  tag_end: A10
+  tag_start: A06
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "registrazione di un'esecuzione pubblica di Canti del Capricorno\n solista Michiko Hirayama (prima parte)\n "
+  tag_end: A16
+  tag_start: A11
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "registrazione di un'esecuzione pubblica di Canti del Capricorno\n solista Michiko Hirayama (seconda parte)\n "
+  tag_end: A20
+  tag_start: A18
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "registrazione di un'esecuzione pubblica di Canti del Capricorno\n solista Michiko Hirayama (terza parte)\n "
+  tag_end: A23
+  tag_start: A22
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "registrazione di un'esecuzione pubblica di Canti del Capricorno\n solista Michiko Hirayama (quarta parte, bis)\n "
+  tag_end: A25
+  tag_start: A25
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "registrazione di un'esecuzione pubblica di un\n brano per corno francese solo\n "
+  tag_end: A27
+  tag_start: A27
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    registrazione di un'esecuzione pubblica di un
+     brano per trombone solo
+    
+  tag_end: A29
+  tag_start: A29
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 inciso stereofonicamente su due tracce. Contiene presumibilmente la registrazione di un concerto vocale a Royaumont del 30 maggio 1987 con solista Michiko Hirayama. A fine nastro ci sono anche due brani strumentali presumibilmente tratti da un concerto del giorno seguente (31 maggio 1987)"
+  tag: NMGS0348-506
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2013-07-19
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

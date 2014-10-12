@@ -1,0 +1,39 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: etichetta
+      author: ??
+      pen: penna biro blu
+    lines: |
+      Copy pour Scelsi Igghur - Suite 11 - S - Pwill
+      M'Guy Festival (97)
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "esecuzione pubblica di un brano per\n quartetto d'archi\n "
+  tag_end: A03
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "esecuzione pubblica di un brano per pianoforte\n "
+  tag_end: A08
+  tag_start: A05
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    esecuzione pubblica di un brano per flauto
+     (presumibilmente Pwyll/Tetratkys)
+    
+  tag_end: A10
+  tag_start: A10
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: il nastro sembra essere una registrazione semi-professionale di esecuzioni dal vivo di lavori di Scelsi non meglio identificati.
+  tag: NMGS0354-025
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2013-11-11
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

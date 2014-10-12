@@ -1,0 +1,45 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: foglio interno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: dattiloscritto
+    lines: "4.- A) RIVERA Enrique \"LA AUSENCIA\" para voz y conjunto instru- 16'40\n\
+      mental\n\
+      Herm\xC3\xA1n W\xC3\xBCrth, tenor\n\
+      Conjunto Instrumental del IEM\n\n\n\
+      B) SCHIDLOWSKY Le\xC3\xB3n INVOCACION 9'20\n\
+      Hanns Stein, recitante\n\
+      Ivonne Herbos, mezzo-soprano\n\
+      Orquesta Sinf\xC3\xB3nica de Chile\n\
+      Director: August\xC3\xACn Cullell\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: dattiloscritto
+    lines: "FECHA: 11/VI/1965 cas. Solicitud: Minsterio R.R.E.E. EQUIPO EMPLEADO:\n\
+      CARACTERISTICAS de copia: velocidad = 7 1/2\"s. Monof\xC3\xB3nico Pista plena. NAB\n\
+      GRABADA POR S.P.C. EDITADA POR COPIADA POR A.I.C.\n"
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    registrazione stereofonica di una esecuzione dal
+     vivo di brani di altri compositori (non
+     meglio identificati)
+    
+  tag_end: A02
+  tag_start: A01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: il nastro contiene una registrazione stereofonica di una esecuzione di brani non di GS.
+  tag: NMGS0314-XXX
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2011-12-06
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

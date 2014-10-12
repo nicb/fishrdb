@@ -1,0 +1,46 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: pennarello blu
+    lines: |
+      19 cms 28-1-86 
+      
+      G.Scelsi . - 5. quartetto - 6'40"
+      in testa: Interview - 6'00"
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: timbro blu
+    lines: |
+      WONDERLAND di MUSIO e SCHIAVONI s.a.s.
+      Via Thailandia, 24 - 00144 ROMA
+      C.F. e P.IVA 06767160584
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "intervista in pubblico a GS da parte di\n una personalit\xC3\xA0 presumibilmente\n ospite della Villa Medici (in francese)\n durante l'intervista GS menziona il 4.\n quartetto appena eseguito (il quale per\xC3\xB2\n non \xC3\xA8 presente in questa registrazione)\n "
+  tag_end: A02
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    esecuzione del 5. quartetto
+    
+  tag_end: A03
+  tag_start: A03
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 la copia di una registrazione professionale effettuata presumibilmente da Piero Schiavoni il 28 gennaio 1986. Essendo stata realizzata su un nastro Ampex, \xC3\xA8 stato necessario effettuare il trasferimento in due fasi diverse, con una pulizia delle testine del lettore tra una fase e l'altra per rimuovere l'abbondante rilascio del nastro. La versione trasferita \xC3\xA8 stata poi opportunamente editata per replicare lo stato primigenio del nastro."
+  tag: NMGS0336-578
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2012-11-12
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

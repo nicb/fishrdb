@@ -1,0 +1,105 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte foglietto n.1
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna biro blu
+    lines: "45 Tours "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna biro blu
+    lines: |
+      Face I Sonate = Niveau Musical
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna biro blu
+    lines: "Face II - Koechlin = A \xC3\xA9couter avec niveau \n\
+      \"doux\"\n\n\n\
+      - Luciole = d., encore plus\n\
+      de [SamaZenilh?] doux m\xC3\xAAme\n\n\n\
+      - Michael = Niveau normal\n\n\n\
+      - Jolivet = Niveau plus fort\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna biro blu
+    lines: "Avec mes excusese pour la prise de son de qualit\xC3\xA9 relative et in\xC3\xA9gale\n\
+      et la discutable fid\xC3\xA9lit\xC3\xA9 des timbres.\n"
+- !ruby/object:Tdp::Box::Display 
+  location: fronte foglietto n.2
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna stilografica blu
+    lines: |
+      Speed 33/4 ins. per second 
+      
+      A) Beginning from white end:-
+      1) Four [Bani?] Songs
+      2) Instrumental music
+      -- Swarode + Tabla
+      by Ali Akbar + [Keramuddin??]
+      respectively
+      an excerpt
+      Darbari Kanara
+      
+      
+      B) Beginning from Red end:-
+      1) two Tagore songs by
+      Rageswari Dutta
+      a) [????]
+      b) [????]
+      2) Italian rendering of
+      two Tagore songs from
+      Gitangali
+      3) Tagore voice
+      a) sound - [????]
+      b) Recitation -
+      [????]
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "musica classica indiana non meglio identificata\n "
+  tag_end: A02
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "frammento parlato di GS assieme ad un non\n meglio identificato 'Cammillo'\n "
+  tag_end: A03
+  tag_start: A03
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "musica classica indiana non meglio identificata\n "
+  tag_end: B01
+  tag_start: B01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "registrazione domestica da trasmissione\n radiofonica (Radio Italy) di un brano\n di musica indiana di Gitangali trascritto\n per soprano e pianoforte da Alfredo\n Casella e cantato da Alice (Gabeaud?)\n accompagnata da Pietro Guarini\n "
+  tag_end: B02
+  tag_start: B02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    registrazione domestica da trasmissione
+     radiofonica (Radio Italy) di musica
+     classica indiana
+    
+  tag_end: B03
+  tag_start: B03
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato su entrambe le tracce fronte retro.\n Frammenti parlati:\n [A03][GS]Pronto pronto pronto. Vediamo se adesso fa questo rumore oppure no. Perch\xC3\xA9 non si capisce niente con questo magnetofono. E` pi\xC3\xB9 capriccioso di una donna che conosco io (risate in sottofondo) Adesso parla pure un po' Cammillo e dice la sua perch\xC3\xA9 questo \xC3\xA8 troppo corto. [Cammillo'] Attenzione, prova per la registrazione. Attenzione, uno due tre quattro cinque sei sette otto nove. Attenzione attenzione, passo. [GS] Questo \xC3\xA8 proprio un discorso da tecnico che ha fatto Cammillo"
+  tag: NMGS0296-XXX
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2011-10-07
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

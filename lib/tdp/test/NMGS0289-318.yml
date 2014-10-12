@@ -1,0 +1,92 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro blu
+    lines: "Tetratkys (N2) "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro blu
+    lines: "velocit\xC3\xA0 gr\n"
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato
+      author: GS
+      pen: penna biro blu
+    lines: |
+      4 Pezzi su una nota ciascuno (Franci) leggere su entrambi le piste
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro blu
+    lines: |
+      27 390
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: incorniciato
+      author: GS
+      pen: penna biro blu
+    lines: |
+      4 Pezzi - Leroux ore 9 1/4 Sunday
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cancellato
+      author: GS
+      pen: penna biro blu
+    lines: "vl "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro blu
+    lines: "Quartetto N2 il V alle 6,20 "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna biro blu
+    lines: "bobina piccola 397 IIIo 485 "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "prova del brano Tetratkys/Pwyll\n "
+  tag_end: A01
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "annuncio e registrazione di una trasmissione\n radiofonica italiana dei '4 Pezzi su\n una nota sola'\n "
+  tag_end: A03
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "annuncio e registrazione di una\n trasmissione radiofonica francese dei\n '4 Pieces sur un son'\n "
+  tag_end: A07
+  tag_start: A04
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "presunta esecuzione del Quartetto N.2\n "
+  tag_end: B05
+  tag_start: B01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    prove (o esecuzione) di un brano per
+     soprano
+    
+  tag_end: B07
+  tag_start: B06
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato in entrambi i versi di scorrimento, dapprima in mono sul canale sinistro e poi in stereofonia al dritto, poi di nuovo mono sul canale sinistro con scorrimento rovesciato. Presumibilmente si tratta di registrazioni da trasmissioni radiofoniche. Un dettaglio interessante \xC3\xA8 nel testo della presentazione dei \"4 Pezzi su una nota sola\" in cui l'annunciatrice presenta il compositore come \"Filippo Scelsi\""
+  tag: NMGS0289-318
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2011-09-23
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

@@ -1,0 +1,48 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna biro blu
+    lines: |
+      Nina KARP Voice improvisations
+      19 cm/sec
+
+- !ruby/object:Tdp::Box::Display 
+  location: retro flangia
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: etichetta
+      author: ??
+      pen: penna biro blu
+    lines: |
+      Nina KARP voice improvisations
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione vocale\n "
+  tag_end: A01
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione voce e percussione\n "
+  tag_end: A02
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazione vocale
+    
+  tag_end: A03
+  tag_start: A03
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 inciso solo sulla seconda traccia. Contiene delle improvvisazioni vocali. Si tratta presumibilmente di un nastro inviato a Scelsi dalla cantante Nina Karp; quest'ultima potrebbe essere la figlia della pianista Vivian Fine."
+  tag: NMGS0343-619
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2013-01-14
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola

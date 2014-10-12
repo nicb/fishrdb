@@ -1,0 +1,67 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cancellato
+      author: GS
+      pen: penna nera
+    lines: "Pwill prova "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: "Canti del Capricorno "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: penna nera
+    lines: "vuoto "
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione di ondiole sovrapposte con ritardo\n tra una traccia e l'altra\n "
+  tag_end: A01
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione di ondiole sovrapposte\n "
+  tag_end: A10
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione di ondiola con sovrapposizione di\n canto tibetano rallentato ca. otto volte\n "
+  tag_end: A11
+  tag_start: A11
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "accordi singoli di pianoforte (presummibilmente\n uno studio preparatorio di Aitsi) in cui GS o un\n suo assistente alza il guadagno del microfono\n sulla risonanza\n "
+  tag_end: A12
+  tag_start: A12
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione di ondiola singola\n "
+  tag_end: A13
+  tag_start: A13
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "accordi singoli di pianoforte (presummibilmente\n uno studio preparatorio di Aitsi) in cui GS o un\n suo assistente alza il guadagno del microfono\n sulla risonanza\n "
+  tag_end: B05
+  tag_start: B02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "accordi singoli di pianoforte (presummibilmente\n uno studio preparatorio di Aitsi) in cui GS o un\n suo assistente alza il guadagno del microfono\n sulla risonanza\n "
+  tag_end: B05
+  tag_start: B06
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    improvvisazione per due ondiole
+    
+  tag_end: B12
+  tag_start: B06
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato su entrambe le tracce nello stesso senso di scorrimento (dritto), poi in senso invertito. L'inizio sembra essere la registrazione di un'improvvisazione di ondiole sovrapposte in cui la traccia sinistra \xC3\xA8 l'eco della traccia destra (l'eco \xC3\xA8 circa 1 secondo, quindi non \xC3\xA8 stato realizzato con il ritardo tra le testine alla velocit\xC3\xA0) Dopo ci sono improvvisazioni per ondiola e per pianoforte."
+  tag: NMGS0288-139
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2011-09-13
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

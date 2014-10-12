@@ -11,7 +11,7 @@ class Tdp::Tape::BoxParser
         token SESSION_HEADER DATE LOCATION TRANSFERRER ANYWORD
         token TAPE_TAG WHITE_SPACE PUNCTUATION ID_TAG EMPTY_LINE EOL
         token TAPE_CONTENT_HEADER TAPE_SEGMENT
-        token COMMA COLON RPAR RSQ DASH LPAR LSQ DOLLAR LBRACE RBRACE
+        token COMMA COLON DASH DOLLAR
         token TAPE_BOX_HEADER NO_DISPLAYS DISPLAY_TERM_SEPARATOR
         token CALLIGRAPHY QUESTION_MARKS DISPLAY_LOCATION AUTHOR_INITIALS
 
@@ -21,10 +21,6 @@ rule
       {
         tape.box = val[2]
         result = tape
-      }
-      | error
-      {
-        logger.info("Box Parser error for token \"#{val.inspect}\"")
       }
 
     display
@@ -162,16 +158,16 @@ end
   include Tdp::Tape::Lexer
 
   def initialize(tape, debug = false)
-    @line = 1
-    @yydebug = debug
-    @tape = tape
+    self.line = 1
+    self.yydebug = debug
+    self.tape = tape
   end
 
   def parse(one_line)
     begin
         result = tbp_lexer(one_line, :bump_line, yydebug) { do_parse }
     rescue ParseError
-        raise ParseError.new("Box Description failed at line #{line}: #{$!}")
+        raise ParseError.new("Box Description failed at line #{self.line}: #{$!} (fragment was: \"#{@last_fragments.last_pushed}\")")
     end
     return result
   end

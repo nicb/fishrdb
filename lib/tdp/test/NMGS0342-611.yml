@@ -1,0 +1,80 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: []
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per ondiola\n "
+  tag_end: A01
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "prove musicali con clarinettista\n "
+  tag_end: A04
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per ondiola distorta\n "
+  tag_end: A06
+  tag_start: A06
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni per ondiola\n "
+  tag_end: A13
+  tag_start: A07
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "sperimentazione con sequenze di nastro\n magnetico ripetute in sequenze\n "
+  tag_end: A15
+  tag_start: A14
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per ondiola\n "
+  tag_end: B01
+  tag_start: B01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "sequenze di suoni sperimentali di difficile \n interpretazione (sembrano ondiole registrate\n distorte e ripetute in sequenza)\n "
+  tag_end: B05
+  tag_start: B02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "nota distorta di ondiola (molto vibrato)\n "
+  tag_end: B06
+  tag_start: B06
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "sequenze di suoni sperimentali di difficile \n interpretazione (sembrano ondiole registrate\n distorte e ripetute in sequenza)\n "
+  tag_end: B07
+  tag_start: B07
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "nota distorta di ondiola (molto vibrato)\n "
+  tag_end: B08
+  tag_start: B08
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "sequenze di suoni sperimentali di difficile \n interpretazione (sembrano ondiole registrate\n distorte e ripetute in sequenza)\n "
+  tag_end: B09
+  tag_start: B09
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "nota distorta di ondiola (molto vibrato)\n "
+  tag_end: B10
+  tag_start: B10
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "sequenze di suoni sperimentali di difficile \n interpretazione (sembrano ondiole registrate\n distorte e ripetute in sequenza)\n "
+  tag_end: B11
+  tag_start: B11
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazioni varie di ondiola\n "
+  tag_end: B31
+  tag_start: B12
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "sequenza percussiva\n "
+  tag_end: B32
+  tag_start: B32
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    sequenza di accordi consonanti acuti molto
+     riverberati ed equispaziati
+    
+  tag_end: B33
+  tag_start: B33
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato su entrambe le tracce fronte-retro. La velocit\xC3\xA0 di scorrimento \xC3\xA8 di difficile interpretazione. Il nastro sembra essere una compilazione di annotazioni ad uso interno."
+  tag: NMGS0342-611
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2012-11-26
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

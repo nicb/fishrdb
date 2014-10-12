@@ -1,0 +1,19 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: []
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    registrazione professionale di un brano per coro
+    
+  tag_end: A03
+  tag_start: A01
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 una registrazione stereofonica professionale di un brano per coro non identificato (dalle parole \xC3\xA8 presumibile che si tratti di un \"Angelus\") La confezione esterna e il tipo di nastro sembrerebbero riportare il nastro ad una registrazione effettuata alla WDR (West-Deutscher Rundfunk K\xC3\xB6ln), ma sulla scatola non vi \xC3\xA8 alcuna indicazione a riguardo."
+  tag: NMGS0321-575
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2012-03-26
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

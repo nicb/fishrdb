@@ -1,0 +1,97 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: feltro nero
+    lines: "THIRD PROGRAM (26.02 1980) "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: feltro nero
+    lines: |
+      CANTI DEL CAPRICORNO MICIKO HIRAYAMA
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: feltro nero
+    lines: |
+      PIANO SUITE 10 (FRAGMENT) RZEWSKI
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: feltro nero
+    lines: |
+      TRILOGIA TRIPHON
+      DITHOME
+      IGGHUR
+      F.M.UITTI
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: feltro nero
+    lines: |
+      CINQUE INCANTESIMI AKI TAKAHASHI
+      (RECORDED 5 11 1978 NOS-DUTCH RADIO FROM PRO MUSICA VIVA
+      FESTIVAL, BREMEN)
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "presentazione parlata (F.M. Uitti,\n F.Van Rossum)\n "
+  tag_end: A01
+  tag_start: A01
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "registrazione di un frammento della\n Suite N.10 (presunto)\n "
+  tag_end: A02
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "presentazione parlata (Y.Mikashoff,\n A.Curran, F.Van Rossum)\n "
+  tag_end: A03
+  tag_start: A03
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "frammenti dei Canti del Capricorno\n (voce: Michiko Hirayama)\n "
+  tag_end: A04
+  tag_start: A04
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "presentazione parlata (F.Rzewski,\n F.M. Uitti, F.Van Rossum)\n "
+  tag_end: A05
+  tag_start: A05
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Triphon (violoncello: F.M.Uitti)\n "
+  tag_end: A06
+  tag_start: A06
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Triphon (violoncello: F.M.Uitti)\n "
+  tag_end: A07
+  tag_start: A07
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Triphon (violoncello: F.M.Uitti)\n "
+  tag_end: A08
+  tag_start: A08
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    Cinque Incantesimi (piano: Aki Takahashi)
+     esecuzione dal vivo
+    
+  tag_end: A13
+  tag_start: A09
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato stereofonicamente su entrambe le tracce nello stesso senso di scorrimento. Si tratta di una copia di una trasmissione radiofonica in lingua olandese dedicata alla musica di GS. Nel nastro ci sono interventi parlati di Frances-Marie Uitti, Yvar Mikashoff, Alvin Curran, Frederic Rzewski e di uno speaker olandese non meglio identificato. Trattandosi di un nastro Ampex 456 notoriamente soggetto a perdita di polvere magnetica, il suddetto \xC3\xA8 stato sottoposto a pre-riscaldamento a 47 C per quattro ore prima del riversamento."
+  tag: NMGS0364-033
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2014-02-20
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

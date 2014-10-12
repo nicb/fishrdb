@@ -1,0 +1,84 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: feltro nero
+    lines: "SECOND PROGRAM (19.02 1980) "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: feltro nero
+    lines: "- PIECE FOR AMPLIFIED PIANO - 5'20 YVAR MIKHASHOFF\n\
+      - FRAGMENT FROM SONATA #2 --\n\
+      - FRAGMENT FROM TTAI\n\
+      - CANTO DEL CAPRICORNO #1\n\
+      MICIKO HIRAYAMA\n\
+      - YAMAON - for BASS AND 5 INSTRUMENTS\n\
+      RECORDED BY SCELSI\n\
+      - QUATTRO PEZZI SU UNA NOTA SOLA\n\
+      RADIO ORCHESTRA SAARBR\xC5\xB0CKEN, H.ZENDER\n\
+      - TRE MANTOS PER VIOLA SOLA\n\
+      GENEVIEVE RENON\n\
+      - MANTO PER VIOLONCELLO SOLO\n\
+      FM UITTI\n\
+      - THREE LATIN PRAYERS\n\
+      SOPRANO UNKNOWN - KRO RECORDING\n"
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Esecuzione di Aitsi da parte di Yvar\n Mikashoff\n "
+  tag_end: A02
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Esecuzione del primo dei Canti del\n Capricorno da parte di Michiko Hirayama\n "
+  tag_end: A04
+  tag_start: A04
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Brano per pianoforte tratto dalla Sonata n.2\n "
+  tag_end: A06
+  tag_start: A06
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Brano per pianoforte tratto dalla Suite TTAI\n "
+  tag_end: A08
+  tag_start: A08
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Esecuzione di Yamaon\n "
+  tag_end: A12
+  tag_start: A10
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Esecuzione di Quattro Pezzi su una Nota\n Sola\n "
+  tag_end: A16
+  tag_start: A14
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Esecuzione di Tre Manto per viola sola da\n parte di Genevi\xC3\xA8ve Renon\n "
+  tag_end: A19
+  tag_start: A18
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Esecuzione di Manto per violoncello solo\n da parte di Frances-Marie Uitti\n con la sovrapposizione della voce di\n Frances-Marie Uitti (intervista)\n "
+  tag_end: A21
+  tag_start: A21
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "Esecuzione di Three Latin Prayers\n "
+  tag_end: A24
+  tag_start: A23
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    Esecuzione di Manto da parte di
+     Frances-Marie Uitti
+    
+  tag_end: A28
+  tag_start: A28
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato stereofonicamente ed \xC3\xA8 presumibilmente la copia di una trasmissione radiofonica trasmessa dalla Radio Olandese presumibilmente in data 19/02/1980. Lo speaker della trasmissione \xC3\xA8 presumibilmente Frans Van Rossum. Alla fine della registrazione della trasmissione c'e` un frammento di un'altra trasmissione, questa volta in lingua tedesca. Trattandosi di un nastro Ampex 456 notoriamente soggetto a perdita di polvere magnetica, il suddetto \xC3\xA8 stato sottoposto a pre-riscaldamento a 47 C per quattro ore prima del riversamento."
+  tag: NMGS0359-032
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2014-01-13
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno

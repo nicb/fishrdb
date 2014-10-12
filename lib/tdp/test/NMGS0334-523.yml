@@ -1,0 +1,82 @@
+--- !ruby/object:Tdp::Tape::Item 
+box: 
+- !ruby/object:Tdp::Box::Display 
+  location: fronte esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: matita nera
+    lines: |
+      SCELSI 6
+
+- !ruby/object:Tdp::Box::Display 
+  location: retro esterno
+  notes: 
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: etichetta
+      author: FMU
+      pen: feltro rosso
+    lines: |
+      preghiere -- vln. solo
+      19 / 3o pezzo
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: cerchiato
+      author: ??
+      pen: penna biro blu
+    lines: |
+      VIOLINO SOLO 19cm/s
+      PISTA 1
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: ??
+      pen: penna biro blu
+    lines: |
+      FATTO, MARZO 1982
+
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: sottolineato
+      author: GS
+      pen: penna stilografica blu
+    lines: "buono "
+  - !ruby/object:Tdp::Box::Note 
+    calligraphy: !ruby/object:Tdp::Tape::CalligraphyDescription 
+      additional_info: ""
+      author: GS
+      pen: matita nera
+    lines: |
+      da sentire tutto vl
+      Mokambo
+
+content: 
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per ondiola\n "
+  tag_end: A02
+  tag_start: A02
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: "improvvisazione per ondiola\n "
+  tag_end: A07
+  tag_start: A04
+- !ruby/object:Tdp::Tape::TapeContent 
+  description: |+
+    registrazione di strumenti a percussione indiani
+     (idioma indiano per sole percussioni)
+    
+  tag_end: A12
+  tag_start: A08
+description: !ruby/object:Tdp::Tape::TapeDescription 
+  description: "il nastro \xC3\xA8 registrato solo sulla prima traccia. Contiene varie improvvisazioni di ondiola e, a seguire, la registrazione di musica etnica per percussioni. Al suono di quest'ultima si sovrappone un peculiare fischio a intervalli regolari (come un segnale d'allarme o simili), di difficile interpretazione."
+  tag: NMGS0334-523
+session: !ruby/object:Tdp::Tape::SessionDescription 
+  date: 2012-11-06
+  location: Discoteca di Stato
+  transferrers: 
+  - Bernardini, Nicola
+  - Quaresima, Bruno
