@@ -21,4 +21,17 @@ namespace :fishrdb do
 
   end
 
+	namespace :stats do
+
+		desc 'Calculate document statistics for FIShrdb'
+		task :document_count => [ :environment ] do
+
+      require File.expand_path(File.join(['..'] * 3, 'lib', 'fishrdb', 'stats'), __FILE__)
+
+			Fishrdb::Stats::DocumentHierarchicalCount.count
+
+		end
+
+	end
+
 end
