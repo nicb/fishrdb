@@ -9,5 +9,7 @@ module Fishrdb
 end
 
 %w(
+	output
   document_hierarchical_count 
+  authority_count
 ).each { |f| require File.join(Fishrdb::Stats::PATH, f) }

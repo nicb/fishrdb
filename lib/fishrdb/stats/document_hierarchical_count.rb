@@ -1,4 +1,3 @@
-require 'debugger'
 module Fishrdb
 
   module Stats
@@ -7,31 +6,24 @@ module Fishrdb
 
       class << self
 
+        include Output
+
+        EXCLUDE_NAME = '__Fondazione_Isabella_Scelsi__'
+
         def count
-					output_header
-					#
-					# get all description levels
-					#
-					DescriptionLevel.levels.each do
-						|dl|
-						cnt = Document.count(:conditions => ['description_level_id = ?', dl.id])
-						output(dl, cnt)
-					end
-					output_trailer
+          print_output_header('Documenti')
+          #
+          # get all description levels
+          #
+          DescriptionLevel.levels.each do
+            |dl|
+            cnt = Document.count(:conditions => ['description_level_id = ? AND name != ?', dl.id, EXCLUDE_NAME])
+            name = cnt > 1 ? dl.level.pluralize : dl.level
+            print_output(name, cnt)
+          end
+
+          print_output_trailer
         end
-
-      private
-
-				def output(dl, cnt)
-					name = cnt > 1 ? dl.level.pluralize : dl.level
-					printf("%-20s %20d\n", name + ':', cnt)
-				end
-
-				def output_header
-					puts("==========================================")
-				end
-
-				alias_method :output_trailer, :output_header
 
       end
 
