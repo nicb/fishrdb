@@ -12,4 +12,5 @@ end
 	output
   document_hierarchical_count 
   authority_count
+	serie_count
 ).each { |f| require File.join(Fishrdb::Stats::PATH, f) }
