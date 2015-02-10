@@ -25,8 +25,8 @@ FILES.each do
 		|csv|
 		klass.all(:order => 'name, first_name').each do
 			|ar|
-			row = [ ar.id, [ar.name, ar.first_name].compact.join(' ') ]
-			row.concat(ar.variants.map { |v| [v.name, v.first_name].compact.join(' ') })
+			row = [ ar.id, ar.name, ar.first_name ]
+			row.concat(ar.variants.map { |v| [v.name, v.first_name] }.flatten)
 			csv << row
 		end
 	end
