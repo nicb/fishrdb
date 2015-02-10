@@ -13,6 +13,7 @@ GEM
     activesupport (2.1.0)
     archive (0.0.3)
       ffi (~> 1.8.1)
+    builder (3.2.2)
     cgi_multipart_eof_fix (2.5.0)
     daemons (1.1.8)
     eventmachine (1.0.3)
@@ -20,6 +21,8 @@ GEM
     fastthread (1.0.7)
     ffi (1.8.1)
     gem_plugin (0.2.3)
+    gyoku (1.2.2)
+      builder (>= 2.1.2)
     mongrel (1.1.5)
       cgi_multipart_eof_fix (>= 2.4)
       daemons (>= 1.0.3)
@@ -28,6 +31,7 @@ GEM
     mysql (2.9.1)
     net-ssh (2.6.8)
     racc (1.4.11)
+    railroad (0.5.0)
     rails (2.1.0)
       actionmailer (= 2.1.0)
       actionpack (= 2.1.0)
@@ -47,8 +51,10 @@ DEPENDENCIES
   SimpleSearch
   archive
   exifr
+  gyoku (~> 1.0)
   mongrel
   mysql
   racc
+  railroad
   rails (= 2.1.0)
   rtunnel

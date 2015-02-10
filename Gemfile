@@ -14,3 +14,10 @@ gem 'rtunnel' # required for convenience remote access scripts
 gem 'archive' # required to run the 'recover' library
 
 gem 'racc' # require to compile tape compilers
+
+gem 'railroad' # to represent the db structure graphically
+
+# gem 'schematic' # creates xsd out of ActiveRecord objects
+
+gem 'gyoku', '~> 1.0'  # create XML out of hashes
+# gem 'pretty-xml'

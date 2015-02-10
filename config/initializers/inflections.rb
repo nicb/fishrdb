@@ -23,4 +23,11 @@ Inflector.inflections do |inflect|
 	inflect.plural /a$/i, 'e'
 	inflect.plural /(erie)$/i, '\1'
 
+	#
+	# english rules (as irregular italian :-()
+	#
+	inflect.irregular 'ard_reference', 'ard_references'
+	inflect.irregular 'sidebar_tree', 'sidebar_trees'
+	inflect.irregular 'name', 'names'
+
 end
