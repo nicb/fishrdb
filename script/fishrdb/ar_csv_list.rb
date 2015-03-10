@@ -11,23 +11,23 @@ OUTPUT_PATH = File.expand_path(File.join(['..'] * 3, 'tmp'), __FILE__)
 
 FILES = {
   PersonName => 'nomi',
-	ScoreTitle => 'titoli',
-	SiteName => 'luoghi',
-	CollectiveName => 'enti',
+  ScoreTitle => 'titoli',
+  SiteName => 'luoghi',
+  CollectiveName => 'enti',
 }
 
 FILES.each do
-	|klass, filename|
+  |klass, filename|
 
-	outfile = File.join(OUTPUT_PATH, filename + '.csv')
+  outfile = File.join(OUTPUT_PATH, filename + '.csv')
 
-	CSV.open(outfile, 'wb') do
-		|csv|
-		klass.all(:order => 'name, first_name').each do
-			|ar|
-			row = [ ar.id, ar.name, ar.first_name ]
-			row.concat(ar.variants.map { |v| [v.name, v.first_name] }.flatten)
-			csv << row
-		end
-	end
+  CSV.open(outfile, 'wb') do
+    |csv|
+    klass.all(:order => 'name, first_name').each do
+      |ar|
+      row = [ ar.id, ar.name, ar.first_name ]
+      row.concat(ar.variants.map { |v| [v.name, v.first_name] }.flatten)
+      csv << row
+    end
+  end
 end
