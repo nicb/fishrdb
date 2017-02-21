@@ -15,12 +15,12 @@
 Inflector.inflections do |inflect|
   inflect.uncountable %w( bibliographic_data tape_data cd_data )
 
-	#
-	# italian rules
-	#
+# #
+# # italian rules
+# #
 
-	inflect.plural /[oe]$/i, 'i'
-	inflect.plural /a$/i, 'e'
-	inflect.plural /(erie)$/i, '\1'
+# inflect.plural /[oe]$/i, 'i'
+# inflect.plural /a$/i, 'e'
+# inflect.plural /(erie)$/i, '\1'
 
 end
