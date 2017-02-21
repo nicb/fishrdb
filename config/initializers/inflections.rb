@@ -29,5 +29,7 @@ Inflector.inflections do |inflect|
 	inflect.irregular 'ard_reference', 'ard_references'
 	inflect.irregular 'sidebar_tree', 'sidebar_trees'
 	inflect.irregular 'name', 'names'
+	inflect.irregular 'container_type', 'container_types'
+	inflect.irregular 'ensemble', 'ensembles'
 
 end
