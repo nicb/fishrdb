@@ -51,4 +51,18 @@ namespace :fishrdb do
 
   end
 
+	namespace :xml do
+
+    require File.expand_path(File.join(['..'] * 3, 'lib', 'fishrdb', 'xml_export'), __FILE__)
+
+		desc 'export xml file of the whole tree'
+		task :export => [ :environment ] do
+
+			fpath = Fishrdb::XmlExport::Builder.build
+			puts("Created xml file of the FIShrdb tree in file \"#{fpath}\"")
+
+		end
+
+	end
+
 end
