@@ -24,6 +24,7 @@ MODELS = [
 	TapeBoxMarkerCollection,
 	TapeBoxMark,
 	User,
+	ContainerType,
 ]
 
 CSV.open(OUTPUT_PATH, 'wb') do
