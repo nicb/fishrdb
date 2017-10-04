@@ -147,7 +147,7 @@ CREATE TABLE `documents` (
   `creator_id` int(11) NOT NULL COMMENT 'Connected to the User table',
   `last_modifier_id` int(11) NOT NULL COMMENT 'Connected to the User table',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` datetime DEFAULT NULL,
   `position` int(11) NOT NULL,
   `lock_version` int(11) DEFAULT '0',
   `record_locked` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'N',

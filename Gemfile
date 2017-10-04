@@ -21,3 +21,5 @@ gem 'railroad' # to represent the db structure graphically
 
 gem 'gyoku', '~> 1.0'  # create XML out of hashes
 # gem 'pretty-xml'
+
+gem 'ruby-debug'
