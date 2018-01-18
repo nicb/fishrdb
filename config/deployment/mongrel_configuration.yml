@@ -4,7 +4,7 @@
 --- 
 :throttle: 0
 :user: nicb
-:cwd: /home/nicb/src/fishrdb
+:cwd: /home/nicb/src/git/fishrdb
 :host: 192.168.0.252
 :timeout: 180
 :debug: false
