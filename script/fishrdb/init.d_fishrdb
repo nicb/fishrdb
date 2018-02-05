@@ -30,12 +30,13 @@ NAME=fishrdb
 #DAEMON_ARGS="--options args"
 #PIDFILE=/var/run/$NAME.pid
 SCRIPTNAME=/etc/init.d/$NAME
-FISHRDB_ROOT_TREE=/home/nicb/src/fishrdb
+FISHRDB_GEMSET_ROOT="/home/nicb/.rvm/gems/ruby-1.8.7-p358@fishrdb210/gems"
+FISHRDB_ROOT_TREE=/home/nicb/src/git/fishrdb
 FISHRDB_MONGREL_CONFIGURATION_FILE="${FISHRDB_ROOT_TREE}/config/deployment/mongrel_configuration.yml"
 PIDFILE="tmp/pids/mongrel.pid"
 FISHRDB_START_ARGS="-C ${FISHRDB_MONGREL_CONFIGURATION_FILE}"
 FISHRDB_STOP_ARGS="-P ${FISHRDB_ROOT_TREE}/${PIDFILE}"
-MONGREL=/usr/bin/mongrel_rails
+MONGREL=
 RM="rm -f"
 
 # Exit if the package is not installed
@@ -65,7 +66,8 @@ do_start()
 		do_stop # make sure you get rid of previous servers
 	fi
 	# [ -f /tmp/mysql.sock ] || ln -s /var/run/mysqld/mysqld.sock /tmp/mysql.sock
-	$MONGREL start $FISHRDB_START_ARGS || return 1
+	$RVM current ruby-1.8.7@fishrdb210 &&\
+	$MONGREL $FISHRDB_START_ARGS || return 1
 	# Add code here, if necessary, that waits for the process to be ready
 	# to handle requests from services started subsequently which depend
 	# on this one.  As a last resort, sleep for some time.
