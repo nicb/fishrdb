@@ -1,0 +1,16 @@
+#!/bin/sh
+#
+# $Id$
+#
+ROOT_DIR=/home/nicb/src/git/fishrdb
+RVM_GEMSET=ruby-1.8.7-p358@fishrdb210
+PKILL="pkill -2"
+LOCK=${ROOT_DIR}/tmp/pids/mongrel.pid
+SCRIPT_DIR=$ROOT_DIR/script
+SERVER="$SCRIPT_DIR/server -e production -d"
+USER=nicb
+SUDO=sudo 
+
+$SUDO -u nicb $PKILL ruby
+$SUDO -u nicb -l $SERVER
+$SERVER

@@ -1,3 +1,8 @@
 #!/bin/sh
-
-RVM_GEMSET=
+#
+# $Id$
+#
+ROOT_DIR=/home/nicb/src/git/fishrdb
+RVM_GEMSET=ruby-1.8.7-p358@fishrdb210
+PKILL=pkill -2
+LOCK=${ROOT_DIR}/tmp/pids/mongrel.pid
