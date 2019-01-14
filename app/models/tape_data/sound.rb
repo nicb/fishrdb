@@ -37,7 +37,7 @@ module TapeDataParts
   private
 
     def sound_path
-      root = "public/private/tapes_lofi/1"
+      root = "public/private/lofi"
       subdir = tape_record.parent.name
       (subsubdir, thrown_away) = tape_record.name.split('-')
       return root + '/' + subdir + '/' + subsubdir + '-*/Audio Files'

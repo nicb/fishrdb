@@ -15,8 +15,8 @@ module FishrdbHelper
     TEXT_GLOB = '*.txt'
 
     COMMON_PATH = File.join(File.dirname(__FILE__), '..', '..', 'public', 'private')
-    LOFI_PATH = File.join(COMMON_PATH, 'lofi', '1')
-    HIFI_PATH = File.join(COMMON_PATH, 'hifi', '1', 'FIS_tapes')
+    LOFI_PATH = File.join(COMMON_PATH, 'lofi')
+    HIFI_PATH = File.join(COMMON_PATH, 'hifi', 'FIS_tapes')
     SESSION_PATH = File.join(COMMON_PATH, 'session-notes', 'version-1')
 
     def tape_path(base)

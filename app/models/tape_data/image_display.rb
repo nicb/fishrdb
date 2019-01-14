@@ -114,7 +114,7 @@ module TapeDataParts
   private
 
     def thumbnail_path
-      root = "public/private/lofi/1"
+      root = "public/private/lofi"
       subdir = tape_record.parent.name
       (subsubdir, thrown_away) = tape_record.name.split('-')
       return root + '/' + subdir + '/' + subsubdir + '-*/Images'
