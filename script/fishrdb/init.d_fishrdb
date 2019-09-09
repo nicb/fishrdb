@@ -28,12 +28,12 @@ DESC="FISHRDB Archive Server"
 NAME=fishrdb
 #DAEMON=/usr/sbin/$NAME
 #DAEMON_ARGS="--options args"
-#PIDFILE=/var/run/$NAME.pid
+PIDRUNFILE=/var/run/$NAME.pid
 SCRIPTNAME=/etc/init.d/$NAME
 FISHRDB_GEMSET_ROOT="/home/nicb/.rvm/gems/ruby-1.8.7-p358@fishrdb210/gems"
 FISHRDB_ROOT_TREE=/home/nicb/src/git/fishrdb
 FISHRDB_MONGREL_CONFIGURATION_FILE="${FISHRDB_ROOT_TREE}/config/deployment/mongrel_configuration.yml"
-PIDFILE="tmp/pids/mongrel.pid"
+PIDFILE="${FISHRDB_ROOT_TREE}/tmp/pids/mongrel.pid"
 FISHRDB_START_ARGS="-C ${FISHRDB_MONGREL_CONFIGURATION_FILE}"
 FISHRDB_STOP_ARGS="-P ${FISHRDB_ROOT_TREE}/${PIDFILE}"
 MONGREL=mongrel_rails
@@ -41,7 +41,7 @@ RM="rm -f"
 RVM="rvm"
 RVM_VERSION="ruby-1.8.7-p358@fishrdb210"
 
-# load rvm into this script
+# load rvm into this script and its version
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Exit if the package is not installed
@@ -66,10 +66,11 @@ do_start()
 	#   0 if daemon has been started
 	#   1 if daemon was already running
 	#   2 if daemon could not be started
-	if [ -f $PIDFILE ] # if a $PIDFILE is still there
+	if [ -f $PIDRUNFILE ] # if a $PIDFILE is still there
 	then
 		do_stop # make sure you get rid of previous servers
 	fi
+  $RM $PIDFILE
 	# [ -f /tmp/mysql.sock ] || ln -s /var/run/mysqld/mysqld.sock /tmp/mysql.sock
 	$RVM use $RVM_VERSION > /dev/null 2>&1 &&\
 	$MONGREL start $FISHRDB_START_ARGS || return 1
