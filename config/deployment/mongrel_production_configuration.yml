@@ -1,0 +1,22 @@
+#
+# Mongrel Production
+#
+--- 
+:throttle: 0
+:user: nicb
+:cwd: /home/nicb/src/git/fishrdb
+:host: 192.168.0.252
+:timeout: 180
+:debug: false
+:group: nicb
+:port: "3000"
+:num_processors: 1024
+:daemon: true
+:environment: production
+:config_script: 
+:prefix: 
+:pid_file: tmp/pids/mongrel_production.pid
+:includes: 
+:log_file: log/mongrel_production.log
+:mime_map: 
+:docroot: public

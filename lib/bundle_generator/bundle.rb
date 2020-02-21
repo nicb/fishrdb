@@ -33,7 +33,8 @@ module BundleGenerator
 
     attr_reader :system, :tapes
 
-    TMPDIR = File.join(File.dirname(__FILE__), '..', '..', 'tmp')
+    BUNDLE_GENERATOR_ROOT = ENV['FISHRDB_BUNDLE_GENERATOR_ROOT'] || File.join(File.dirname(__FILE__), '..', '..')
+    TMPDIR = File.join(BUNDLE_GENERATOR_ROOT, 'tmp')
 
     def initialize(config)
       super(nil)

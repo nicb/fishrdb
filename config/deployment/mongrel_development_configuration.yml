@@ -1,5 +1,5 @@
 #
-# $Id: mongrel_configuration.yml 590 2010-12-24 14:58:05Z nicb $
+# Mongrel Development
 #
 --- 
 :throttle: 0
@@ -9,14 +9,14 @@
 :timeout: 180
 :debug: false
 :group: nicb
-:port: "3000"
+:port: "3001"
 :num_processors: 1024
 :daemon: true
-:environment: production
+:environment: development
 :config_script: 
 :prefix: 
-:pid_file: tmp/pids/mongrel.pid
+:pid_file: tmp/pids/mongrel_development.pid
 :includes: 
-:log_file: log/mongrel.log
+:log_file: log/mongrel_development.log
 :mime_map: 
 :docroot: public

@@ -64,6 +64,7 @@ module Tdp
         'FMU' => { :last_name => 'Uitti', :first_name => 'Frances-Marie' },
         'AC' => { :last_name => 'Curran', :first_name => 'Alvin' },
         'NB' => { :last_name => 'Bernardini', :first_name => 'Nicola' },
+        'PS' => { :last_name => 'Schiavoni', :first_name => 'Pietro' },
       }
 
       def acro_to_name(acro)
