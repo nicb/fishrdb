@@ -1,6 +1,9 @@
 #!/bin/bash
+# PLEASE NOTE: this code should not be used as is. It must be completely
+# refactored to become two different init files with different environments
+# (one for development and the other for production)
 #
-# $Id: init.d_fishrdb 590 2010-12-24 14:58:05Z nicb $
+#
 #
 # This file must be installed in /etc/init.d and is run by root at startup
 #
@@ -34,15 +37,24 @@ FISHRDB_GEMSET="/home/nicb/.rvm/gems/ruby-1.8.7-p358@fishrdb210/"
 FISHRDB_GEMSET_ROOT="${FISHRDB_GEMSET}/gems"
 FISHRDB_BIN="${FISHRDB_GEMSET}/bin"
 FISHRDB_ROOT_TREE=/home/nicb/src/git/fishrdb
-FISHRDB_MONGREL_CONFIGURATION_FILE="${FISHRDB_ROOT_TREE}/config/deployment/mongrel_configuration.yml"
-PIDFILE="${FISHRDB_ROOT_TREE}/tmp/pids/mongrel.pid"
-FISHRDB_START_ARGS="-C ${FISHRDB_MONGREL_CONFIGURATION_FILE}"
+FISHRDB_MONGREL_PRODUCTION_CONFIGURATION_FILE="${FISHRDB_ROOT_TREE}/config/deployment/mongrel_production_configuration.yml"
+FISHRDB_MONGREL_DEVELOPMENT_CONFIGURATION_FILE="${FISHRDB_ROOT_TREE}/config/deployment/mongrel_development_configuration.yml"
+PIDFILE="${FISHRDB_ROOT_TREE}/tmp/pids/mongrel_production.pid"
+FISHRDB_START_ARGS_P="-C ${FISHRDB_MONGREL_PRODUCTION_CONFIGURATION_FILE}"
+FISHRDB_START_ARGS_D="-C ${FISHRDB_MONGREL_DEVELOPMENT_CONFIGURATION_FILE}"
 FISHRDB_STOP_ARGS="-P ${FISHRDB_ROOT_TREE}/${PIDFILE}"
 MONGREL="${FISHRDB_BIN}/mongrel_rails"
 RM="rm -f"
 RVM="rvm"
 RVM_VERSION="ruby-1.8.7-p358@fishrdb210"
 
+echo "THIS SCRIPT CANNOT BE USED RIGHT NOW!!!" 2>&1
+echo "(it must be seriously refactored)" 2>&1
+echo "use $MONGREL start -C ${FISHRDB_MONGREL_PRODUCTION_CONFIGURATION_FILE}" 2>&1
+echo "or use $MONGREL start -C ${FISHRDB_MONGREL_DEVELOPMENT_CONFIGURATION_FILE}" 2>&1
+exit -1
+
+#
 # load rvm into this script and its version
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
@@ -75,7 +87,9 @@ do_start()
   $RM $PIDFILE
 	# [ -f /tmp/mysql.sock ] || ln -s /var/run/mysqld/mysqld.sock /tmp/mysql.sock
 	$RVM use $RVM_VERSION > /dev/null 2>&1 &&\
-	$MONGREL start $FISHRDB_START_ARGS || return 1
+	$MONGREL start $FISHRDB_START_ARGS_P || return 1
+	$MONGREL start $FISHRDB_START_ARGS_D || return 1
+  echo $? > $PIDRUNFILE
 	# Add code here, if necessary, that waits for the process to be ready
 	# to handle requests from services started subsequently which depend
 	# on this one.  As a last resort, sleep for some time.
@@ -105,6 +119,7 @@ do_stop()
 	[ "$?" = 2 ] && return 2
 	# Many daemons don't delete their pidfiles when they exit.
 	$RM $PIDFILE
+  $RM $PIDRUNFILE
 	return "$RETVAL"
 }
 
