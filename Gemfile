@@ -1,25 +1,54 @@
+source 'https://rubygems.org'
+
+gem 'rails', '3.2.22.5'
+
+# Bundle edge Rails instead:
+# gem 'rails', :git => 'git://github.com/rails/rails.git'
+
+# gem 'sqlite3'
+gem 'mysql2'
+gem 'activerecord-mysql2-adapter'
+
+
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails', '~> 3.2.1'
+
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  # gem 'therubyracer', :platforms => :ruby
+
+  gem 'uglifier', '>= 1.0.3'
+end
+
+gem 'jquery-rails'
+
+# To use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.0.0'
+
+# To use Jbuilder templates for JSON
+# gem 'jbuilder'
+
+# Use unicorn as the app server
+# gem 'unicorn'
+
+# Deploy with Capistrano
+# gem 'capistrano'
+
+# To use debugger
+gem 'byebug'
+
 #
-# $Id: Gemfile 637 2013-09-10 12:56:40Z nicb $
-# 
-source "https://rubygems.org"
-
-gem "rails", '= 2.1.0'
-gem 'mysql'
-gem 'mongrel'
-
+# added by nicb
+#
+gem 'gyoku'
 gem 'SimpleSearch'
+gem 'acts_as_tree'
+gem 'acts_as_list'
+gem 'will_paginate'
 gem 'exifr'
-gem 'rtunnel' # required for convenience remote access scripts
-
-gem 'archive' # required to run the 'recover' library
-
-gem 'racc' # require to compile tape compilers
-
-gem 'railroad' # to represent the db structure graphically
-
-# gem 'schematic' # creates xsd out of ActiveRecord objects
-
-gem 'gyoku', '~> 1.0'  # create XML out of hashes
-# gem 'pretty-xml'
-
-gem 'ruby-debug'
+path './vendor/local_gems' do
+  gem 'search_engine'
+  gem 'tape_name_caption'
+end
