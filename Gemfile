@@ -52,3 +52,4 @@ path './vendor/local_gems' do
   gem 'search_engine'
   gem 'tape_name_caption'
 end
+gem 'test-unit', '~> 3.0'
