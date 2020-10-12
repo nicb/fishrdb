@@ -155,8 +155,8 @@ public
     result = nil
     if send(property)
 	    case
-	    when send(property).is_a?(klass): result = send(property)
-	    when send(property).is_a?(Date)
+	    when send(property).is_a?(klass) then result = send(property)
+	    when send(property).is_a?(Date) then
         bd = BibliographicData.find_by_bibliographic_record_id(self.id)
         result = bd.send(property)
 	    end

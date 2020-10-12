@@ -12,7 +12,7 @@
 #   inflect.uncountable %w( fish sheep )
 # end
 #
-Inflector.inflections do |inflect|
+ActiveSupport::Inflector.inflections do |inflect|
   inflect.uncountable %w( bibliographic_data tape_data cd_data )
 
 # #

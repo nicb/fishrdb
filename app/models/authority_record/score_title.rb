@@ -12,13 +12,13 @@ class ScoreTitle < AuthorityRecord
   attr_readonly         :children_count
 	public_class_method		:new, :create
   validates_uniqueness_of	:name, :scope => [:organico, :author_id, :transcriber_id, :lyricist_id],
-                          :message => "è già stato inserito"
+                          :message => "&egrave; gi&agrave; stato inserito"
 end
 
 class ScoreTitleVariant < ScoreTitle
 	belongs_to	:accepted_form, :class_name => 'ScoreTitle', :foreign_key => 'authority_record_id', :counter_cache => :children_count
 	validates_presence_of	:authority_record_id
-  validates_uniqueness_of	:name, :scope => :authority_record_id, :message => "è già stato inserito"
+  validates_uniqueness_of	:name, :scope => :authority_record_id, :message => "&egrave; &agrave; stato inserito"
 
   include AuthorityRecordParts::VariantMethods
 

@@ -6,14 +6,14 @@ class SiteName < AuthorityRecord
 	has_many	:site_name_variants, :foreign_key => 'authority_record_id', :order => "name", :dependent => :destroy
   attr_readonly         :children_count
 	public_class_method		:new, :create
-	validates_uniqueness_of	:name, :message => "è già stato inserito"
+	validates_uniqueness_of	:name, :message => "&egrave; gi&agrave; stato inserito"
 
 end
 
 class SiteNameVariant < SiteName
 	belongs_to	:accepted_form, :class_name => 'SiteName', :foreign_key => 'authority_record_id', :counter_cache => :children_count
 	validates_presence_of	:authority_record_id
-	validates_uniqueness_of	:name, :scope => :authority_record_id, :message => ": Questa variante è già stata inserita"
+	validates_uniqueness_of	:name, :scope => :authority_record_id, :message => ": Questa variante &egrave; gi&agrave; stata inserita"
 
   include AuthorityRecordParts::VariantMethods
 

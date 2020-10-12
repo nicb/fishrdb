@@ -5,7 +5,7 @@
 class BibliographicData < ActiveRecord::Base
 
   belongs_to :bibliographic_record
-  set_primary_key :bibliographic_record_id
+  self.primary_key = :bibliographic_record_id
 
   validates_presence_of :bibliographic_record_id
 

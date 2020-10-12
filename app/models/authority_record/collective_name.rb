@@ -7,7 +7,7 @@ class CollectiveName < AuthorityRecord
   belongs_to :cn_equivalent
   attr_readonly         :children_count
 	public_class_method		:new, :create
-	validates_uniqueness_of	:name, :scope => [:date_start, :date_end], :message => "è già stato inserito"
+	validates_uniqueness_of	:name, :scope => [:date_start, :date_end], :message => "&egrave; gi&agrave; stato inserito"
 
 
 public

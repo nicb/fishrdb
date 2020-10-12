@@ -1,6 +1,8 @@
 #
 # $Id: cd.rake 448 2009-09-27 23:09:50Z nicb $
 #
+require File.expand_path(File.join(['..'] * 3, 'config', 'constants'), __FILE__)
+
 namespace :db do
   namespace :cd do
     require File.dirname(__FILE__) + '/../cd_importer'

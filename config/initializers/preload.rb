@@ -1,6 +1,9 @@
 #
 # $Id: preload.rb 561 2010-11-27 21:30:08Z nicb $
 #
+
+require File.expand_path(File.join(['..'] * 2, 'constants'), __FILE__)
+
 # uncomment this line to enable debugging from the start
 #
 # require 'debugger'

@@ -58,7 +58,7 @@ class Document < ActiveRecord::Base
 	validates_presence_of 	:name, :description_level_id, :creator, :last_modifier, :container_type_id
   validates_numericality_of :description_level_id, :container_type_id
   #
-  validate_on_update :parent_cannot_be_self
+  validate :parent_cannot_be_self, :on => :update
 
 	make_searchable  [ :edizione_score, :container_number, :name, :titoli_series, :luoghi_series,
 					   :enti_series, :consistenza, :autore_score, :autore_versi_score,

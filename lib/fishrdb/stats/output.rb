@@ -7,7 +7,7 @@ module Fishrdb
       private
 
         def print_output(name, cnt)
-          printf("%-40s %5d\n", name.gsub(/à/, 'a`') + ':', cnt)
+          printf("%-40s %5d\n", name + ':', cnt)
         end
 
         def bar

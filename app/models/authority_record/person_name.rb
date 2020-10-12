@@ -6,9 +6,9 @@ class PersonName < AuthorityRecord
 	has_many	:person_name_variants, :foreign_key => 'authority_record_id', :order => "name, first_name, pseudonym", :dependent => :destroy
   attr_readonly         :children_count
 	public_class_method		:new, :create
-  validates_uniqueness_of	:name, :scope => [:first_name, :pseudonym], :message => "è già stato inserito"
-  validates_uniqueness_of	:first_name, :scope => [:name, :pseudonym], :message => "è già stato inserito"
-  validates_uniqueness_of	:pseudonym, :scope => [:first_name, :name], :message => "è già stato inserito"
+  validates_uniqueness_of	:name, :scope => [:first_name, :pseudonym], :message => "&egrave; gi&agrave; stato inserito"
+  validates_uniqueness_of	:first_name, :scope => [:name, :pseudonym], :message => "&egrave; gi&agrave; stato inserito"
+  validates_uniqueness_of	:pseudonym, :scope => [:first_name, :name], :message => "&egrave; gi&agrave; stato inserito"
 	validate :alternate_presences_of_name_first_name_or_pseudonym
 
   composed_of(:date, :class_name => 'ExtDate::Interval', :mapping =>

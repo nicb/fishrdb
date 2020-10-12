@@ -1,3 +1,4 @@
+# encoding: utf-8
 #
 # $Id: description_level.rb 517 2010-07-10 20:55:56Z nicb $
 #
@@ -92,7 +93,7 @@ class DescriptionLevel
     #
     # need to: downcase, sub spaces, normalize to pure ASCII
     #
-    return level.chars.downcase.gsub(/\s+/, '_').normalize(:kd).gsub(/[^\x00-\x7F]/n,'').to_s
+    return level.downcase.gsub(/\s+/, '_').normalize(:kd).gsub(/[^\x00-\x7F]/n,'').to_s
   end
 
   def ==(other)

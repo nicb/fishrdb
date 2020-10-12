@@ -2,7 +2,6 @@
 # $Id: search_system.rb 55 2007-11-11 18:36:02Z nicb $
 #
 require	'search/simple'
-gem		"SimpleSearch"
 
 class ActiveRecord::Base
 
@@ -21,4 +20,3 @@ class MockContents
         Time.at(0)
     end
 end
-

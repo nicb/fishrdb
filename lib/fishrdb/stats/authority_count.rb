@@ -14,8 +14,8 @@ module Fishrdb
           { 'PersonNameVariant' => 'Nomi di persona (forme varianti)' },
           { 'CollectiveName' => 'Nomi di enti' },
           { 'CollectiveNameVariant' => 'Nomi di enti (forme varianti)' },
-          { 'SiteName' => 'Nomi di località' }, 
-          { 'SiteNameVariant' => 'Nomi di località (forme varianti)' },
+          { 'SiteName' => 'Nomi di localita`' }, 
+          { 'SiteNameVariant' => 'Nomi di localita` (forme varianti)' },
           { 'ScoreTitle' => 'Titoli di partiture' },
           { 'ScoreTitleVariant' => 'Titoli di partiture (forme varianti)' },
         ]
