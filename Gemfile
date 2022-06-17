@@ -3,7 +3,7 @@
 # 
 source "https://rubygems.org"
 
-gem "rails", '= 2.1.0'
+gem "rails", '7.0.3'
 gem 'mysql'
 gem 'mongrel'
 
